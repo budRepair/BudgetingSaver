@@ -1,0 +1,1045 @@
+{
+  "Name": "TEST_予算_001",
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionResource, Forguncy.RbacPermission.Core",
+      "enabledTypes": 4
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 5,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 1
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 1,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 2
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 5,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "6217581a-5e44-4ae9-b9bc-b535de1349db",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "1"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "927dbbfa-bdc8-4cac-a63f-82082c7a287a",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 5,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "f0b0d88a-92aa-4998-b5a1-441e19827bee",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "2"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "1fa53ced-ad3f-4665-bf05-9ba9ebadc633",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 5,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "fbc2db40-2dc4-4aad-b1ec-5591eb273db9",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "3"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "b362526f-9525-465b-8ad2-f04ced7a1a92",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 5,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "91a40780-15d5-46f9-8ea4-9a46bd3d8e12",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "4"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "c7708855-2977-47ca-bbfa-563fe121623d",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 5,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "d7d7287d-1dc6-431f-aaa0-8eaf34f97bdb",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "5"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "4dd104ec-134f-467a-af0e-ca42e316700f",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 5,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "58e1fd89-5198-4c28-b564-048f69b427aa",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "6"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "b396a46a-9d0c-46f8-8f2b-ceb51e890cd7",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 5,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "49a8c2d8-7f63-469b-afdb-aca4bd91dd13",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "7"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "78c13402-0098-48b9-bad4-50a4b34b1b48",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 5,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "8b69e291-75d1-4472-aea3-ad2b7376097e",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "8"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "0a2c14bf-5e2b-44f5-9273-f8f18fa0e5b9",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 5,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "d7918166-4d98-44f6-a256-428ba3fa4c1b",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "9"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "64ecf278-13b4-4335-99a2-17866aae4356",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 5,
+            "_2月": 1,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "95cd853b-6ac1-4966-8033-1f8c0650118c",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "10"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "cfcc4a73-f8ad-4d0a-a12a-8caa106a97c5",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 5,
+            "_3月": 1,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "a6fd1adf-04a2-4b93-b194-69fd91aaffc5",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "11"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "b4032f39-83a5-466f-9cd6-165539e8c0c8",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 1,
+            "組織コード": 1,
+            "科目コード": 5,
+            "_4月": 1,
+            "_5月": 1,
+            "_6月": 1,
+            "_7月": 1,
+            "_8月": 1,
+            "_9月": 1,
+            "_10月": 1,
+            "_11月": 1,
+            "_12月": 1,
+            "_1月": 1,
+            "_2月": 1,
+            "_3月": 5,
+            "バージョン": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "5e1ea940-7d39-42df-ae1f-27de8eee824b",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "12"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_予算_001",
+                    "ColumnName": "年度",
+                    "GUID": "16f437de-eeae-4e2d-b490-778ea34e23d4",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度_検証用",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "年度",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "組織コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "科目コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_4月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_5月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_6月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_7月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_8月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_9月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_10月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_11月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_12月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_1月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_2月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_3月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "バージョン",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "MST_年度_検証用",
+      "PrimaryColumn": "年度",
+      "ForeignTable": "TEST_予算_001",
+      "ForeignColumn": "年度"
+    }
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,984 @@
+{
+  "Rows": {
+    "Count": 42
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,2": "検証用メニュー",
+    "2,39": "メニューに戻る"
+  },
+  "AttachInfos": {
+    "2,39": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "スタイル3",
+        "Items": [
+          {
+            "Value": "マスタ管理",
+            "Text": "マスタ管理",
+            "IconPath": "File/352_access_file_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "Expand": true,
+            "CanVisitRoleList": [
+              "Administrator"
+            ],
+            "SubItems": [
+              {
+                "Value": "マスタ設定",
+                "Text": "マスタ設定",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "Administrator"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "商品単価マスタ",
+                    "Text": "商品単価マスタ",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "Expand": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "商品単価マスタ_検証用登録"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "Value": "権限設定",
+                "Text": "権限設定",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "Administrator"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "組織マスタ",
+                    "Text": "組織マスタ",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "Expand": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "組織マスタ_検証用"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "Value": "権限マスタ",
+                    "Text": "権限マスタ",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "Expand": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "権限マスタ_検証用"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "DefaultExpandStyle": 1,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 16.0,
+            "Bold": true,
+            "Height": 30.0,
+            "IconHeight": 14.0,
+            "IconWidth": 14.0
+          },
+          {
+            "FontSize": 13.333333333333332,
+            "Bold": true,
+            "Height": 22.0,
+            "IconHeight": 12.0,
+            "IconWidth": 12.0
+          },
+          {
+            "FontSize": 13.333333333333332,
+            "Bold": false,
+            "Height": 22.0,
+            "IconHeight": 12.0,
+            "IconWidth": 12.0
+          }
+        ]
+      }
+    },
+    "4,17": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "スタイル3",
+        "Items": [
+          {
+            "Value": "会計期間ロック",
+            "Text": "会計期間ロック",
+            "IconPath": "Application/078_lock_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "Expand": true,
+            "CanVisitRoleList": [
+              "Administrator"
+            ],
+            "SubItems": [
+              {
+                "Value": "月ロック",
+                "Text": "月ロック",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "Administrator"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "商品単価マスタ",
+                    "Text": "商品単価マスタ",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "商品単価マスタ_月ロック"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "Value": "予算入力",
+                    "Text": "予算入力",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "予算_入力制御"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "Value": "年度ロック",
+                "Text": "年度ロック",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "Administrator"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "商品単価マスタ_月横変換",
+                    "Text": "商品単価マスタ_月横変換",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "商品単価マスタ_月横変換"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "DefaultExpandStyle": 1,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 16.0,
+            "Bold": true,
+            "Height": 30.0,
+            "IconHeight": 14.0,
+            "IconWidth": 14.0
+          },
+          {
+            "FontSize": 13.333333333333332,
+            "Bold": true,
+            "Height": 22.0,
+            "IconHeight": 12.0,
+            "IconWidth": 12.0
+          },
+          {
+            "FontSize": 13.333333333333332,
+            "Bold": false,
+            "Height": 22.0,
+            "IconHeight": 12.0,
+            "IconWidth": 12.0
+          }
+        ]
+      }
+    },
+    "4,33": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "スタイル3",
+        "Items": [
+          {
+            "Value": "その他",
+            "Text": "その他",
+            "IconPath": "Navigation/229_list_5.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "Expand": true,
+            "CanVisitRoleList": [
+              "Administrator"
+            ],
+            "SubItems": [
+              {
+                "Value": "検証用",
+                "Text": "検証用",
+                "IconPath": "Chart/364_bar_chart_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "売上計画_検証用(コンボボックス)",
+                    "Text": "売上計画_検証用(コンボボックス)",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "売上入力_検証用"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "Value": "予算データ_検証用(データ削除)",
+                    "Text": "予算データ_検証用(データ削除)",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "予算データ_検証用"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "Value": "予算データ_検証用(自動計算)",
+                    "Text": "予算データ_検証用(自動計算)",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "損益計算書入力_収益計算"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              },
+              {
+                "Value": "その他",
+                "Text": "その他",
+                "IconPath": "Chart/364_bar_chart_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "SubItems": [
+                  {
+                    "Value": "予算データ_検証用2",
+                    "Text": "予算データ_検証用2",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "予算データ_検証用2"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "Value": "入力制御_検証用",
+                    "Text": "入力制御_検証用",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "入力制御"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  },
+                  {
+                    "Value": "見込入力_検証用",
+                    "Text": "見込入力_検証用",
+                    "SelectedIconColor": "Background 1",
+                    "SelectedIconColorUseItemColor": true,
+                    "IconColorUseItemColor": true,
+                    "IsOldMenuPath": false,
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "見込入力_検証"
+                      }
+                    ],
+                    "CanVisitRoleList": [
+                      "FGC_Anonymous"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "DefaultExpandStyle": 1,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 16.0,
+            "Bold": true,
+            "Height": 30.0,
+            "IconHeight": 14.0,
+            "IconWidth": 14.0
+          },
+          {
+            "FontSize": 13.333333333333332,
+            "Bold": true,
+            "Height": 22.0,
+            "IconHeight": 12.0,
+            "IconWidth": 12.0
+          },
+          {
+            "FontSize": 13.333333333333332,
+            "Bold": false,
+            "Height": 22.0,
+            "IconHeight": 12.0,
+            "IconWidth": 12.0
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Foreground": 5,
+        "Formatter": 3,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 35",
+        "[AUTO]General",
+        "Center",
+        "Blue"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "1,0": 0,
+      "1,1": 0,
+      "1,2": 1,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "2,0": 0,
+      "2,1": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,39": 2,
+      "2,40": 3,
+      "2,41": 3,
+      "2,42": 3,
+      "2,43": 3,
+      "4,2": 4,
+      "4,17": 4,
+      "4,18": 5,
+      "4,19": 5,
+      "4,20": 5,
+      "4,21": 5,
+      "4,22": 5,
+      "4,23": 5,
+      "4,24": 5,
+      "4,25": 5,
+      "4,26": 5,
+      "4,27": 5,
+      "4,28": 5,
+      "4,33": 4,
+      "4,34": 5,
+      "4,35": 5,
+      "4,36": 5,
+      "4,37": 5,
+      "4,38": 5,
+      "4,39": 5,
+      "4,40": 5,
+      "4,41": 5,
+      "4,42": 5,
+      "4,43": 5,
+      "4,44": 5,
+      "5,17": 5,
+      "5,18": 5,
+      "5,19": 5,
+      "5,20": 5,
+      "5,21": 5,
+      "5,22": 5,
+      "5,23": 5,
+      "5,24": 5,
+      "5,25": 5,
+      "5,26": 5,
+      "5,27": 5,
+      "5,28": 5,
+      "5,33": 5,
+      "5,34": 5,
+      "5,35": 5,
+      "5,36": 5,
+      "5,37": 5,
+      "5,38": 5,
+      "5,39": 5,
+      "5,40": 5,
+      "5,41": 5,
+      "5,42": 5,
+      "5,43": 5,
+      "5,44": 5,
+      "6,17": 5,
+      "6,18": 5,
+      "6,19": 5,
+      "6,20": 5,
+      "6,21": 5,
+      "6,22": 5,
+      "6,23": 5,
+      "6,24": 5,
+      "6,25": 5,
+      "6,26": 5,
+      "6,27": 5,
+      "6,28": 5,
+      "6,33": 5,
+      "6,34": 5,
+      "6,35": 5,
+      "6,36": 5,
+      "6,37": 5,
+      "6,38": 5,
+      "6,39": 5,
+      "6,40": 5,
+      "6,41": 5,
+      "6,42": 5,
+      "6,43": 5,
+      "6,44": 5,
+      "7,17": 5,
+      "7,18": 5,
+      "7,19": 5,
+      "7,20": 5,
+      "7,21": 5,
+      "7,22": 5,
+      "7,23": 5,
+      "7,24": 5,
+      "7,25": 5,
+      "7,26": 5,
+      "7,27": 5,
+      "7,28": 5,
+      "7,33": 5,
+      "7,34": 5,
+      "7,35": 5,
+      "7,36": 5,
+      "7,37": 5,
+      "7,38": 5,
+      "7,39": 5,
+      "7,40": 5,
+      "7,41": 5,
+      "7,42": 5,
+      "7,43": 5,
+      "7,44": 5,
+      "8,17": 5,
+      "8,18": 5,
+      "8,19": 5,
+      "8,20": 5,
+      "8,21": 5,
+      "8,22": 5,
+      "8,23": 5,
+      "8,24": 5,
+      "8,25": 5,
+      "8,26": 5,
+      "8,27": 5,
+      "8,28": 5,
+      "8,33": 5,
+      "8,34": 5,
+      "8,35": 5,
+      "8,36": 5,
+      "8,37": 5,
+      "8,38": 5,
+      "8,39": 5,
+      "8,40": 5,
+      "8,41": 5,
+      "8,42": 5,
+      "8,43": 5,
+      "8,44": 5,
+      "9,17": 5,
+      "9,18": 5,
+      "9,19": 5,
+      "9,20": 5,
+      "9,21": 5,
+      "9,22": 5,
+      "9,23": 5,
+      "9,24": 5,
+      "9,25": 5,
+      "9,26": 5,
+      "9,27": 5,
+      "9,28": 5,
+      "9,33": 5,
+      "9,34": 5,
+      "9,35": 5,
+      "9,36": 5,
+      "9,37": 5,
+      "9,38": 5,
+      "9,39": 5,
+      "9,40": 5,
+      "9,41": 5,
+      "9,42": 5,
+      "9,43": 5,
+      "9,44": 5,
+      "10,17": 5,
+      "10,18": 5,
+      "10,19": 5,
+      "10,20": 5,
+      "10,21": 5,
+      "10,22": 5,
+      "10,23": 5,
+      "10,24": 5,
+      "10,25": 5,
+      "10,26": 5,
+      "10,27": 5,
+      "10,28": 5,
+      "10,33": 5,
+      "10,34": 5,
+      "10,35": 5,
+      "10,36": 5,
+      "10,37": 5,
+      "10,38": 5,
+      "10,39": 5,
+      "10,40": 5,
+      "10,41": 5,
+      "10,42": 5,
+      "10,43": 5,
+      "10,44": 5,
+      "11,17": 5,
+      "11,18": 5,
+      "11,19": 5,
+      "11,20": 5,
+      "11,21": 5,
+      "11,22": 5,
+      "11,23": 5,
+      "11,24": 5,
+      "11,25": 5,
+      "11,26": 5,
+      "11,27": 5,
+      "11,28": 5,
+      "11,33": 5,
+      "11,34": 5,
+      "11,35": 5,
+      "11,36": 5,
+      "11,37": 5,
+      "11,38": 5,
+      "11,39": 5,
+      "11,40": 5,
+      "11,41": 5,
+      "11,42": 5,
+      "11,43": 5,
+      "11,44": 5,
+      "12,17": 5,
+      "12,18": 5,
+      "12,19": 5,
+      "12,20": 5,
+      "12,21": 5,
+      "12,22": 5,
+      "12,23": 5,
+      "12,24": 5,
+      "12,25": 5,
+      "12,26": 5,
+      "12,27": 5,
+      "12,28": 5,
+      "12,33": 5,
+      "12,34": 5,
+      "12,35": 5,
+      "12,36": 5,
+      "12,37": 5,
+      "12,38": 5,
+      "12,39": 5,
+      "12,40": 5,
+      "12,41": 5,
+      "12,42": 5,
+      "12,43": 5,
+      "12,44": 5,
+      "13,17": 5,
+      "13,18": 5,
+      "13,19": 5,
+      "13,20": 5,
+      "13,21": 5,
+      "13,22": 5,
+      "13,23": 5,
+      "13,24": 5,
+      "13,25": 5,
+      "13,26": 5,
+      "13,27": 5,
+      "13,28": 5,
+      "13,33": 5,
+      "13,34": 5,
+      "13,35": 5,
+      "13,36": 5,
+      "13,37": 5,
+      "13,38": 5,
+      "13,39": 5,
+      "13,40": 5,
+      "13,41": 5,
+      "13,42": 5,
+      "13,43": 5,
+      "13,44": 5,
+      "14,17": 5,
+      "14,18": 5,
+      "14,19": 5,
+      "14,20": 5,
+      "14,21": 5,
+      "14,22": 5,
+      "14,23": 5,
+      "14,24": 5,
+      "14,25": 5,
+      "14,26": 5,
+      "14,27": 5,
+      "14,28": 5,
+      "14,33": 5,
+      "14,34": 5,
+      "14,35": 5,
+      "14,36": 5,
+      "14,37": 5,
+      "14,38": 5,
+      "14,39": 5,
+      "14,40": 5,
+      "14,41": 5,
+      "14,42": 5,
+      "14,43": 5,
+      "14,44": 5,
+      "15,17": 5,
+      "15,18": 5,
+      "15,19": 5,
+      "15,20": 5,
+      "15,21": 5,
+      "15,22": 5,
+      "15,23": 5,
+      "15,24": 5,
+      "15,25": 5,
+      "15,26": 5,
+      "15,27": 5,
+      "15,28": 5,
+      "15,33": 5,
+      "15,34": 5,
+      "15,35": 5,
+      "15,36": 5,
+      "15,37": 5,
+      "15,38": 5,
+      "15,39": 5,
+      "15,40": 5,
+      "15,41": 5,
+      "15,42": 5,
+      "15,43": 5,
+      "15,44": 5,
+      "16,17": 5,
+      "16,18": 5,
+      "16,19": 5,
+      "16,20": 5,
+      "16,21": 5,
+      "16,22": 5,
+      "16,23": 5,
+      "16,24": 5,
+      "16,25": 5,
+      "16,26": 5,
+      "16,27": 5,
+      "16,28": 5,
+      "16,33": 5,
+      "16,34": 5,
+      "16,35": 5,
+      "16,36": 5,
+      "16,37": 5,
+      "16,38": 5,
+      "16,39": 5,
+      "16,40": 5,
+      "16,41": 5,
+      "16,42": 5,
+      "16,43": 5,
+      "16,44": 5,
+      "17,17": 5,
+      "17,18": 5,
+      "17,19": 5,
+      "17,20": 5,
+      "17,21": 5,
+      "17,22": 5,
+      "17,23": 5,
+      "17,24": 5,
+      "17,25": 5,
+      "17,26": 5,
+      "17,27": 5,
+      "17,28": 5,
+      "17,33": 5,
+      "17,34": 5,
+      "17,35": 5,
+      "17,36": 5,
+      "17,37": 5,
+      "17,38": 5,
+      "17,39": 5,
+      "17,40": 5,
+      "17,41": 5,
+      "17,42": 5,
+      "17,43": 5,
+      "17,44": 5,
+      "18,17": 5,
+      "18,18": 5,
+      "18,19": 5,
+      "18,20": 5,
+      "18,21": 5,
+      "18,22": 5,
+      "18,23": 5,
+      "18,24": 5,
+      "18,25": 5,
+      "18,26": 5,
+      "18,27": 5,
+      "18,28": 5,
+      "18,33": 5,
+      "18,34": 5,
+      "18,35": 5,
+      "18,36": 5,
+      "18,37": 5,
+      "18,38": 5,
+      "18,39": 5,
+      "18,40": 5,
+      "18,41": 5,
+      "18,42": 5,
+      "18,43": 5,
+      "18,44": 5,
+      "19,17": 5,
+      "19,18": 5,
+      "19,19": 5,
+      "19,20": 5,
+      "19,21": 5,
+      "19,22": 5,
+      "19,23": 5,
+      "19,24": 5,
+      "19,25": 5,
+      "19,26": 5,
+      "19,27": 5,
+      "19,28": 5,
+      "19,33": 5,
+      "19,34": 5,
+      "19,35": 5,
+      "19,36": 5,
+      "19,37": 5,
+      "19,38": 5,
+      "19,39": 5,
+      "19,40": 5,
+      "19,41": 5,
+      "19,42": 5,
+      "19,43": 5,
+      "19,44": 5,
+      "20,17": 5,
+      "20,18": 5,
+      "20,19": 5,
+      "20,20": 5,
+      "20,21": 5,
+      "20,22": 5,
+      "20,23": 5,
+      "20,24": 5,
+      "20,25": 5,
+      "20,26": 5,
+      "20,27": 5,
+      "20,28": 5,
+      "20,33": 5,
+      "20,34": 5,
+      "20,35": 5,
+      "20,36": 5,
+      "20,37": 5,
+      "20,38": 5,
+      "20,39": 5,
+      "20,40": 5,
+      "20,41": 5,
+      "20,42": 5,
+      "20,43": 5,
+      "20,44": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,17,12",
+    "4,17,17,12",
+    "4,33,17,12",
+    "1,2,2,12",
+    "2,39,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//x8exXE96trMMauSYyCbCwArxOWmcYveBqAJ/WX8qT3MDrJZAh7yIAm4Fs/3rJTpHNtTQplUXZVLBysfT5P43Gm9lDwdS2rloxbaDQcwu3GYqGRQUpILa2tsDvpE8iRtywhdX/Qu71zcS313MR2Bus5BUA/J2pddYU5OMirfvro7oiyYI+gzYfT8JD4P/G7VydtbfMetryWOC7/IItzctiWiz4e2HEqYO0VMecrDpMRn5E45bFwSnuRfzqSnT+qw7P8jzSGVmCHlqqmS2I0xiw3mwzThgiSN5Ex6E0RCqbwlb9wVm4NZ+YezFyS80SpQle/ImTFcP40PebOWt6sP/A15vhwG8v7157DYphpoSWbXqXqBvaz01jeyYpAHdH9NzoCI3YlzyrjASm9C0aS8+HUZQFiD2Dc97luh8AC3z64zdQf0idFE+cHPuEwW/DCOhbeE2GxTXu32S8o8HsBq4P/1imfkcpYyiiAjlf2AWZxQhbP5/OI78JpvG/eXw2s6PYnw2AnT2G4yy24zB/wgcEjzKn7/5QEUM03/m6t5iVD8Mq7BgM2Y04EDQ/sa48AJC8/oDeS/AUWQkhfZHZlqyV+ii+g+at127ZVvhZRxVCJ6ovYyhKZbZHN1U1W0Mb3Or4QLGOpj82bxdyjPeYxv/bI4Kq6IRWxnxwPQhRuI4PucpGvME1/bK1w2Vz3JWtDE0GDNfMBy4sTU1WGtLx+Za9dM7fa+c3tlyr6d0ruymPUSDy0nAeCInig9A3WOtgs1msrij/qoND6F1nU2G3fm7OBsYvUi9eyiM6YWJvi23uuy7/AcBOqBC1oz6hO2mfkidC5PZm/jINyJ6/1LAmwKUuIGyuvdnxXAGq40qUKJgQ0lpRDXjjaen5ZiLrhHTbQIstdr/s0YLA+y6FIVaBqsXzw==|920

@@ -1,0 +1,121 @@
+{
+  "Name": "見込入力初期値",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度",
+          "DataValidationInfo": {},
+          "TestData": "2024"
+        },
+        {
+          "Name": "バージョン_From",
+          "DataValidationInfo": {},
+          "TestData": "Fix"
+        },
+        {
+          "Name": "バージョン_To",
+          "DataValidationInfo": {},
+          "TestData": "Fix"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {
+        "@pmt1": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=年度"
+          },
+          "Item2": 16
+        },
+        "@pmt2": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=バージョン_From"
+          },
+          "Item2": 16
+        }
+      },
+      "SqlStatement": "INSERT \r\nINTO \"WK_見込_損益計算書\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    @pmt1 AS \"年度\"\r\n    , wk2.\"組織コード\"\r\n    , mt.\"科目コード\"\r\n    , wk2.\"4月\"\r\n    , wk2.\"5月\"\r\n    , wk2.\"6月\"\r\n    , wk2.\"7月\"\r\n    , wk2.\"8月\"\r\n    , wk2.\"9月\"\r\n    , wk2.\"10月\"\r\n    , wk2.\"11月\"\r\n    , wk2.\"12月\"\r\n    , wk2.\"1月\"\r\n    , wk2.\"2月\"\r\n    , wk2.\"3月\"\r\n    , @pmt2 AS \"バージョン\" \r\nFROM\r\n    \"MST_科目\" mt \r\n    LEFT JOIN ( \r\n        SELECT DISTINCT\r\n            \"組織コード\" \r\n        FROM\r\n            \"VIEW_予算_損益計算書\" \r\n        WHERE\r\n            \"年度\" = @pmt1 \r\n            AND \"バージョン\" = @pmt2\r\n    ) wk1 \r\n        ON 1 = 1 \r\n    LEFT JOIN \"VIEW_予算_損益計算書\" wk2 \r\n        ON mt.\"科目コード\" = wk2.\"科目コード\" \r\n        AND wk1.\"組織コード\" = wk2.\"組織コード\" \r\n        AND wk2.\"年度\" = @pmt1 \r\n        AND wk2.\"バージョン\" = @pmt2 \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+      "ReturnsName": "return1",
+      "ID": "0119095c930244648d73cf602a17f2ca",
+      "Comments": "コピー対象データをWKテーブルに作成",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {
+        "@pmt1": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=年度"
+          },
+          "Item2": 16
+        },
+        "@pmt2": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=バージョン_From"
+          },
+          "Item2": 16
+        },
+        "@pmt3": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=バージョン_To"
+          },
+          "Item2": 16
+        }
+      },
+      "SqlStatement": "INSERT \r\nINTO \"WK_見込_損益計算書\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    @pmt1 AS \"年度\"\r\n    , wk1.\"組織コード\"\r\n    , wk1.\"科目コード\"\r\n    , wk2.\"4月\"\r\n    , wk2.\"5月\"\r\n    , wk2.\"6月\"\r\n    , wk2.\"7月\"\r\n    , wk2.\"8月\"\r\n    , wk2.\"9月\"\r\n    , wk2.\"10月\"\r\n    , wk2.\"11月\"\r\n    , wk2.\"12月\"\r\n    , wk2.\"1月\"\r\n    , wk2.\"2月\"\r\n    , wk2.\"3月\"\r\n    , @pmt3 AS \"バージョン\" \r\nFROM\r\n    ( \r\n        SELECT DISTINCT\r\n            wk.\"組織コード\"\r\n            , mt.\"科目コード\" \r\n        FROM\r\n            \"MST_科目\" mt \r\n            LEFT JOIN ( \r\n                SELECT DISTINCT\r\n                    \"組織コード\" \r\n                FROM\r\n                    \"VIEW_予算_損益計算書\" \r\n                WHERE\r\n                    \"年度\" = @pmt1 \r\n                    AND \"バージョン\" = @pmt2\r\n            ) wk \r\n                ON 1 = 1 \r\n        ORDER BY\r\n            wk.\"組織コード\"\r\n            , mt.\"科目コード\"\r\n    ) wk1 \r\n    LEFT JOIN \"VIEW_予算_損益計算書\" wk2 \r\n        ON wk1.\"科目コード\" = wk2.\"科目コード\" \r\n        AND wk1.\"組織コード\" = wk2.\"組織コード\" \r\n        AND wk2.\"年度\" = @pmt1 \r\n        AND wk2.\"バージョン\" = @pmt2;",
+      "ReturnsName": "return1",
+      "ID": "7d7e6027668447469450bb0f3b7836b2",
+      "Comments": "コピー対象データをWKテーブルに作成"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {},
+      "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_見込_損益計算書\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_見込_損益計算書\" wk \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_見込_損益計算書\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\" \r\nFROM\r\n    \"WK_見込_損益計算書\";",
+      "ReturnsName": "return1",
+      "ID": "4c002a959d5f40f9abe568ccb76e3e8a",
+      "Comments": "見込データ作成処理"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {},
+      "SqlStatement": "DELETE \r\nFROM\r\n    \"WK_見込_損益計算書\";",
+      "ReturnsName": "return1",
+      "ID": "dc275fbe484f401cb9c3ed8da150c218",
+      "Comments": "WKテーブル削除処理"
+    }
+  ]
+}

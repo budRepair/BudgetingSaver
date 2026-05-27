@@ -1,0 +1,2590 @@
+{
+  "Rows": {
+    "Count": 96
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "210": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 83.0
+        }
+      },
+      "211": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 134.0
+        }
+      },
+      "212": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 62.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      209,
+      210,
+      211,
+      212
+    ],
+    "Count": 213
+  },
+  "Values": {
+    "1,2": "売上・外注費テーブル",
+    "1,61": "",
+    "2,55": "メニューに戻る",
+    "3,209": "■ログアウトコマンド",
+    "4,2": "テーブル",
+    "4,7": "売上",
+    "4,16": "Excelエクスポート",
+    "4,25": "Excelインポート",
+    "4,210": "処理確認",
+    "4,211": "ログアウトしますか？",
+    "5,210": "リターンコード",
+    "6,210": "処理失敗",
+    "6,211": "ログアウト処理に失敗しました。管理者に確認してください。"
+  },
+  "AttachInfos": {
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=売上・外注費テーブル!HD5"
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "ログアウトコマンド",
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=売上・外注費テーブル!HD6"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=売上・外注費テーブル!HD6"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_ログイン"
+                          }
+                        ],
+                        "ID": "cd013878-1c70-465a-878b-3fb83109bfd7"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=売上・外注費テーブル!HD6"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=売上・外注費テーブル!HD7"
+                            }
+                          }
+                        ],
+                        "ID": "4f5f1526-9808-4d81-9647-ad19a200ef61"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "f24cb673-39e2-46cf-8be4-ed251f7122ae"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "スタイル14",
+        "Icon": {
+          "Name": "Arrow/321_exit_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 18.0
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "",
+        "Items": [
+          {
+            "Value": "売上",
+            "DisplayValue": "売上"
+          },
+          {
+            "Value": "外注費",
+            "DisplayValue": "外注費"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・外注費テーブル!H5"
+                      }
+                    ]
+                  },
+                  "value": "売上"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!7:50"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!51:94"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e8bfd0f1-7ccf-4299-a901-ddcddb527d67"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!7:50"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!51:94"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "a6a4a3a5-d6d0-48e9-aa3d-227ccee34da4"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": "売上"
+      }
+    },
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・外注費テーブル!H5"
+                      }
+                    ]
+                  },
+                  "value": "売上"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ExportExcelListviewNameMode": 1,
+                    "ListViewName": "リストビュー1",
+                    "NewOtherName": "売上テーブル",
+                    "IsOnlyExportValue": false
+                  }
+                ],
+                "ID": "24d4e45a-816c-4031-9a41-bf894d4cdbee"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ExportExcelListviewNameMode": 1,
+                    "ListViewName": "リストビュー2",
+                    "NewOtherName": "外注費テーブル",
+                    "IsOnlyExportValue": false
+                  }
+                ],
+                "ID": "81f274ac-0676-4920-913f-f9e11049ac2a"
+              }
+            ]
+          }
+        ],
+        "Text": "Excelエクスポート",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "4,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・外注費テーブル!H5"
+                      }
+                    ]
+                  },
+                  "value": "売上"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ImportExcelToListViewMode": 2,
+                    "ImportExcelToListViewColumnInfos": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!C9"
+                        },
+                        "ColumnName": "年度",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!F9"
+                        },
+                        "ColumnName": "組織コード",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!J9"
+                        },
+                        "ColumnName": "親属性コード",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!N9"
+                        },
+                        "ColumnName": "親属性名称"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!U9"
+                        },
+                        "ColumnName": "_1月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!Z9"
+                        },
+                        "ColumnName": "_1月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AD9"
+                        },
+                        "ColumnName": "_1月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AJ9"
+                        },
+                        "ColumnName": "_2月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AO9"
+                        },
+                        "ColumnName": "_2月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AS9"
+                        },
+                        "ColumnName": "_2月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AY9"
+                        },
+                        "ColumnName": "_3月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BD9"
+                        },
+                        "ColumnName": "_3月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BH9"
+                        },
+                        "ColumnName": "_3月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BN9"
+                        },
+                        "ColumnName": "_4月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BS9"
+                        },
+                        "ColumnName": "_4月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BW9"
+                        },
+                        "ColumnName": "_4月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CC9"
+                        },
+                        "ColumnName": "_5月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CH9"
+                        },
+                        "ColumnName": "_5月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CL9"
+                        },
+                        "ColumnName": "_5月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CR9"
+                        },
+                        "ColumnName": "_6月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CW9"
+                        },
+                        "ColumnName": "_6月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DA9"
+                        },
+                        "ColumnName": "_6月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DG9"
+                        },
+                        "ColumnName": "_7月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DL9"
+                        },
+                        "ColumnName": "_7月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DP9"
+                        },
+                        "ColumnName": "_7月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DV9"
+                        },
+                        "ColumnName": "_8月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EA9"
+                        },
+                        "ColumnName": "_8月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EE9"
+                        },
+                        "ColumnName": "_8月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EK9"
+                        },
+                        "ColumnName": "_9月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EP9"
+                        },
+                        "ColumnName": "_9月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!ET9"
+                        },
+                        "ColumnName": "_9月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EZ9"
+                        },
+                        "ColumnName": "_10月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FE9"
+                        },
+                        "ColumnName": "_10月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FI9"
+                        },
+                        "ColumnName": "_10月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FO9"
+                        },
+                        "ColumnName": "_11月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FT9"
+                        },
+                        "ColumnName": "_11月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FX9"
+                        },
+                        "ColumnName": "_11月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GD9"
+                        },
+                        "ColumnName": "_12月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GI9"
+                        },
+                        "ColumnName": "_12月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GM9"
+                        },
+                        "ColumnName": "_12月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GS9"
+                        },
+                        "ColumnName": "バージョン"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GV9"
+                        },
+                        "ColumnName": "科目コード",
+                        "IsPrimaryKey": true
+                      }
+                    ],
+                    "IsShowSuccessAlert": true,
+                    "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
+                  }
+                ],
+                "ID": "0adb6393-26bd-4c9b-ac3c-becb47ede646"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー2",
+                    "ImportExcelToListViewMode": 2,
+                    "ImportExcelToListViewColumnInfos": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!C53"
+                        },
+                        "ColumnName": "年度",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!F53"
+                        },
+                        "ColumnName": "組織コード",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!J53"
+                        },
+                        "ColumnName": "親属性コード",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!N53"
+                        },
+                        "ColumnName": "親属性名称"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!U53"
+                        },
+                        "ColumnName": "_1月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!Z53"
+                        },
+                        "ColumnName": "_1月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AD53"
+                        },
+                        "ColumnName": "_1月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AJ53"
+                        },
+                        "ColumnName": "_2月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AO53"
+                        },
+                        "ColumnName": "_2月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AS53"
+                        },
+                        "ColumnName": "_2月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!AY53"
+                        },
+                        "ColumnName": "_3月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BD53"
+                        },
+                        "ColumnName": "_3月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BH53"
+                        },
+                        "ColumnName": "_3月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BN53"
+                        },
+                        "ColumnName": "_4月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BS53"
+                        },
+                        "ColumnName": "_4月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!BW53"
+                        },
+                        "ColumnName": "_4月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CC53"
+                        },
+                        "ColumnName": "_5月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CH53"
+                        },
+                        "ColumnName": "_5月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CL53"
+                        },
+                        "ColumnName": "_5月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CR53"
+                        },
+                        "ColumnName": "_6月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!CW53"
+                        },
+                        "ColumnName": "_6月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DA53"
+                        },
+                        "ColumnName": "_6月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DG53"
+                        },
+                        "ColumnName": "_7月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DL53"
+                        },
+                        "ColumnName": "_7月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DP53"
+                        },
+                        "ColumnName": "_7月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!DV53"
+                        },
+                        "ColumnName": "_8月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EA53"
+                        },
+                        "ColumnName": "_8月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EE53"
+                        },
+                        "ColumnName": "_8月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EK53"
+                        },
+                        "ColumnName": "_9月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EP53"
+                        },
+                        "ColumnName": "_9月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!ET53"
+                        },
+                        "ColumnName": "_9月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!EZ53"
+                        },
+                        "ColumnName": "_10月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FE53"
+                        },
+                        "ColumnName": "_10月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FI53"
+                        },
+                        "ColumnName": "_10月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FO53"
+                        },
+                        "ColumnName": "_11月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FT53"
+                        },
+                        "ColumnName": "_11月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!FX53"
+                        },
+                        "ColumnName": "_11月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GD53"
+                        },
+                        "ColumnName": "_12月単価"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GI53"
+                        },
+                        "ColumnName": "_12月数量"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GM53"
+                        },
+                        "ColumnName": "_12月"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GS53"
+                        },
+                        "ColumnName": "バージョン"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・外注費テーブル!GV53"
+                        },
+                        "ColumnName": "科目コード",
+                        "IsPrimaryKey": true
+                      }
+                    ],
+                    "IsShowSuccessAlert": true,
+                    "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
+                  }
+                ],
+                "ID": "f3a03e75-23bd-42c3-a7d7-b14ea9f127f6"
+              }
+            ]
+          }
+        ],
+        "Text": "Excelインポート",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "INP_予算_売上",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 43,
+        "ColumnCount": 205,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2
+      }
+    },
+    "8,2": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "年度",
+        "GUID": "5e2cfdd1-e5a6-49db-a780-fb4169beaecf"
+      }
+    },
+    "8,5": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "組織コード",
+        "GUID": "d01dd2ca-4445-45a5-b1c2-b88ec93dfb38"
+      }
+    },
+    "8,9": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "親属性コード",
+        "GUID": "b72b8e26-9663-4df7-899b-008345aa9e1a"
+      }
+    },
+    "8,13": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "親属性名称",
+        "GUID": "08438fbd-b3d7-4260-ab0a-cd9431beb042"
+      }
+    },
+    "8,20": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_1月単価",
+        "GUID": "1af58a75-5012-4c6d-bc33-063a037f6eec"
+      }
+    },
+    "8,25": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_1月数量",
+        "GUID": "d304db18-d207-436e-8b9a-181637be14a2"
+      }
+    },
+    "8,29": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_1月",
+        "GUID": "57c8b14f-8a74-4daa-9d7b-36399ccfb822"
+      }
+    },
+    "8,35": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_2月単価",
+        "GUID": "7bba63d4-3ff9-4076-898f-b322182e948b"
+      }
+    },
+    "8,40": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_2月数量",
+        "GUID": "a500f05b-cc47-4856-b1eb-ea5ebdd58ea2"
+      }
+    },
+    "8,44": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_2月",
+        "GUID": "60c8388b-0a48-4c1b-bf54-fbcee65f0588"
+      }
+    },
+    "8,50": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_3月単価",
+        "GUID": "8cbae537-b8e5-4ea3-a86b-ea357711e874"
+      }
+    },
+    "8,55": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_3月数量",
+        "GUID": "4ffd9786-ccd8-427f-8ddf-5f16b85a7319"
+      }
+    },
+    "8,59": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_3月",
+        "GUID": "c83def9f-2384-4ff9-9538-97b62bf5151c"
+      }
+    },
+    "8,65": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_4月単価",
+        "GUID": "7959960b-2d12-47fe-95ad-fbe4be4b2f66"
+      }
+    },
+    "8,70": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_4月数量",
+        "GUID": "07f28783-3867-4f76-872c-91ba51aa144e"
+      }
+    },
+    "8,74": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_4月",
+        "GUID": "db073c1b-f222-48d3-9880-6fbaf31deb84"
+      }
+    },
+    "8,80": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_5月単価",
+        "GUID": "c2ec3a37-35b4-4b16-9722-fd18d35260f1"
+      }
+    },
+    "8,85": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_5月数量",
+        "GUID": "025a5c5f-64a8-44fe-956c-44f690889ea8"
+      }
+    },
+    "8,89": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_5月",
+        "GUID": "1cfb00c0-743e-47ce-aab2-0ebedf77753d"
+      }
+    },
+    "8,95": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_6月単価",
+        "GUID": "39c8bc78-d6ac-4000-91d8-6ab6e3ccbcb8"
+      }
+    },
+    "8,100": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_6月数量",
+        "GUID": "43542104-a933-4500-879a-4293923af34e"
+      }
+    },
+    "8,104": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_6月",
+        "GUID": "e78c4ef0-1799-45c6-a185-c368c1467aa0"
+      }
+    },
+    "8,110": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_7月単価",
+        "GUID": "d9834925-7658-43a3-9fa1-4570f266f9ba"
+      }
+    },
+    "8,115": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_7月数量",
+        "GUID": "ad5f78ca-580f-4dbd-bf3e-324aff5ef771"
+      }
+    },
+    "8,119": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_7月",
+        "GUID": "7a062e8d-055c-41a7-a0cd-f8347914f1b4"
+      }
+    },
+    "8,125": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_8月単価",
+        "GUID": "80f44f1d-4a21-466c-9755-5f1989539e57"
+      }
+    },
+    "8,130": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_8月数量",
+        "GUID": "4b81cbdb-7c92-4f6d-95e8-1d012930e9aa"
+      }
+    },
+    "8,134": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_8月",
+        "GUID": "bafefacc-3e4e-49d3-a24d-fe9f016dc677"
+      }
+    },
+    "8,140": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_9月単価",
+        "GUID": "1bcbf2a2-dbc4-4713-8d9d-6608e932a1a1"
+      }
+    },
+    "8,145": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_9月数量",
+        "GUID": "bf5fd734-1b90-46eb-913b-0a4abe9dbab1"
+      }
+    },
+    "8,149": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_9月",
+        "GUID": "64d6f1bb-02af-48c2-bc2a-a2497b453f3b"
+      }
+    },
+    "8,155": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_10月単価",
+        "GUID": "3a61db79-d45b-4709-926b-60d5c3f05d5a"
+      }
+    },
+    "8,160": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_10月数量",
+        "GUID": "b2a7c0a2-ef5c-4d26-af0c-71056b0e1281"
+      }
+    },
+    "8,164": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_10月",
+        "GUID": "f968458e-17a4-4181-8eb9-4d9ce0f199bd"
+      }
+    },
+    "8,170": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_11月単価",
+        "GUID": "3f6e956e-bdd4-4861-b5a7-02a9b4844f86"
+      }
+    },
+    "8,175": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_11月数量",
+        "GUID": "e8b3941f-bf92-413a-aba5-c5304ded4051"
+      }
+    },
+    "8,179": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_11月",
+        "GUID": "d5431608-0321-4d20-b3c0-abf64a83a411"
+      }
+    },
+    "8,185": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_12月単価",
+        "GUID": "3d994a2a-63e7-412a-adee-d56f572e8c90"
+      }
+    },
+    "8,190": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_12月数量",
+        "GUID": "b36a29fd-0992-4dbb-a46f-b0bcd0bbaf3d"
+      }
+    },
+    "8,194": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_12月",
+        "GUID": "f0facf36-805d-484d-8594-ca04ab34317e"
+      }
+    },
+    "8,200": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "バージョン",
+        "GUID": "44aae67e-3e3c-4e1a-b886-ce61cc29571b"
+      }
+    },
+    "8,203": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "科目コード",
+        "GUID": "18cc374d-ba15-49ef-b5ae-226e0f13832b"
+      }
+    },
+    "51,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "INP_予算_外注費",
+        "RowIndex": 51,
+        "ColumnIndex": 2,
+        "RowCount": 43,
+        "ColumnCount": 205,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2
+      }
+    },
+    "52,2": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "年度",
+        "GUID": "db9c42fa-3e0d-4cf5-ab5f-83937a47b761"
+      }
+    },
+    "52,5": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "組織コード",
+        "GUID": "14e0ccf9-6f3e-490f-825c-ca4ff72f8db3"
+      }
+    },
+    "52,9": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "親属性コード",
+        "GUID": "e110b0d6-dffc-47b9-b144-503bde4bff7f"
+      }
+    },
+    "52,13": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "親属性名称",
+        "GUID": "7e766c7b-19fd-4154-8430-4ed866cf74d1"
+      }
+    },
+    "52,20": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_1月単価",
+        "GUID": "fb78388c-2ac2-4732-9526-721937f042ba"
+      }
+    },
+    "52,25": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_1月数量",
+        "GUID": "6824c893-0d45-4144-af59-a204ce39cad9"
+      }
+    },
+    "52,29": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_1月",
+        "GUID": "69e2e3b4-a4e4-4d84-81e5-76d6d8b7f04d"
+      }
+    },
+    "52,35": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_2月単価",
+        "GUID": "41f5b549-d3d6-4c3f-a23a-b525cc71450e"
+      }
+    },
+    "52,40": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_2月数量",
+        "GUID": "7a4406f1-2e4d-4a9f-be37-87a51bd1b363"
+      }
+    },
+    "52,44": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_2月",
+        "GUID": "fef49a9b-b23f-4286-84d6-e660475b948a"
+      }
+    },
+    "52,50": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_3月単価",
+        "GUID": "59199848-520e-4825-8c9e-65c72cb3eff7"
+      }
+    },
+    "52,55": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_3月数量",
+        "GUID": "d55e00a5-288c-4742-b3e4-7836d5a3a2c1"
+      }
+    },
+    "52,59": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_3月",
+        "GUID": "37c2c203-719b-415f-9af9-4b5e9f5fecfd"
+      }
+    },
+    "52,65": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_4月単価",
+        "GUID": "de3989bb-0cd0-411a-b69b-b8ff33a5803c"
+      }
+    },
+    "52,70": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_4月数量",
+        "GUID": "b95cb70c-8988-4115-8a61-60ea8280022a"
+      }
+    },
+    "52,74": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_4月",
+        "GUID": "ffc7a6d8-2faf-46fa-925e-342f4e64155e"
+      }
+    },
+    "52,80": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_5月単価",
+        "GUID": "e6770441-f102-43a8-8a14-9198f2296043"
+      }
+    },
+    "52,85": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_5月数量",
+        "GUID": "c7bd0801-36a9-4f36-be69-f1f95c11cd9a"
+      }
+    },
+    "52,89": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_5月",
+        "GUID": "901a598a-72d2-47d7-bcac-a703a5dcee6c"
+      }
+    },
+    "52,95": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_6月単価",
+        "GUID": "db2323d4-30ea-4afa-8725-79c1c87833d7"
+      }
+    },
+    "52,100": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_6月数量",
+        "GUID": "2640a188-43e0-40ee-a848-eae617c58349"
+      }
+    },
+    "52,104": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_6月",
+        "GUID": "cac775a7-1cc7-4dce-ac57-15e2aa093077"
+      }
+    },
+    "52,110": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_7月単価",
+        "GUID": "c5291dc0-5d67-475c-b04f-b29dfc8ba07a"
+      }
+    },
+    "52,115": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_7月数量",
+        "GUID": "e0359bee-83a1-47c8-823c-34d33f30f1f4"
+      }
+    },
+    "52,119": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_7月",
+        "GUID": "b3c1aba4-e345-43ae-9371-391fb5cab645"
+      }
+    },
+    "52,125": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_8月単価",
+        "GUID": "2a4ed87d-85d0-4529-afb4-ee75071fcce2"
+      }
+    },
+    "52,130": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_8月数量",
+        "GUID": "dc5d2569-6fe9-4b0f-aecd-0ea3e2bafbd3"
+      }
+    },
+    "52,134": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_8月",
+        "GUID": "1aac6327-da4c-4694-b306-9e2d7d6b466c"
+      }
+    },
+    "52,140": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_9月単価",
+        "GUID": "ff2e4e3e-2008-48c1-b22a-f24b8d72476d"
+      }
+    },
+    "52,145": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_9月数量",
+        "GUID": "d7e62de3-86e7-4420-8a81-d05c2b2205e7"
+      }
+    },
+    "52,149": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_9月",
+        "GUID": "e238efc3-741f-4084-8f72-a714930f75c2"
+      }
+    },
+    "52,155": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_10月単価",
+        "GUID": "961f92fb-1d32-4a28-9191-f782e45b6848"
+      }
+    },
+    "52,160": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_10月数量",
+        "GUID": "c8218bc9-49a3-4729-99b2-042303781107"
+      }
+    },
+    "52,164": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_10月",
+        "GUID": "0f54dcc3-d938-448b-9ee0-0a2897b71e82"
+      }
+    },
+    "52,170": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_11月単価",
+        "GUID": "77e42c30-b52c-4a9c-8448-2fa466de6500"
+      }
+    },
+    "52,175": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_11月数量",
+        "GUID": "345c262e-eac2-4b23-824f-d4d80b5ad999"
+      }
+    },
+    "52,179": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_11月",
+        "GUID": "fd23bc11-b8a0-4187-87e2-916ad7e998f7"
+      }
+    },
+    "52,185": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_12月単価",
+        "GUID": "fcd5d83e-ae0f-4d70-8e1e-e7d237d26442"
+      }
+    },
+    "52,190": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_12月数量",
+        "GUID": "f91338ce-d4e7-40bd-9379-9fbdb92d22a2"
+      }
+    },
+    "52,194": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "_12月",
+        "GUID": "2c5d5037-08ab-4fa1-b985-0a2a5186da1c"
+      }
+    },
+    "52,200": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "バージョン",
+        "GUID": "e5bea8df-e9cd-43f2-9116-efa017f22fc7"
+      }
+    },
+    "52,203": {
+      "BindingInfo": {
+        "TableName": "INP_予算_外注費",
+        "ColumnName": "科目コード",
+        "GUID": "34512aa8-cdac-4a8c-8a14-6fbc7837f7ca"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Formatter": 5,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Foreground": 6,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "Formatter": 5,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 7
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 11,
+        "HorizontalAlignment": 12
+      },
+      {
+        "HorizontalAlignment": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "Text 1 35",
+        "Blue",
+        "[AUTO]General",
+        "Text 1 50",
+        "General",
+        "Text 2 80",
+        "black",
+        "DarkGray",
+        "#,##0",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,31": 1,
+      "0,176": 1,
+      "0,177": 0,
+      "0,178": 0,
+      "0,179": 0,
+      "0,180": 0,
+      "0,181": 0,
+      "0,182": 0,
+      "0,183": 0,
+      "0,184": 0,
+      "0,207": 0,
+      "0,208": 0,
+      "0,209": 0,
+      "0,210": 0,
+      "0,211": 0,
+      "0,212": 0,
+      "1,1": 0,
+      "1,2": 2,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "1,176": 0,
+      "1,177": 0,
+      "1,178": 0,
+      "1,179": 0,
+      "1,180": 0,
+      "1,181": 0,
+      "1,182": 0,
+      "1,183": 0,
+      "1,184": 0,
+      "1,207": 0,
+      "1,208": 0,
+      "1,209": 0,
+      "1,210": 0,
+      "1,211": 0,
+      "1,212": 0,
+      "2,1": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,55": 3,
+      "2,56": 4,
+      "2,57": 4,
+      "2,58": 4,
+      "2,59": 4,
+      "2,61": 0,
+      "2,62": 0,
+      "2,205": 0,
+      "2,206": 0,
+      "2,207": 0,
+      "2,208": 0,
+      "2,209": 0,
+      "2,210": 0,
+      "2,211": 0,
+      "2,212": 0,
+      "3,1": 5,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,205": 0,
+      "3,206": 0,
+      "3,207": 0,
+      "3,208": 0,
+      "3,209": 0,
+      "3,210": 0,
+      "3,211": 0,
+      "3,212": 0,
+      "4,2": 6,
+      "4,3": 7,
+      "4,4": 7,
+      "4,5": 7,
+      "4,6": 7,
+      "4,7": 7,
+      "4,8": 7,
+      "4,9": 7,
+      "4,10": 7,
+      "4,11": 7,
+      "4,12": 7,
+      "4,13": 7,
+      "4,14": 7,
+      "4,15": 7,
+      "4,16": 8,
+      "4,17": 7,
+      "4,18": 7,
+      "4,19": 7,
+      "4,20": 7,
+      "4,21": 7,
+      "4,22": 7,
+      "4,23": 7,
+      "4,24": 7,
+      "4,25": 8,
+      "4,26": 7,
+      "4,27": 7,
+      "4,28": 7,
+      "4,29": 7,
+      "4,30": 7,
+      "4,31": 7,
+      "4,53": 7,
+      "4,54": 7,
+      "4,55": 7,
+      "4,56": 7,
+      "4,57": 7,
+      "4,65": 7,
+      "4,66": 7,
+      "4,67": 7,
+      "4,68": 7,
+      "4,69": 7,
+      "4,70": 7,
+      "4,71": 7,
+      "4,72": 7,
+      "4,73": 7,
+      "4,74": 7,
+      "4,75": 7,
+      "4,76": 7,
+      "4,77": 7,
+      "4,78": 7,
+      "4,79": 7,
+      "4,80": 7,
+      "4,81": 7,
+      "4,82": 7,
+      "4,83": 7,
+      "4,84": 7,
+      "4,85": 7,
+      "4,86": 7,
+      "4,87": 7,
+      "4,88": 7,
+      "4,89": 7,
+      "4,90": 7,
+      "4,91": 7,
+      "4,92": 7,
+      "4,93": 7,
+      "4,94": 7,
+      "4,95": 7,
+      "4,96": 7,
+      "4,97": 7,
+      "4,98": 7,
+      "4,99": 7,
+      "4,100": 7,
+      "4,101": 7,
+      "4,102": 7,
+      "4,103": 7,
+      "4,104": 7,
+      "4,105": 7,
+      "4,106": 7,
+      "4,107": 7,
+      "4,108": 7,
+      "4,109": 7,
+      "4,110": 7,
+      "4,111": 7,
+      "4,112": 7,
+      "4,113": 7,
+      "4,114": 7,
+      "4,115": 7,
+      "4,116": 7,
+      "4,117": 7,
+      "4,118": 7,
+      "4,119": 7,
+      "4,120": 7,
+      "4,121": 7,
+      "4,122": 7,
+      "4,123": 7,
+      "4,124": 7,
+      "4,125": 7,
+      "4,126": 7,
+      "4,127": 7,
+      "4,128": 7,
+      "4,129": 7,
+      "4,130": 7,
+      "4,131": 7,
+      "4,132": 7,
+      "4,133": 7,
+      "4,134": 7,
+      "4,135": 7,
+      "4,136": 7,
+      "4,137": 7,
+      "4,138": 7,
+      "4,139": 7,
+      "4,140": 7,
+      "4,141": 7,
+      "4,142": 7,
+      "4,143": 7,
+      "4,144": 7,
+      "4,145": 7,
+      "4,146": 7,
+      "4,147": 7,
+      "4,148": 7,
+      "4,149": 7,
+      "4,150": 7,
+      "4,151": 7,
+      "4,152": 7,
+      "4,153": 7,
+      "4,154": 7,
+      "4,155": 7,
+      "4,156": 7,
+      "4,157": 7,
+      "4,158": 7,
+      "4,159": 7,
+      "4,160": 7,
+      "4,161": 7,
+      "4,162": 7,
+      "4,163": 7,
+      "4,164": 7,
+      "4,165": 7,
+      "4,166": 7,
+      "4,167": 7,
+      "4,168": 7,
+      "4,169": 7,
+      "4,172": 8,
+      "4,173": 7,
+      "4,174": 7,
+      "4,175": 7,
+      "4,176": 7,
+      "4,177": 7,
+      "4,178": 7,
+      "4,179": 7,
+      "4,180": 9,
+      "4,205": 0,
+      "4,206": 0,
+      "4,207": 0,
+      "4,208": 0,
+      "4,209": 0,
+      "4,210": 10,
+      "4,211": 11,
+      "4,212": 0,
+      "5,2": 7,
+      "5,3": 7,
+      "5,4": 7,
+      "5,5": 7,
+      "5,6": 7,
+      "5,7": 7,
+      "5,8": 7,
+      "5,9": 7,
+      "5,10": 7,
+      "5,11": 7,
+      "5,12": 7,
+      "5,13": 7,
+      "5,14": 7,
+      "5,15": 7,
+      "5,16": 7,
+      "5,17": 7,
+      "5,18": 7,
+      "5,19": 7,
+      "5,20": 7,
+      "5,21": 7,
+      "5,22": 7,
+      "5,23": 7,
+      "5,24": 7,
+      "5,25": 7,
+      "5,26": 7,
+      "5,27": 7,
+      "5,28": 7,
+      "5,29": 7,
+      "5,30": 7,
+      "5,31": 7,
+      "5,53": 7,
+      "5,54": 7,
+      "5,55": 7,
+      "5,56": 7,
+      "5,57": 7,
+      "5,65": 7,
+      "5,66": 7,
+      "5,67": 7,
+      "5,68": 7,
+      "5,69": 7,
+      "5,70": 7,
+      "5,71": 7,
+      "5,72": 7,
+      "5,73": 7,
+      "5,74": 7,
+      "5,75": 7,
+      "5,76": 7,
+      "5,77": 7,
+      "5,78": 7,
+      "5,79": 7,
+      "5,80": 7,
+      "5,81": 7,
+      "5,82": 7,
+      "5,83": 7,
+      "5,84": 7,
+      "5,85": 7,
+      "5,86": 7,
+      "5,87": 7,
+      "5,88": 7,
+      "5,89": 7,
+      "5,90": 7,
+      "5,91": 7,
+      "5,92": 7,
+      "5,93": 7,
+      "5,94": 7,
+      "5,95": 7,
+      "5,96": 7,
+      "5,97": 7,
+      "5,98": 7,
+      "5,99": 7,
+      "5,100": 7,
+      "5,101": 7,
+      "5,102": 7,
+      "5,103": 7,
+      "5,104": 7,
+      "5,105": 7,
+      "5,106": 7,
+      "5,107": 7,
+      "5,108": 7,
+      "5,109": 7,
+      "5,110": 7,
+      "5,111": 7,
+      "5,112": 7,
+      "5,113": 7,
+      "5,114": 7,
+      "5,115": 7,
+      "5,116": 7,
+      "5,117": 7,
+      "5,118": 7,
+      "5,119": 7,
+      "5,120": 7,
+      "5,121": 7,
+      "5,122": 7,
+      "5,123": 7,
+      "5,124": 7,
+      "5,125": 7,
+      "5,126": 7,
+      "5,127": 7,
+      "5,128": 7,
+      "5,129": 7,
+      "5,130": 7,
+      "5,131": 7,
+      "5,132": 7,
+      "5,133": 7,
+      "5,134": 7,
+      "5,135": 7,
+      "5,136": 7,
+      "5,137": 7,
+      "5,138": 7,
+      "5,139": 7,
+      "5,140": 7,
+      "5,141": 7,
+      "5,142": 7,
+      "5,143": 7,
+      "5,144": 7,
+      "5,145": 7,
+      "5,146": 7,
+      "5,147": 7,
+      "5,148": 7,
+      "5,149": 7,
+      "5,150": 7,
+      "5,151": 7,
+      "5,152": 7,
+      "5,153": 7,
+      "5,154": 7,
+      "5,155": 7,
+      "5,156": 7,
+      "5,157": 7,
+      "5,158": 7,
+      "5,159": 7,
+      "5,160": 7,
+      "5,161": 7,
+      "5,162": 7,
+      "5,163": 7,
+      "5,164": 7,
+      "5,165": 7,
+      "5,166": 7,
+      "5,167": 7,
+      "5,168": 7,
+      "5,169": 7,
+      "5,172": 7,
+      "5,173": 7,
+      "5,174": 7,
+      "5,175": 7,
+      "5,176": 7,
+      "5,177": 7,
+      "5,178": 7,
+      "5,179": 7,
+      "5,180": 9,
+      "5,205": 0,
+      "5,206": 0,
+      "5,207": 0,
+      "5,208": 0,
+      "5,209": 0,
+      "5,210": 10,
+      "5,211": 11,
+      "5,212": 0,
+      "6,205": 0,
+      "6,206": 0,
+      "6,207": 0,
+      "6,208": 0,
+      "6,209": 0,
+      "6,210": 12,
+      "6,211": 13,
+      "6,212": 14,
+      "7,2": 15,
+      "7,3": 16,
+      "7,4": 16,
+      "7,5": 16,
+      "7,6": 16,
+      "7,7": 16,
+      "7,8": 16,
+      "7,9": 17,
+      "7,10": 16,
+      "7,11": 16,
+      "7,12": 16,
+      "7,13": 0,
+      "7,20": 0,
+      "7,25": 0,
+      "7,29": 0,
+      "7,35": 0,
+      "7,36": 0,
+      "7,37": 0,
+      "7,38": 0,
+      "7,39": 0,
+      "7,40": 0,
+      "7,41": 0,
+      "7,42": 0,
+      "7,43": 0,
+      "7,44": 0,
+      "7,45": 0,
+      "7,46": 0,
+      "7,47": 0,
+      "7,48": 0,
+      "7,49": 0,
+      "7,50": 0,
+      "7,51": 0,
+      "7,52": 0,
+      "7,53": 0,
+      "7,54": 0,
+      "7,55": 0,
+      "7,56": 0,
+      "7,57": 0,
+      "7,58": 0,
+      "7,59": 0,
+      "7,60": 0,
+      "7,61": 0,
+      "7,62": 0,
+      "7,63": 0,
+      "7,64": 0,
+      "7,65": 0,
+      "7,70": 0,
+      "7,74": 0,
+      "7,80": 0,
+      "7,85": 0,
+      "7,89": 0,
+      "7,95": 0,
+      "7,100": 0,
+      "7,104": 0,
+      "7,110": 0,
+      "7,115": 0,
+      "7,119": 0,
+      "7,125": 0,
+      "7,130": 0,
+      "7,134": 0,
+      "7,140": 0,
+      "7,145": 0,
+      "7,149": 0,
+      "7,155": 0,
+      "7,160": 0,
+      "7,164": 0,
+      "7,170": 0,
+      "7,175": 0,
+      "7,179": 0,
+      "7,185": 0,
+      "7,190": 0,
+      "7,194": 0,
+      "8,2": 18,
+      "8,9": 0,
+      "8,13": 0,
+      "8,20": 19,
+      "8,25": 19,
+      "8,29": 19,
+      "8,35": 19,
+      "8,36": 0,
+      "8,37": 0,
+      "8,38": 0,
+      "8,39": 0,
+      "8,40": 19,
+      "8,41": 0,
+      "8,42": 0,
+      "8,43": 0,
+      "8,44": 19,
+      "8,45": 0,
+      "8,46": 0,
+      "8,47": 0,
+      "8,48": 0,
+      "8,49": 0,
+      "8,50": 19,
+      "8,51": 0,
+      "8,52": 0,
+      "8,53": 0,
+      "8,54": 0,
+      "8,55": 19,
+      "8,56": 0,
+      "8,57": 0,
+      "8,58": 0,
+      "8,59": 19,
+      "8,60": 0,
+      "8,61": 0,
+      "8,62": 0,
+      "8,63": 0,
+      "8,64": 0,
+      "8,65": 19,
+      "8,70": 19,
+      "8,74": 19,
+      "8,80": 19,
+      "8,85": 19,
+      "8,89": 19,
+      "8,95": 19,
+      "8,100": 19,
+      "8,104": 19,
+      "8,110": 19,
+      "8,115": 19,
+      "8,119": 19,
+      "8,125": 19,
+      "8,130": 19,
+      "8,134": 19,
+      "8,140": 19,
+      "8,145": 19,
+      "8,149": 19,
+      "8,155": 19,
+      "8,160": 19,
+      "8,164": 19,
+      "8,170": 19,
+      "8,175": 19,
+      "8,179": 19,
+      "8,185": 19,
+      "8,190": 19,
+      "8,194": 19,
+      "51,2": 15,
+      "51,3": 16,
+      "51,4": 16,
+      "51,5": 17,
+      "51,6": 16,
+      "51,7": 16,
+      "51,8": 16,
+      "51,9": 17,
+      "51,10": 16,
+      "51,11": 16,
+      "51,12": 16,
+      "51,13": 0,
+      "51,20": 0,
+      "51,25": 0,
+      "51,29": 0,
+      "51,35": 0,
+      "51,40": 0,
+      "51,44": 0,
+      "51,50": 0,
+      "51,55": 0,
+      "51,59": 0,
+      "51,65": 0,
+      "51,70": 0,
+      "51,74": 0,
+      "51,80": 0,
+      "51,85": 0,
+      "51,89": 0,
+      "51,95": 0,
+      "51,100": 0,
+      "51,104": 0,
+      "51,110": 0,
+      "51,115": 0,
+      "51,119": 0,
+      "51,125": 0,
+      "51,130": 0,
+      "51,134": 0,
+      "51,140": 0,
+      "51,145": 0,
+      "51,149": 0,
+      "51,155": 0,
+      "51,160": 0,
+      "51,164": 0,
+      "51,170": 0,
+      "51,175": 0,
+      "51,179": 0,
+      "51,185": 0,
+      "51,190": 0,
+      "51,194": 0,
+      "51,200": 0,
+      "51,203": 0,
+      "52,2": 18,
+      "52,5": 0,
+      "52,9": 0,
+      "52,13": 0,
+      "52,20": 19,
+      "52,25": 19,
+      "52,29": 19,
+      "52,35": 19,
+      "52,40": 19,
+      "52,44": 19,
+      "52,50": 19,
+      "52,55": 19,
+      "52,59": 19,
+      "52,65": 19,
+      "52,70": 19,
+      "52,74": 19,
+      "52,80": 19,
+      "52,85": 19,
+      "52,89": 19,
+      "52,95": 19,
+      "52,100": 19,
+      "52,104": 19,
+      "52,110": 19,
+      "52,115": 19,
+      "52,119": 19,
+      "52,125": 19,
+      "52,130": 19,
+      "52,134": 19,
+      "52,140": 19,
+      "52,145": 19,
+      "52,149": 19,
+      "52,155": 19,
+      "52,160": 19,
+      "52,164": 19,
+      "52,170": 19,
+      "52,175": 19,
+      "52,179": 19,
+      "52,185": 19,
+      "52,190": 19,
+      "52,194": 19,
+      "52,200": 0,
+      "52,203": 0
+    },
+    "RowStyles": {
+      "3": 20,
+      "4": 20,
+      "5": 20,
+      "6": 20
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,2,1,3",
+    "8,5,1,4",
+    "8,9,1,4",
+    "8,13,1,7",
+    "8,20,1,5",
+    "8,25,1,4",
+    "8,29,1,6",
+    "8,35,1,5",
+    "8,40,1,4",
+    "8,44,1,6",
+    "8,50,1,5",
+    "8,55,1,4",
+    "8,59,1,6",
+    "8,65,1,5",
+    "8,70,1,4",
+    "8,74,1,6",
+    "8,80,1,5",
+    "8,85,1,4",
+    "8,89,1,6",
+    "8,95,1,5",
+    "8,100,1,4",
+    "8,104,1,6",
+    "8,110,1,5",
+    "8,115,1,4",
+    "8,119,1,6",
+    "8,125,1,5",
+    "8,130,1,4",
+    "8,134,1,6",
+    "8,140,1,5",
+    "8,145,1,4",
+    "8,149,1,6",
+    "8,155,1,5",
+    "8,160,1,4",
+    "8,164,1,6",
+    "8,170,1,5",
+    "8,175,1,4",
+    "8,179,1,6",
+    "8,185,1,5",
+    "8,190,1,4",
+    "8,194,1,6",
+    "8,200,1,3",
+    "8,203,1,4",
+    "9,2,41,205",
+    "53,2,41,205",
+    "52,2,1,3",
+    "52,5,1,4",
+    "52,9,1,4",
+    "52,13,1,7",
+    "52,20,1,5",
+    "52,25,1,4",
+    "52,29,1,6",
+    "52,35,1,5",
+    "52,40,1,4",
+    "52,44,1,6",
+    "52,50,1,5",
+    "52,55,1,4",
+    "52,59,1,6",
+    "52,65,1,5",
+    "52,70,1,4",
+    "52,74,1,6",
+    "52,80,1,5",
+    "52,85,1,4",
+    "52,89,1,6",
+    "52,95,1,5",
+    "52,100,1,4",
+    "52,104,1,6",
+    "52,110,1,5",
+    "52,115,1,4",
+    "52,119,1,6",
+    "52,125,1,5",
+    "52,130,1,4",
+    "52,134,1,6",
+    "52,140,1,5",
+    "52,145,1,4",
+    "52,149,1,6",
+    "52,155,1,5",
+    "52,160,1,4",
+    "52,164,1,6",
+    "52,170,1,5",
+    "52,175,1,4",
+    "52,179,1,6",
+    "52,185,1,5",
+    "52,190,1,4",
+    "52,194,1,6",
+    "52,200,1,3",
+    "52,203,1,4",
+    "1,2,2,16",
+    "4,7,2,7",
+    "4,2,2,5",
+    "4,16,2,7",
+    "4,25,2,7",
+    "1,61,2,2",
+    "2,55,1,5",
+    "7,2,1,3",
+    "7,5,1,4",
+    "7,9,1,4",
+    "7,13,1,7",
+    "7,20,1,5",
+    "7,25,1,4",
+    "7,29,1,6",
+    "7,35,1,5",
+    "7,40,1,4",
+    "7,44,1,6",
+    "7,50,1,5",
+    "7,55,1,4",
+    "7,59,1,6",
+    "7,65,1,5",
+    "7,70,1,4",
+    "7,74,1,6",
+    "7,80,1,5",
+    "7,85,1,4",
+    "7,89,1,6",
+    "7,95,1,5",
+    "7,100,1,4",
+    "7,104,1,6",
+    "7,110,1,5",
+    "7,115,1,4",
+    "7,119,1,6",
+    "7,125,1,5",
+    "7,130,1,4",
+    "7,134,1,6",
+    "7,140,1,5",
+    "7,145,1,4",
+    "7,149,1,6",
+    "7,155,1,5",
+    "7,160,1,4",
+    "7,164,1,6",
+    "7,170,1,5",
+    "7,175,1,4",
+    "7,179,1,6",
+    "7,185,1,5",
+    "7,190,1,4",
+    "7,194,1,6",
+    "7,200,1,3",
+    "7,203,1,4",
+    "51,2,1,3",
+    "51,5,1,4",
+    "51,9,1,4",
+    "51,13,1,7",
+    "51,20,1,5",
+    "51,25,1,4",
+    "51,29,1,6",
+    "51,35,1,5",
+    "51,40,1,4",
+    "51,44,1,6",
+    "51,50,1,5",
+    "51,55,1,4",
+    "51,59,1,6",
+    "51,65,1,5",
+    "51,70,1,4",
+    "51,74,1,6",
+    "51,80,1,5",
+    "51,85,1,4",
+    "51,89,1,6",
+    "51,95,1,5",
+    "51,100,1,4",
+    "51,104,1,6",
+    "51,110,1,5",
+    "51,115,1,4",
+    "51,119,1,6",
+    "51,125,1,5",
+    "51,130,1,4",
+    "51,134,1,6",
+    "51,140,1,5",
+    "51,145,1,4",
+    "51,149,1,6",
+    "51,155,1,5",
+    "51,160,1,4",
+    "51,164,1,6",
+    "51,170,1,5",
+    "51,175,1,4",
+    "51,179,1,6",
+    "51,185,1,5",
+    "51,190,1,4",
+    "51,194,1,6",
+    "51,200,1,3",
+    "51,203,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=売上・外注費テーブル!7:50"
+            },
+            "Value": true
+          },
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=売上・外注費テーブル!51:94"
+            },
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "INP_予算_売上"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//RCXhT0LLhTZZ+/L6ZP0caALAGmu7DZj0TWwIGR+yr2mDAtyl51m/8rV7vDx5Dn6T2Ym60JEIW2Ew12+KFt2ic1bX/c0MKa8MhWCY1CMogJiZ6c8Lj8YNTduacm2w+8SaCgFPgTvDS02jNtyHk7TaLKXV28K5PIOBj8iC1GghFs1lmc/Z6RnFHjcZJOyiYl9lmPdciYxywPhaWYxq3CkMs5bmxGLqxXv8i/RME/jsuQoB3IdMdl0PUYWo5PR3+P+FK4ZtwAQz+kVLc9EXLfE0+5YTwNL/Zyfx52/C51dftsmSpNxiIWLkrlc3reNu0gwEErupHZmAnvw+/4g1T3V03iNlhDoQmXMaBRUCvZg6LNifBiwaE6G2lN/JJalsPDynWnM5/V5uXlbfm39zPmuFuomGnNOdPxQSYe9ejXJhom7kRNmvvDN+75j+O3ElW3R/lKME4cJF0s6z0QyFH168eWAxccXhLJexSiDT0k4ZyGbOtk3q5ILrzEBfNlxcLwn17CMFBLFuU0BclI2k8z1O3KoyI5Y8urxdh7WKSLgUTiEc8G8GqmwcT2ygxA6MSdsGp1o5Xs7DywzxGElzH6sPqrLXN7gCgSNdBNnvpUNiZJw6Gxf3Ai4nSCSasLrUNmifaqlXGWwZ5kswXlph+mM8wrJVb/R1TWpGrTUq8pTLG//e1yXpedR89sXLniu6iJoFfon8sqwpRWRQ/rw69IJft1U7TEguCNX0O/Go+JFfteNOh3wz2e07rRcuUwKmzAXJwRZ60eQS0JHyvAaV406K4ernFsqgk/UwjSDrGCUD1bxexPANOw5LGGYNtHb13vpxW86A3/xkl2G/5b0KeOLoqvGs1xPov5eKlH6mnqKYCc7zW7a/1EC8n9NomYm1LluTUlOczR537y1p20zOdJID/w==|920

@@ -1,0 +1,1832 @@
+{
+  "Rows": {
+    "Count": 51
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "90": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 83.0
+        }
+      },
+      "91": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 143.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      89,
+      90,
+      91,
+      92
+    ],
+    "Count": 93
+  },
+  "Values": {
+    "1,2": "科目マスタ",
+    "1,61": "",
+    "2,55": "メニューに戻る",
+    "3,89": "■ログアウトコマンド",
+    "4,2": "ファイル種類",
+    "4,7": "EXCEL",
+    "4,16": "エクスポート",
+    "4,25": "インポート",
+    "4,90": "処理確認",
+    "4,91": "ログアウトしますか？",
+    "5,90": "リターンコード",
+    "6,90": "処理失敗",
+    "6,91": "ログアウト処理に失敗しました。管理者に確認してください。"
+  },
+  "AttachInfos": {
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=科目マスタ!CN5"
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "ログアウトコマンド",
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=科目マスタ!CN6"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=科目マスタ!CN6"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_ログイン"
+                          }
+                        ],
+                        "ID": "b0d39381-b9fc-44e3-9402-7a62a2ceda06"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=科目マスタ!CN6"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=科目マスタ!CN7"
+                            }
+                          }
+                        ],
+                        "ID": "407ec710-6b21-4380-a2cb-bbaf7e80978d"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "c7ca63f3-4dce-46f9-99c6-a7ac37acc895"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "スタイル14",
+        "Icon": {
+          "Name": "Arrow/321_exit_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 18.0
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）CSV",
+        "Items": [
+          {
+            "Value": "EXCEL",
+            "DisplayValue": "EXCEL"
+          },
+          {
+            "Value": "CSV",
+            "DisplayValue": "CSV"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=科目マスタ!Q6"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "VIEW_実績_損益計算書",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "VIEW_実績_損益計算書",
+                        "ColumnName": "年度",
+                        "GUID": "d08cc971-e017-47b2-934e-c1e2cb9d3131"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=科目マスタ!H5"
+                      }
+                    },
+                    "ID": "833950aeb83741e18f4f0aa405f8a52f"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "VIEW_予算_損益計算書",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "VIEW_予算_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "c2586c2d-f8f1-4fb2-9910-632d641d2e32"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!H5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "VIEW_予算_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "1c28000b-ad3a-4495-91a1-530ee7703a8b"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AF6"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "903f222c3aa74028bb2f6eb0ddc4c899"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_見込_損益計算書",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_見込_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "d6c84fb7-4215-41fa-b2bc-076baa614369"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!H5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_見込_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "7f7d1aa3-5698-470c-93fb-d35d59cd8043"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AF6"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "28b70cfa7c3b412d90f6ea245de4c38c"
+                  }
+                ],
+                "ID": "16b42cd0-a8f7-4bd6-a696-e2c581bac92c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=科目マスタ!Z6"
+                              }
+                            ]
+                          },
+                          "value": "%Null%"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_実績_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "c68988b4-bcbb-4202-93f6-af85bbaaf91c"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "d7ef371d-eea2-4e40-aded-2ba2e7831c6a",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MST_組織",
+                                      "RelatedColumn": "組織コード",
+                                      "DisplayColumn": "部門名"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!Q6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "9f979dc7f7b7497c92b5bf5d6baa3a5c"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_予算_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "d7c596c2-3cf6-45e9-9546-ab309340ec9f"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "523511e6-e43e-4789-9f4a-25ead6eb59f4",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MST_組織",
+                                      "RelatedColumn": "組織コード",
+                                      "DisplayColumn": "部門名"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!Q6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "8b0deb8a-1ba0-4193-962b-3161a421de9a"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "efd725b2463c4a76ac14333370df9f14"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "INP_見込_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "423ec9e9-f396-47b2-b1c0-ecf8662ba4dc"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "61e99bda-e6e7-4511-8097-56ce5441b887",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MST_組織",
+                                      "RelatedColumn": "組織コード",
+                                      "DisplayColumn": "部門名"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!Q6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "f879445c-b47a-4e01-b0a8-551695d2e39e"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "6abff1970a954937a52b94f4a37c62d6"
+                          }
+                        ],
+                        "ID": "cefa4ad1-9172-4226-8e13-1480273ce7a4"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_実績_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "72a2c5a7-f1ed-44c4-84ba-39852f8db0cf"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "65d4b7d8-f07a-4196-9d8d-cf61b6d67b9b"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!Z6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "5d32723a920b43b285e24b60ae27fe03"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_予算_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "4ced6f2a-4554-4394-a2f8-465e65f85934"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "9cf47c01-52d1-4953-b913-3ad186bb9722"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!Z6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "8ce80e70-2ac5-453e-a23c-82a2abb71a23"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "cc484322fb2b4e17a2073e93d6fc449a"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "INP_見込_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "96a9aaf1-4e07-4172-b8d5-f3fcb83055ef"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "3ed897d4-5788-4d5a-b928-6a2347544ae4"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!Z6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "e0456bd8-f854-4112-b3cf-c49c932da418"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=科目マスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "9206ffaeafab497a8f828ffabe79647c"
+                          }
+                        ],
+                        "ID": "d6255e49-4b1e-4727-94df-d7081d8b552a"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ae109356-fceb-4ab4-bd13-c19514f0ed80"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": "EXCEL"
+      }
+    },
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=科目マスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "CSV"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ImportExportCSV.ImportExportCSV, ImportExportCSV",
+                    "ImportExportInfo": {
+                      "CSVOperation": 1,
+                      "ListViewName": "リストビュー1",
+                      "Columns": [
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!C9"
+                          },
+                          "CSVColumnName": "分類コード",
+                          "CSVColumnIndex": 1
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!H9"
+                          },
+                          "CSVColumnName": "分類名",
+                          "CSVColumnIndex": 2
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!M9"
+                          },
+                          "CSVColumnName": "大項目コード",
+                          "CSVColumnIndex": 3
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!R9"
+                          },
+                          "CSVColumnName": "大項目名",
+                          "CSVColumnIndex": 4
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AA9"
+                          },
+                          "CSVColumnName": "中項目コード",
+                          "CSVColumnIndex": 5
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AF9"
+                          },
+                          "CSVColumnName": "中項目名",
+                          "CSVColumnIndex": 6
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AO9"
+                          },
+                          "CSVColumnName": "会社コード"
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AT9"
+                          },
+                          "CSVColumnName": "連結科目コード"
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AY9"
+                          },
+                          "CSVColumnName": "連結科目名"
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BH9"
+                          },
+                          "CSVColumnName": "科目コード",
+                          "CSVColumnIndex": 7
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BM9"
+                          },
+                          "CSVColumnName": "科目名",
+                          "CSVColumnIndex": 8
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BV9"
+                          },
+                          "CSVColumnName": "階層レベル",
+                          "CSVColumnIndex": 9
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BZ9"
+                          },
+                          "CSVColumnName": "フラグ",
+                          "CSVColumnIndex": 10
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!CD9"
+                          },
+                          "CSVColumnName": "区分",
+                          "CSVColumnIndex": 11
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!CH9"
+                          },
+                          "CSVColumnName": "ソート順"
+                        }
+                      ],
+                      "ColumnDelimiter": ",",
+                      "EncodingType": "UTF-8",
+                      "TextQualifier": "\"",
+                      "FilePath": "Documents\\example.csv",
+                      "ExportFileName": "科目マスタ"
+                    }
+                  }
+                ],
+                "ID": "0957aea2-b0e4-44df-ae55-aa1676908fab"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=科目マスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "EXCEL"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ExportExcelListviewNameMode": 1,
+                    "ListViewName": "リストビュー1",
+                    "NewOtherName": "科目マスタ",
+                    "IsOnlyExportValue": false
+                  }
+                ],
+                "ID": "4e78d88f-c50a-459a-ab5a-89668463a8fe"
+              }
+            ]
+          }
+        ],
+        "Text": "エクスポート",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "4,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=科目マスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "CSV"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ImportExportCSV.ImportExportCSV, ImportExportCSV",
+                    "ImportExportInfo": {
+                      "ListViewName": "リストビュー1",
+                      "ImportMode": 2,
+                      "Columns": [
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!C9"
+                          },
+                          "CSVColumnName": "分類コード",
+                          "CSVColumnIndex": 1
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!H9"
+                          },
+                          "CSVColumnName": "分類名",
+                          "CSVColumnIndex": 2
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!M9"
+                          },
+                          "CSVColumnName": "大項目コード",
+                          "CSVColumnIndex": 3
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!R9"
+                          },
+                          "CSVColumnName": "大項目名",
+                          "CSVColumnIndex": 4
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AA9"
+                          },
+                          "CSVColumnName": "中項目コード",
+                          "CSVColumnIndex": 5
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AF9"
+                          },
+                          "CSVColumnName": "中項目名",
+                          "CSVColumnIndex": 6
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AO9"
+                          },
+                          "CSVColumnName": "会社コード",
+                          "IsPrimaryKey": true
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AT9"
+                          },
+                          "CSVColumnName": "連結科目コード"
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!AY9"
+                          },
+                          "CSVColumnName": "連結科目名"
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BH9"
+                          },
+                          "CSVColumnName": "科目コード",
+                          "CSVColumnIndex": 7,
+                          "IsPrimaryKey": true
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BM9"
+                          },
+                          "CSVColumnName": "科目名",
+                          "CSVColumnIndex": 8
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BV9"
+                          },
+                          "CSVColumnName": "階層レベル",
+                          "CSVColumnIndex": 9
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!BZ9"
+                          },
+                          "CSVColumnName": "フラグ",
+                          "CSVColumnIndex": 10
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!CD9"
+                          },
+                          "CSVColumnName": "区分",
+                          "CSVColumnIndex": 11
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=科目マスタ!CH9"
+                          },
+                          "CSVColumnName": "ソート順"
+                        }
+                      ],
+                      "ColumnDelimiter": ",",
+                      "EncodingType": "UTF-8",
+                      "TextQualifier": "\"",
+                      "FilePath": "Documents\\example.csv"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "891b4983-908d-48ad-bc2a-dedb0fb60825"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=科目マスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "EXCEL"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ImportExcelToListViewMode": 2,
+                    "ImportExcelToListViewColumnInfos": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!C9"
+                        },
+                        "ColumnName": "分類コード"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!H9"
+                        },
+                        "ColumnName": "分類名"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!M9"
+                        },
+                        "ColumnName": "大項目コード"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!R9"
+                        },
+                        "ColumnName": "大項目名"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!AA9"
+                        },
+                        "ColumnName": "中項目コード"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!AF9"
+                        },
+                        "ColumnName": "中項目名"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!AO9"
+                        },
+                        "ColumnName": "会社コード",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!AT9"
+                        },
+                        "ColumnName": "連結科目コード"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!AY9"
+                        },
+                        "ColumnName": "連結科目名"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!BH9"
+                        },
+                        "ColumnName": "科目コード",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!BM9"
+                        },
+                        "ColumnName": "科目名"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!BV9"
+                        },
+                        "ColumnName": "階層レベル"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!BZ9"
+                        },
+                        "ColumnName": "フラグ"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!CD9"
+                        },
+                        "ColumnName": "区分"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=科目マスタ!CH9"
+                        },
+                        "ColumnName": "ソート順"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "62454f39-992a-4473-a4ba-f3bd76ab18d5"
+              }
+            ]
+          }
+        ],
+        "Text": "インポート",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "MST_科目",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 42,
+        "ColumnCount": 87,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "8,2": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "分類コード",
+        "GUID": "d2e89fd4-0da6-4686-b057-2a28f72c3ef9"
+      }
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "分類名",
+        "GUID": "ad2d1da5-4507-4ae9-9b06-7ac9519778e9"
+      }
+    },
+    "8,12": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "大項目コード",
+        "GUID": "57f1f94a-3fe4-4646-ba94-29eb2729ecc1"
+      }
+    },
+    "8,17": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "大項目名",
+        "GUID": "4b15e7f4-8d9b-4d78-b4c6-946e5f373d86"
+      }
+    },
+    "8,26": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "中項目コード",
+        "GUID": "847e2e44-f5de-4867-9559-2e74f018b1bb"
+      }
+    },
+    "8,31": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "中項目名",
+        "GUID": "be019d72-05e0-4869-95f8-1997c7c74974"
+      }
+    },
+    "8,40": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "会社コード",
+        "GUID": "9b8c9662-dc85-4849-a0ee-ee26190d90a7"
+      }
+    },
+    "8,45": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "連結科目コード",
+        "GUID": "f744cedd-f99e-45df-9f84-cff77dbf5f4e"
+      }
+    },
+    "8,50": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "連結科目名",
+        "GUID": "64fd301f-b5a6-4c73-ac08-37931ca57e85"
+      }
+    },
+    "8,59": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "科目コード",
+        "GUID": "1d9cbaa9-f17d-4d8a-913a-ce9d5161e01c"
+      }
+    },
+    "8,64": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "科目名",
+        "GUID": "c90a7223-fc7d-4c06-b070-5b527d87b8e9"
+      }
+    },
+    "8,73": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "階層レベル",
+        "GUID": "cc9428da-90c7-4f59-adaf-375d07d6e7c4"
+      }
+    },
+    "8,77": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "フラグ",
+        "GUID": "4df1545b-317b-48ad-b088-b418d7b66321"
+      }
+    },
+    "8,81": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "区分",
+        "GUID": "1f1558a4-3975-4459-9095-e3191c618ba0"
+      }
+    },
+    "8,85": {
+      "BindingInfo": {
+        "TableName": "MST_科目",
+        "ColumnName": "ソート順",
+        "GUID": "09825829-aac3-49e7-ac6b-57d87b526844"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Formatter": 5,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Foreground": 6,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "Formatter": 5,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 7
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderRight": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "Text 1 35",
+        "Blue",
+        "[AUTO]General",
+        "Text 1 50",
+        "General",
+        "Text 2 80",
+        "black",
+        "DarkGray"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,31": 1,
+      "0,89": 0,
+      "0,90": 0,
+      "0,91": 0,
+      "1,1": 0,
+      "1,2": 2,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 0,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "1,89": 0,
+      "1,90": 0,
+      "1,91": 0,
+      "2,1": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,55": 3,
+      "2,56": 4,
+      "2,57": 4,
+      "2,58": 4,
+      "2,59": 4,
+      "2,61": 0,
+      "2,62": 0,
+      "2,86": 0,
+      "2,87": 0,
+      "2,88": 0,
+      "2,89": 0,
+      "2,90": 0,
+      "2,91": 0,
+      "3,1": 5,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,31": 1,
+      "3,32": 6,
+      "3,33": 6,
+      "3,34": 6,
+      "3,35": 6,
+      "3,36": 6,
+      "3,37": 6,
+      "3,38": 6,
+      "3,39": 6,
+      "3,40": 1,
+      "3,41": 1,
+      "3,42": 6,
+      "3,43": 6,
+      "3,44": 6,
+      "3,45": 6,
+      "3,46": 6,
+      "3,47": 6,
+      "3,48": 6,
+      "3,49": 6,
+      "3,86": 0,
+      "3,87": 0,
+      "3,88": 0,
+      "3,89": 0,
+      "3,90": 0,
+      "3,91": 0,
+      "4,2": 7,
+      "4,3": 8,
+      "4,4": 8,
+      "4,5": 8,
+      "4,6": 8,
+      "4,7": 8,
+      "4,8": 8,
+      "4,9": 8,
+      "4,10": 8,
+      "4,11": 8,
+      "4,12": 8,
+      "4,13": 8,
+      "4,14": 8,
+      "4,15": 8,
+      "4,16": 9,
+      "4,17": 8,
+      "4,18": 8,
+      "4,19": 8,
+      "4,20": 8,
+      "4,21": 8,
+      "4,22": 8,
+      "4,23": 8,
+      "4,24": 10,
+      "4,25": 9,
+      "4,26": 8,
+      "4,27": 8,
+      "4,28": 8,
+      "4,29": 8,
+      "4,30": 8,
+      "4,31": 8,
+      "4,53": 9,
+      "4,54": 9,
+      "4,55": 9,
+      "4,56": 9,
+      "4,57": 9,
+      "4,58": 9,
+      "4,59": 9,
+      "4,60": 9,
+      "4,61": 9,
+      "4,86": 0,
+      "4,87": 0,
+      "4,88": 0,
+      "4,89": 0,
+      "4,90": 11,
+      "4,91": 12,
+      "5,2": 8,
+      "5,3": 8,
+      "5,4": 8,
+      "5,5": 8,
+      "5,6": 8,
+      "5,7": 8,
+      "5,8": 8,
+      "5,9": 8,
+      "5,10": 8,
+      "5,11": 8,
+      "5,12": 8,
+      "5,13": 8,
+      "5,14": 8,
+      "5,15": 8,
+      "5,16": 8,
+      "5,17": 8,
+      "5,18": 8,
+      "5,19": 8,
+      "5,20": 8,
+      "5,21": 8,
+      "5,22": 8,
+      "5,23": 8,
+      "5,24": 10,
+      "5,25": 8,
+      "5,26": 8,
+      "5,27": 8,
+      "5,28": 8,
+      "5,29": 8,
+      "5,30": 8,
+      "5,31": 8,
+      "5,53": 9,
+      "5,54": 9,
+      "5,55": 9,
+      "5,56": 9,
+      "5,57": 9,
+      "5,58": 9,
+      "5,59": 9,
+      "5,60": 9,
+      "5,61": 9,
+      "5,86": 0,
+      "5,87": 0,
+      "5,88": 0,
+      "5,89": 0,
+      "5,90": 13,
+      "5,91": 14,
+      "6,86": 0,
+      "6,87": 0,
+      "6,88": 0,
+      "6,89": 0,
+      "6,90": 15,
+      "6,91": 16,
+      "7,2": 17,
+      "7,3": 18,
+      "7,4": 18,
+      "7,5": 18,
+      "7,6": 18,
+      "7,7": 18,
+      "7,8": 18,
+      "7,9": 18,
+      "7,10": 18,
+      "7,11": 18,
+      "7,12": 18,
+      "7,13": 18,
+      "7,14": 18,
+      "7,15": 18,
+      "7,16": 18,
+      "7,17": 18,
+      "7,18": 18,
+      "7,19": 18,
+      "7,20": 18,
+      "7,21": 18,
+      "7,22": 18,
+      "7,23": 18,
+      "7,24": 18,
+      "7,25": 18,
+      "7,26": 18,
+      "7,27": 18,
+      "7,28": 18,
+      "7,29": 18,
+      "7,30": 18,
+      "7,31": 18,
+      "7,32": 18,
+      "7,33": 18,
+      "7,34": 18,
+      "7,35": 18,
+      "7,36": 18,
+      "7,37": 18,
+      "7,38": 18,
+      "7,39": 18,
+      "7,40": 18,
+      "7,41": 18,
+      "7,42": 18,
+      "7,43": 18,
+      "7,44": 18,
+      "8,2": 19,
+      "8,7": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,16": 0,
+      "8,17": 0,
+      "8,31": 0,
+      "8,32": 0,
+      "8,33": 0,
+      "8,34": 0,
+      "8,35": 0,
+      "8,36": 0,
+      "8,37": 0,
+      "8,38": 0,
+      "8,39": 0,
+      "8,50": 0,
+      "8,59": 0,
+      "8,60": 0,
+      "8,61": 0,
+      "8,62": 0,
+      "8,63": 0,
+      "8,64": 0,
+      "8,73": 0,
+      "8,74": 0,
+      "8,75": 0,
+      "8,76": 0,
+      "8,77": 0,
+      "8,81": 0,
+      "8,85": 0,
+      "9,2": 19,
+      "9,47": 20,
+      "10,2": 19,
+      "10,47": 20,
+      "11,2": 19,
+      "11,47": 20,
+      "12,2": 19,
+      "12,47": 20,
+      "13,2": 19,
+      "13,47": 20,
+      "14,2": 19,
+      "14,47": 20,
+      "15,2": 19,
+      "15,47": 20,
+      "16,2": 19,
+      "16,47": 20,
+      "17,2": 19,
+      "17,47": 20,
+      "18,2": 19,
+      "18,47": 20,
+      "19,2": 19,
+      "19,47": 20,
+      "20,2": 19,
+      "20,47": 20,
+      "21,2": 19,
+      "21,47": 20,
+      "22,2": 19,
+      "22,47": 20,
+      "23,2": 19,
+      "23,47": 20,
+      "24,2": 19,
+      "24,47": 20,
+      "25,2": 19,
+      "25,47": 20,
+      "26,2": 19,
+      "26,47": 20,
+      "27,2": 19,
+      "27,47": 20,
+      "28,2": 19,
+      "28,47": 20,
+      "29,2": 19,
+      "29,47": 20,
+      "30,2": 19,
+      "30,47": 20,
+      "31,2": 19,
+      "31,47": 20,
+      "32,2": 19,
+      "32,47": 20,
+      "33,2": 19,
+      "33,47": 20,
+      "34,2": 19,
+      "34,47": 20,
+      "35,2": 19,
+      "35,47": 20,
+      "36,2": 19,
+      "36,47": 20,
+      "37,2": 19,
+      "37,47": 20,
+      "38,2": 19,
+      "38,47": 20,
+      "39,2": 19,
+      "39,47": 20,
+      "40,2": 19,
+      "40,47": 20,
+      "41,2": 19,
+      "41,47": 20,
+      "42,2": 19,
+      "42,47": 20,
+      "43,2": 19,
+      "43,47": 20,
+      "44,2": 19,
+      "44,47": 20,
+      "45,2": 19,
+      "45,47": 20,
+      "46,2": 19,
+      "46,47": 20,
+      "47,2": 19,
+      "47,47": 20,
+      "48,2": 21,
+      "48,3": 22,
+      "48,4": 22,
+      "48,5": 22,
+      "48,6": 22,
+      "48,7": 22,
+      "48,8": 22,
+      "48,9": 22,
+      "48,10": 22,
+      "48,11": 22,
+      "48,12": 22,
+      "48,13": 22,
+      "48,14": 22,
+      "48,15": 22,
+      "48,16": 22,
+      "48,17": 22,
+      "48,18": 22,
+      "48,19": 22,
+      "48,20": 22,
+      "48,21": 22,
+      "48,22": 22,
+      "48,23": 22,
+      "48,24": 22,
+      "48,25": 22,
+      "48,26": 22,
+      "48,27": 22,
+      "48,28": 22,
+      "48,29": 22,
+      "48,30": 22,
+      "48,31": 22,
+      "48,32": 22,
+      "48,33": 22,
+      "48,34": 22,
+      "48,35": 22,
+      "48,36": 22,
+      "48,37": 22,
+      "48,38": 22,
+      "48,39": 22,
+      "48,40": 22,
+      "48,41": 22,
+      "48,42": 22,
+      "48,43": 22,
+      "48,44": 22,
+      "48,45": 22,
+      "48,46": 22,
+      "48,47": 23
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,7,1,5",
+    "8,2,1,5",
+    "8,12,1,5",
+    "8,17,1,9",
+    "9,2,40,87",
+    "8,73,1,4",
+    "8,31,1,9",
+    "8,26,1,5",
+    "8,64,1,9",
+    "8,59,1,5",
+    "8,40,1,5",
+    "8,45,1,5",
+    "8,50,1,9",
+    "8,77,1,4",
+    "8,81,1,4",
+    "8,85,1,4",
+    "1,2,2,8",
+    "1,61,2,2",
+    "2,55,1,5",
+    "4,16,2,7",
+    "4,25,2,7",
+    "4,7,2,7",
+    "4,2,2,5",
+    "7,2,1,5",
+    "7,7,1,5",
+    "7,12,1,5",
+    "7,17,1,9",
+    "7,26,1,5",
+    "7,31,1,9",
+    "7,40,1,5",
+    "7,45,1,5",
+    "7,50,1,9",
+    "7,59,1,5",
+    "7,64,1,9",
+    "7,73,1,4",
+    "7,77,1,4",
+    "7,81,1,4",
+    "7,85,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "MST_科目"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//I4AO+tJrNQosEJ70iQqWbfYIhZUjuPBDLD7ZfiVDWxRc3iN9CjNiaIwyDpfacQb06TmxRnVG0PUpqUNlR2q+wClp9iSMc0MgyWJXOzDdgsPUrHFnfVdHU6rAx6bpVkavUutl5A+1V5HSXbVqnEK84g5tP9dtvLk+fofu2YT2v1kRA6TSYef5X5ixSbL8hgSXLSBhjNraQcZEHAYM8dVL4TnUYXPJb1iP1N+rgargKMHIw8FwY9DAniFDtoToQ2AajG67R1h83b1rrHqQ58YLZxOQKQ0d6qsqztlPq8JCzzrTpyi7rXvkj+qidpWiHdqZNfRXQQgNq86yPoU1Z2FVibZaNS/W9J67VhF5SKf/MOh6F2IJVUoBVMd/lay0flV2ePdkwOArqS9+sl+sJNlLZqqgpE5glqVI9uAY/KfAtUi3v5PA9uhy+WJ/nFL7a0Ee4BGtbk/24QZ0qFlyhwJaBEeZLfv8mDE8GV1xPAfbGIv0VZIkGV7B0AowgnAW0KKnuIkuWB1Yfwp0B/xVyjvXFmb3hP/3ujyqC3m8Gac6yDIeZqh9PoNdz1SBhjkD/KED3bbUDG3c7Qj9WEoY9y8SLPyb8eONtCeWoGu9+DgCC57DKrtwiMO1Gb3WbAZtS0O4OuYEJ5Z5fDs6yPnODmjcJtzvXX5ueAyZC7u2eszDBvCSaF8lGqD5xNWghCOS7n8DngqPmHlAQlUeqnsgOG/0oWlezIPX9gB3c/9J6OxE6kkKlT7KKLl7jCid3ibgNhQs5w0mPLoNK02jyJSwzvPYMk/RajFuXeHCaB+Xvc5p0sOksqjlTk4SmJ9Xti3aXMQqgkvytqb9V/30wRHd67MWZQLnVdqbMhPk+FHHzjMc1nN/zWtrhvrX7NQ7zhodB+tYH2gHbglNyWDdT7wXt/p8mw==|920

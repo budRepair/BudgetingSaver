@@ -1,0 +1,291 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 101.0
+        }
+      }
+    },
+    "Count": 48
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "RowCount": 12,
+        "ColumnCount": 8,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "1,0": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "年度",
+        "GUID": "f4c24024-8515-46b2-967c-3051bfc4e232"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "月",
+        "GUID": "682b2300-c0a7-4168-b427-390181e8ba4e"
+      }
+    },
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "組織コード",
+        "GUID": "12630100-5b5a-4d44-8777-ac7448012981",
+        "RelationBinding": {
+          "RelatedTable": "MST_組織",
+          "RelatedColumn": "組織コード",
+          "DisplayColumn": "組織コード"
+        }
+      }
+    },
+    "1,3": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "組織コード",
+        "GUID": "6c053ee3-35b6-470c-9a87-815aa807d2eb",
+        "RelationBinding": {
+          "RelatedTable": "MST_組織",
+          "RelatedColumn": "組織コード",
+          "DisplayColumn": "組織名"
+        }
+      }
+    },
+    "1,4": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "科目コード",
+        "GUID": "a8f1ab44-e6bf-46b4-843c-6dabec512e64"
+      }
+    },
+    "1,5": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "科目コード",
+        "GUID": "0ff50b40-14b5-41e3-94d8-0f7703b7ea1e",
+        "RelationBinding": {
+          "RelatedTable": "MST_科目",
+          "RelatedColumn": "科目コード",
+          "DisplayColumn": "科目名"
+        }
+      }
+    },
+    "1,6": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "金額",
+        "GUID": "b7be0782-d78c-4cc2-ad60-38b7649a2a39"
+      }
+    },
+    "1,7": {
+      "BindingInfo": {
+        "TableName": "VIEW_予算_損益計算書エクスポート用",
+        "ColumnName": "バージョン",
+        "GUID": "ad67b5fa-1b3a-4f9f-8c40-2f60a350b44b"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#,##0;[Red]#,##0",
+        "Right"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "1,0": 0,
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 1,
+      "1,7": 0,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "2,0": 0,
+      "2,1": 0,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "3,0": 0,
+      "3,1": 0,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 0,
+      "3,6": 0,
+      "3,7": 0,
+      "4,0": 0,
+      "4,1": 0,
+      "4,2": 0,
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "5,0": 0,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "6,0": 0,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,6": 0,
+      "6,7": 0,
+      "7,0": 0,
+      "7,1": 0,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,6": 0,
+      "7,7": 0,
+      "8,0": 0,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,6": 0,
+      "8,7": 0,
+      "9,0": 0,
+      "9,1": 0,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "9,5": 0,
+      "9,6": 0,
+      "9,7": 0,
+      "10,0": 0,
+      "10,1": 0,
+      "10,2": 0,
+      "10,3": 0,
+      "10,4": 0,
+      "10,5": 0,
+      "10,6": 0,
+      "10,7": 0,
+      "11,0": 0,
+      "11,1": 0,
+      "11,2": 0,
+      "11,3": 0,
+      "11,4": 0,
+      "11,5": 0,
+      "11,6": 0,
+      "11,7": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,0,10,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//NqxK2XAl+YJjtIOoju1wUDphK8yf1YKNu8yH9aEuqbmgOJ6Ry/Oc6hJ3CHgkc1ceeo4BD1UZ6Bnye5jClxE1u5pOo1ZmZi/feFsa0IUb0qX3aVulNP+PFFsFivPYIi0d/iCLBC5KDjTmWuv/s/+VDmekwgjk8IMvRQiNH6jC41juUg45aOzciyoYhOj2apevZI/XrfSnibU4oD1FVERTtPsNs2bpkaMmnuvi6IkIUsCnpeJ95ff73SrSzulxIMZ4gQEmSdgQ4oEHqmYt3J0QUBDB4BpydkARFVc17lo53Y+T3tRMx/X/JH7OiR6UAxRR/nICb6nCISKN4K3Q0L5hMpe4tQqOccCWc5/Mzqz4LGWg73/XKB8NYepNm4YG5TrfN0m7V0saDhijPSwLOUBOrj17BhfN9dvFeJW34rG7ufKp6lJWeVN1QUl40VONnlDgh+BdRLfOZYuhj4jAn7YZhE3AJ+fSsQFCcSdVolEQJQDGkIZgRZEApyEWxQoHZxdKbA31ntY2zoVfNlOChi3m5s6mAKkcSOI0w4eDnq/H4UNGqWjDW4+Fqa27j2ZeJoqPM0tJ9VtIXHuH9wTE4/zFzmt3VuRDdJ4FqCW4fs2LWqIfSKPRl+AfV+VV+Fb6+lQ0PueSO36EERVRAd+qY7lK1/YSsfW16Y74+dV9i6djowVa+OwQjwbIKBqOeG8ZSkaYcWOtUtONQCcQNN+CbK6uU5f+DBgiGnqrOSZAm/+iLFLcQIkNV4kLbfnk5hBzWeWW2bhCHMGAzaQREhvB6gpz1t6C2Ra6SthIkdaobcGxpxE9La9Kk9c3FqAuAtxscKKaYY0KO8v2mFJhtllJng6qoSFaf27GSnf5S6DgmcYf8sgkasJgpVNjPynnPfhPHKkKiUTnoOwi5JdwZGKV2msB6A==|920

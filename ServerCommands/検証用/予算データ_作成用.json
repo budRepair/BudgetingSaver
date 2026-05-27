@@ -1,0 +1,146 @@
+{
+  "Name": "予算データ_作成用",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "組織",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "バージョン",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "_flg",
+          "DataValidationInfo": {},
+          "TestData": "2"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=_flg"
+              }
+            },
+            "value": "1"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=年度"
+                  },
+                  "Item2": 16
+                },
+                "@pmt2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=組織"
+                  },
+                  "Item2": 16
+                },
+                "@pmt3": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=バージョン"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "INSERT \r\nINTO \"TEST_予算_001\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , mst.\"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\" \r\nFROM\r\n    \"TEST_予算_001\" tbl \r\n    LEFT JOIN \"MST_科目\" mst \r\n        ON 1 = 1;",
+              "ReturnsName": "return1",
+              "ID": "fee1d1eb8f9f4bbf9327e59ef19bb001"
+            }
+          ],
+          "ID": "4944cb95-578c-4086-958e-15f541c2c893"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=_flg"
+              }
+            },
+            "value": "2"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=年度"
+                  },
+                  "Item2": 16
+                },
+                "@pmt2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=組織"
+                  },
+                  "Item2": 16
+                },
+                "@pmt3": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=バージョン"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "INSERT \r\nINTO \"TEST_予算_001\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , mst.\"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\" \r\nFROM\r\n    \"TEST_予算_001\" tbl \r\n    LEFT JOIN \"MST_組織\" mst \r\n        ON 1 = 1;",
+              "ReturnsName": "return1",
+              "ID": "eb65d947299e4ded885d6af8e518186c"
+            }
+          ],
+          "ID": "e2b3b043-d123-4c19-a78e-727a1c9e5450"
+        }
+      ]
+    }
+  ]
+}

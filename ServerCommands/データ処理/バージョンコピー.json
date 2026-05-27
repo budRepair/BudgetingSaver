@@ -1,0 +1,968 @@
+{
+  "Name": "バージョンコピー",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度_From",
+          "DataValidationInfo": {},
+          "TestData": "2024"
+        },
+        {
+          "Name": "年度_To",
+          "DataValidationInfo": {},
+          "TestData": "2025"
+        },
+        {
+          "Name": "部門コード",
+          "DataValidationInfo": {},
+          "TestData": "N001"
+        },
+        {
+          "Name": "組織コード",
+          "DataValidationInfo": {},
+          "TestData": "ENT001"
+        },
+        {
+          "Name": "バージョン_From",
+          "DataValidationInfo": {},
+          "TestData": "Fix"
+        },
+        {
+          "Name": "バージョン_To",
+          "DataValidationInfo": {},
+          "TestData": "Fix"
+        },
+        {
+          "Name": "_flg",
+          "DataValidationInfo": {},
+          "TestData": "3"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_flg"
+                  }
+                },
+                "value": "1"
+              },
+              "CommandList": [
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"フラグ\"\r\n    , \"区分\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , @pmt4 AS \"バージョン\"\r\n    , \"フラグ\"\r\n    , \"区分\"\r\n    , \"損益\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_損益計算書\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt3;",
+                  "ReturnsName": "return1",
+                  "ID": "952e54953bd54d8eb45d555028a8ef75",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt4 AS \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"売上\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_売上\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt3;",
+                  "ReturnsName": "return1",
+                  "ID": "3ada03fef6ea4b94acb4dfb168be05da",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt4 AS \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"外注費\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_外注費\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt3;",
+                  "ReturnsName": "return1",
+                  "ID": "4069e57504204eaabed4f934828f8c20",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , @pmt4 AS \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"販管費\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_販管費_一般管理費\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt3;",
+                  "ReturnsName": "return1",
+                  "ID": "141d8143ca034558834c0a8b32754a5c",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , @pmt4 AS \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"営業外\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_営業外_特別損益\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt3;",
+                  "ReturnsName": "return1",
+                  "ID": "64f47f37414c414699881808e9fe4149",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt4 AS \"バージョン\"\r\n    , \"原価\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_売上原価\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt3;",
+                  "ReturnsName": "return1",
+                  "ID": "94d105db066a448691d1d7ac04eed126",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                }
+              ],
+              "Comments": "全社",
+              "ID": "d0ae45da-5384-4394-a9f1-8dad74da4e5e"
+            },
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_flg"
+                  }
+                },
+                "value": "2"
+              },
+              "CommandList": [
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=部門コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"フラグ\"\r\n    , \"区分\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , wk.\"組織コード\"\r\n    , wk.\"科目コード\"\r\n    , wk.\"_4月\"\r\n    , wk.\"_5月\"\r\n    , wk.\"_6月\"\r\n    , wk.\"_7月\"\r\n    , wk.\"_8月\"\r\n    , wk.\"_9月\"\r\n    , wk.\"_10月\"\r\n    , wk.\"_11月\"\r\n    , wk.\"_12月\"\r\n    , wk.\"_1月\"\r\n    , wk.\"_2月\"\r\n    , wk.\"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , wk.\"フラグ\"\r\n    , wk.\"区分\"\r\n    , \"損益\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_損益計算書\" wk \r\n    INNER JOIN \"MST_組織\" mst \r\n        ON wk.\"組織コード\" = mst.\"組織コード\" \r\n        AND mst.\"部門コード\" = @pmt3 \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "a643fdf88e3a472db266ab9d14e5f785",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=部門コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , wk.\"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"売上\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_売上\" wk \r\n    INNER JOIN \"MST_組織\" mst \r\n        ON wk.\"組織コード\" = mst.\"組織コード\" \r\n        AND mst.\"部門コード\" = @pmt3 \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "72ceb729718b4c8bbb4573a960c3fe0c",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=部門コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , wk.\"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"外注費\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_外注費\" wk \r\n    INNER JOIN \"MST_組織\" mst \r\n        ON wk.\"組織コード\" = mst.\"組織コード\" \r\n        AND mst.\"部門コード\" = @pmt3 \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "8bfdab1935fa4c5baf45ad7ad22c77c8",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=部門コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , wk.\"組織コード\"\r\n    , wk.\"科目コード\"\r\n    , wk.\"_4月\"\r\n    , wk.\"_5月\"\r\n    , wk.\"_6月\"\r\n    , wk.\"_7月\"\r\n    , wk.\"_8月\"\r\n    , wk.\"_9月\"\r\n    , wk.\"_10月\"\r\n    , wk.\"_11月\"\r\n    , wk.\"_12月\"\r\n    , wk.\"_1月\"\r\n    , wk.\"_2月\"\r\n    , wk.\"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , wk.\"予算部門コード\"\r\n    , \"販管費\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_販管費_一般管理費\" wk \r\n    INNER JOIN \"MST_組織\" mst \r\n        ON wk.\"組織コード\" = mst.\"組織コード\" \r\n        AND mst.\"部門コード\" = @pmt3 \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "535c66efb1b0498cb09a503b277a05b3",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=部門コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , wk.\"組織コード\"\r\n    , wk.\"科目コード\"\r\n    , wk.\"_4月\"\r\n    , wk.\"_5月\"\r\n    , wk.\"_6月\"\r\n    , wk.\"_7月\"\r\n    , wk.\"_8月\"\r\n    , wk.\"_9月\"\r\n    , wk.\"_10月\"\r\n    , wk.\"_11月\"\r\n    , wk.\"_12月\"\r\n    , wk.\"_1月\"\r\n    , wk.\"_2月\"\r\n    , wk.\"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , wk.\"予算部門コード\"\r\n    , \"営業外\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_営業外_特別損益\" wk \r\n    INNER JOIN \"MST_組織\" mst \r\n        ON wk.\"組織コード\" = mst.\"組織コード\" \r\n        AND mst.\"部門コード\" = @pmt3 \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "2c1a36e5fb1847fda5f70c2fb652d7d7",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=部門コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , wk.\"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"原価\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_売上原価\" wk \r\n    INNER JOIN \"MST_組織\" mst \r\n        ON wk.\"組織コード\" = mst.\"組織コード\" \r\n        AND mst.\"部門コード\" = @pmt3 \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "8eaa5891d5b24fef9e142cdb4affe04f",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                }
+              ],
+              "Comments": "選択部門",
+              "ID": "b6f174e4-2888-45d0-90ea-1d84a91c196b"
+            },
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_flg"
+                  }
+                },
+                "value": "3"
+              },
+              "CommandList": [
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=組織コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"フラグ\"\r\n    , \"区分\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"フラグ\"\r\n    , \"区分\"\r\n    , \"損益\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_損益計算書\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "00251d5d6eb14430a9f8236f8f6b14c6",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=組織コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"売上\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_売上\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "98ec254fd9ef43e699ffac0fa9830c39",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=組織コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"科目コード\"\r\n    , \"外注費\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_外注費\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "c2a2295e3d524c72bafe64709ad6327a",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=組織コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"販管費\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_販管費_一般管理費\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "0b7c1c51fc694a5bb5566fba1aecd86e",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=組織コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"予算部門コード\"\r\n    , \"営業外\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_営業外_特別損益\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "41728d5256d94d4399afc825a606372e",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                },
+                {
+                  "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                  "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                  "Params": {
+                    "@pmt1": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt2": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度_To"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt3": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=組織コード"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt4": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_From"
+                      },
+                      "Item2": 16
+                    },
+                    "@pmt5": {
+                      "Item1": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョン_To"
+                      },
+                      "Item2": 16
+                    }
+                  },
+                  "SqlStatement": "INSERT \r\nINTO \"WK_予算_売上_外注費_バージョンコピー用\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"画面\"\r\n) \r\nSELECT\r\n    @pmt2 AS \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , @pmt5 AS \"バージョン\"\r\n    , \"原価\" AS \"画面\" \r\nFROM\r\n    \"INP_予算_売上原価\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND \"バージョン\" = @pmt4;",
+                  "ReturnsName": "return1",
+                  "ID": "4206460afd094ab1aab81e4bfcbaf068",
+                  "Comments": "コピー対象データをWKテーブルに作成"
+                }
+              ],
+              "Comments": "選択組織",
+              "ID": "69cc80cb-f107-49ef-bb96-7033e2b51dff"
+            }
+          ]
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_損益計算書\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_予算_バージョンコピー用\" wk \r\n        WHERE\r\n            \"INP_予算_損益計算書\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_予算_損益計算書\".\"組織コード\" = wk.\"組織コード\" \r\n            AND \"INP_予算_損益計算書\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_予算_損益計算書\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"フラグ\"\r\n    , \"区分\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"フラグ\"\r\n    , \"区分\" \r\nFROM\r\n    \"WK_予算_バージョンコピー用\" \r\nWHERE\r\n    \"画面\" = \"損益\";",
+          "ReturnsName": "return1",
+          "ID": "4dfb767706de4b8bbaa2120e666f7800",
+          "Comments": "予算データ作成処理"
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_売上\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_予算_売上_外注費_バージョンコピー用\" wk \r\n        WHERE\r\n            \"INP_予算_売上\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_予算_売上\".\"組織コード\" = wk.\"組織コード\" \r\n            AND \"INP_予算_売上\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_予算_売上\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\" \r\nFROM\r\n    \"WK_予算_売上_外注費_バージョンコピー用\" \r\nWHERE\r\n    \"画面\" = \"売上\";",
+          "ReturnsName": "return1",
+          "ID": "5af79d478a654dd9acfe34ac07e8992b",
+          "Comments": "予算データ作成処理"
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_外注費\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_予算_売上_外注費_バージョンコピー用\" wk \r\n        WHERE\r\n            \"INP_予算_外注費\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_予算_外注費\".\"組織コード\" = wk.\"組織コード\" \r\n            AND \"INP_予算_外注費\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_予算_外注費\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"科目コード\" \r\nFROM\r\n    \"WK_予算_売上_外注費_バージョンコピー用\" \r\nWHERE\r\n    \"画面\" = \"外注費\";",
+          "ReturnsName": "return1",
+          "ID": "49988b11f7a04ab09792d7aa7f57fa0b",
+          "Comments": "予算データ作成処理"
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_販管費_一般管理費\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_予算_バージョンコピー用\" wk \r\n        WHERE\r\n            \"INP_予算_販管費_一般管理費\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_予算_販管費_一般管理費\".\"組織コード\" = wk.\"組織コード\" \r\n            AND \"INP_予算_販管費_一般管理費\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_予算_販管費_一般管理費\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\" \r\nFROM\r\n    \"WK_予算_バージョンコピー用\" \r\nWHERE\r\n    \"画面\" = \"販管費\";",
+          "ReturnsName": "return1",
+          "ID": "c0492dc9415c4f1d8b930b6f7c31f915",
+          "Comments": "予算データ作成処理"
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_営業外_特別損益\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_予算_バージョンコピー用\" wk \r\n        WHERE\r\n            \"INP_予算_営業外_特別損益\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_予算_営業外_特別損益\".\"組織コード\" = wk.\"組織コード\" \r\n            AND \"INP_予算_営業外_特別損益\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_予算_営業外_特別損益\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n    , \"予算部門コード\" \r\nFROM\r\n    \"WK_予算_バージョンコピー用\" \r\nWHERE\r\n    \"画面\" = \"営業外\";",
+          "ReturnsName": "return1",
+          "ID": "3d1986423afd4a66ad62205917c2368b",
+          "Comments": "予算データ作成処理"
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_売上原価\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_予算_売上_外注費_バージョンコピー用\" wk \r\n        WHERE\r\n            \"INP_予算_売上原価\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_予算_売上原価\".\"組織コード\" = wk.\"組織コード\" \r\n            AND \"INP_予算_売上原価\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_予算_売上原価\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"親属性コード\"\r\n    , \"親属性名称\"\r\n    , \"_4月単価\"\r\n    , \"_4月数量\"\r\n    , \"_4月\"\r\n    , \"_5月単価\"\r\n    , \"_5月数量\"\r\n    , \"_5月\"\r\n    , \"_6月単価\"\r\n    , \"_6月数量\"\r\n    , \"_6月\"\r\n    , \"_7月単価\"\r\n    , \"_7月数量\"\r\n    , \"_7月\"\r\n    , \"_8月単価\"\r\n    , \"_8月数量\"\r\n    , \"_8月\"\r\n    , \"_9月単価\"\r\n    , \"_9月数量\"\r\n    , \"_9月\"\r\n    , \"_10月単価\"\r\n    , \"_10月数量\"\r\n    , \"_10月\"\r\n    , \"_11月単価\"\r\n    , \"_11月数量\"\r\n    , \"_11月\"\r\n    , \"_12月単価\"\r\n    , \"_12月数量\"\r\n    , \"_12月\"\r\n    , \"_1月単価\"\r\n    , \"_1月数量\"\r\n    , \"_1月\"\r\n    , \"_2月単価\"\r\n    , \"_2月数量\"\r\n    , \"_2月\"\r\n    , \"_3月単価\"\r\n    , \"_3月数量\"\r\n    , \"_3月\"\r\n    , \"バージョン\" \r\nFROM\r\n    \"WK_予算_売上_外注費_バージョンコピー用\" \r\nWHERE\r\n    \"画面\" = \"原価\";",
+          "ReturnsName": "return1",
+          "ID": "821d304768ea41429368bb70535ac0f0",
+          "Comments": "予算データ作成処理"
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"WK_予算_バージョンコピー用\";",
+          "ReturnsName": "return1",
+          "ID": "cdef84725a2145fba2371fead4c16b30",
+          "Comments": "WKテーブル削除処理"
+        },
+        {
+          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+          "Params": {},
+          "SqlStatement": "DELETE \r\nFROM\r\n    \"WK_予算_売上_外注費_バージョンコピー用\";",
+          "ReturnsName": "return1",
+          "ID": "0545b21fbf2745198cbee40e74c6fef3",
+          "Comments": "WKテーブル削除処理"
+        }
+      ]
+    }
+  ]
+}

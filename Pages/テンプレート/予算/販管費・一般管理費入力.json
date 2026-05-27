@@ -1,0 +1,4108 @@
+{
+  "Rows": {
+    "Count": 60
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "103": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 91.0
+        }
+      },
+      "104": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 91.0
+        }
+      },
+      "105": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 135.0
+        }
+      }
+    },
+    "Count": 167
+  },
+  "Values": {
+    "1,2": "販管費・一般管理費入力",
+    "1,61": "",
+    "2,55": "メニューに戻る",
+    "3,105": "↓初期値設定",
+    "3,109": "戻り値",
+    "4,7": "%CurrentUser.会社コード%",
+    "4,23": "%CurrentUser.組織１コード%",
+    "4,34": "%CurrentUser.組織２コード%",
+    "4,45": "%CurrentUser.組織３コード%",
+    "5,105": "Fix",
+    "7,2": "データ表示",
+    "7,9": "データ保存",
+    "7,16": "損益計算書へ反映",
+    "10,2": "科目コード",
+    "10,7": "科目名",
+    "10,14": "1月",
+    "10,20": "2月",
+    "10,26": "3月",
+    "10,32": "4月",
+    "10,38": "5月",
+    "10,44": "6月",
+    "10,50": "7月",
+    "10,56": "8月",
+    "10,62": "9月",
+    "10,68": "10月",
+    "10,74": "11月",
+    "10,80": "12月",
+    "48,103": "■ログアウトコマンド",
+    "49,104": "処理確認",
+    "49,105": "ログアウトしますか？",
+    "50,104": "リターンコード",
+    "51,104": "処理失敗",
+    "51,105": "ログアウト処理に失敗しました。管理者に確認してください。"
+  },
+  "Formulas": {
+    "4,103": "IF(BL5=0,\"%Null%\",BL5)",
+    "4,105": "YEAR(EDATE(TODAY(),-3))"
+  },
+  "AttachInfos": {
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=販管費・一般管理費入力!DB50"
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "ログアウトコマンド",
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=販管費・一般管理費入力!DB51"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=販管費・一般管理費入力!DB51"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_ログイン"
+                          }
+                        ],
+                        "ID": "bf9c262b-7c17-4f9a-b0fd-b802e440928e"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=販管費・一般管理費入力!DB51"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!DB52"
+                            }
+                          }
+                        ],
+                        "ID": "f937baa3-4d20-4ca7-9ac3-30ed1ebd5e00"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7b8f4e54-5ff3-4986-bb89-983b488f8668"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "スタイル14",
+        "Icon": {
+          "Name": "Arrow/321_exit_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 18.0
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）2020",
+        "IsBounding": true,
+        "DataSource": "MST_年度",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "bcbd40a1-8f69-40f8-b855-49693d864a98"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "4258a0b8-7ca0-4387-be12-1db848d845e0"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "84c54f17-25dd-4147-81a1-5301a8accfae"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "1f102aca-d516-4f44-bf75-78fe6d3c5ea2"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=販管費・一般管理費入力!DB5"
+        }
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "会社名",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "会社コード",
+          "GUID": "135bbe70-9d0c-4602-a7c3-9274d4fc5fcd"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "会社名",
+          "GUID": "b72bc95f-d826-4cb6-ba0c-210dc9d842f7"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "会社コード",
+                "GUID": "d20f3925-f6fc-4a20-a9ee-4c9680e71658"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9eade020-54ad-403a-9444-6db466b38ef1"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "4480b6ae-16f4-4dc1-90d2-a69a5bc364d2"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.会社コード%"
+      }
+    },
+    "4,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織1",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "本部コード",
+          "GUID": "c714c24b-c887-4ff8-9ea1-955aa146df2a"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "本部名",
+          "GUID": "66d58df4-b175-4380-82b2-b7bac9eb1fa3"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "会社コード",
+            "GUID": "53544df3-6054-4a1c-a59c-f3ffddb59fd0"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=販管費・一般管理費入力!H5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "本部コード",
+                "GUID": "75051642-81d7-4d73-8fd9-4c445e87ff1f"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "4f071425-66bf-4577-8ff4-eef6ab10f03c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ea5bf68e-e913-4371-ab22-a519d921658f"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "会社ユーザ"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織１コード%"
+      }
+    },
+    "4,34": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織2",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門コード",
+          "GUID": "d73e7092-ee85-4f0c-878f-39c6aa8957e6"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "de9e5a02-200d-4461-817e-26d54608b70b"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "本部コード",
+            "GUID": "f21ea1ad-94b8-4700-b1f9-8a2e63604ad0"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=販管費・一般管理費入力!X5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "部門コード",
+                "GUID": "90264f37-1ef1-4edc-b3fe-94e45bf0dd7c"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e3f35a72-ee82-4e9f-b9ca-48649ff14257"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "dba628ee-cbe5-4bce-a5ea-fe77f39e9e4d"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "会社ユーザ",
+              "組織１ユーザ"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織２コード%"
+      }
+    },
+    "4,45": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織3",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織コード",
+          "GUID": "22eeea1c-f5ce-4e8b-9a39-4552d911fb35"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織名",
+          "GUID": "e16819e2-ec7b-448d-af2a-5e080c2ef22a"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "部門コード",
+            "GUID": "a75c1d69-3c42-4e72-88fb-5237b9b55b70"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "組織コード",
+                "GUID": "fa026628-5add-4d2e-bcea-c186c584df5a"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9ee85928-416b-466b-ad2e-d6c52ab4fbe7"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "4f942542-2e08-4721-97cb-5b082ee64164"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "会社ユーザ",
+              "組織１ユーザ",
+              "組織２ユーザ"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織３コード%"
+      }
+    },
+    "4,56": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）Ver01",
+        "IsBounding": true,
+        "DataSource": "MST_バージョン",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョンコード",
+          "GUID": "ea684646-084c-4f9b-b6df-2801f5810ccd"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "674f60cd-bcce-4695-baba-5482be04fb75"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_バージョン",
+                "ColumnName": "バージョン名",
+                "GUID": "feb1ebe8-d5ab-403b-be8c-73edd9884e96"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "f261b64c-7a1a-44e1-a690-899cf801d5ef"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "784d484e-0d44-4dac-8514-f8c517ab72a2"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=販管費・一般管理費入力!DB6"
+        }
+      }
+    },
+    "4,63": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "取引先",
+        "IsBounding": true,
+        "DataSource": "MST_属性",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_属性",
+          "ColumnName": "親属性コード",
+          "GUID": "76cd7d93-a527-4997-bd06-80b4444ec58d"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_属性",
+          "ColumnName": "親属性名称",
+          "GUID": "416a3f01-2642-4abd-8d45-fe9d0206cba9"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9a16a01f-8a94-4ff9-9f1c-5395db165c9f"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "c77ad9cf-c436-412c-9168-cf7bcdfdd13d"
+              }
+            ]
+          }
+        ],
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": ""
+      }
+    },
+    "7,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ab896abe-664a-404b-8c82-75a65791e499"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingText": "データを表示します",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "販管費・一般管理費入力",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "年度",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "組織",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "バージョン",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "会社",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!H5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "荷主",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=IF(販管費・一般管理費入力!BL5=0,\"\",販管費・一般管理費入力!BL5)"
+                        }
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "損益計算書入力",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "年度",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!C5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "会社",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!H5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "組織",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "バージョン",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "区分",
+                        "Value": "2"
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_販管費_一般管理費",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_販管費_一般管理費",
+                            "ColumnName": "年度",
+                            "GUID": "a841d514-f4aa-449f-ba22-841abbe66293"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=販管費・一般管理費入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_販管費_一般管理費",
+                            "ColumnName": "組織コード",
+                            "GUID": "7b252457-a2fa-4568-8cbc-ae64d8a3ab90"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_販管費_一般管理費",
+                            "ColumnName": "バージョン",
+                            "GUID": "3f16a8f4-5573-4b2d-9c48-061434a9c54f"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_販管費_一般管理費",
+                            "ColumnName": "科目コード",
+                            "GUID": "e5e9fccc-524c-45b9-835e-ab88f663213f",
+                            "RelationBinding": {
+                              "RelatedTable": "MST_科目",
+                              "RelatedColumn": "科目コード",
+                              "DisplayColumn": "会社コード"
+                            }
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=販管費・一般管理費入力!H5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "3a5272e3a7a04043a97acc5143a4f89d"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_販管費_一般管理費",
+                            "ColumnName": "科目コード",
+                            "GUID": "c3b86bd7-f467-410e-baad-53fa7d9f930a"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "98178c3944a7473ea74f4b7679b5e544"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!10:53"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=販管費・一般管理費入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  }
+                ],
+                "ID": "d2c49d37-5e48-4ced-9b57-8b54a38308a3"
+              }
+            ]
+          }
+        ],
+        "Text": "データ表示",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に更新してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "2c3a1d8b-1180-4988-9757-afd3cc61e700"
+              }
+            ]
+          }
+        ],
+        "Text": "データ保存",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に反映してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                    "LoopInfo": {
+                      "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+                      "ListviewName": "リストビュー4"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "INP_予算_損益計算書",
+                        "ShowConfirm": false,
+                        "RowsToUpdate": 1,
+                        "RowsToUpdateCondition": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "年度",
+                                "GUID": "4b837692-c337-49da-85cc-b030d5ad2351"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=販管費・一般管理費入力!C5"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "組織コード",
+                                "GUID": "8ce390a3-83e5-4e15-9a13-3ccf96222c2c"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=販管費・一般管理費入力!AT5"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "バージョン",
+                                "GUID": "434aceda-5c72-4dae-83ab-337fbc93ffad"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=販管費・一般管理費入力!BE5"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "科目コード",
+                                "GUID": "221d47c7-4544-4112-8933-fbceb51a02ba"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=販管費・一般管理費入力!DK12"
+                              }
+                            }
+                          ]
+                        },
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_4月",
+                              "GUID": "464bd95c-3c52-4f74-b729-c7fe1ad5641f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!DN12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_5月",
+                              "GUID": "4dc88984-0da6-4803-ad33-73660f8d9ff1"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!DR12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_6月",
+                              "GUID": "17fa5749-5ce2-49c3-a41c-13bc08a82244"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!DV12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_7月",
+                              "GUID": "3ac6b93a-1bd0-44d0-a3b1-502ead961558"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!DZ12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_8月",
+                              "GUID": "72b877ad-e568-4c8a-8b01-cc3f7b134781"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!ED12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_9月",
+                              "GUID": "45066fbb-c03a-4583-b4cb-8c411870100b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!EH12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_10月",
+                              "GUID": "63d3b007-b60c-472b-8cfa-caf81d473685"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!EL12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_11月",
+                              "GUID": "6f461a34-c457-4b10-ba6d-ced3a08cb201"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!EP12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_12月",
+                              "GUID": "e1345fee-cbe5-4f47-abc3-26239e907223"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!ET12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_1月",
+                              "GUID": "bac15ff5-19d1-470d-8c3b-3289ed906c68"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!EX12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_2月",
+                              "GUID": "6ba275bd-154f-4ab3-9a64-8ccdd9a623c0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!FB12"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_3月",
+                              "GUID": "bb2c829a-aabd-435b-b819-f9f2ca3ca066"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=販管費・一般管理費入力!FF12"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "ID": "94969ac4-3295-4ff9-8372-664396e61ebb"
+              }
+            ]
+          }
+        ],
+        "Text": "損益計算書へ反映",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "10,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "INP_予算_販管費_一般管理費",
+        "RowIndex": 10,
+        "ColumnIndex": 2,
+        "RowCount": 43,
+        "ColumnCount": 84,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_販管費_一般管理費",
+            "ColumnName": "予算部門コード",
+            "GUID": "72d071e2-9da6-438a-8207-d5ebb8781a5c"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=販管費・一般管理費入力!CZ5"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "10,103": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "MST_属性",
+        "RowIndex": 10,
+        "ColumnIndex": 103,
+        "RowCount": 37,
+        "ColumnCount": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_属性",
+            "ColumnName": "親属性コード",
+            "GUID": "0ce87448-ad6e-447d-8dc1-1cd55dfb7b0a"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=販管費・一般管理費入力!BL5"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "10,107": {
+      "ListViewInfo": {
+        "Name": "リストビュー4",
+        "TableName": "INP_予算_販管費_一般管理費",
+        "RowIndex": 10,
+        "ColumnIndex": 107,
+        "RowCount": 9,
+        "ColumnCount": 58,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "11,2": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "科目コード",
+        "GUID": "ea61780a-c79b-43b4-9ec8-55b12991716d"
+      }
+    },
+    "11,7": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "科目コード",
+        "GUID": "80661123-2472-4bfb-bc39-d15e067a349a",
+        "RelationBinding": {
+          "RelatedTable": "MST_科目",
+          "RelatedColumn": "科目コード",
+          "DisplayColumn": "科目名"
+        }
+      }
+    },
+    "11,14": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_1月",
+        "GUID": "94b3b39a-5304-4180-b337-a941c0a05638"
+      }
+    },
+    "11,20": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_2月",
+        "GUID": "bf621910-02ef-4c38-ad8a-f48a026897ed"
+      }
+    },
+    "11,26": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_3月",
+        "GUID": "1f2c4dc2-2ed6-45d1-b6d0-6080873bd7a7"
+      }
+    },
+    "11,32": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_4月",
+        "GUID": "4b28fdb6-9607-4678-86da-9c14cd94835b"
+      }
+    },
+    "11,38": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_5月",
+        "GUID": "ca3b036b-1097-45ce-aab3-2f961c396282"
+      }
+    },
+    "11,44": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_6月",
+        "GUID": "106b18a5-e645-47c0-a3d0-9c8262db6dac"
+      }
+    },
+    "11,50": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_7月",
+        "GUID": "badf0093-ddaa-4926-aaba-81c3e17af18d"
+      }
+    },
+    "11,56": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_8月",
+        "GUID": "977753b6-0878-4e6c-9b01-45e973b6665a"
+      }
+    },
+    "11,62": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_9月",
+        "GUID": "744d43fa-2971-4948-8761-315d253b196f"
+      }
+    },
+    "11,68": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_10月",
+        "GUID": "ffd35d3a-4efd-413c-9009-f570b61a135e"
+      }
+    },
+    "11,74": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_11月",
+        "GUID": "fe3c2c57-cf45-4019-bfe3-efee54455af3"
+      }
+    },
+    "11,80": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_12月",
+        "GUID": "bf344d07-ea0a-4f88-b04f-afba716edf4e"
+      }
+    },
+    "11,103": {
+      "BindingInfo": {
+        "TableName": "MST_属性",
+        "ColumnName": "親属性コード",
+        "GUID": "833358f1-5b23-43e6-99af-55ef2c3b55f3"
+      }
+    },
+    "11,104": {
+      "BindingInfo": {
+        "TableName": "MST_属性",
+        "ColumnName": "親属性名称",
+        "GUID": "aaaaafc9-6eab-4e9a-82e8-f7272592b426"
+      }
+    },
+    "11,105": {
+      "BindingInfo": {
+        "TableName": "MST_属性",
+        "ColumnName": "単価",
+        "GUID": "8e188435-c6ab-478e-811c-a267becdabe5"
+      }
+    },
+    "11,107": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "年度",
+        "GUID": "6778fecb-057d-4f9d-84b4-aac50ec3c2b8"
+      }
+    },
+    "11,110": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "組織コード",
+        "GUID": "41abfcb0-4fe2-4994-afe6-7f6331a8dd26"
+      }
+    },
+    "11,114": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "科目コード",
+        "GUID": "58536416-5a0e-47d5-89e3-bbe96a7f09f1"
+      }
+    },
+    "11,117": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_4月合計",
+        "GUID": "ecb652cf-b8ee-4f02-ac7c-312c94f50a20"
+      }
+    },
+    "11,121": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_5月合計",
+        "GUID": "9d8e1d2c-1cbe-4c69-9e28-03b2949c9412"
+      }
+    },
+    "11,125": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_6月合計",
+        "GUID": "6c9c4c99-5a81-4658-8e19-08d13d903408"
+      }
+    },
+    "11,129": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_7月合計",
+        "GUID": "0f99bf8c-9e7f-4fe9-b252-dd9ff070557f"
+      }
+    },
+    "11,133": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_8月合計",
+        "GUID": "f548d736-3a12-4726-8d8b-44dfebb34296"
+      }
+    },
+    "11,137": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_9月合計",
+        "GUID": "1f4f474f-5d42-4e48-8820-07aa33292762"
+      }
+    },
+    "11,141": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_10月合計",
+        "GUID": "26a5af57-7c69-4e5d-9d8c-668733726b22"
+      }
+    },
+    "11,145": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_11月合計",
+        "GUID": "7cadad0a-1db2-4b9a-aa97-626129c03202"
+      }
+    },
+    "11,149": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_12月合計",
+        "GUID": "b0cd0828-5433-40de-921f-88cc9bc269b6"
+      }
+    },
+    "11,153": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_1月合計",
+        "GUID": "401fbe63-d57c-48de-9ad8-d05c0714767a"
+      }
+    },
+    "11,157": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_2月合計",
+        "GUID": "b2b586b2-656a-46d6-88c6-f5c8ecfcd36b"
+      }
+    },
+    "11,161": {
+      "BindingInfo": {
+        "TableName": "INP_予算_販管費_一般管理費",
+        "ColumnName": "_3月合計",
+        "GUID": "c9f36447-8891-4a3e-89e1-94ce84fd9367"
+      }
+    },
+    "53,104": {
+      "ListViewInfo": {
+        "Name": "リストビュー3",
+        "TableName": "MST_組織",
+        "RowIndex": 53,
+        "ColumnIndex": 104,
+        "RowCount": 7,
+        "ColumnCount": 2,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "54,104": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "会社コード",
+        "GUID": "67091867-bf5e-446b-b193-375273d9c489"
+      }
+    },
+    "54,105": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "会社名",
+        "GUID": "ec9a2076-e261-4a97-afcd-a89034b066a1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 3,
+        "Foreground": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontSize": 34.666666666666664,
+        "FontWeight": 3,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 7,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 7,
+        "Formatter": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 10,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 11,
+        "HorizontalAlignment": 12,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 13,
+        "FontFamily": 0,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": 2
+      },
+      {
+        "Background": 13,
+        "FontFamily": 0,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": 2
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 2,
+        "BorderLeft": 2,
+        "BorderRight": 2
+      },
+      {
+        "Background": 13,
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Blue",
+        "[AUTO]General",
+        "Bold",
+        "Text 1 35",
+        "Center",
+        "#FFFFFF00",
+        "Background 1 0",
+        "#FFA9A9A9",
+        "DarkGray",
+        "Background 1 -5",
+        "#,##0",
+        "Right",
+        "Text 2 80",
+        "black"
+      ],
+      "Borders": [
+        {
+          "Color": 8
+        },
+        {
+          "Color": 9
+        },
+        {
+          "Color": 14
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,22": 0,
+      "0,30": 1,
+      "0,31": 1,
+      "0,32": 1,
+      "0,33": 0,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 0,
+      "0,48": 0,
+      "0,49": 0,
+      "0,50": 0,
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,55": 0,
+      "0,56": 0,
+      "0,57": 0,
+      "0,58": 0,
+      "0,59": 0,
+      "0,60": 0,
+      "0,61": 0,
+      "0,64": 0,
+      "0,65": 0,
+      "0,66": 0,
+      "0,67": 0,
+      "0,68": 0,
+      "0,69": 0,
+      "0,72": 0,
+      "0,73": 0,
+      "0,74": 0,
+      "0,75": 0,
+      "0,76": 0,
+      "0,77": 0,
+      "0,78": 0,
+      "0,79": 0,
+      "0,80": 0,
+      "0,81": 0,
+      "0,82": 0,
+      "0,83": 0,
+      "0,84": 0,
+      "0,85": 0,
+      "0,86": 0,
+      "0,87": 0,
+      "0,90": 0,
+      "0,91": 0,
+      "0,92": 0,
+      "0,93": 0,
+      "0,94": 0,
+      "0,95": 0,
+      "0,96": 0,
+      "0,97": 0,
+      "0,98": 0,
+      "0,99": 0,
+      "0,100": 0,
+      "0,101": 0,
+      "0,102": 0,
+      "1,2": 2,
+      "1,22": 0,
+      "1,23": 3,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,49": 0,
+      "1,60": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "1,64": 0,
+      "1,65": 0,
+      "1,66": 0,
+      "1,67": 0,
+      "1,68": 0,
+      "1,69": 0,
+      "1,72": 0,
+      "1,73": 0,
+      "1,84": 0,
+      "1,85": 0,
+      "1,86": 0,
+      "1,87": 0,
+      "2,22": 0,
+      "2,23": 3,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,49": 0,
+      "2,55": 1,
+      "2,56": 4,
+      "2,57": 4,
+      "2,58": 4,
+      "2,59": 4,
+      "2,60": 0,
+      "2,61": 0,
+      "2,62": 0,
+      "2,63": 0,
+      "2,64": 0,
+      "2,65": 0,
+      "2,66": 0,
+      "2,67": 0,
+      "2,68": 0,
+      "2,69": 0,
+      "2,70": 0,
+      "2,71": 0,
+      "2,72": 0,
+      "2,73": 0,
+      "2,84": 0,
+      "2,85": 0,
+      "2,86": 0,
+      "2,87": 0,
+      "2,88": 0,
+      "2,89": 0,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 0,
+      "3,19": 0,
+      "3,20": 0,
+      "3,21": 0,
+      "3,22": 0,
+      "3,23": 0,
+      "3,24": 0,
+      "3,25": 0,
+      "3,26": 0,
+      "3,27": 0,
+      "3,28": 0,
+      "3,29": 0,
+      "3,30": 0,
+      "3,103": 0,
+      "3,105": 6,
+      "3,109": 6,
+      "4,2": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "4,16": 0,
+      "4,17": 0,
+      "4,18": 0,
+      "4,19": 0,
+      "4,20": 0,
+      "4,21": 0,
+      "4,23": 0,
+      "4,24": 0,
+      "4,25": 0,
+      "4,26": 0,
+      "4,27": 0,
+      "4,28": 0,
+      "4,29": 0,
+      "4,30": 0,
+      "4,31": 0,
+      "4,32": 0,
+      "4,34": 0,
+      "4,35": 0,
+      "4,36": 0,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 0,
+      "4,40": 0,
+      "4,41": 0,
+      "4,42": 0,
+      "4,43": 0,
+      "4,45": 0,
+      "4,46": 0,
+      "4,47": 0,
+      "4,48": 0,
+      "4,49": 0,
+      "4,50": 0,
+      "4,51": 0,
+      "4,52": 0,
+      "4,53": 0,
+      "4,54": 0,
+      "4,56": 0,
+      "4,57": 0,
+      "4,58": 0,
+      "4,59": 0,
+      "4,60": 0,
+      "4,61": 0,
+      "4,63": 0,
+      "4,64": 0,
+      "4,65": 0,
+      "4,66": 0,
+      "4,67": 0,
+      "4,68": 0,
+      "4,69": 0,
+      "4,70": 0,
+      "4,71": 0,
+      "4,72": 0,
+      "4,73": 0,
+      "4,74": 0,
+      "4,75": 0,
+      "4,76": 0,
+      "4,77": 0,
+      "4,102": 0,
+      "4,103": 0,
+      "4,105": 0,
+      "4,109": 7,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "5,16": 0,
+      "5,17": 0,
+      "5,18": 0,
+      "5,19": 0,
+      "5,20": 0,
+      "5,21": 0,
+      "5,23": 0,
+      "5,24": 0,
+      "5,25": 0,
+      "5,26": 0,
+      "5,27": 0,
+      "5,28": 0,
+      "5,29": 0,
+      "5,30": 0,
+      "5,31": 0,
+      "5,32": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,36": 0,
+      "5,37": 0,
+      "5,38": 0,
+      "5,39": 0,
+      "5,40": 0,
+      "5,41": 0,
+      "5,42": 0,
+      "5,43": 0,
+      "5,45": 0,
+      "5,46": 0,
+      "5,47": 0,
+      "5,48": 0,
+      "5,49": 0,
+      "5,50": 0,
+      "5,51": 0,
+      "5,52": 0,
+      "5,53": 0,
+      "5,54": 0,
+      "5,56": 0,
+      "5,57": 0,
+      "5,58": 0,
+      "5,59": 0,
+      "5,60": 0,
+      "5,61": 0,
+      "5,63": 0,
+      "5,64": 0,
+      "5,65": 0,
+      "5,66": 0,
+      "5,67": 0,
+      "5,68": 0,
+      "5,69": 0,
+      "5,70": 0,
+      "5,71": 0,
+      "5,72": 0,
+      "5,73": 0,
+      "5,74": 0,
+      "5,75": 0,
+      "5,76": 0,
+      "5,77": 0,
+      "5,102": 0,
+      "5,103": 0,
+      "5,105": 8,
+      "5,109": 7,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,6": 0,
+      "6,7": 0,
+      "6,8": 0,
+      "6,9": 0,
+      "6,10": 0,
+      "6,11": 0,
+      "6,12": 0,
+      "6,13": 0,
+      "6,56": 0,
+      "6,57": 0,
+      "6,58": 0,
+      "6,59": 0,
+      "6,60": 0,
+      "6,61": 0,
+      "6,62": 0,
+      "6,63": 0,
+      "6,64": 0,
+      "6,65": 0,
+      "6,66": 0,
+      "6,67": 0,
+      "6,68": 0,
+      "6,69": 0,
+      "6,70": 0,
+      "6,72": 0,
+      "6,73": 0,
+      "6,74": 0,
+      "6,75": 0,
+      "6,76": 0,
+      "6,77": 0,
+      "6,78": 0,
+      "6,79": 0,
+      "6,80": 0,
+      "6,81": 0,
+      "6,82": 0,
+      "6,83": 0,
+      "6,84": 0,
+      "6,85": 0,
+      "6,86": 0,
+      "6,87": 0,
+      "6,88": 0,
+      "6,89": 0,
+      "6,90": 0,
+      "6,91": 0,
+      "6,92": 0,
+      "6,93": 0,
+      "6,94": 0,
+      "6,95": 0,
+      "6,96": 0,
+      "6,97": 0,
+      "6,98": 0,
+      "6,99": 0,
+      "6,100": 0,
+      "6,101": 0,
+      "6,102": 0,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,6": 0,
+      "7,7": 0,
+      "7,8": 0,
+      "7,9": 6,
+      "7,10": 0,
+      "7,11": 0,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "7,16": 0,
+      "7,17": 0,
+      "7,18": 0,
+      "7,19": 0,
+      "7,20": 0,
+      "7,21": 0,
+      "7,22": 0,
+      "7,23": 0,
+      "7,24": 0,
+      "7,56": 0,
+      "7,57": 0,
+      "7,58": 0,
+      "7,59": 0,
+      "7,60": 0,
+      "7,61": 0,
+      "7,62": 0,
+      "7,63": 0,
+      "7,64": 0,
+      "7,65": 0,
+      "7,66": 0,
+      "7,67": 0,
+      "7,68": 0,
+      "7,69": 0,
+      "7,70": 0,
+      "7,72": 0,
+      "7,73": 0,
+      "7,74": 0,
+      "7,75": 0,
+      "7,76": 0,
+      "7,77": 0,
+      "7,78": 0,
+      "7,79": 0,
+      "7,80": 0,
+      "7,81": 0,
+      "7,82": 0,
+      "7,83": 0,
+      "7,84": 0,
+      "7,85": 0,
+      "7,86": 0,
+      "7,87": 0,
+      "7,88": 0,
+      "7,89": 0,
+      "7,90": 0,
+      "7,91": 0,
+      "7,92": 0,
+      "7,93": 0,
+      "7,94": 0,
+      "7,95": 0,
+      "7,96": 0,
+      "7,97": 0,
+      "7,98": 0,
+      "7,99": 0,
+      "7,100": 0,
+      "7,101": 0,
+      "7,102": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,6": 0,
+      "8,7": 0,
+      "8,8": 0,
+      "8,9": 0,
+      "8,10": 0,
+      "8,11": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,16": 0,
+      "8,17": 0,
+      "8,18": 0,
+      "8,19": 0,
+      "8,20": 0,
+      "8,21": 0,
+      "8,22": 0,
+      "8,23": 0,
+      "8,24": 0,
+      "8,56": 0,
+      "8,57": 0,
+      "8,58": 0,
+      "8,59": 0,
+      "8,60": 0,
+      "8,61": 0,
+      "8,62": 0,
+      "8,63": 0,
+      "8,64": 0,
+      "8,65": 0,
+      "8,66": 0,
+      "8,67": 0,
+      "8,68": 0,
+      "8,69": 0,
+      "8,70": 0,
+      "8,72": 0,
+      "8,73": 0,
+      "8,74": 0,
+      "8,75": 0,
+      "8,76": 0,
+      "8,77": 0,
+      "8,78": 0,
+      "8,79": 0,
+      "8,80": 0,
+      "8,81": 0,
+      "8,82": 0,
+      "8,83": 0,
+      "8,84": 0,
+      "8,85": 0,
+      "8,86": 0,
+      "8,87": 0,
+      "8,88": 0,
+      "8,89": 0,
+      "8,90": 0,
+      "8,91": 0,
+      "8,92": 0,
+      "8,93": 0,
+      "8,94": 0,
+      "8,95": 0,
+      "8,96": 0,
+      "8,97": 0,
+      "8,98": 0,
+      "8,99": 0,
+      "8,100": 0,
+      "8,101": 0,
+      "8,102": 0,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "9,5": 0,
+      "9,6": 0,
+      "9,7": 0,
+      "9,8": 0,
+      "9,9": 0,
+      "9,10": 0,
+      "9,11": 0,
+      "9,12": 0,
+      "9,13": 0,
+      "9,14": 9,
+      "9,16": 0,
+      "9,17": 0,
+      "9,18": 0,
+      "9,19": 0,
+      "9,20": 0,
+      "9,21": 0,
+      "9,22": 0,
+      "9,24": 0,
+      "9,25": 0,
+      "9,26": 0,
+      "9,27": 0,
+      "9,28": 9,
+      "9,29": 0,
+      "9,31": 0,
+      "9,32": 0,
+      "9,33": 0,
+      "9,34": 0,
+      "9,35": 0,
+      "9,36": 0,
+      "9,37": 0,
+      "9,38": 0,
+      "9,39": 0,
+      "9,41": 0,
+      "9,42": 9,
+      "9,43": 0,
+      "9,45": 0,
+      "9,46": 0,
+      "9,47": 0,
+      "9,48": 0,
+      "9,49": 0,
+      "9,50": 0,
+      "9,51": 0,
+      "9,52": 0,
+      "9,54": 0,
+      "9,55": 0,
+      "9,56": 9,
+      "9,58": 0,
+      "9,59": 0,
+      "9,60": 0,
+      "9,61": 0,
+      "9,62": 0,
+      "9,63": 0,
+      "9,64": 0,
+      "9,65": 0,
+      "9,67": 0,
+      "9,68": 0,
+      "9,69": 0,
+      "9,70": 10,
+      "9,71": 0,
+      "9,72": 0,
+      "9,74": 0,
+      "9,75": 0,
+      "9,76": 0,
+      "9,77": 0,
+      "9,78": 0,
+      "9,79": 0,
+      "9,81": 0,
+      "9,82": 0,
+      "9,83": 0,
+      "9,84": 10,
+      "9,86": 0,
+      "9,87": 0,
+      "9,88": 0,
+      "9,89": 0,
+      "9,90": 0,
+      "9,91": 0,
+      "9,92": 0,
+      "9,93": 0,
+      "9,94": 0,
+      "9,95": 0,
+      "9,97": 0,
+      "9,98": 10,
+      "9,99": 0,
+      "9,101": 0,
+      "9,102": 0,
+      "9,160": 0,
+      "10,2": 11,
+      "10,3": 12,
+      "10,4": 12,
+      "10,5": 12,
+      "10,6": 13,
+      "10,7": 11,
+      "10,8": 12,
+      "10,9": 12,
+      "10,10": 12,
+      "10,11": 12,
+      "10,12": 12,
+      "10,13": 13,
+      "10,14": 14,
+      "10,15": 15,
+      "10,16": 15,
+      "10,17": 15,
+      "10,18": 15,
+      "10,19": 16,
+      "10,20": 17,
+      "10,21": 15,
+      "10,22": 15,
+      "10,23": 15,
+      "10,24": 15,
+      "10,25": 16,
+      "10,26": 17,
+      "10,27": 18,
+      "10,28": 18,
+      "10,29": 18,
+      "10,30": 18,
+      "10,31": 19,
+      "10,32": 14,
+      "10,33": 18,
+      "10,34": 18,
+      "10,35": 18,
+      "10,36": 18,
+      "10,37": 19,
+      "10,38": 14,
+      "10,39": 18,
+      "10,40": 18,
+      "10,41": 18,
+      "10,42": 18,
+      "10,43": 19,
+      "10,44": 14,
+      "10,45": 18,
+      "10,46": 18,
+      "10,47": 18,
+      "10,48": 18,
+      "10,49": 19,
+      "10,50": 14,
+      "10,51": 18,
+      "10,52": 18,
+      "10,53": 18,
+      "10,54": 18,
+      "10,55": 19,
+      "10,56": 14,
+      "10,57": 18,
+      "10,58": 18,
+      "10,59": 18,
+      "10,60": 18,
+      "10,61": 19,
+      "10,62": 14,
+      "10,63": 18,
+      "10,64": 18,
+      "10,65": 18,
+      "10,66": 18,
+      "10,67": 19,
+      "10,68": 14,
+      "10,69": 18,
+      "10,70": 18,
+      "10,71": 18,
+      "10,72": 18,
+      "10,73": 19,
+      "10,74": 14,
+      "10,75": 18,
+      "10,76": 18,
+      "10,77": 18,
+      "10,78": 18,
+      "10,79": 19,
+      "10,80": 14,
+      "10,81": 18,
+      "10,82": 18,
+      "10,83": 18,
+      "10,84": 18,
+      "10,85": 19,
+      "10,103": 20,
+      "10,104": 21,
+      "10,105": 22,
+      "10,107": 6,
+      "10,110": 0,
+      "10,114": 0,
+      "10,117": 0,
+      "10,121": 0,
+      "10,125": 0,
+      "10,129": 0,
+      "10,133": 0,
+      "10,137": 0,
+      "10,141": 0,
+      "10,145": 0,
+      "10,149": 0,
+      "10,153": 0,
+      "10,157": 0,
+      "10,161": 0,
+      "11,2": 23,
+      "11,3": 12,
+      "11,4": 12,
+      "11,5": 12,
+      "11,6": 13,
+      "11,7": 23,
+      "11,8": 12,
+      "11,9": 12,
+      "11,10": 12,
+      "11,11": 12,
+      "11,12": 12,
+      "11,13": 13,
+      "11,14": 24,
+      "11,15": 15,
+      "11,16": 15,
+      "11,17": 15,
+      "11,18": 15,
+      "11,19": 16,
+      "11,20": 24,
+      "11,21": 15,
+      "11,22": 15,
+      "11,23": 15,
+      "11,24": 15,
+      "11,25": 16,
+      "11,26": 24,
+      "11,27": 15,
+      "11,28": 15,
+      "11,29": 15,
+      "11,30": 15,
+      "11,31": 16,
+      "11,32": 24,
+      "11,33": 15,
+      "11,34": 15,
+      "11,35": 15,
+      "11,36": 15,
+      "11,37": 16,
+      "11,38": 24,
+      "11,39": 15,
+      "11,40": 15,
+      "11,41": 15,
+      "11,42": 15,
+      "11,43": 16,
+      "11,44": 24,
+      "11,45": 15,
+      "11,46": 15,
+      "11,47": 15,
+      "11,48": 15,
+      "11,49": 16,
+      "11,50": 24,
+      "11,51": 15,
+      "11,52": 15,
+      "11,53": 15,
+      "11,54": 15,
+      "11,55": 16,
+      "11,56": 24,
+      "11,57": 15,
+      "11,58": 15,
+      "11,59": 15,
+      "11,60": 15,
+      "11,61": 16,
+      "11,62": 24,
+      "11,63": 15,
+      "11,64": 15,
+      "11,65": 15,
+      "11,66": 15,
+      "11,67": 16,
+      "11,68": 24,
+      "11,69": 15,
+      "11,70": 15,
+      "11,71": 15,
+      "11,72": 15,
+      "11,73": 16,
+      "11,74": 24,
+      "11,75": 15,
+      "11,76": 15,
+      "11,77": 15,
+      "11,78": 15,
+      "11,79": 16,
+      "11,80": 24,
+      "11,81": 15,
+      "11,82": 15,
+      "11,83": 15,
+      "11,84": 15,
+      "11,85": 16,
+      "11,103": 25,
+      "11,105": 26,
+      "11,107": 0,
+      "11,110": 0,
+      "11,114": 0,
+      "11,117": 0,
+      "11,121": 0,
+      "11,125": 0,
+      "11,129": 0,
+      "11,133": 0,
+      "11,137": 0,
+      "11,141": 0,
+      "11,145": 0,
+      "11,149": 0,
+      "11,153": 0,
+      "11,157": 0,
+      "11,161": 0,
+      "12,103": 25,
+      "12,105": 26,
+      "13,103": 25,
+      "13,105": 26,
+      "14,103": 25,
+      "14,105": 26,
+      "15,103": 25,
+      "15,105": 26,
+      "16,103": 25,
+      "16,105": 26,
+      "17,103": 25,
+      "17,105": 26,
+      "18,103": 25,
+      "18,105": 26,
+      "19,103": 25,
+      "19,105": 26,
+      "19,160": 0,
+      "19,161": 0,
+      "19,162": 0,
+      "19,163": 0,
+      "19,164": 0,
+      "20,103": 25,
+      "20,105": 26,
+      "20,160": 0,
+      "20,161": 0,
+      "20,162": 0,
+      "20,163": 0,
+      "20,164": 0,
+      "21,103": 25,
+      "21,105": 26,
+      "21,160": 0,
+      "21,161": 0,
+      "21,162": 0,
+      "21,163": 0,
+      "21,164": 0,
+      "22,103": 25,
+      "22,105": 26,
+      "22,160": 0,
+      "22,161": 0,
+      "22,162": 0,
+      "22,163": 0,
+      "22,164": 0,
+      "23,103": 25,
+      "23,105": 26,
+      "24,103": 25,
+      "24,105": 26,
+      "25,103": 25,
+      "25,105": 26,
+      "26,103": 25,
+      "26,105": 26,
+      "27,103": 25,
+      "27,105": 26,
+      "28,103": 25,
+      "28,105": 26,
+      "29,103": 25,
+      "29,105": 26,
+      "30,103": 25,
+      "30,105": 26,
+      "31,103": 25,
+      "31,105": 26,
+      "32,103": 25,
+      "32,105": 26,
+      "33,103": 25,
+      "33,105": 26,
+      "34,103": 25,
+      "34,105": 26,
+      "35,103": 25,
+      "35,105": 26,
+      "36,103": 25,
+      "36,105": 26,
+      "37,103": 25,
+      "37,105": 26,
+      "38,103": 25,
+      "38,105": 26,
+      "39,103": 25,
+      "39,105": 26,
+      "40,103": 25,
+      "40,105": 26,
+      "41,103": 25,
+      "41,105": 26,
+      "42,103": 25,
+      "42,105": 26,
+      "43,103": 25,
+      "43,105": 26,
+      "44,103": 25,
+      "44,105": 26,
+      "45,103": 25,
+      "45,105": 26,
+      "46,103": 27,
+      "46,104": 28,
+      "46,105": 29,
+      "48,103": 0,
+      "48,104": 0,
+      "48,105": 0,
+      "49,103": 0,
+      "49,104": 30,
+      "49,105": 31,
+      "50,103": 0,
+      "50,104": 32,
+      "50,105": 33,
+      "51,103": 0,
+      "51,104": 34,
+      "51,105": 35,
+      "53,104": 0,
+      "53,105": 0,
+      "54,24": 0,
+      "54,25": 0,
+      "54,26": 0,
+      "54,27": 0,
+      "54,28": 0,
+      "54,29": 0,
+      "54,30": 0,
+      "54,31": 0,
+      "54,32": 0,
+      "54,33": 0,
+      "54,34": 0,
+      "54,35": 0,
+      "54,36": 0,
+      "54,37": 0,
+      "54,38": 0,
+      "54,39": 0,
+      "54,40": 0,
+      "54,41": 0,
+      "54,42": 0,
+      "54,43": 0,
+      "54,44": 0,
+      "54,45": 0,
+      "54,46": 0,
+      "54,47": 0,
+      "54,48": 0,
+      "54,49": 0,
+      "54,50": 0,
+      "54,51": 0,
+      "54,52": 0,
+      "54,53": 0,
+      "54,54": 0,
+      "54,55": 0,
+      "54,56": 0,
+      "54,57": 0,
+      "54,58": 0,
+      "54,59": 0,
+      "54,60": 0,
+      "54,61": 0,
+      "54,62": 0,
+      "54,63": 0,
+      "54,64": 0,
+      "54,65": 0,
+      "54,66": 0,
+      "54,67": 0,
+      "54,68": 0,
+      "54,69": 0,
+      "54,70": 0,
+      "54,71": 0,
+      "54,72": 0,
+      "54,73": 0,
+      "54,74": 0,
+      "54,75": 0,
+      "54,76": 0,
+      "54,77": 0,
+      "54,78": 0,
+      "54,79": 0,
+      "54,80": 0,
+      "54,81": 0,
+      "54,82": 0,
+      "54,83": 0,
+      "54,84": 0,
+      "54,85": 0,
+      "54,86": 0,
+      "54,87": 0,
+      "54,88": 0,
+      "54,89": 0,
+      "54,90": 0,
+      "54,91": 0,
+      "54,92": 0,
+      "54,93": 0,
+      "54,94": 0,
+      "54,95": 0,
+      "54,96": 0,
+      "54,97": 0,
+      "54,98": 0,
+      "54,99": 0,
+      "54,100": 0,
+      "54,101": 0,
+      "54,102": 0,
+      "54,104": 0,
+      "54,105": 0,
+      "55,24": 0,
+      "55,25": 0,
+      "55,26": 0,
+      "55,27": 0,
+      "55,28": 0,
+      "55,29": 0,
+      "55,30": 0,
+      "55,31": 0,
+      "55,32": 0,
+      "55,33": 0,
+      "55,34": 0,
+      "55,35": 0,
+      "55,36": 0,
+      "55,37": 0,
+      "55,38": 0,
+      "55,39": 0,
+      "55,40": 0,
+      "55,41": 0,
+      "55,42": 0,
+      "55,43": 0,
+      "55,44": 0,
+      "55,45": 0,
+      "55,46": 0,
+      "55,47": 0,
+      "55,48": 0,
+      "55,49": 0,
+      "55,50": 0,
+      "55,51": 0,
+      "55,52": 0,
+      "55,53": 0,
+      "55,54": 0,
+      "55,55": 0,
+      "55,56": 0,
+      "55,57": 0,
+      "55,58": 0,
+      "55,59": 0,
+      "55,60": 0,
+      "55,61": 0,
+      "55,62": 0,
+      "55,63": 0,
+      "55,64": 0,
+      "55,65": 0,
+      "55,66": 0,
+      "55,67": 0,
+      "55,68": 0,
+      "55,69": 0,
+      "55,70": 0,
+      "55,71": 0,
+      "55,72": 0,
+      "55,73": 0,
+      "55,74": 0,
+      "55,75": 0,
+      "55,76": 0,
+      "55,77": 0,
+      "55,78": 0,
+      "55,79": 0,
+      "55,80": 0,
+      "55,81": 0,
+      "55,82": 0,
+      "55,83": 0,
+      "55,84": 0,
+      "55,85": 0,
+      "55,86": 0,
+      "55,87": 0,
+      "55,88": 0,
+      "55,89": 0,
+      "55,90": 0,
+      "55,91": 0,
+      "55,92": 0,
+      "55,93": 0,
+      "55,94": 0,
+      "55,95": 0,
+      "55,96": 0,
+      "55,97": 0,
+      "55,98": 0,
+      "55,99": 0,
+      "55,100": 0,
+      "55,101": 0,
+      "55,102": 0,
+      "55,104": 0,
+      "55,105": 0,
+      "56,24": 0,
+      "56,25": 0,
+      "56,26": 0,
+      "56,27": 0,
+      "56,28": 0,
+      "56,29": 0,
+      "56,30": 0,
+      "56,31": 0,
+      "56,32": 0,
+      "56,33": 0,
+      "56,34": 0,
+      "56,35": 0,
+      "56,36": 0,
+      "56,37": 0,
+      "56,38": 0,
+      "56,39": 0,
+      "56,40": 0,
+      "56,41": 0,
+      "56,42": 0,
+      "56,43": 0,
+      "56,44": 0,
+      "56,45": 0,
+      "56,46": 0,
+      "56,47": 0,
+      "56,48": 0,
+      "56,49": 0,
+      "56,50": 0,
+      "56,51": 0,
+      "56,52": 0,
+      "56,53": 0,
+      "56,54": 0,
+      "56,55": 0,
+      "56,56": 0,
+      "56,57": 0,
+      "56,58": 0,
+      "56,59": 0,
+      "56,60": 0,
+      "56,61": 0,
+      "56,62": 0,
+      "56,63": 0,
+      "56,64": 0,
+      "56,65": 0,
+      "56,66": 0,
+      "56,67": 0,
+      "56,68": 0,
+      "56,69": 0,
+      "56,70": 0,
+      "56,71": 0,
+      "56,72": 0,
+      "56,73": 0,
+      "56,74": 0,
+      "56,75": 0,
+      "56,76": 0,
+      "56,77": 0,
+      "56,78": 0,
+      "56,79": 0,
+      "56,80": 0,
+      "56,81": 0,
+      "56,82": 0,
+      "56,83": 0,
+      "56,84": 0,
+      "56,85": 0,
+      "56,86": 0,
+      "56,87": 0,
+      "56,88": 0,
+      "56,89": 0,
+      "56,90": 0,
+      "56,91": 0,
+      "56,92": 0,
+      "56,93": 0,
+      "56,94": 0,
+      "56,95": 0,
+      "56,96": 0,
+      "56,97": 0,
+      "56,98": 0,
+      "56,99": 0,
+      "56,100": 0,
+      "56,101": 0,
+      "56,102": 0,
+      "56,104": 0,
+      "56,105": 0,
+      "57,24": 0,
+      "57,25": 0,
+      "57,26": 0,
+      "57,27": 0,
+      "57,28": 0,
+      "57,29": 0,
+      "57,30": 0,
+      "57,31": 0,
+      "57,32": 0,
+      "57,33": 0,
+      "57,34": 0,
+      "57,35": 0,
+      "57,36": 0,
+      "57,37": 0,
+      "57,38": 0,
+      "57,39": 0,
+      "57,40": 0,
+      "57,41": 0,
+      "57,42": 0,
+      "57,43": 0,
+      "57,44": 0,
+      "57,45": 0,
+      "57,46": 0,
+      "57,47": 0,
+      "57,48": 0,
+      "57,49": 0,
+      "57,50": 0,
+      "57,51": 0,
+      "57,52": 0,
+      "57,53": 0,
+      "57,54": 0,
+      "57,55": 0,
+      "57,56": 0,
+      "57,57": 0,
+      "57,58": 0,
+      "57,59": 0,
+      "57,60": 0,
+      "57,61": 0,
+      "57,62": 0,
+      "57,63": 0,
+      "57,64": 0,
+      "57,65": 0,
+      "57,66": 0,
+      "57,67": 0,
+      "57,68": 0,
+      "57,69": 0,
+      "57,70": 0,
+      "57,71": 0,
+      "57,72": 0,
+      "57,73": 0,
+      "57,74": 0,
+      "57,75": 0,
+      "57,76": 0,
+      "57,77": 0,
+      "57,78": 0,
+      "57,79": 0,
+      "57,80": 0,
+      "57,81": 0,
+      "57,82": 0,
+      "57,83": 0,
+      "57,84": 0,
+      "57,85": 0,
+      "57,86": 0,
+      "57,87": 0,
+      "57,88": 0,
+      "57,89": 0,
+      "57,90": 0,
+      "57,91": 0,
+      "57,92": 0,
+      "57,93": 0,
+      "57,94": 0,
+      "57,95": 0,
+      "57,96": 0,
+      "57,97": 0,
+      "57,98": 0,
+      "57,99": 0,
+      "57,100": 0,
+      "57,101": 0,
+      "57,102": 0,
+      "57,104": 0,
+      "57,105": 0,
+      "58,24": 0,
+      "58,25": 0,
+      "58,26": 0,
+      "58,27": 0,
+      "58,28": 0,
+      "58,29": 0,
+      "58,30": 0,
+      "58,31": 0,
+      "58,32": 0,
+      "58,33": 0,
+      "58,34": 0,
+      "58,35": 0,
+      "58,36": 0,
+      "58,37": 0,
+      "58,38": 0,
+      "58,39": 0,
+      "58,40": 0,
+      "58,41": 0,
+      "58,42": 0,
+      "58,43": 0,
+      "58,44": 0,
+      "58,45": 0,
+      "58,46": 0,
+      "58,47": 0,
+      "58,48": 0,
+      "58,49": 0,
+      "58,50": 0,
+      "58,51": 0,
+      "58,52": 0,
+      "58,53": 0,
+      "58,54": 0,
+      "58,55": 0,
+      "58,56": 0,
+      "58,57": 0,
+      "58,58": 0,
+      "58,59": 0,
+      "58,60": 0,
+      "58,61": 0,
+      "58,62": 0,
+      "58,63": 0,
+      "58,64": 0,
+      "58,65": 0,
+      "58,66": 0,
+      "58,67": 0,
+      "58,68": 0,
+      "58,69": 0,
+      "58,70": 0,
+      "58,71": 0,
+      "58,72": 0,
+      "58,73": 0,
+      "58,74": 0,
+      "58,75": 0,
+      "58,76": 0,
+      "58,77": 0,
+      "58,78": 0,
+      "58,79": 0,
+      "58,80": 0,
+      "58,81": 0,
+      "58,82": 0,
+      "58,83": 0,
+      "58,84": 0,
+      "58,85": 0,
+      "58,86": 0,
+      "58,87": 0,
+      "58,88": 0,
+      "58,89": 0,
+      "58,90": 0,
+      "58,91": 0,
+      "58,92": 0,
+      "58,93": 0,
+      "58,94": 0,
+      "58,95": 0,
+      "58,96": 0,
+      "58,97": 0,
+      "58,98": 0,
+      "58,99": 0,
+      "58,100": 0,
+      "58,101": 0,
+      "58,102": 0,
+      "58,104": 0,
+      "58,105": 0,
+      "59,104": 0,
+      "59,105": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,2,4",
+    "4,7,2,15",
+    "4,23,2,10",
+    "4,34,2,10",
+    "4,45,2,10",
+    "4,56,2,6",
+    "4,63,2,15",
+    "11,2,1,5",
+    "11,7,1,7",
+    "11,107,1,3",
+    "11,110,1,4",
+    "11,114,1,3",
+    "11,117,1,4",
+    "11,121,1,4",
+    "11,125,1,4",
+    "11,129,1,4",
+    "11,133,1,4",
+    "11,137,1,4",
+    "11,141,1,4",
+    "11,145,1,4",
+    "11,149,1,4",
+    "11,153,1,4",
+    "11,157,1,4",
+    "11,161,1,4",
+    "11,14,1,6",
+    "11,20,1,6",
+    "11,26,1,6",
+    "11,32,1,6",
+    "11,38,1,6",
+    "11,44,1,6",
+    "11,50,1,6",
+    "11,56,1,6",
+    "11,62,1,6",
+    "11,68,1,6",
+    "11,74,1,6",
+    "11,80,1,6",
+    "1,2,2,19",
+    "1,61,2,2",
+    "2,55,1,5",
+    "55,104,5,2",
+    "12,2,41,84",
+    "12,103,35,3",
+    "12,107,7,58",
+    "7,2,2,6",
+    "7,9,2,6",
+    "7,16,2,9",
+    "10,2,1,5",
+    "10,7,1,7",
+    "10,14,1,6",
+    "10,20,1,6",
+    "10,26,1,6",
+    "10,32,1,6",
+    "10,38,1,6",
+    "10,44,1,6",
+    "10,50,1,6",
+    "10,56,1,6",
+    "10,62,1,6",
+    "10,68,1,6",
+    "10,74,1,6",
+    "10,80,1,6",
+    "10,107,1,3",
+    "10,110,1,4",
+    "10,114,1,3",
+    "10,117,1,4",
+    "10,121,1,4",
+    "10,125,1,4",
+    "10,129,1,4",
+    "10,133,1,4",
+    "10,137,1,4",
+    "10,141,1,4",
+    "10,145,1,4",
+    "10,149,1,4",
+    "10,153,1,4",
+    "10,157,1,4",
+    "10,161,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=販管費・一般管理費入力!10:53"
+            },
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "INP_予算_販管費_一般管理費",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_販管費_一般管理費",
+            "ColumnName": "ID",
+            "GUID": "02f8ca76-9dbd-4603-be28-116bfea6b134"
+          },
+          "Value": "%Null%"
+        },
+        "ID": "10101f67878744868a70a807f45d4af0"
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=販管費・一般管理費入力!C8"
+            },
+            "PropertyType": 0,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=販管費・一般管理費入力!J8"
+            },
+            "PropertyType": 1,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=販管費・一般管理費入力!Q8"
+            },
+            "PropertyType": 1,
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "INP_予算_販管費_一般管理費"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//YeFkPGFoQi6ohyMov/qksXo6lKpNKxQcMjSkDyimonJSjIzABXAXqkPt6jw7fJqrMZ29UkycCGOzfkKbSb1I0LTa/awiJzTFCq3teC5lbeH/ibXU1K8zrzKH/FX9sHIz4+ywuBpj/IYfWi+wySHqK+W3IW+/ThVGo8rMyfLOGVDGRXu0E/kHRjPTShvLV73upb0V8Ne8GWRNrbiQLz1qkA6eSxFR2Z3ZMV1+SZV6l8o424+HViBMAlj0F/XB3DDzjoNqKYDNtVmO+Z23TdvdvsttBJbXmE1G9V1vpSPxrjeq7VJf6GurCciCqPGFJ3D7cwHNtqgih21P0rWxUcYTBxSmQtU7va9zIRzH+z9Nu2Q6vHnhpgrjdl95f/W1WMVQwixc6fuBR/TozLy1hfZB8ojA3Absk7LSVfdCQ5GwNpWnvZAGBEI6uTvHAsgoDHs4inMmayXoW/pNd1bLak7bMCPoeqQzmuyaA5CJ0yqv6751WN+k7z7coq9tR/MCTcbTRgXz4PlhoZAAOYlyDJyY8n8AF15mZpgB2e/7cqVhMRp1PGa2RltHJdAqbvX05M2+t+rJaQ0nvgI0qKTzBgbtwR87o5PQQKuGhLNd/EDMa1BBBYKFS00TBemLptlciId5Wo+uhT/pQChDmvD1oV/7pNfnKHFRd3gMl8oAmv13jyrYBligL9YPiBU3f3wgTxsY+N9MfnLYYJ3rSVmL7LuoS6+K07znWeMe3UE0e3REJrdOFFxxmUFCJYJx7d62sihPOuXV+sHoOpjVb3NTZgc9XatXlcMkJASbIPou1h7jUG/jDUWtO+S1jmAT5xbzj1UmI+zla+4l6OuUYuryDT1Kvtk3LVeO41meG1sd1u2K+bflvRum80grzH2P7XBDBObk7agQmNcqpMdJhJDeVq5fJg==|920

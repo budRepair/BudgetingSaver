@@ -1,0 +1,327 @@
+{
+  "Name": "予算データ_検証用",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "組織",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "バージョン",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "_flg",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=_flg"
+              }
+            },
+            "value": "1"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "SubConditions": [
+                      {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          }
+                        },
+                        "value": "%Null%"
+                      },
+                      {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          }
+                        },
+                        "value": "%Null%"
+                      }
+                    ]
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                      "Params": {
+                        "@pmt1": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt2": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt3": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          },
+                          "Item2": 16
+                        }
+                      },
+                      "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_損益計算書\" \r\nWHERE\r\n    \"年度\" = @pmt1;",
+                      "ReturnsName": "return1",
+                      "ID": "0d93c9ac846547f999fd0a0bc4d3bde5"
+                    }
+                  ],
+                  "ID": "c9f0d663-600b-46c9-be58-3dae3feb3740"
+                },
+                {
+                  "Condition": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "SubConditions": [
+                      {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          }
+                        },
+                        "value": "%Null%"
+                      },
+                      {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          }
+                        },
+                        "value": "%Null%",
+                        "compareType": 1
+                      }
+                    ]
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                      "Params": {
+                        "@pmt1": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt2": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt3": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          },
+                          "Item2": 16
+                        }
+                      },
+                      "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_損益計算書\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt3;",
+                      "ReturnsName": "return1",
+                      "ID": "a00a96d099314693b304b1170d6258ec"
+                    }
+                  ],
+                  "ID": "ec6f9f9e-5928-46b6-b467-0cfbe2b43e06"
+                },
+                {
+                  "Condition": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "SubConditions": [
+                      {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          }
+                        },
+                        "value": "%Null%",
+                        "compareType": 1
+                      },
+                      {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          }
+                        },
+                        "value": "%Null%",
+                        "compareType": 1
+                      }
+                    ]
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                      "Params": {
+                        "@pmt1": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt2": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt3": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          },
+                          "Item2": 16
+                        }
+                      },
+                      "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_損益計算書\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"組織コード\" = @pmt2 \r\n    AND \"バージョン\" = @pmt3;",
+                      "ReturnsName": "return1",
+                      "ID": "bad5e21411bb4b5ca8e962048ffe3ca9"
+                    }
+                  ],
+                  "ID": "493f8af8-0516-46fe-b39d-9eae7d124933"
+                }
+              ]
+            }
+          ],
+          "ID": "b82e88e7-c759-479e-8850-1c1f31ea94e8"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=_flg"
+              }
+            },
+            "value": "2"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=年度"
+                      }
+                    },
+                    "value": "%Null%"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                      "Params": {
+                        "@pmt1": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt2": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt3": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          },
+                          "Item2": 16
+                        }
+                      },
+                      "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_予算_損益計算書\" \r\nWHERE\r\n    \"年度\" is null;",
+                      "ReturnsName": "return1",
+                      "ID": "53a1245d99c743a484c96de243b7701c"
+                    }
+                  ],
+                  "ID": "2bf2bb8b-1c02-4fca-b45c-c964081fa9fd"
+                }
+              ]
+            }
+          ],
+          "ID": "531cb89d-db47-45f2-b05d-b2f2436e6f67"
+        }
+      ]
+    }
+  ]
+}

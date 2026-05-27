@@ -1,0 +1,208 @@
+{
+  "Name": "VIEW_実績_配賦前後",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "年度",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "組織コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "科目コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "4月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "4月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "5月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "5月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "6月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "6月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "7月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "7月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "8月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "8月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "9月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "9月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "10月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "10月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "11月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "11月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "12月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "12月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "1月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "1月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "2月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "2月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "3月_配賦前",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "3月_配賦後",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "VIEW_実績_配賦前後",
+    "SourceViewName": "fgc16ef4880ef274a94a9accc14ef0",
+    "CreateViewSql": "SELECT\r\n \"年度\",\r\n \"組織コード\",\r\n \"科目コード\",\r\n SUM(\"4月_配賦前\") AS \"4月_配賦前\",\r\n SUM(\"4月_配賦後\") AS \"4月_配賦後\",\r\n SUM(\"5月_配賦前\") AS \"5月_配賦前\",\r\n SUM(\"5月_配賦後\") AS \"5月_配賦後\",\r\n SUM(\"6月_配賦前\") AS \"6月_配賦前\",\r\n SUM(\"6月_配賦後\") AS \"6月_配賦後\",\r\n SUM(\"7月_配賦前\") AS \"7月_配賦前\",\r\n SUM(\"7月_配賦後\") AS \"7月_配賦後\",\r\n SUM(\"8月_配賦前\") AS \"8月_配賦前\",\r\n SUM(\"8月_配賦後\") AS \"8月_配賦後\",\r\n SUM(\"9月_配賦前\") AS \"9月_配賦前\",\r\n SUM(\"9月_配賦後\") AS \"9月_配賦後\",\r\n SUM(\"10月_配賦前\") AS \"10月_配賦前\",\r\n SUM(\"10月_配賦後\") AS \"10月_配賦後\",\r\n SUM(\"11月_配賦前\") AS \"11月_配賦前\",\r\n SUM(\"11月_配賦後\") AS \"11月_配賦後\",\r\n SUM(\"12月_配賦前\") AS \"12月_配賦前\",\r\n SUM(\"12月_配賦後\") AS \"12月_配賦後\",\r\n SUM(\"1月_配賦前\") AS \"1月_配賦前\",\r\n SUM(\"1月_配賦後\") AS \"1月_配賦後\",\r\n SUM(\"2月_配賦前\") AS \"2月_配賦前\",\r\n SUM(\"2月_配賦後\") AS \"2月_配賦後\",\r\n SUM(\"3月_配賦前\") AS \"3月_配賦前\",\r\n SUM(\"3月_配賦後\") AS \"3月_配賦後\"\r\nFROM (\r\n  SELECT\r\n   \"年度\",\r\n   \"組織コード\",\r\n   \"科目コード\",\r\n   SUM(CASE WHEN \"月\" = \"04\" THEN \"金額\" END) AS \"4月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"05\" THEN \"金額\" END) AS \"5月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"06\" THEN \"金額\" END) AS \"6月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"07\" THEN \"金額\" END) AS \"7月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"08\" THEN \"金額\" END) AS \"8月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"09\" THEN \"金額\" END) AS \"9月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"10\" THEN \"金額\" END) AS \"10月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"11\" THEN \"金額\" END) AS \"11月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"12\" THEN \"金額\" END) AS \"12月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"01\" THEN \"金額\" END) AS \"1月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"02\" THEN \"金額\" END) AS \"2月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"03\" THEN \"金額\" END) AS \"3月_配賦前\",\r\n   0 AS \"4月_配賦後\",\r\n   0 AS \"5月_配賦後\",\r\n   0 AS \"6月_配賦後\",\r\n   0 AS \"7月_配賦後\",\r\n   0 AS \"8月_配賦後\",\r\n   0 AS \"9月_配賦後\",\r\n   0 AS \"10月_配賦後\",\r\n   0 AS \"11月_配賦後\",\r\n   0 AS \"12月_配賦後\",\r\n   0 AS \"1月_配賦後\",\r\n   0 AS \"2月_配賦後\",\r\n   0 AS \"3月_配賦後\"\r\n  FROM \"INP_実績_損益計算書\"\r\n  GROUP BY\r\n   \"配賦区分\",\r\n   \"年度\",\r\n   \"組織コード\",\r\n   \"科目コード\"\r\n  UNION ALL\r\n  SELECT\r\n   \"年度\",\r\n   \"組織コード\",\r\n   \"科目コード\",\r\n   0 AS \"4月_配賦前\",\r\n   0 AS \"5月_配賦前\",\r\n   0 AS \"6月_配賦前\",\r\n   0 AS \"7月_配賦前\",\r\n   0 AS \"8月_配賦前\",\r\n   0 AS \"9月_配賦前\",\r\n   0 AS \"10月_配賦前\",\r\n   0 AS \"11月_配賦前\",\r\n   0 AS \"12月_配賦前\",\r\n   0 AS \"1月_配賦前\",\r\n   0 AS \"2月_配賦前\",\r\n   0 AS \"3月_配賦前\",\r\n   SUM(CASE WHEN \"月\" = \"04\" THEN \"金額\" END) AS \"4月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"05\" THEN \"金額\" END) AS \"5月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"06\" THEN \"金額\" END) AS \"6月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"07\" THEN \"金額\" END) AS \"7月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"08\" THEN \"金額\" END) AS \"8月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"09\" THEN \"金額\" END) AS \"9月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"10\" THEN \"金額\" END) AS \"10月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"11\" THEN \"金額\" END) AS \"11月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"12\" THEN \"金額\" END) AS \"12月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"01\" THEN \"金額\" END) AS \"1月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"02\" THEN \"金額\" END) AS \"2月_配賦後\",\r\n   SUM(CASE WHEN \"月\" = \"03\" THEN \"金額\" END) AS \"3月_配賦後\"\r\n  FROM \"INP_実績_配賦後\"\r\n  GROUP BY\r\n   \"配賦区分\",\r\n   \"年度\",\r\n   \"組織コード\",\r\n   \"科目コード\"\r\n) act\r\nGROUP BY\r\n \"年度\",\r\n \"組織コード\",\r\n \"科目コード\""
+  },
+  "Relations": [
+    {
+      "PrimaryTable": "MST_科目",
+      "PrimaryColumn": "科目コード",
+      "ForeignTable": "VIEW_実績_配賦前後",
+      "ForeignColumn": "科目コード"
+    }
+  ],
+  "Indexes": []
+}

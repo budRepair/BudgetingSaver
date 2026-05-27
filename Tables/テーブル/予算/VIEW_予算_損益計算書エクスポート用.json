@@ -1,0 +1,76 @@
+{
+  "Name": "VIEW_予算_損益計算書エクスポート用",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "年度",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "組織コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "科目コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "科目名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "月",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "金額",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "バージョン",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "VIEW_予算_損益計算書エクスポート用",
+    "SourceViewName": "fgc51b86d3cd98647a8b2276cd76e6",
+    "CreateViewSql": "SELECT\r\n tbl.\"年度\",\r\n tbl.\"組織コード\",\r\n tbl.\"科目コード\",\r\n\"科目名\",\r\n mst.\"月コード\" AS \"月\",\r\n CASE mst.\"月コード\"\r\n   WHEN '04' THEN tbl.\"_4月\"\r\n   WHEN '05' THEN tbl.\"_5月\"\r\n   WHEN '06' THEN tbl.\"_6月\"\r\n   WHEN '07' THEN tbl.\"_7月\"\r\n   WHEN '08' THEN tbl.\"_8月\"\r\n   WHEN '09' THEN tbl.\"_9月\"\r\n   WHEN '10' THEN tbl.\"_10月\"\r\n   WHEN '11' THEN tbl.\"_11月\"\r\n   WHEN '12' THEN tbl.\"_12月\"\r\n   WHEN '01' THEN tbl.\"_1月\"\r\n   WHEN '02' THEN tbl.\"_2月\"\r\n   WHEN '03' THEN tbl.\"_3月\"\r\n END  AS \"金額\",\r\n \"バージョン\"\r\nFROM \"INP_予算_損益計算書\" tbl\r\nLEFT JOIN \"MST_組織\" 組織\r\nON tbl.\"組織コード\" = 組織.\"組織コード\"\r\nLEFT JOIN \"MST_科目\" 科目\r\nON 科目.\"科目コード\" = tbl.\"科目コード\"\r\nAND 科目.\"会社コード\" = 組織.\"会社コード\"\r\nLEFT OUTER JOIN \"MST_年度\" mst\r\nON  tbl.\"年度\" = mst.\"年度\""
+  },
+  "Relations": [
+    {
+      "PrimaryTable": "MST_組織",
+      "PrimaryColumn": "組織コード",
+      "ForeignTable": "VIEW_予算_損益計算書エクスポート用",
+      "ForeignColumn": "組織コード",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "MST_科目",
+      "PrimaryColumn": "科目コード",
+      "ForeignTable": "VIEW_予算_損益計算書エクスポート用",
+      "ForeignColumn": "科目コード",
+      "IsDetailTableRelation": false
+    }
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,192 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 35
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 58
+  },
+  "Values": {
+    "12,22": "コードの入力",
+    "14,21": "お使いの認証アプリに表示されるコードを入力してください。",
+    "17,21": "コード",
+    "23,21": "確認"
+  },
+  "AttachInfos": {
+    "5,21": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_logo_light.png"
+      }
+    },
+    "18,21": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LargeRoundCorner_LightTheme_Normal3",
+        "WaterMark": "",
+        "ForguncyAttribute": "MFA_VerifyCode_Inputbox"
+      },
+      "DataValidationInfo": {
+        "NumberType": 6,
+        "CompareParamType": 2,
+        "FirstParamValue": "6",
+        "IgnoreBlank": false,
+        "ErrorMessage": "6桁のコードを入力してください。"
+      }
+    },
+    "21,21": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "このデバイスではコードの入力は不要にする",
+        "Style": 1,
+        "ForguncyAttribute": "MFA_VerifyCode_TrustDevice"
+      }
+    },
+    "23,21": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "確認",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_RoundCorner_Style2",
+        "ForguncyAttribute": "MFA_VerifyCode_SubmitButton"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 4,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "Foreground": 4
+      },
+      {
+        "Formatter": 7,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 4,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 15",
+        "Center",
+        "Text 1 35",
+        "Left",
+        "Top",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "12,22": 0,
+      "14,21": 1,
+      "17,21": 2,
+      "18,21": 3,
+      "21,21": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,21,4,16",
+    "23,21,2,16",
+    "12,22,2,14",
+    "18,21,2,16",
+    "14,21,2,16",
+    "21,21,1,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MobilePageName": "FGC_コードの入力_モバイル",
+    "Title": "コードの入力",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Name": "BackgroundPicture0",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "PCLoginBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1120,605"
+    },
+    {
+      "Name": "BackgroundPicture1",
+      "DisplayName": "背景画像2",
+      "StyleInfo": {
+        "CornerRadius": 8.4375,
+        "Fill": "#FFFFFFFF"
+      },
+      "IsAutomaticFill": false,
+      "Location": "380,220",
+      "Size": "360,305"
+    }
+  ]
+}//dv3esIeEGTvV6ur/VSckSV1qhsY0E02heiMjaNTc3SQ5qWQzMDLZNFkLFJ/IqjMfIDT97qikXhxNlQmJubB4SQCVetrvk32UufVeimbZH1XivJGu9uHwjlJUgPYkGjjX/B54LzMGXmgc7P/1inIuTpGBolRLAPASnD5NsHKIUazgA5o6JETQfuNP3b0V4vdmef5m1GSeOrQEkngrKbbLm0f/LJ43nwxqOi/qKiMG8HPJuc4iUdZnQrGRa20IzpDxotboZTu52rbCNNmcAN7VREoj9ISUz6I5nj/w8utOQZ/1rn2s6xa/Yx+/009Jx/QCyXHQD/uRuNatbh4iUmvV22gXnYPzT75POWJGXGjNG/wL1WeGQsIQlaE9GoMhMvmaM7VOvlAzlcCQG1ubCHfjwr+siL/uhfcQZUB0AddX/KisGsAFpEtpBB9C/QhESc2jHFb/Ep1TBSE9OpZNufjvyIInabDslRd+iYmM4St2USkjjp450wluAEp1RQoAJ4A7KcsSY4j+5hPXrKcqay125rvRf9rMWTupn0dllglNgtX1TEICNHe0KyP6cp9fsQqQw8MQijqI5woLK7v9Xlc5BmV/QKym6Ov4e31SB9F0I5s9bOHVnC1OHMopOZxVF+tAv7Y824zXdyJx33chA8WKMFnmUfh9jQTmPxXiXeYMaG7sW2JpZHzJitMPy43emnlQ1aXZ2YToSI7c0a301BqiHih2LZgqV91cFvcCQyEtwZNLSWtlefc4Iot/+M3DoZ6IM1RrmQas0UQKRGel719ymEaqa9xRqsPXbbwZbADd4oMMt36whjyg8r+toFvv4OYYXCHUE7ya2KoVfLJSfMIxEJZvGemjx50kMVYczl0Ny3lrYTcrZXQcBPmwPl+jidpU//IQbch811ZMO4mxfbrvWw==|920

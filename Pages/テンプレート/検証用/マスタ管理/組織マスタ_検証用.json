@@ -1,0 +1,545 @@
+{
+  "Rows": {
+    "Count": 31
+  },
+  "Cols": {
+    "Count": 83
+  },
+  "Values": {
+    "1,2": "組織マスタ_検証用",
+    "2,58": "検証用メニューに戻る",
+    "7,21": "ユーザー名",
+    "7,27": "ロール",
+    "7,37": "部",
+    "7,48": "課",
+    "7,57": "会社",
+    "8,21": "%CurrentUser.UserName%",
+    "8,27": "%CurrentUser.Role%",
+    "8,37": "%CurrentUser.部%",
+    "8,48": "%CurrentUser.課%",
+    "8,57": "%CurrentUser.会社%"
+  },
+  "AttachInfos": {
+    "2,58": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "検証用メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "検証用メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事部",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門コード",
+          "GUID": "b89ef6bf-00f9-4e6c-999a-0b0915a38c5f"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "e211ceb1-71c7-4aae-9422-c2b15851920d"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "部門名",
+            "GUID": "a3e99fd4-a466-4260-874e-cba99a847ffa"
+          },
+          "Value": "%CurrentUser.部%"
+        }
+      }
+    },
+    "4,10": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事部",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門コード",
+          "GUID": "4fd45297-e694-44a2-bb62-43e22e7761f1"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "68c0f886-7bf9-40f0-9752-929753a24886"
+        }
+      }
+    },
+    "4,18": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事部",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門コード",
+          "GUID": "217d0b57-ec41-4de2-8069-574d58378f37"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "b9a7ad0f-750f-46e3-9e15-c787d6e176b7"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "会社名",
+            "GUID": "78be0b1f-b707-47fd-a416-a2a496a8bbbc"
+          },
+          "Value": "%CurrentUser.会社%"
+        }
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "MST_組織",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 16,
+        "ColumnCount": 65,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "8,2": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "組織コード",
+        "GUID": "028ee517-87c1-4ee2-992b-bb61e2d6378e"
+      }
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "部門名",
+        "GUID": "5de22ece-d1ba-4906-8c63-c559f8fed5e5"
+      }
+    },
+    "8,13": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "組織名",
+        "GUID": "8b55af5a-5f25-4e8f-8410-59e1bab5972b"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Formatter": 5,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "Formatter": 5,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 6
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 35",
+        "Center",
+        "Blue",
+        "[AUTO]General",
+        "Left",
+        "DarkGray"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,31": 0,
+      "0,32": 0,
+      "0,33": 0,
+      "0,34": 0,
+      "0,35": 0,
+      "1,1": 0,
+      "1,2": 1,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "2,1": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,58": 2,
+      "2,59": 0,
+      "2,60": 0,
+      "2,61": 0,
+      "2,62": 0,
+      "2,63": 0,
+      "2,64": 0,
+      "2,65": 0,
+      "3,1": 3,
+      "3,2": 3,
+      "3,3": 3,
+      "3,4": 3,
+      "3,5": 3,
+      "3,6": 3,
+      "3,7": 3,
+      "3,8": 3,
+      "3,9": 3,
+      "3,10": 3,
+      "3,11": 3,
+      "3,12": 3,
+      "3,13": 3,
+      "3,14": 3,
+      "3,15": 3,
+      "3,16": 3,
+      "3,36": 4,
+      "3,37": 5,
+      "3,38": 5,
+      "3,39": 5,
+      "3,40": 5,
+      "3,41": 5,
+      "3,42": 5,
+      "3,43": 5,
+      "3,44": 5,
+      "3,45": 5,
+      "3,46": 5,
+      "3,47": 5,
+      "3,48": 5,
+      "3,49": 5,
+      "3,50": 5,
+      "3,51": 5,
+      "3,52": 5,
+      "3,53": 5,
+      "3,54": 5,
+      "3,56": 6,
+      "3,57": 6,
+      "3,58": 6,
+      "3,59": 5,
+      "3,60": 5,
+      "3,61": 5,
+      "3,62": 5,
+      "3,63": 5,
+      "3,64": 5,
+      "3,65": 5,
+      "3,66": 5,
+      "3,67": 5,
+      "3,68": 5,
+      "3,69": 5,
+      "3,70": 5,
+      "3,71": 5,
+      "4,2": 7,
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 7,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "4,18": 7,
+      "4,19": 0,
+      "4,20": 0,
+      "4,21": 0,
+      "4,22": 0,
+      "4,23": 0,
+      "4,32": 0,
+      "4,33": 0,
+      "4,34": 0,
+      "4,35": 0,
+      "4,36": 0,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 5,
+      "4,40": 5,
+      "4,41": 5,
+      "4,42": 5,
+      "4,43": 5,
+      "4,44": 5,
+      "4,45": 5,
+      "4,46": 5,
+      "4,47": 5,
+      "4,48": 5,
+      "4,49": 5,
+      "4,50": 5,
+      "4,51": 5,
+      "4,52": 5,
+      "4,53": 5,
+      "4,54": 5,
+      "4,56": 5,
+      "4,57": 5,
+      "4,58": 5,
+      "4,59": 5,
+      "4,60": 5,
+      "4,61": 5,
+      "4,62": 5,
+      "4,63": 5,
+      "4,64": 5,
+      "4,65": 5,
+      "4,66": 5,
+      "4,67": 5,
+      "4,68": 5,
+      "4,69": 5,
+      "4,70": 5,
+      "4,71": 5,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "5,18": 0,
+      "5,19": 0,
+      "5,20": 0,
+      "5,21": 0,
+      "5,22": 0,
+      "5,23": 0,
+      "5,32": 0,
+      "5,33": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,36": 0,
+      "5,37": 0,
+      "5,38": 0,
+      "7,2": 8,
+      "7,3": 9,
+      "7,4": 9,
+      "7,5": 9,
+      "7,6": 9,
+      "7,7": 9,
+      "7,8": 9,
+      "7,9": 9,
+      "7,10": 9,
+      "7,11": 9,
+      "7,12": 9,
+      "7,13": 9,
+      "7,14": 9,
+      "7,15": 9,
+      "7,16": 9,
+      "7,17": 9,
+      "7,18": 9,
+      "7,19": 9,
+      "7,20": 9,
+      "8,2": 10,
+      "9,2": 10,
+      "9,20": 11,
+      "10,2": 10,
+      "10,20": 11,
+      "11,2": 10,
+      "11,20": 11,
+      "12,2": 10,
+      "12,20": 11,
+      "13,2": 10,
+      "13,20": 11,
+      "14,2": 10,
+      "14,20": 11,
+      "15,2": 10,
+      "15,20": 11,
+      "16,2": 10,
+      "16,20": 11,
+      "17,2": 10,
+      "17,20": 11,
+      "18,2": 10,
+      "18,20": 11,
+      "19,2": 10,
+      "19,20": 11,
+      "20,2": 10,
+      "20,20": 11,
+      "21,2": 10,
+      "21,20": 11,
+      "22,2": 12,
+      "22,3": 13,
+      "22,4": 13,
+      "22,5": 13,
+      "22,6": 13,
+      "22,7": 13,
+      "22,8": 13,
+      "22,9": 13,
+      "22,10": 13,
+      "22,11": 13,
+      "22,12": 13,
+      "22,13": 13,
+      "22,14": 13,
+      "22,15": 13,
+      "22,16": 13,
+      "22,17": 13,
+      "22,18": 13,
+      "22,19": 13,
+      "22,20": 14
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,2,1,5",
+    "8,7,1,6",
+    "8,13,1,8",
+    "8,27,1,10",
+    "8,37,1,11",
+    "8,48,1,9",
+    "8,57,1,10",
+    "8,21,1,6",
+    "9,2,14,65",
+    "4,2,2,6",
+    "4,10,2,6",
+    "4,18,2,6",
+    "1,2,2,15",
+    "2,58,1,8",
+    "7,2,1,5",
+    "7,7,1,6",
+    "7,13,1,8",
+    "7,21,1,6",
+    "7,27,1,10",
+    "7,37,1,11",
+    "7,48,1,9",
+    "7,57,1,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "MST_組織"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//psfCt3jhnYSsgQnFx98T7QbrRs7dNoP3IecVsql/q6nvN3kF8v7Mc9cWCspoMfBI3uHX7t8SUTsGHGNHDCVKI3Dyy1lnOgphTahGpWN1OJYy5Umt8ltrheuFDDXhxid6RCHBNoWJIuW14L9JQr4UCKPcc2wR+msQMTOBQMQuJ1r7R/l4N7SGoFf4jWCvwaRyxsFLaV8jPeXe68oV1YX+CNWnHL9N4H0cRRQTllccZJtIM0cAA9diPsbR35IISKuePrFSzWjoE8lE/MjTRx4v12ita1uRIvD3QV1zvJySJPYFs+hZALDIm0/QNxz50OSIEqv4RKAExfCb3J9L+946Kjmk59lO/6OC3kG297HdXkSDYeDGxlhLkSml+OOWgZCNKH06IjWic/AegYgGsmhaLJQ739C5cRtZSoQDhn2DDRcZPyzxk9cUVfixNGUi6GAxZbG6U+X0IBAKZEIFfzyUXAB1iF8wYczO/xEKm6ZFsXnKjToOqRkDE+Wz5Ii+O7uOglu7GeTZ9BIWhD8IzVOGWryAe2MR7PoMKTSqR/oLHcU4rGIyCqBw5ysQ02M1lqsDVrkJOhwHt2FV5z/qWnH0wPUD9yQ3uknN2e633eOa9GQOkJ7X1wykssPUsFiwgUcBgI4e9/imJh+j8lAYOlBQfQLY1qvRC+jD7QoKxZXm8kA9SPVSbxXFoXyHHYlMPUkL0rp/VMWsrOYfXtXZzBPDbSBXbwPbgZ7tVV6aow/iN62R5/tYx80rWYCl2bOCIrlBpgao8wz9KF03le34fnWk3ULyCgLiyAYdrEgR6kmyYMQU9aM3ViCBujlGePAqOKg9sV+TIPWuMFjF1a0ROHW0wiA2a32GAkBHRvU/KYLqjoeppLyBzs0WfXzzbhSOJWDOJ41z2ktdl76iU2eECexF9w==|920

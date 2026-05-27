@@ -1,0 +1,2243 @@
+{
+  "Rows": {
+    "Count": 64
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      78,
+      79,
+      80
+    ],
+    "Count": 81
+  },
+  "Values": {
+    "1,2": "予算データ",
+    "2,68": "検証用メニューに戻る",
+    "4,30": "データ表示",
+    "4,39": "削除条件⇒",
+    "4,71": "データ削除",
+    "5,79": "Fix",
+    "7,2": "科目コード",
+    "7,7": "科目名_小項目",
+    "7,14": "予算",
+    "7,18": "予算",
+    "7,22": "予算",
+    "7,26": "予算",
+    "7,30": "予算",
+    "7,34": "予算",
+    "7,38": "予算",
+    "7,42": "予算",
+    "7,46": "予算",
+    "7,50": "予算",
+    "7,54": "予算",
+    "7,58": "予算"
+  },
+  "Formulas": {
+    "4,79": "YEAR(EDATE(TODAY(),-3))"
+  },
+  "AttachInfos": {
+    "2,68": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "検証用メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "検証用メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）2020",
+        "IsBounding": true,
+        "DataSource": "MST_年度",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "ead830b0-cf56-4be3-8fad-06a9a65f739e"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "4cee068c-4c96-459e-aa79-fb05b036786c"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!Q5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!AE5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "bcff887a-a1c2-45b0-aca8-cc70945596f9"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!AE5"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "44221ac2-c903-40a3-b7b1-590f36a3f9d2"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=予算データ_検証用!CB5"
+        }
+      }
+    },
+    "4,9": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事部",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "8817f01e-a23e-4119-8d7c-548c5ecc2cf1"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "60eefab6-9feb-4559-abba-293ec5d10e4e"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=予算データ_検証用!8:62"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=予算データ_検証用!AE5"
+                },
+                "PropertyType": 0,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=予算データ_検証用!BT5"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事課",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織コード",
+          "GUID": "82f2ed07-7379-4fcb-8ad2-518d8476d7f5"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織名",
+          "GUID": "d67355ba-7a5d-4484-9943-324b2d3fa297"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "部門名",
+            "GUID": "72563f16-419a-49bc-9457-01e0d8f3edde"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=予算データ_検証用!J5"
+          }
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!Q5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!AE5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "04df9a5a-5ba3-44a6-887d-409a243e1d79"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!AE5"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "dface29d-0c00-4e80-9440-b77d693a1e51"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "4,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）Ver01",
+        "IsBounding": true,
+        "DataSource": "MST_バージョン",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "fde304d1-1398-47b5-a410-d4276b87ec02"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "8ed54fd0-0cda-4cdc-ac69-ffa1144df65e"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!Q5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!AE5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9f1050a1-e657-4c82-8fa1-d748781d9b72"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!AE5"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ec57fd05-bed6-492f-a0a3-785cd8635454"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=予算データ_検証用!CB6"
+        }
+      }
+    },
+    "4,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "INP_予算_損益計算書",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "54784042-0c5c-43c1-a489-5fcf3f37bce1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=予算データ_検証用!C5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "組織コード",
+                    "GUID": "5e5657a5-962f-4b9d-b3fe-187057b9dfab"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=予算データ_検証用!Q5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "バージョン",
+                    "GUID": "9ac0f95b-65f6-44ec-b95d-fe934ce81ddd"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=予算データ_検証用!X5"
+                  }
+                }
+              ]
+            },
+            "ID": "f51cd0401e4a46ed9b24f643d0f725ec"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=予算データ_検証用!BT5"
+                },
+                "PropertyType": 0,
+                "Value": true
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=予算データ_検証用!8:62"
+                },
+                "Value": true
+              }
+            ]
+          }
+        ],
+        "Text": "データ表示",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "4,47": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）2020",
+        "IsBounding": true,
+        "DataSource": "INP_予算_損益計算書",
+        "ValueColumnBindingInfo": {
+          "TableName": "INP_予算_損益計算書",
+          "ColumnName": "年度",
+          "GUID": "b5d4b5d8-2fa9-4c62-a1ad-d1643f4f3aee"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "INP_予算_損益計算書",
+          "ColumnName": "年度",
+          "GUID": "f2cfca67-7761-411e-8b24-48b1712d076f"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!AV5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!BD5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!BL5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "209b6419-c063-4ff6-8754-5db58e148d5b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ca1632cd-bc8e-46bf-b028-205511685786"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "4,55": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事課",
+        "IsBounding": true,
+        "DataSource": "INP_予算_損益計算書",
+        "ValueColumnBindingInfo": {
+          "TableName": "INP_予算_損益計算書",
+          "ColumnName": "組織コード",
+          "GUID": "6c72384f-0d91-4a1a-b164-fc01f75a3ddf"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "INP_予算_損益計算書",
+          "ColumnName": "組織コード",
+          "GUID": "9b9ce458-c255-4136-a753-e2fc9e61d257"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_損益計算書",
+            "ColumnName": "年度",
+            "GUID": "16606184-ec9b-4df3-aacc-0392bb3e8660"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=予算データ_検証用!AV5"
+          }
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!AV5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!BD5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!BL5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "fd47b018-b1c1-44cf-9a4a-f36d68e9dee6"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "a3641be8-ebc0-4419-b855-975920a6ad27"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "4,63": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）Ver01",
+        "IsBounding": true,
+        "DataSource": "INP_予算_損益計算書",
+        "ValueColumnBindingInfo": {
+          "TableName": "INP_予算_損益計算書",
+          "ColumnName": "バージョン",
+          "GUID": "fe336697-54ff-4b4d-b19e-11474979ed68"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "INP_予算_損益計算書",
+          "ColumnName": "バージョン",
+          "GUID": "9cd6199c-054d-4c7b-becb-c7a7cd47985f"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_損益計算書",
+            "ColumnName": "組織コード",
+            "GUID": "daf928ce-7809-4d07-bf2c-850e4318cf65"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=予算データ_検証用!BD5"
+          }
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!AV5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!BD5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=予算データ_検証用!BL5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9a6ade02-10b3-4032-856b-55576ea4652c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BT5"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ac4d5c92-6360-4369-9633-29719b61119b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "4,71": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=予算データ_検証用!C9"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingText": "データを表示します",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "予算データ_検証用",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "年度",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!AV5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "組織",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BD5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "バージョン",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=予算データ_検証用!BL5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "_flg",
+                        "Value": "1"
+                      }
+                    ],
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=予算データ_検証用!CB9"
+                    },
+                    "ResultMessageTo": {
+                      "SerializeProperty": "=予算データ_検証用!CB10"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_損益計算書",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "4a9b0670-e30c-4396-b8fb-4f21f0e04c42"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=予算データ_検証用!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "組織コード",
+                            "GUID": "af9142d4-af54-42e0-ad73-8627ac1988ae"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=予算データ_検証用!Q5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "dac53c4f-76de-4b92-b640-ad6970184d3c"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=予算データ_検証用!X5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "276122eb38374b519a025affd9091151"
+                  },
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  }
+                ],
+                "ID": "78b5123e-9ffd-4f7d-b51c-7ee72b64eeb9"
+              }
+            ]
+          }
+        ],
+        "Text": "データ削除",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "INP_予算_損益計算書",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 55,
+        "ColumnCount": 76,
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true,
+          "DemandedRowCount": 1
+        },
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "8,2": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "科目コード",
+        "GUID": "5c6b3e41-eb11-4e10-8690-c930683f585a",
+        "RelationBinding": {
+          "RelatedTable": "MST_科目",
+          "RelatedColumn": "科目コード",
+          "DisplayColumn": "科目コード"
+        }
+      }
+    },
+    "8,7": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "科目コード",
+        "GUID": "d1722565-3510-4cbc-9035-b63c4bdc742c",
+        "RelationBinding": {
+          "RelatedTable": "TEST_科目マスタ",
+          "RelatedColumn": "科目コード",
+          "DisplayColumn": "科目名"
+        }
+      }
+    },
+    "8,14": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_4月",
+        "GUID": "b8ddfb5c-3082-4e9e-a79d-269b2485f8cd"
+      }
+    },
+    "8,18": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_5月",
+        "GUID": "cc7e1e12-cb7b-4438-8453-68da03c1dbfd"
+      }
+    },
+    "8,22": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_6月",
+        "GUID": "c11a3bde-9ca2-45cf-9686-b65b15ac034d"
+      }
+    },
+    "8,26": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_7月",
+        "GUID": "f9d97bc0-ddbf-4345-a9d6-c1b0352b795f"
+      }
+    },
+    "8,30": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_8月",
+        "GUID": "a09ceb43-b776-4272-a4b2-eb081e412b98"
+      }
+    },
+    "8,34": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_9月",
+        "GUID": "c5b0fe3d-cc64-4cd0-9988-86f3017917ff"
+      }
+    },
+    "8,38": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_10月",
+        "GUID": "14b02e36-781b-4c0f-85ed-a58bbe5de136"
+      }
+    },
+    "8,42": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_11月",
+        "GUID": "95d1d190-991d-43af-a521-cabdc54575d4"
+      }
+    },
+    "8,46": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_12月",
+        "GUID": "48137a04-17b2-4c9d-911b-9269f995c02d"
+      }
+    },
+    "8,50": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_1月",
+        "GUID": "533e6abc-983f-43b0-8e7a-1ae0c3e00b87"
+      }
+    },
+    "8,54": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_2月",
+        "GUID": "dfeca324-f01a-463a-9da9-e908ad2631e1"
+      }
+    },
+    "8,58": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "_3月",
+        "GUID": "223e5f2e-e396-42db-9122-0c1984895d2c"
+      }
+    },
+    "8,62": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "区分",
+        "GUID": "30bc8d1c-fda8-4bc5-9b07-16c1d8edf708"
+      }
+    },
+    "8,66": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "バージョン",
+        "GUID": "415065b5-9e97-4d35-91f5-3e2aeb5db8d1"
+      }
+    },
+    "8,70": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "組織コード",
+        "GUID": "4b3e9455-3088-4b0b-8446-33900def434f"
+      }
+    },
+    "8,74": {
+      "BindingInfo": {
+        "TableName": "INP_予算_損益計算書",
+        "ColumnName": "年度",
+        "GUID": "4932d8fc-a919-4357-aee8-0ef2ce3854fd"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 34.666666666666664,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "Foreground": 4,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Formatter": 2,
+        "Underline": true
+      },
+      {
+        "Background": 5,
+        "FontWeight": 6,
+        "Foreground": 7,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "HorizontalAlignment": 9,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 1
+      },
+      {
+        "Background": 11,
+        "HorizontalAlignment": 9,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 11,
+        "HorizontalAlignment": 9,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Formatter": 12,
+        "HorizontalAlignment": 13,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 12,
+        "HorizontalAlignment": 13,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 12,
+        "HorizontalAlignment": 13,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderRight": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "HGP創英角ﾎﾟｯﾌﾟ体",
+        "[AUTO]General",
+        "Center",
+        "Blue",
+        "#FFFFFF00",
+        "Bold",
+        "#FFFF0000",
+        "black",
+        "Left",
+        "DarkGray",
+        "Background 1 -5",
+        "#,##0",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 8
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,22": 0,
+      "0,32": 0,
+      "0,33": 0,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 0,
+      "0,48": 0,
+      "0,49": 0,
+      "0,50": 0,
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 1,
+      "0,54": 1,
+      "0,55": 1,
+      "0,56": 1,
+      "0,57": 1,
+      "0,58": 1,
+      "0,59": 1,
+      "0,60": 1,
+      "0,61": 1,
+      "0,62": 1,
+      "0,63": 1,
+      "0,64": 1,
+      "0,65": 1,
+      "0,66": 1,
+      "0,67": 1,
+      "0,68": 1,
+      "0,69": 1,
+      "0,70": 1,
+      "0,71": 1,
+      "0,72": 1,
+      "0,73": 1,
+      "0,74": 1,
+      "0,75": 1,
+      "0,76": 1,
+      "0,77": 1,
+      "0,78": 1,
+      "0,79": 1,
+      "0,80": 1,
+      "1,1": 0,
+      "1,2": 2,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 0,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 3,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,36": 0,
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,41": 0,
+      "1,42": 0,
+      "1,43": 0,
+      "1,44": 0,
+      "1,45": 0,
+      "1,46": 0,
+      "1,47": 0,
+      "1,48": 0,
+      "1,49": 0,
+      "1,50": 0,
+      "1,51": 0,
+      "1,52": 0,
+      "1,53": 1,
+      "1,54": 1,
+      "1,55": 1,
+      "1,56": 1,
+      "1,57": 1,
+      "1,58": 1,
+      "1,59": 1,
+      "1,60": 1,
+      "1,61": 1,
+      "1,62": 1,
+      "1,63": 1,
+      "1,64": 1,
+      "1,65": 1,
+      "1,66": 1,
+      "1,67": 1,
+      "1,68": 1,
+      "1,69": 1,
+      "1,70": 1,
+      "1,71": 1,
+      "1,72": 1,
+      "1,73": 1,
+      "1,74": 1,
+      "1,75": 1,
+      "1,76": 1,
+      "1,77": 1,
+      "1,78": 1,
+      "1,79": 1,
+      "1,80": 1,
+      "2,1": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 4,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 0,
+      "2,36": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "2,42": 0,
+      "2,43": 0,
+      "2,44": 0,
+      "2,45": 0,
+      "2,46": 0,
+      "2,47": 0,
+      "2,48": 0,
+      "2,49": 0,
+      "2,50": 0,
+      "2,51": 0,
+      "2,52": 0,
+      "2,53": 1,
+      "2,54": 1,
+      "2,55": 1,
+      "2,56": 1,
+      "2,57": 1,
+      "2,58": 1,
+      "2,59": 1,
+      "2,60": 1,
+      "2,61": 1,
+      "2,62": 1,
+      "2,63": 1,
+      "2,64": 1,
+      "2,65": 1,
+      "2,66": 1,
+      "2,67": 1,
+      "2,68": 5,
+      "2,69": 1,
+      "2,70": 1,
+      "2,71": 1,
+      "2,72": 1,
+      "2,73": 1,
+      "2,74": 1,
+      "2,75": 1,
+      "2,76": 1,
+      "2,77": 1,
+      "2,78": 1,
+      "2,79": 1,
+      "2,80": 1,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 1,
+      "3,22": 1,
+      "3,23": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "3,28": 1,
+      "3,29": 1,
+      "3,30": 1,
+      "3,31": 1,
+      "3,32": 1,
+      "3,33": 1,
+      "3,34": 1,
+      "3,35": 1,
+      "3,36": 1,
+      "3,37": 1,
+      "3,38": 1,
+      "3,39": 1,
+      "3,40": 1,
+      "3,41": 1,
+      "3,42": 1,
+      "3,43": 1,
+      "3,44": 1,
+      "4,1": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "4,30": 1,
+      "4,31": 1,
+      "4,32": 1,
+      "4,33": 1,
+      "4,34": 1,
+      "4,35": 1,
+      "4,36": 1,
+      "4,39": 6,
+      "4,40": 7,
+      "4,41": 7,
+      "4,42": 7,
+      "4,43": 7,
+      "4,44": 7,
+      "4,45": 8,
+      "4,47": 1,
+      "4,48": 1,
+      "4,49": 1,
+      "4,50": 1,
+      "4,51": 1,
+      "4,52": 1,
+      "4,53": 1,
+      "4,54": 1,
+      "4,55": 1,
+      "4,56": 1,
+      "4,57": 1,
+      "4,58": 1,
+      "4,59": 1,
+      "4,60": 1,
+      "4,61": 1,
+      "4,62": 1,
+      "4,63": 1,
+      "4,64": 1,
+      "4,65": 1,
+      "4,66": 1,
+      "4,67": 1,
+      "4,68": 1,
+      "4,70": 1,
+      "4,71": 9,
+      "4,72": 1,
+      "4,73": 1,
+      "4,74": 1,
+      "4,75": 1,
+      "4,76": 1,
+      "4,77": 1,
+      "4,79": 1,
+      "5,1": 1,
+      "5,2": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 1,
+      "5,6": 1,
+      "5,7": 1,
+      "5,8": 1,
+      "5,9": 1,
+      "5,10": 1,
+      "5,11": 1,
+      "5,12": 1,
+      "5,13": 1,
+      "5,14": 1,
+      "5,15": 1,
+      "5,16": 1,
+      "5,17": 1,
+      "5,18": 1,
+      "5,19": 1,
+      "5,20": 1,
+      "5,21": 1,
+      "5,22": 1,
+      "5,23": 1,
+      "5,24": 1,
+      "5,25": 1,
+      "5,26": 1,
+      "5,27": 1,
+      "5,28": 1,
+      "5,30": 1,
+      "5,31": 1,
+      "5,32": 1,
+      "5,33": 1,
+      "5,34": 1,
+      "5,35": 1,
+      "5,36": 1,
+      "5,39": 10,
+      "5,40": 11,
+      "5,41": 11,
+      "5,42": 11,
+      "5,43": 11,
+      "5,44": 11,
+      "5,45": 12,
+      "5,47": 1,
+      "5,48": 1,
+      "5,49": 1,
+      "5,50": 1,
+      "5,51": 1,
+      "5,52": 1,
+      "5,53": 1,
+      "5,54": 1,
+      "5,55": 1,
+      "5,56": 1,
+      "5,57": 1,
+      "5,58": 1,
+      "5,59": 1,
+      "5,60": 1,
+      "5,61": 1,
+      "5,62": 1,
+      "5,63": 1,
+      "5,64": 1,
+      "5,65": 1,
+      "5,66": 1,
+      "5,67": 1,
+      "5,68": 1,
+      "5,70": 1,
+      "5,71": 1,
+      "5,72": 1,
+      "5,73": 1,
+      "5,74": 1,
+      "5,75": 1,
+      "5,76": 1,
+      "5,77": 1,
+      "5,79": 13,
+      "6,1": 1,
+      "6,2": 1,
+      "6,3": 1,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,25": 1,
+      "6,26": 1,
+      "6,27": 1,
+      "6,28": 1,
+      "6,29": 1,
+      "6,30": 1,
+      "6,31": 1,
+      "6,32": 1,
+      "6,33": 1,
+      "6,34": 1,
+      "6,35": 1,
+      "6,36": 1,
+      "6,37": 1,
+      "6,38": 1,
+      "6,39": 1,
+      "6,40": 1,
+      "6,41": 1,
+      "6,42": 1,
+      "6,43": 1,
+      "6,44": 1,
+      "7,2": 14,
+      "7,3": 15,
+      "7,4": 15,
+      "7,5": 15,
+      "7,6": 15,
+      "7,7": 16,
+      "7,8": 15,
+      "7,9": 15,
+      "7,10": 15,
+      "7,11": 15,
+      "7,12": 15,
+      "7,13": 15,
+      "7,14": 17,
+      "7,15": 15,
+      "7,16": 15,
+      "7,17": 15,
+      "7,18": 18,
+      "7,19": 19,
+      "7,20": 19,
+      "7,21": 19,
+      "7,22": 18,
+      "7,23": 19,
+      "7,24": 19,
+      "7,25": 19,
+      "7,26": 18,
+      "7,27": 19,
+      "7,28": 19,
+      "7,29": 19,
+      "7,30": 18,
+      "7,31": 19,
+      "7,32": 19,
+      "7,33": 19,
+      "7,34": 18,
+      "7,35": 19,
+      "7,36": 19,
+      "7,37": 19,
+      "7,38": 18,
+      "7,39": 19,
+      "7,40": 19,
+      "7,41": 19,
+      "7,42": 18,
+      "7,43": 19,
+      "7,44": 19,
+      "7,45": 19,
+      "7,46": 18,
+      "7,47": 19,
+      "7,48": 19,
+      "7,49": 19,
+      "7,50": 18,
+      "7,51": 19,
+      "7,52": 19,
+      "7,53": 19,
+      "7,54": 18,
+      "7,55": 19,
+      "7,56": 19,
+      "7,57": 19,
+      "7,58": 18,
+      "7,59": 19,
+      "7,60": 19,
+      "7,61": 19,
+      "7,62": 18,
+      "7,63": 15,
+      "7,64": 15,
+      "7,65": 15,
+      "8,2": 20,
+      "8,3": 21,
+      "8,4": 21,
+      "8,5": 21,
+      "8,6": 21,
+      "8,7": 22,
+      "8,8": 23,
+      "8,9": 23,
+      "8,10": 23,
+      "8,11": 23,
+      "8,12": 23,
+      "8,13": 24,
+      "8,14": 25,
+      "8,15": 21,
+      "8,16": 21,
+      "8,17": 21,
+      "8,18": 26,
+      "8,19": 27,
+      "8,20": 27,
+      "8,21": 27,
+      "8,22": 26,
+      "8,23": 27,
+      "8,24": 27,
+      "8,25": 27,
+      "8,26": 26,
+      "8,27": 27,
+      "8,28": 27,
+      "8,29": 27,
+      "8,30": 26,
+      "8,31": 27,
+      "8,32": 27,
+      "8,33": 27,
+      "8,34": 26,
+      "8,35": 27,
+      "8,36": 27,
+      "8,37": 27,
+      "8,38": 26,
+      "8,39": 27,
+      "8,40": 27,
+      "8,41": 27,
+      "8,42": 26,
+      "8,43": 27,
+      "8,44": 27,
+      "8,45": 27,
+      "8,46": 26,
+      "8,47": 27,
+      "8,48": 27,
+      "8,49": 27,
+      "8,50": 26,
+      "8,51": 27,
+      "8,52": 27,
+      "8,53": 27,
+      "8,54": 26,
+      "8,55": 27,
+      "8,56": 27,
+      "8,57": 27,
+      "8,58": 26,
+      "8,59": 27,
+      "8,60": 27,
+      "8,61": 27,
+      "8,62": 28,
+      "8,63": 23,
+      "8,64": 23,
+      "8,65": 23,
+      "9,2": 29,
+      "9,65": 30,
+      "10,2": 29,
+      "10,65": 30,
+      "11,2": 29,
+      "11,65": 30,
+      "12,2": 29,
+      "12,65": 30,
+      "13,2": 29,
+      "13,65": 30,
+      "14,2": 29,
+      "14,65": 30,
+      "15,2": 29,
+      "15,65": 30,
+      "16,2": 29,
+      "16,65": 30,
+      "17,2": 29,
+      "17,65": 30,
+      "18,2": 29,
+      "18,65": 30,
+      "19,2": 29,
+      "19,65": 30,
+      "20,2": 29,
+      "20,65": 30,
+      "21,2": 29,
+      "21,65": 30,
+      "22,2": 29,
+      "22,65": 30,
+      "23,2": 29,
+      "23,65": 30,
+      "24,2": 29,
+      "24,65": 30,
+      "25,2": 29,
+      "25,65": 30,
+      "26,2": 29,
+      "26,65": 30,
+      "27,2": 29,
+      "27,65": 30,
+      "28,2": 29,
+      "28,65": 30,
+      "29,2": 29,
+      "29,65": 30,
+      "30,2": 29,
+      "30,65": 30,
+      "31,2": 29,
+      "31,65": 30,
+      "32,2": 29,
+      "32,65": 30,
+      "33,2": 29,
+      "33,65": 30,
+      "34,2": 29,
+      "34,65": 30,
+      "35,2": 29,
+      "35,65": 30,
+      "36,2": 29,
+      "36,65": 30,
+      "37,2": 29,
+      "37,65": 30,
+      "38,2": 29,
+      "38,65": 30,
+      "39,2": 29,
+      "39,65": 30,
+      "40,2": 29,
+      "40,65": 30,
+      "41,2": 29,
+      "41,65": 30,
+      "42,2": 29,
+      "42,65": 30,
+      "43,2": 29,
+      "43,65": 30,
+      "44,2": 29,
+      "44,65": 30,
+      "45,2": 29,
+      "45,65": 30,
+      "46,2": 29,
+      "46,65": 30,
+      "47,2": 29,
+      "47,65": 30,
+      "48,2": 29,
+      "48,65": 30,
+      "49,2": 29,
+      "49,65": 30,
+      "50,2": 29,
+      "50,65": 30,
+      "51,2": 29,
+      "51,65": 30,
+      "52,2": 29,
+      "52,65": 30,
+      "53,2": 29,
+      "53,65": 30,
+      "54,2": 29,
+      "54,65": 30,
+      "55,2": 29,
+      "55,65": 30,
+      "56,2": 29,
+      "56,65": 30,
+      "57,2": 29,
+      "57,65": 30,
+      "58,2": 29,
+      "58,65": 30,
+      "59,2": 29,
+      "59,65": 30,
+      "60,2": 29,
+      "60,65": 30,
+      "61,2": 31,
+      "61,3": 32,
+      "61,4": 32,
+      "61,5": 32,
+      "61,6": 32,
+      "61,7": 32,
+      "61,8": 32,
+      "61,9": 32,
+      "61,10": 32,
+      "61,11": 32,
+      "61,12": 32,
+      "61,13": 32,
+      "61,14": 32,
+      "61,15": 32,
+      "61,16": 32,
+      "61,17": 32,
+      "61,18": 32,
+      "61,19": 32,
+      "61,20": 32,
+      "61,21": 32,
+      "61,22": 32,
+      "61,23": 32,
+      "61,24": 32,
+      "61,25": 32,
+      "61,26": 32,
+      "61,27": 32,
+      "61,28": 32,
+      "61,29": 32,
+      "61,30": 32,
+      "61,31": 32,
+      "61,32": 32,
+      "61,33": 32,
+      "61,34": 32,
+      "61,35": 32,
+      "61,36": 32,
+      "61,37": 32,
+      "61,38": 32,
+      "61,39": 32,
+      "61,40": 32,
+      "61,41": 32,
+      "61,42": 32,
+      "61,43": 32,
+      "61,44": 32,
+      "61,45": 32,
+      "61,46": 32,
+      "61,47": 32,
+      "61,48": 32,
+      "61,49": 32,
+      "61,50": 32,
+      "61,51": 32,
+      "61,52": 32,
+      "61,53": 32,
+      "61,54": 32,
+      "61,55": 32,
+      "61,56": 32,
+      "61,57": 32,
+      "61,58": 32,
+      "61,59": 32,
+      "61,60": 32,
+      "61,61": 32,
+      "61,62": 32,
+      "61,63": 32,
+      "61,64": 32,
+      "61,65": 33
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,2,6",
+    "4,9,2,6",
+    "4,16,2,6",
+    "4,23,2,6",
+    "4,30,2,7",
+    "4,71,2,7",
+    "4,47,2,6",
+    "4,55,2,6",
+    "4,63,2,6",
+    "4,39,2,7",
+    "8,2,1,5",
+    "8,14,1,4",
+    "8,18,1,4",
+    "8,22,1,4",
+    "8,26,1,4",
+    "8,30,1,4",
+    "8,34,1,4",
+    "8,38,1,4",
+    "8,42,1,4",
+    "8,46,1,4",
+    "8,50,1,4",
+    "8,54,1,4",
+    "8,58,1,4",
+    "8,62,1,4",
+    "8,66,1,4",
+    "8,70,1,4",
+    "8,74,1,4",
+    "9,2,53,76",
+    "8,7,1,7",
+    "1,2,2,10",
+    "2,68,1,8",
+    "7,2,1,5",
+    "7,7,1,7",
+    "7,14,1,4",
+    "7,18,1,4",
+    "7,22,1,4",
+    "7,26,1,4",
+    "7,30,1,4",
+    "7,34,1,4",
+    "7,38,1,4",
+    "7,42,1,4",
+    "7,46,1,4",
+    "7,50,1,4",
+    "7,54,1,4",
+    "7,58,1,4",
+    "7,62,1,4",
+    "7,66,1,4",
+    "7,70,1,4",
+    "7,74,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=予算データ_検証用!AE5"
+            },
+            "PropertyType": 0,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=予算データ_検証用!BT5"
+            },
+            "PropertyType": 0,
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=予算データ_検証用!8:62"
+            },
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "INP_予算_損益計算書",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_損益計算書",
+            "ColumnName": "ID",
+            "GUID": "7cd75e7e-476b-4b17-b7aa-b0f5c4106da6"
+          },
+          "Value": "%Null%"
+        },
+        "ID": "b3f0f11998734a6fbdd796abab5a6866"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "INP_予算_損益計算書"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//2Yyl4rEyJ9CRQvn73gAt1l5a35gFP0oURSRBMmsmUp1kttcDqVDPyGqTdo1q1Vn9Ltd2vZpckMyUtbF0VXQWqfnF+wETQ2GepZgKCoE58EoXG75PIQfPRkEE/DJkEa90OZzAD5zeNDMxrAXBgZX1UCj1IJ/THDnhdfgjCainFm3pnAx3ODdVTMo+u1G7vuTwUyS467sVNoaGZ22aPvWUbdHPJ0DDZuibjga9eYwcdVasSgt8YZHXEmr4sVxn1HbL3fAWPWu3Ep3cr0Wb+PCRBWw4dbrrurMApo/p5rOG0OMF5QzJ11/HzwMLVGoJGTwTGf8wbUfEGCrhmNIfqmbvplDh3XMWtsiGhd6+/WzKz1PlTBLz+DTT6sLuQCCuKCfgZf2XPNufOHY05b4+if0GO7dPcvGbF+VNkN5DjSyMd/MwkMlmf5DOSXUsRxi3Lmy58erbx2zRrvLSxfXQygcP8e+GJIrABMtqwk4YK8CGkjIo9pr6Ee/qmYSKizk7ua6OqXw6qJ+o+eC9QviGNbKb3XMGjcdzEjd/Mkmht39QohdNAqHJhaqPLVUfUi8McvmqzdZRIbP+2k09UAKzSN38PEcDme8cq6tzocOHhrOWiJNv7oFQX/e1VxBn4XLEoOQywyVta6xhBEllU+QsbO8Fnu4bvmicGC2wmjf/TpQoYL0VZfdN8A7mpUBcdNNNUfI/MMvTQb8Sik7weXSdHlnnzLgHGUWF+RmzOLLxNhDW0yN5HaG8rfdURDL6lvyJpcMfIqIofe3A3ftagc8EaiDxazo3X9BlQ6KoEt+EgbZ6W0uxYgpPHDcV8dB6PnKj/8LY3zo/N+N5/qfDlxbc4fVGxIYuM6z5h6OXCxeGMCrBjLSzp/zuH7GoWyuNy3gP3AUrmAXaxlzzbcEgqL80HgD5AA==|920

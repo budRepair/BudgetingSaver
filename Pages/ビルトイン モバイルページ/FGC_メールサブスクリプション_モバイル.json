@@ -1,0 +1,139 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,2": "メールによる通知設定",
+    "5,1": "通知設定の種類を選択してください。",
+    "21,2": "保存",
+    "21,10": "キャンセル"
+  },
+  "AttachInfos": {
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "LayoutMode": 1,
+        "ItemSpace": 14,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "通知しない"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "すべての変更を通知する"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "自分以外のユーザーからの変更を通知する"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "自身が作成したレコードの変更のみ通知"
+          },
+          {
+            "Value": "4",
+            "DisplayValue": "自身が担当者に割り当てられているレコードの変更のみ通知"
+          }
+        ],
+        "ForguncyAttribute": "MailSubscription_Choice"
+      }
+    },
+    "21,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "保存",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Normal_Style2",
+        "ForguncyAttribute": "MailSubscription_Button"
+      }
+    },
+    "21,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.33333396911621,
+        "Foreground": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 4,
+        "Formatter": 1
+      },
+      {
+        "VerticalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 6,
+        "Foreground": null,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 -50",
+        "[AUTO]General",
+        "Center",
+        "Bottom",
+        "#FF3F3F3F",
+        "Top",
+        "Bold",
+        "Body",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "5,1": 1,
+      "7,1": 2,
+      "21,2": 3,
+      "21,10": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 7,
+      "FontSize": 13.333333015441895,
+      "Foreground": 8
+    }
+  },
+  "Spans": [
+    "2,2,2,14",
+    "7,1,11,16",
+    "21,2,2,6",
+    "21,10,2,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "メールサブスクリプション",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//cfEs21BCPcBktL/OA92Rgd4xfdPgQfDI+l3Z0WT5P8bnYoCD5gOi3+QQCAlus7+uPGvFC0zzSi/9A6fvG79mnwJpWfZNQ8aO1yExaMg2WAO9iEqQ9Y6GRg8Ev5WozrdomEw5oRc0pv4vBvg/BvrtheNF7xuntuRXCK45ZhL93PRXGkHVJ8SRfbSjBAeNfc2UtfMJIJl7sXC2ATUp/BXIMTtRSpaxO192CRkevnTQYwbmJmehWDFT11px0hk01V+bexNic/iMdDTDF4o50lAsofagYUSwGkedsnEThlcAY421LNLPxPB0DaYBO/w9s5WebJrh/BNa9B3tGWTEW19ehuL6XucbWnDgFpS/4vdztihRXcW79xcixSOjn0RUCA43+kaTKAyzVCyPWSnWv9uG/xcbpSb5iWmUuIJULkbmMw7n9IrBDe2CHRqFopGX1jztPLKXI+CcF/lnaYz0sOQXqno49eMJ51shR6YHchNVLDMHtX7/Tf+ZYtdYc5c48vo3NcXUjKTptNtfLD4VwsvCbcZiOrF9H0Ux0um+/o0Czlpmyum8FKqj4kEdzUzCvxf0cCkD7MXkxW4VA0zRdym73RSlbziWVpCpzaTs+1aYNiRoMMbSfc97wrTjB1gojQUZM+pLLGX4mrcLkFlvBSLjbqQddWjiEVouFoOPnVJEjinrnHyk9NUA3yrJ9ff+tss52n/n01Bll9JfmqDwKxOf3lcPBcvE2cL8xA7px2cOWcI6F/25ugSxprV96q+lKR4lpyeWhz3p3f5m1oa14K2Vy1weEvYyYdroBKNFnsZbVeo6T9y6yehHL8SdFokZVRYw11e99U+Kf8N8wp3j4CRstl0thIZ/emG9xvragtKbDTcd+EsGCturahT4+D+0XFe8hn5Y9y/AycdSA0FgZ9pFtA==|920

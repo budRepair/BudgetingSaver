@@ -1,0 +1,279 @@
+{
+  "Name": "実績配賦結果取込",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度",
+          "DataValidationInfo": {},
+          "TestData": "2023"
+        },
+        {
+          "Name": "月",
+          "DataValidationInfo": {},
+          "TestData": "04"
+        },
+        {
+          "Name": "組織",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "画面ID",
+          "DataValidationInfo": {},
+          "TestData": "SRC004"
+        },
+        {
+          "Name": "画面名称",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "_msg1",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "_msg2",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "_msg3",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "_msg4",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "_flg",
+          "DataValidationInfo": {},
+          "TestData": "2"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=_flg"
+              }
+            },
+            "value": "1"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt4": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=画面ID"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "DELETE \r\nFROM\r\n    \"WK_共通_取込用\" \r\nWHERE\r\n    \"画面ID\" = @pmt4;",
+              "ReturnsName": "return0",
+              "ID": "b898446ccefa475c9e2fd58f7ccfc45a",
+              "Comments": ""
+            }
+          ],
+          "ID": "6e654312-be0f-44d9-a650-db601cb2b76e"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=年度"
+                  },
+                  "Item2": 16
+                },
+                "@pmt2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=月"
+                  },
+                  "Item2": 16
+                },
+                "@pmt3": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=組織"
+                  },
+                  "Item2": 16
+                },
+                "@pmt4": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=画面ID"
+                  },
+                  "Item2": 16
+                },
+                "@pmt5": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=画面名称"
+                  },
+                  "Item2": 16
+                },
+                "@msg1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_msg1"
+                  },
+                  "Item2": 16
+                },
+                "@msg2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_msg2"
+                  },
+                  "Item2": 16
+                },
+                "@msg3": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_msg3"
+                  },
+                  "Item2": 16
+                },
+                "@msg4": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_msg4"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "DELETE \r\nFROM\r\n    \"TRN_エラー一覧\" \r\nWHERE\r\n    \"画面ID\" = @pmt4; \r\n\r\nINSERT \r\nINTO \"TRN_エラー一覧\" ( \r\n    \"年度\"\r\n    , \"月\"\r\n    , \"画面ID\"\r\n    , \"画面名称\"\r\n    , \"組織コード\"\r\n    , \"エラーコード\"\r\n    , \"エラー内容\"\r\n) \r\nSELECT\r\n    wk_act.\"年度\"\r\n    , wk_act.\"月\"\r\n    , @pmt4 AS \"画面ID\"\r\n    , @pmt5 AS \"画面名称\"\r\n    , wk_act.\"組織コード\"\r\n    , CASE \r\n        WHEN m_acc.\"科目コード\" IS NULL \r\n            THEN wk_act.\"科目コード\" \r\n        ELSE NULL \r\n        END AS \"エラーコード\"\r\n    , CASE \r\n        WHEN wk_act.\"年度\" = @pmt1 \r\n            THEN CASE \r\n            WHEN wk_act.\"月\" = @pmt2 \r\n                THEN CASE \r\n                WHEN m_ent.\"組織コード\" IS NULL \r\n                    THEN @msg3 \r\n                WHEN m_acc.\"科目コード\" IS NULL \r\n                    THEN @msg4 \r\n                END \r\n            ELSE @msg2 \r\n            END \r\n        ELSE @msg1 \r\n        END AS \"エラー内容\" \r\nFROM\r\n    \"WK_共通_取込用\" wk_act \r\n    LEFT JOIN \"MST_組織\" m_ent \r\n        ON wk_act.\"組織コード\" = m_ent.\"組織コード\" \r\n    LEFT JOIN \"MST_科目\" m_acc \r\n        ON wk_act.\"科目コード\" = m_acc.\"科目コード\" \r\n        AND m_acc.\"会社コード\" = m_ent.\"会社コード\" \r\nWHERE\r\n    ( \r\n        wk_act.\"年度\" IS NULL \r\n        OR wk_act.\"月\" IS NULL \r\n        OR m_ent.\"組織コード\" IS NULL \r\n        OR m_acc.\"科目コード\" IS NULL \r\n        OR wk_act.\"年度\" <> @pmt1 \r\n        OR wk_act.\"月\" <> @pmt2\r\n    ) \r\n    AND wk_act.\"画面ID\" = @pmt4;",
+              "ReturnsName": "return0",
+              "ID": "e0ad94ad0caa4bea87cb0f8531e64ff9",
+              "Comments": ""
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "_cnt",
+              "TableValue": {
+                "TableName": "TRN_エラー一覧",
+                "TableValueType": 3,
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TRN_エラー一覧",
+                    "ColumnName": "画面ID",
+                    "GUID": "8069aa62-88c9-4042-af1c-ea18ea6493cb"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=画面ID"
+                  }
+                }
+              },
+              "ID": "391a203687a9430799e9b0f89417be85"
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=_cnt"
+                      }
+                    },
+                    "value": "0"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                      "Params": {
+                        "@pmt1": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt2": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=月"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt3": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          },
+                          "Item2": 16
+                        },
+                        "@pmt4": {
+                          "Item1": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=画面ID"
+                          },
+                          "Item2": 16
+                        }
+                      },
+                      "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_実績_配賦後\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"月\" = @pmt2 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_共通_取込用\" \r\n        WHERE\r\n            \"INP_実績_配賦後\".\"組織コード\" = \"WK_共通_取込用\".\"組織コード\" \r\n            AND \"INP_実績_配賦後\".\"科目コード\" = \"WK_共通_取込用\".\"科目コード\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_実績_配賦後\" (\"年度\", \"月\", \"組織コード\", \"組織名\", \"科目コード\", \"科目名\", \"金額\") \r\nSELECT\r\n    \"年度\"\r\n    , \"月\"\r\n    , \"組織コード\"\r\n    , \"組織名\"\r\n    , \"科目コード\"\r\n    , \"科目名\"\r\n    , \"金額\" \r\nFROM\r\n    \"WK_共通_取込用\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"月\" = @pmt2 \r\n    AND \"組織コード\" = @pmt3 \r\n    AND \"画面ID\" = @pmt4;",
+                      "ReturnsName": "return0",
+                      "ID": "940a2528a024450081e2fb8db0473a00",
+                      "Comments": ""
+                    }
+                  ],
+                  "ID": "b29aac35-8f9b-4d87-9f8e-f5f8c6075773"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=_cnt"
+              }
+            }
+          ],
+          "ID": "5141848a-75e9-47bc-bbfb-56412b986eda"
+        }
+      ]
+    }
+  ]
+}

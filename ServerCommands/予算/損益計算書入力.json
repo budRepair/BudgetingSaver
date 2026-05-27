@@ -1,0 +1,700 @@
+{
+  "Name": "損益計算書入力",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度",
+          "DataValidationInfo": {},
+          "TestData": "2024"
+        },
+        {
+          "Name": "会社",
+          "DataValidationInfo": {},
+          "TestData": "0000"
+        },
+        {
+          "Name": "組織",
+          "DataValidationInfo": {},
+          "TestData": "20100000"
+        },
+        {
+          "Name": "バージョン",
+          "DataValidationInfo": {},
+          "TestData": "Fix"
+        },
+        {
+          "Name": "区分",
+          "DataValidationInfo": {}
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "SubConditions": [
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "0"
+              },
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "%Null%"
+              }
+            ],
+            "RelationType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "_cnt0",
+                  "TableValue": {
+                    "TableName": "INP_予算_損益計算書",
+                    "TableValueType": 3,
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "f2379a28-1c65-4601-86b3-096b7914a8ca"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "組織コード",
+                            "GUID": "deefa520-3225-4ab5-80e7-73b16a3020ae"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "274b6043-7be5-4fbc-a690-fa4c352014b0"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "区分",
+                            "GUID": "064e2567-92a5-4578-9065-990665607362"
+                          },
+                          "Value": "0"
+                        }
+                      ]
+                    }
+                  },
+                  "ID": "a50c82bfac1943fd8789c6502c9c46ac"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=_cnt0"
+                          }
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                          "Params": {
+                            "@pmt1": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=年度"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt2": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=組織"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt3": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=バージョン"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt4": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=会社"
+                              },
+                              "Item2": 16
+                            }
+                          },
+                          "SqlStatement": "INSERT \r\nINTO \"INP_予算_損益計算書\" (\"年度\", \"組織コード\", \"科目コード\", \"バージョン\", \"区分\") \r\nSELECT\r\n    @pmt1 AS \"年度\"\r\n    , @pmt2 AS \"組織コード\"\r\n    , \"科目コード\"\r\n    , @pmt3 AS \"バージョン\"\r\n    , \"区分\" \r\nFROM\r\n    \"MST_科目\" \r\nWHERE\r\n    \"区分\" = '0' \r\n    AND \"会社コード\" = @pmt4;",
+                          "ReturnsName": "return0",
+                          "ID": "ae576c29792c4df886f984dbad28211c",
+                          "Comments": ""
+                        }
+                      ],
+                      "ID": "13edf4f8-b660-4e37-b487-025bc4e74615"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ID": "9d6b4e67-be1f-46e7-9acd-b873457ca5e3"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "SubConditions": [
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "1"
+              },
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "%Null%"
+              }
+            ],
+            "RelationType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "_cnt1",
+                  "TableValue": {
+                    "TableName": "INP_予算_損益計算書",
+                    "TableValueType": 3,
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "5d994784-ac40-4dd3-9524-a0670e0554b5"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "組織コード",
+                            "GUID": "30647a46-78d0-4108-8f30-64806597443e"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "1be0c746-6c3a-466e-8d5c-2b8f95586e60"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "区分",
+                            "GUID": "64191d4d-273e-4cba-b86c-c7c299cf361d"
+                          },
+                          "Value": "1"
+                        }
+                      ]
+                    }
+                  },
+                  "ID": "029a4f1daf024442b213fee61fa45855"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=_cnt1"
+                          }
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                          "Params": {
+                            "@pmt1": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=年度"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt2": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=組織"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt3": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=バージョン"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt4": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=会社"
+                              },
+                              "Item2": 16
+                            }
+                          },
+                          "SqlStatement": "INSERT \r\nINTO \"INP_予算_損益計算書\" (\"年度\", \"組織コード\", \"科目コード\", \"バージョン\", \"区分\") \r\nSELECT\r\n    @pmt1 AS \"年度\"\r\n    , @pmt2 AS \"組織コード\"\r\n    , \"科目コード\"\r\n    , @pmt3 AS \"バージョン\"\r\n    , \"区分\" \r\nFROM\r\n    \"MST_科目\" \r\nWHERE\r\n    \"区分\" = '1' \r\n    AND \"会社コード\" = @pmt4;",
+                          "ReturnsName": "return1",
+                          "ID": "7c7fd11250db4642a76c1bda2e4cbcc3",
+                          "Comments": ""
+                        }
+                      ],
+                      "ID": "5658fe9c-0446-4f2f-9892-0e7189d3a5d6"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ID": "3eff7131-3a99-42e2-84da-571f651e1c95"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "SubConditions": [
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "2"
+              },
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "%Null%"
+              }
+            ],
+            "RelationType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "_cnt2",
+                  "TableValue": {
+                    "TableName": "INP_予算_損益計算書",
+                    "TableValueType": 3,
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "586265a0-8adf-4c50-84b5-ba9e985b03f2"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "組織コード",
+                            "GUID": "bb342b7e-4bf0-402c-abd7-347b5b88c4c1"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "3564e74b-e43b-4763-8513-1b294fdda711"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "区分",
+                            "GUID": "11b9ecc8-2e52-4066-86c9-5fbd2eab645e"
+                          },
+                          "Value": "2"
+                        }
+                      ]
+                    }
+                  },
+                  "ID": "ff7e7d6554724886a6876dd5289ae61a"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=_cnt2"
+                          }
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                          "Params": {
+                            "@pmt1": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=年度"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt2": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=組織"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt3": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=バージョン"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt4": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=会社"
+                              },
+                              "Item2": 16
+                            }
+                          },
+                          "SqlStatement": "INSERT \r\nINTO \"INP_予算_損益計算書\" (\"年度\", \"組織コード\", \"科目コード\", \"バージョン\", \"区分\") \r\nSELECT\r\n    @pmt1 AS \"年度\"\r\n    , @pmt2 AS \"組織コード\"\r\n    , \"科目コード\"\r\n    , @pmt3 AS \"バージョン\"\r\n    , \"区分\" \r\nFROM\r\n    \"MST_科目\" \r\nWHERE\r\n    \"区分\" = '2' \r\n    AND \"会社コード\" = @pmt4;",
+                          "ReturnsName": "return1",
+                          "ID": "e34f470605734a4ebacc10c031b76a3e",
+                          "Comments": ""
+                        }
+                      ],
+                      "ID": "9abe7326-a0c6-45e8-a8f5-368fe8d17078"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ID": "5d538836-6b26-4886-b9b2-344f84f3ef6b"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "SubConditions": [
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "3"
+              },
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=区分"
+                  }
+                },
+                "value": "%Null%"
+              }
+            ],
+            "RelationType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "_cnt3",
+                  "TableValue": {
+                    "TableName": "INP_予算_損益計算書",
+                    "TableValueType": 3,
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "b0c072ce-0ab7-45ce-978c-2e5fabd81ec4"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=年度"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "組織コード",
+                            "GUID": "86d6f19c-053e-4f80-a2ab-1b42691a84a6"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=組織"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "e5f6c804-2186-4982-b479-8eebc6a00d27"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョン"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_損益計算書",
+                            "ColumnName": "区分",
+                            "GUID": "44f186f8-cc97-4eee-a091-2b6bbf745f37"
+                          },
+                          "Value": "3"
+                        }
+                      ]
+                    }
+                  },
+                  "ID": "f7f5aea9de724b63bdbc26caedd82234"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=_cnt3"
+                          }
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+                          "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+                          "Params": {
+                            "@pmt1": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=年度"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt2": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=組織"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt3": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=バージョン"
+                              },
+                              "Item2": 16
+                            },
+                            "@pmt4": {
+                              "Item1": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=会社"
+                              },
+                              "Item2": 16
+                            }
+                          },
+                          "SqlStatement": "INSERT \r\nINTO \"INP_予算_損益計算書\" (\"年度\", \"組織コード\", \"科目コード\", \"バージョン\", \"区分\") \r\nSELECT\r\n    @pmt1 AS \"年度\"\r\n    , @pmt2 AS \"組織コード\"\r\n    , \"科目コード\"\r\n    , @pmt3 AS \"バージョン\"\r\n    , \"区分\" \r\nFROM\r\n    \"MST_科目\" \r\nWHERE\r\n    \"区分\" = '3' \r\n    AND \"会社コード\" = @pmt4;",
+                          "ReturnsName": "return1",
+                          "ID": "1d0a0c2509fc4fbd9675d1eeb9f644f7",
+                          "Comments": ""
+                        }
+                      ],
+                      "ID": "2f0b498b-cb3d-4670-9b1c-df41ca90a7a9"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ID": "6a52506e-871f-4f3c-b354-d55c30c4c262"
+        }
+      ]
+    }
+  ]
+}

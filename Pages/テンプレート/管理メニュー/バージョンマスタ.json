@@ -1,0 +1,1141 @@
+{
+  "Rows": {
+    "Count": 24
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 83.0
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 124.0
+        }
+      },
+      "67": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 63.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      64,
+      65,
+      66,
+      67
+    ],
+    "Count": 68
+  },
+  "Values": {
+    "1,2": "バージョンマスタ",
+    "1,61": "",
+    "2,55": "メニューに戻る",
+    "3,64": "■ログアウトコマンド",
+    "4,2": "ファイル種類",
+    "4,7": "EXCEL",
+    "4,16": "エクスポート",
+    "4,25": "インポート",
+    "4,65": "処理確認",
+    "4,66": "ログアウトしますか？",
+    "5,65": "リターンコード",
+    "6,65": "処理失敗",
+    "6,66": "ログアウト処理に失敗しました。管理者に確認してください。"
+  },
+  "AttachInfos": {
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=バージョンマスタ!BO5"
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "ログアウトコマンド",
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=バージョンマスタ!BO6"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=バージョンマスタ!BO6"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_ログイン"
+                          }
+                        ],
+                        "ID": "d5256f54-1fd0-4b40-a7d2-424e640a8448"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=バージョンマスタ!BO6"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=バージョンマスタ!BO7"
+                            }
+                          }
+                        ],
+                        "ID": "7c850a14-fa44-4999-8333-bcf4498caff7"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "6d354ac2-e0d7-4dd4-a72a-aa694c9d3ae4"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "スタイル4",
+        "Icon": {
+          "Name": "Arrow/321_exit_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 18.0
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）CSV",
+        "Items": [
+          {
+            "Value": "EXCEL",
+            "DisplayValue": "EXCEL"
+          },
+          {
+            "Value": "CSV",
+            "DisplayValue": "CSV"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=バージョンマスタ!Q6"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "VIEW_実績_損益計算書",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "VIEW_実績_損益計算書",
+                        "ColumnName": "年度",
+                        "GUID": "85a06f90-d261-4b1e-ab49-94006769b8da"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=バージョンマスタ!H5"
+                      }
+                    },
+                    "ID": "29b84e60e24143b59650406cce31417d"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "VIEW_予算_損益計算書",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "VIEW_予算_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "0574d9b4-4274-4167-8f49-20dded1f6a87"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!H5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "VIEW_予算_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "9a71b4fc-2c6d-41a8-9319-acc8ec1071af"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!AF6"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "89387186fe1f47d6b0568748673612ab"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_見込_損益計算書",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_見込_損益計算書",
+                            "ColumnName": "年度",
+                            "GUID": "6759cb6a-4892-4b55-8e61-baf22965df4e"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!H5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_見込_損益計算書",
+                            "ColumnName": "バージョン",
+                            "GUID": "511b141e-e572-4035-bcf3-2919848225a5"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!AF6"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "081849911ae44c66b46a93751f95036a"
+                  }
+                ],
+                "ID": "dbc31a94-fcf7-4a41-86c8-6a9b4df6597b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=バージョンマスタ!Z6"
+                              }
+                            ]
+                          },
+                          "value": "%Null%"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_実績_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "c432761c-4fe3-40e2-8c28-0b28fc34be7d"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "9a3bdfe0-3efb-4299-bc12-fd0f5b36106b",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MST_組織",
+                                      "RelatedColumn": "組織コード",
+                                      "DisplayColumn": "部門名"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!Q6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "f7f085b6095d4a9d82a35eb3180578c3"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_予算_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "44c6f004-a15e-44ef-8b5b-292d3f191717"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "41f17b09-acc9-4ca3-986c-39a992d047b9",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MST_組織",
+                                      "RelatedColumn": "組織コード",
+                                      "DisplayColumn": "部門名"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!Q6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "a9f336d3-56a0-4042-a04c-69b8fea42a4a"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "c70ec7264d2a4ccfa3284467b9624fc1"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "INP_見込_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "051772d5-04b8-489e-9f06-9ced4f5bc7c7"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "ed82984f-03ff-4011-9f9f-119a6955dcd9",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MST_組織",
+                                      "RelatedColumn": "組織コード",
+                                      "DisplayColumn": "部門名"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!Q6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "62836b5d-7085-4372-9856-fc7581c2ab1d"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "db7ac82cbded44c7aba353f2ee7e4f4a"
+                          }
+                        ],
+                        "ID": "eb10daa7-248b-4336-ac2e-90a10cbe2c1b"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_実績_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "5d238729-93f0-4fb9-a152-43e137723548"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_実績_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "9014c348-47d8-4491-b3ba-c17f1fd7ec2b"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!Z6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "ea626964a3f94dd7861e8c10de491956"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "VIEW_予算_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "af4ba012-ec7e-489f-a406-d3b722ca4bde"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "d30442cc-bfa5-41ca-9be1-06638b7dbe45"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!Z6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "VIEW_予算_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "42f72cce-fbc7-48dd-856b-b1306f8c8f6f"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "dd477fbe5ef74813bc58d14106f937f3"
+                          },
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "INP_見込_損益計算書",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "年度",
+                                    "GUID": "1592cd0b-20c6-4502-be67-99ca1c97909d"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!H5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "5f379b05-4f66-4dce-9732-5a7741d1c7b7"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!Z6"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_見込_損益計算書",
+                                    "ColumnName": "バージョン",
+                                    "GUID": "1dd8188e-542f-47df-8be8-35b5f63ced58"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=バージョンマスタ!AF6"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "d87270a1169f46e482c854c047fea0fe"
+                          }
+                        ],
+                        "ID": "773bd0db-9f29-4ed1-91e5-8cac1c401707"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "006ac372-d961-430a-b6da-acd8e0d5fcdf"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": "EXCEL"
+      }
+    },
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=バージョンマスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "CSV"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ImportExportCSV.ImportExportCSV, ImportExportCSV",
+                    "ImportExportInfo": {
+                      "CSVOperation": 1,
+                      "ListViewName": "リストビュー1",
+                      "Columns": [
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!C9"
+                          },
+                          "CSVColumnName": "バージョンコード",
+                          "CSVColumnIndex": 1
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!L9"
+                          },
+                          "CSVColumnName": "バージョン名",
+                          "CSVColumnIndex": 2
+                        }
+                      ],
+                      "ColumnDelimiter": ",",
+                      "EncodingType": "UTF-8",
+                      "TextQualifier": "\"",
+                      "FilePath": "Documents\\example.csv",
+                      "ExportFileName": "バージョンマスタ"
+                    }
+                  }
+                ],
+                "ID": "33d6d997-d5bc-44ca-9f53-62b1b6642b80"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=バージョンマスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "EXCEL"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ExportExcelListviewNameMode": 1,
+                    "ListViewName": "リストビュー1",
+                    "NewOtherName": "バージョンマスタ",
+                    "IsOnlyExportValue": false
+                  }
+                ],
+                "ID": "65d3d853-559f-4b20-98bb-e1b8580589dd"
+              }
+            ]
+          }
+        ],
+        "Text": "エクスポート",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "4,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=バージョンマスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "CSV"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ImportExportCSV.ImportExportCSV, ImportExportCSV",
+                    "ImportExportInfo": {
+                      "ListViewName": "リストビュー1",
+                      "ImportMode": 2,
+                      "Columns": [
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!C9"
+                          },
+                          "CSVColumnName": "バージョンコード",
+                          "CSVColumnIndex": 1,
+                          "IsPrimaryKey": true
+                        },
+                        {
+                          "ListViewColumnCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=バージョンマスタ!L9"
+                          },
+                          "CSVColumnName": "バージョン名",
+                          "CSVColumnIndex": 2
+                        }
+                      ],
+                      "ColumnDelimiter": ",",
+                      "EncodingType": "UTF-8",
+                      "TextQualifier": "\"",
+                      "FilePath": "Documents\\example.csv"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "3f95fe90-c648-4e8e-84be-c8ca5ccd9d00"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=バージョンマスタ!H5"
+                      }
+                    ]
+                  },
+                  "value": "EXCEL"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ImportExcelToListViewMode": 2,
+                    "ImportExcelToListViewColumnInfos": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=バージョンマスタ!C9"
+                        },
+                        "ColumnName": "バージョンコード",
+                        "IsPrimaryKey": true
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=バージョンマスタ!L9"
+                        },
+                        "ColumnName": "バージョン名"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "85188883-15c8-4f97-bb68-c08172742320"
+              }
+            ]
+          }
+        ],
+        "Text": "インポート",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "MST_バージョン",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 15,
+        "ColumnCount": 19,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "8,2": {
+      "BindingInfo": {
+        "TableName": "MST_バージョン",
+        "ColumnName": "バージョンコード",
+        "GUID": "637f6ffa-88b6-4cdb-8ab8-873c5b590ff8"
+      }
+    },
+    "8,11": {
+      "BindingInfo": {
+        "TableName": "MST_バージョン",
+        "ColumnName": "バージョン名",
+        "GUID": "247106d5-2e5d-4c2a-8bfb-de95ffe63331"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Formatter": 5,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "Formatter": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 6
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "BorderLeft": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 35",
+        "Center",
+        "Blue",
+        "[AUTO]General",
+        "General",
+        "Text 2 80",
+        "black",
+        "DarkGray"
+      ],
+      "Borders": [
+        {
+          "Color": 8
+        },
+        {
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "1,1": 0,
+      "1,2": 1,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 0,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "2,1": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,55": 2,
+      "2,56": 3,
+      "2,57": 3,
+      "2,58": 3,
+      "2,59": 3,
+      "2,61": 0,
+      "2,62": 0,
+      "3,1": 4,
+      "3,2": 4,
+      "3,3": 4,
+      "3,4": 4,
+      "3,5": 4,
+      "3,6": 4,
+      "3,7": 4,
+      "3,8": 4,
+      "3,9": 4,
+      "3,10": 4,
+      "3,11": 4,
+      "3,12": 4,
+      "3,13": 4,
+      "3,14": 4,
+      "3,15": 4,
+      "3,16": 4,
+      "3,62": 5,
+      "3,63": 6,
+      "3,64": 0,
+      "3,65": 0,
+      "3,66": 0,
+      "3,67": 6,
+      "4,2": 7,
+      "4,3": 8,
+      "4,4": 8,
+      "4,5": 8,
+      "4,6": 8,
+      "4,7": 8,
+      "4,8": 8,
+      "4,9": 8,
+      "4,10": 8,
+      "4,11": 8,
+      "4,12": 8,
+      "4,13": 8,
+      "4,14": 8,
+      "4,15": 8,
+      "4,16": 9,
+      "4,17": 8,
+      "4,18": 8,
+      "4,19": 8,
+      "4,20": 8,
+      "4,21": 8,
+      "4,22": 8,
+      "4,23": 8,
+      "4,24": 10,
+      "4,25": 9,
+      "4,26": 8,
+      "4,27": 8,
+      "4,28": 8,
+      "4,29": 8,
+      "4,30": 8,
+      "4,31": 8,
+      "4,62": 6,
+      "4,63": 6,
+      "4,64": 0,
+      "4,65": 11,
+      "4,66": 12,
+      "4,67": 6,
+      "5,2": 8,
+      "5,3": 8,
+      "5,4": 8,
+      "5,5": 8,
+      "5,6": 8,
+      "5,7": 8,
+      "5,8": 8,
+      "5,9": 8,
+      "5,10": 8,
+      "5,11": 8,
+      "5,12": 8,
+      "5,13": 8,
+      "5,14": 8,
+      "5,15": 8,
+      "5,16": 8,
+      "5,17": 8,
+      "5,18": 8,
+      "5,19": 8,
+      "5,20": 8,
+      "5,21": 8,
+      "5,22": 8,
+      "5,23": 8,
+      "5,24": 10,
+      "5,25": 8,
+      "5,26": 8,
+      "5,27": 8,
+      "5,28": 8,
+      "5,29": 8,
+      "5,30": 8,
+      "5,31": 8,
+      "5,64": 0,
+      "5,65": 13,
+      "5,66": 14,
+      "6,64": 0,
+      "6,65": 15,
+      "6,66": 16,
+      "7,2": 17,
+      "7,3": 18,
+      "7,4": 18,
+      "7,5": 18,
+      "7,6": 18,
+      "7,7": 18,
+      "7,8": 18,
+      "7,9": 18,
+      "7,10": 18,
+      "8,2": 19,
+      "8,11": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,2,1,9",
+    "8,11,1,10",
+    "4,16,2,7",
+    "4,25,2,7",
+    "4,7,2,7",
+    "4,2,2,5",
+    "9,2,13,19",
+    "1,2,2,12",
+    "1,61,2,2",
+    "2,55,1,5",
+    "7,2,1,9",
+    "7,11,1,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "MST_バージョン"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//GcBEyuFi6Qz9DniJVtq4RpGnkFMAdZpooKp6oqzkuDLVJj+kKoBbesxY1ntstwbW470XLTWUica9d3R36oZ61lgrNSDNToFStjLoP84ggSpAtocn87fg9Hg3w1Fl+s/+yomUAbMaDjfMqtaQOjFm8ClhwjMNyuw0EhJXuzvz7Tlb4QXHxxrHhOGyalOCJv6SI+S/K9jBt7HqNX4EiD5yewGglLZM309TlsxtxHZa2lwvze60lSP1uNb/jC9HY67m6BIoxEiyXt9ZX7wQpjJ1MIYunztk/Mz1FCToINhjWgDhC0AJJJaHJ4r8oI01TgU+LMSsa4mZZP6DMfUmw/Vr/GiOZSq1ZMif1vXWU6x+WSECD09kwqR7gSpExoyhwDtP/z+azLiULANrG1LpOSd3am2iXYZMcG04CKqE9Ft/987pu7UL/rrnYz8W4Y20Z4Iqg8H5+5xdLXKICWoHA2TKxDK6gteLsQHcvSh/AUhza1JscWiRuukBqPo88S05NsSCcG8qFH4ltHSMjnLaGsmNB575IfwJsCdlOcoFZt++LYJ5oBmgSIWv5iX0wvWA7fydJIV9Y8K3EXgr5PmkNzj7f+TnIQ+Cen4by5JQrkE7/V7A4QIHkwMvcyHaF01b562oyvc0HWAsHT1OcaYtyyGDDn4YKAQjR46j5zfLqImtIymQvJKczuP9g8rLdCQ/u3Y/UMSfm6qsxz+nD+YE4PjjCo+vAmpeSia2uf/2N30eZk6yohHLnFJPtedGfAN8fGdh+DjgtV9Eis3yz8BhzpHBqBYt4bcNsksVshKwbdWYXXPIOuiKBJXx1VCc8S1odWHLcedS2rs3ur47wMUVrvXjzSv2dURmVOU8mEF49IdkY3R0RSDN6rg60N5qJHXa2ObaBoKcwUG+S87coG4AQsuJrA==|920

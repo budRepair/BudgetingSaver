@@ -1,0 +1,400 @@
+{
+  "Name": "見込実績置換_単月",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度",
+          "DataValidationInfo": {},
+          "TestData": "2023"
+        },
+        {
+          "Name": "月",
+          "DataValidationInfo": {},
+          "TestData": "05"
+        },
+        {
+          "Name": "バージョン",
+          "DataValidationInfo": {},
+          "TestData": "Fix"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "04"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=年度"
+                  },
+                  "Item2": 16
+                },
+                "@pmt2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=バージョン"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_4月\" = ( \r\n        SELECT\r\n            \"4月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "f8510d0dba8c4c67a0aa484529ee5442",
+              "Comments": "4月"
+            }
+          ],
+          "ID": "802bdec4-a7de-4f0c-a8ee-7b7304ab59e1"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "05"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=年度"
+                  },
+                  "Item2": 16
+                },
+                "@pmt2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=バージョン"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_5月\" = ( \r\n        SELECT\r\n            \"5月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "e2272fd18c1944b1b7ce3c4beb95b566",
+              "Comments": "5月"
+            }
+          ],
+          "ID": "cafaec80-08bb-4c9d-976c-c3b8fa967a2e"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "06"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=年度"
+                  },
+                  "Item2": 16
+                },
+                "@pmt2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=バージョン"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_6月\" = ( \r\n        SELECT\r\n            \"6月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "75821fd6c482476caf5691f9158c0ef9",
+              "Comments": "6月"
+            }
+          ],
+          "ID": "a65dfd3e-1f1f-4c3a-876b-134f82cad4e4"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "07"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {
+                "@pmt1": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=年度"
+                  },
+                  "Item2": 16
+                },
+                "@pmt2": {
+                  "Item1": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=バージョン"
+                  },
+                  "Item2": 16
+                }
+              },
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_7月\" = ( \r\n        SELECT\r\n            \"7月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "c5e85c7f69fd42c28b2e1aa48deb1811",
+              "Comments": "7月"
+            }
+          ],
+          "ID": "4dc677d1-96a7-4a53-8b10-b1c317f78860"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "08"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_8月\" = ( \r\n        SELECT\r\n            \"8月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "fb02f2f62f744e768291758f6450266d",
+              "Comments": "8月"
+            }
+          ],
+          "ID": "aabfe539-e5b2-4ade-8324-77dcb09e4cb6"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "09"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_9月\" = ( \r\n        SELECT\r\n            \"9月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "55539ae437c34b3badbab519935230d8",
+              "Comments": "9月"
+            }
+          ],
+          "ID": "71e6102e-02c2-44e6-97ba-622860136953"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "10"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_10月\" = ( \r\n        SELECT\r\n            \"10月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "e74dfa7b26e446638d129fddac9bb0f7",
+              "Comments": "10月"
+            }
+          ],
+          "ID": "2008a136-190e-4f6c-92fd-e65a1676d211"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "11"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_11月\" = ( \r\n        SELECT\r\n            \"11月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "4129ffb8809444d4bcd8d1be2f7d6a23",
+              "Comments": "11月"
+            }
+          ],
+          "ID": "37296aba-bc96-47f6-8aac-884bb9244f2b"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "12"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_12月\" = ( \r\n        SELECT\r\n            \"12月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "5be85ddf021c45158985ec5e1823b095",
+              "Comments": "12月"
+            }
+          ],
+          "ID": "71c6e254-2c2c-4b62-8271-68a55605c16d"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "01"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_01月\" = ( \r\n        SELECT\r\n            \"01月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "02c957b7a1f24f069bf1c68c608f17da",
+              "Comments": "1月"
+            }
+          ],
+          "ID": "a7498cd4-4363-42b6-ae5e-809e60992d72"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "02"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_02月\" = ( \r\n        SELECT\r\n            \"02月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "2c30f84e52d7474d9b7913789473895d",
+              "Comments": "2月"
+            }
+          ],
+          "ID": "d9a71b51-205b-4995-8431-a0a37cfc6dad"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=月"
+              }
+            },
+            "value": "03"
+          },
+          "CommandList": [
+            {
+              "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+              "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+              "Params": {},
+              "SqlStatement": "UPDATE \"INP_見込_損益計算書\" \r\nSET\r\n    \"_03月\" = ( \r\n        SELECT\r\n            \"03月\" \r\n        FROM\r\n            \"VIEW_実績_損益計算書\" vi \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = vi.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"組織コード\" = vi.\"組織コード\" \r\n            AND \"INP_見込_損益計算書\".\"科目コード\" = vi.\"科目コード\"\r\n    ) \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"バージョン\" = @pmt2;",
+              "ID": "7e0004d9e0e44f389d2600676d681546",
+              "Comments": "3月"
+            }
+          ],
+          "ID": "d7bd773b-2fd4-4f0c-a032-9d50cb3460f0"
+        }
+      ]
+    }
+  ]
+}

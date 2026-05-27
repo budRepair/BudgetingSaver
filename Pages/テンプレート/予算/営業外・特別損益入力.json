@@ -1,0 +1,3472 @@
+{
+  "Rows": {
+    "Count": 67
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "105": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 97.0
+        }
+      },
+      "106": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 132.0
+        }
+      },
+      "107": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "108": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "109": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "110": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165
+    ],
+    "Count": 166
+  },
+  "Values": {
+    "1,2": "営業外・特別損益 入力",
+    "1,61": "",
+    "2,55": "メニューに戻る",
+    "3,105": "↓初期値設定",
+    "3,109": "↓戻り値設定",
+    "4,7": "%CurrentUser.会社コード%",
+    "4,23": "%CurrentUser.組織１コード%",
+    "4,34": "%CurrentUser.組織２コード%",
+    "4,45": "%CurrentUser.組織３コード%",
+    "5,105": "Fix",
+    "7,2": "データ表示",
+    "7,9": "データ保存",
+    "7,16": "損益計算書へ反映",
+    "9,104": "■ログアウトコマンド",
+    "10,2": "科目コード",
+    "10,7": "科目名",
+    "10,14": "1月",
+    "10,20": "2月",
+    "10,26": "3月",
+    "10,32": "4月",
+    "10,38": "5月",
+    "10,44": "6月",
+    "10,50": "7月",
+    "10,56": "8月",
+    "10,62": "9月",
+    "10,68": "10月",
+    "10,74": "11月",
+    "10,80": "12月",
+    "10,105": "処理確認",
+    "10,106": "ログアウトしますか？",
+    "11,105": "リターンコード",
+    "12,105": "処理失敗",
+    "12,106": "ログアウト処理に失敗しました。管理者に確認してください。"
+  },
+  "Formulas": {
+    "4,105": "YEAR(EDATE(TODAY(),-3))",
+    "6,105": "IF(BL5=0,\"%Null%\",BL5)"
+  },
+  "AttachInfos": {
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=営業外・特別損益入力!DC11"
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "ログアウトコマンド",
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=営業外・特別損益入力!DC12"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=営業外・特別損益入力!DC12"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_ログイン"
+                          }
+                        ],
+                        "ID": "b567d11f-3170-4ed2-ac46-d4f9b9b29e26"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=営業外・特別損益入力!DC12"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!DC13"
+                            }
+                          }
+                        ],
+                        "ID": "504bcbde-e561-458a-9231-e39222c93440"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "583c0c3c-c801-46b8-ac8d-4c83e5eb6626"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "スタイル14",
+        "Icon": {
+          "Name": "Arrow/321_exit_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 18.0
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）2020",
+        "IsBounding": true,
+        "DataSource": "MST_年度",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "77c3129d-e612-40b1-bf5b-b4cb465b67d0"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "38ee6daa-eb3c-4deb-9b57-8acad52796cf"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!10:65"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e5954110-4060-438e-b35f-cea62601c916"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8349381b-a396-4bdb-9c11-f06e94df9f16"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=営業外・特別損益入力!DB5"
+        }
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "会社名",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "会社コード",
+          "GUID": "ff776ae5-7845-48b3-9bcd-a6db32214079"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "会社名",
+          "GUID": "eec99a9a-f99c-4d31-a05b-af6c1ae29ff2"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "会社コード",
+                "GUID": "c3f1a60e-f4d8-4382-ba6f-e69f256b0ca2"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!10:65"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9f00a7af-f1a7-4fc0-aa8b-57ebe8908bb7"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "efcaf9de-90af-43cc-b828-d7fd0432fa09"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.会社コード%"
+      }
+    },
+    "4,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織1",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "本部コード",
+          "GUID": "f33c0cb9-6ebd-46e3-a883-03a532f3da66"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "本部名",
+          "GUID": "0b8b78b5-440e-401a-b438-33a11cd450d1"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "会社コード",
+            "GUID": "c0ec205f-6680-4f17-8e7e-274c22c5c8f2"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=営業外・特別損益入力!H5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "本部コード",
+                "GUID": "5b977cef-341d-477a-88b1-505ca308b740"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!10:65"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "5c0acce2-73ac-41d3-b4b3-269f452db322"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "f78f8e02-b003-4a80-b331-0e55aa750214"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "会社ユーザ"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織１コード%"
+      }
+    },
+    "4,34": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織2",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門コード",
+          "GUID": "6153e19a-3def-45ad-9048-416fcf2b1464"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "237bc4ef-5f5e-40d1-a525-c9a0cd854ecd"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "本部コード",
+            "GUID": "8e0dffb1-c78c-4f66-a12d-feecdc53227c"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=営業外・特別損益入力!X5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "部門コード",
+                "GUID": "db0b3d44-64ce-436d-84f7-874cd4b4d404"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!10:65"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "c08ae2a5-009a-44e1-9f1c-0854bf8007df"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9f4095fc-6238-426b-9ac5-92364ea48ec7"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "会社ユーザ",
+              "組織１ユーザ",
+              "Administrator"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織２コード%"
+      }
+    },
+    "4,45": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織3",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織コード",
+          "GUID": "d5da0ebe-0c98-4ba7-8ca2-8db8570dae4a"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織名",
+          "GUID": "1d4576be-227c-4ab6-9ec3-6671ed8ff5a5"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "部門コード",
+            "GUID": "6ce986b3-02e8-490f-b1bc-dd382a92192d"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=営業外・特別損益入力!AI5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "組織コード",
+                "GUID": "9127d396-dbfe-4648-a689-4633f361630a"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!10:65"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!H5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ead3d23b-40a6-4d6d-a9e4-be0df12772e6"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "a959062e-69d8-41df-990b-2fd9844e435b"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "会社ユーザ",
+              "組織１ユーザ",
+              "組織２ユーザ"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織３コード%"
+      }
+    },
+    "4,56": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）Ver01",
+        "IsBounding": true,
+        "DataSource": "MST_バージョン",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "e1460499-c33c-4365-b5e3-d5a6152df89f"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "659d893a-ea21-4873-a020-62fc37f191de"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!10:65"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "a5fd86f8-7f28-42b7-8222-2a1b33d1ebff"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "a12b1dfc-1257-4d3c-91bb-556efbb6069a"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=営業外・特別損益入力!DB6"
+        }
+      }
+    },
+    "4,63": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "取引先",
+        "IsBounding": true,
+        "DataSource": "MST_属性",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_属性",
+          "ColumnName": "親属性コード",
+          "GUID": "ba7e40d2-1af7-473f-9256-ae10897b6224"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_属性",
+          "ColumnName": "親属性名称",
+          "GUID": "7a663570-b6f1-471d-8666-018f1db61204"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!10:65"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!J8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=営業外・特別損益入力!Q8"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!X5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2ae7a0ba-faec-488b-8526-388ed6accda9"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e2346e56-3d9e-45e8-a8d7-4e9014503f5a"
+              }
+            ]
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "7,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AI5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!10:65"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "26b4e00e-ec3e-401f-a093-1e278e97b804"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingText": "データを表示します",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "営業外・特別損益入力",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "年度",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "組織",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!AT5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "バージョン",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!BE5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "会社",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!H5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "荷主",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=IF(営業外・特別損益入力!BL5=0,\"\",営業外・特別損益入力!BL5)"
+                        }
+                      }
+                    ],
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=営業外・特別損益入力!DF5"
+                    },
+                    "ResultMessageTo": {
+                      "SerializeProperty": "=営業外・特別損益入力!DF6"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "損益計算書入力",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "年度",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!C5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "会社",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!H5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "組織",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!AT5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "バージョン",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!BE5"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "区分",
+                        "Value": "3"
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_営業外_特別損益",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_営業外_特別損益",
+                            "ColumnName": "年度",
+                            "GUID": "b2f261c2-4fb8-4765-99df-5f0ed7a5b601"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=営業外・特別損益入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_営業外_特別損益",
+                            "ColumnName": "組織コード",
+                            "GUID": "87ba6238-ff30-4453-a3f4-43e98ca4105a"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=営業外・特別損益入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_営業外_特別損益",
+                            "ColumnName": "バージョン",
+                            "GUID": "d1fc141d-7fe5-4d51-8558-d7b48c96603b"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=営業外・特別損益入力!BE5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_営業外_特別損益",
+                            "ColumnName": "科目コード",
+                            "GUID": "7061f899-4c40-43f0-a750-549a898d5684",
+                            "RelationBinding": {
+                              "RelatedTable": "MST_科目",
+                              "RelatedColumn": "科目コード",
+                              "DisplayColumn": "会社コード"
+                            }
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=営業外・特別損益入力!H5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "c326609e3673478ab99baca3d40260b4"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_営業外_特別損益",
+                            "ColumnName": "科目コード",
+                            "GUID": "ff6df25c-516d-46c6-878a-24dba4df17cd"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "da4fbeaa79d74bdaa0f22b5e9494c4e1"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!10:65"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=営業外・特別損益入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  }
+                ],
+                "ID": "eeb831d5-18ba-4125-b420-1acedd7ffb0b"
+              }
+            ]
+          }
+        ],
+        "Text": "データ表示",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に更新してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "4bee8cab-10c6-45aa-81ec-c613e1d05fe2"
+              }
+            ]
+          }
+        ],
+        "Text": "データ保存",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に反映してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                    "LoopInfo": {
+                      "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+                      "ListviewName": "リストビュー3"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "INP_予算_損益計算書",
+                        "ShowConfirm": false,
+                        "RowsToUpdate": 1,
+                        "RowsToUpdateCondition": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "年度",
+                                "GUID": "0807292b-13b9-43ef-971e-e2a4b73aa5b3"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=営業外・特別損益入力!C5"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "組織コード",
+                                "GUID": "3e523a4d-4c82-4dc0-af21-cc0a7c208ce0"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=営業外・特別損益入力!AT5"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "バージョン",
+                                "GUID": "33e05bb3-36e6-47e2-985e-8be99f931ea0"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=営業外・特別損益入力!BE5"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_損益計算書",
+                                "ColumnName": "科目コード",
+                                "GUID": "2d5fc782-91aa-47f9-9c03-2bd0c326e1b5"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=営業外・特別損益入力!DL17"
+                              }
+                            }
+                          ]
+                        },
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_4月",
+                              "GUID": "e3b5704f-7be4-4253-8746-b1335403a9a1"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!DO17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_5月",
+                              "GUID": "52e1e669-7a1a-48e4-bedf-83a1c95bd904"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!DS17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_6月",
+                              "GUID": "dc8d4d57-7c9e-4743-8ae2-617a961f6d91"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!DW17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_7月",
+                              "GUID": "b6427956-61d6-4703-86c9-3d0651a179b3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!EA17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_8月",
+                              "GUID": "4e31364a-b6ac-4506-9a98-e8a9aeb15601"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!EE17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_9月",
+                              "GUID": "5c737f2c-d580-4ab9-8776-62a4ffe0d443"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!EI17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_10月",
+                              "GUID": "5575b3ac-d45c-43f0-8ba3-9b5708a910ed"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!EM17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_11月",
+                              "GUID": "281c0d48-80c6-4a27-90d1-93a522ca5e2f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!EQ17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_12月",
+                              "GUID": "a5fbca54-a4f6-4719-a743-57d16fd84ec6"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!EU17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_1月",
+                              "GUID": "90dbe882-68dd-4492-a5dd-5071ca8e2a45"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!EY17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_2月",
+                              "GUID": "5c6c9b3a-28c1-4a15-b483-d85dfef867a5"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!FC17"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_損益計算書",
+                              "ColumnName": "_3月",
+                              "GUID": "7f91293b-e86b-4a53-bd37-a1f477e7b814"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=営業外・特別損益入力!FG17"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "ID": "85137bfe-afc4-4db4-811d-c03a5d147b25"
+              }
+            ]
+          }
+        ],
+        "Text": "損益計算書へ反映",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "10,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "INP_予算_営業外_特別損益",
+        "RowIndex": 10,
+        "ColumnIndex": 2,
+        "RowCount": 55,
+        "ColumnCount": 84,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_営業外_特別損益",
+            "ColumnName": "予算部門コード",
+            "GUID": "5aae0118-c668-41dc-916c-75c497df53c9"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=営業外・特別損益入力!DB7"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "11,2": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "科目コード",
+        "GUID": "15d5fda1-f7f9-4b24-b5df-0bcaba43c2bc"
+      }
+    },
+    "11,7": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "科目コード",
+        "GUID": "ef90484b-3472-411d-bf38-f79f15d4d04f",
+        "RelationBinding": {
+          "RelatedTable": "MST_科目",
+          "RelatedColumn": "科目コード",
+          "DisplayColumn": "科目名"
+        }
+      }
+    },
+    "11,14": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_1月",
+        "GUID": "902b97b1-0f5f-4c54-a1a7-0d718196edc4"
+      }
+    },
+    "11,20": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_2月",
+        "GUID": "f80ed04d-a709-46c2-80bc-32bb2812e22d"
+      }
+    },
+    "11,26": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_3月",
+        "GUID": "6e417306-59ec-49ee-b6ee-36319ac72b67"
+      }
+    },
+    "11,32": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_4月",
+        "GUID": "afbfb21e-b996-43d8-91e1-d7f39ca40a0c"
+      }
+    },
+    "11,38": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_5月",
+        "GUID": "b0be79e7-259a-4bd9-8bb3-5ca20f6be658"
+      }
+    },
+    "11,44": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_6月",
+        "GUID": "f5117fac-dbed-4c75-aab3-fd043fc7d1df"
+      }
+    },
+    "11,50": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_7月",
+        "GUID": "d078d88e-c67f-484d-8d1b-dd5add35c1c5"
+      }
+    },
+    "11,56": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_8月",
+        "GUID": "8e586080-2526-41eb-93d7-a502e1c6e598"
+      }
+    },
+    "11,62": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_9月",
+        "GUID": "d7b4d14d-d459-4915-a77f-785d2acfb369"
+      }
+    },
+    "11,68": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_10月",
+        "GUID": "aa6bbc35-2d53-44c4-9ca4-3c58c4aebfb4"
+      }
+    },
+    "11,74": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_11月",
+        "GUID": "967749d2-f4db-4e48-83a4-1b9097ea6622"
+      }
+    },
+    "11,80": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_12月",
+        "GUID": "0f66133f-06eb-4bbc-b3b3-e6b1c4e60649"
+      }
+    },
+    "15,105": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "MST_組織",
+        "RowIndex": 15,
+        "ColumnIndex": 105,
+        "RowCount": 7,
+        "ColumnCount": 2,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "15,108": {
+      "ListViewInfo": {
+        "Name": "リストビュー3",
+        "TableName": "INP_予算_営業外_特別損益",
+        "RowIndex": 15,
+        "ColumnIndex": 108,
+        "RowCount": 9,
+        "ColumnCount": 58,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "16,105": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "会社コード",
+        "GUID": "a8ef6c29-d9ee-4e2b-8c39-bdcd69a09ed7"
+      }
+    },
+    "16,106": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "会社名",
+        "GUID": "08680116-1a18-4df2-9b02-7a95c61bdd03"
+      }
+    },
+    "16,108": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "年度",
+        "GUID": "098b7571-1705-4aea-917c-af47964c7944"
+      }
+    },
+    "16,111": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "組織コード",
+        "GUID": "bc1b64fa-3f49-45bd-86c0-022dfe833443"
+      }
+    },
+    "16,115": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "科目コード",
+        "GUID": "74112ec9-41e8-4400-93e2-2755c10e68cb"
+      }
+    },
+    "16,118": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_4月合計",
+        "GUID": "f9f88431-68fc-4bb9-9079-692ad630e42f"
+      }
+    },
+    "16,122": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_5月合計",
+        "GUID": "2fc1d9da-b4d3-44aa-9059-f09f0bb42297"
+      }
+    },
+    "16,126": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_6月合計",
+        "GUID": "1895e64e-2a55-4c9c-9912-afe4986ca919"
+      }
+    },
+    "16,130": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_7月合計",
+        "GUID": "ebf76eea-0cac-4825-91c0-42e859207d04"
+      }
+    },
+    "16,134": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_8月合計",
+        "GUID": "b418e419-6ed3-4c6e-9c73-942068d469b2"
+      }
+    },
+    "16,138": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_9月合計",
+        "GUID": "c48bf72a-8913-4391-871f-a808b3f61862"
+      }
+    },
+    "16,142": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_10月合計",
+        "GUID": "85035351-5259-4138-98d0-8e667e943723"
+      }
+    },
+    "16,146": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_11月合計",
+        "GUID": "411fc911-1473-4460-9723-c9b8ac92db1d"
+      }
+    },
+    "16,150": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_12月合計",
+        "GUID": "b8c860ba-e929-4157-b963-07cd73afccfc"
+      }
+    },
+    "16,154": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_1月合計",
+        "GUID": "4cb06634-9b81-4286-8767-d16de3667a68"
+      }
+    },
+    "16,158": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_2月合計",
+        "GUID": "8e407544-ab69-45b4-8d0f-54a6a6856651"
+      }
+    },
+    "16,162": {
+      "BindingInfo": {
+        "TableName": "INP_予算_営業外_特別損益",
+        "ColumnName": "_3月合計",
+        "GUID": "33b485df-c8d0-4ad8-82d9-424b33f8db22"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 3,
+        "Foreground": 4,
+        "Formatter": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontSize": 34.666666666666664,
+        "FontWeight": 3,
+        "Formatter": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 7,
+        "Formatter": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Foreground": 8,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 8,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 10,
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 12,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 13,
+        "HorizontalAlignment": 14,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 10,
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 10,
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Blue",
+        "[AUTO]General",
+        "Bold",
+        "Text 1 35",
+        "Center",
+        "#FFFFFF00",
+        "Background 1 0",
+        "#FF000000",
+        "DarkGray",
+        "Text 2 80",
+        "black",
+        "Background 1 -5",
+        "#,##0",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        },
+        {
+          "Color": 11
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,22": 0,
+      "0,31": 1,
+      "0,32": 1,
+      "0,33": 1,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 0,
+      "0,48": 0,
+      "0,49": 0,
+      "0,50": 0,
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,74": 0,
+      "0,75": 0,
+      "0,76": 0,
+      "0,77": 0,
+      "0,78": 0,
+      "0,79": 0,
+      "0,80": 0,
+      "0,81": 0,
+      "0,84": 0,
+      "0,85": 0,
+      "0,86": 0,
+      "0,87": 0,
+      "0,88": 0,
+      "0,89": 0,
+      "0,90": 0,
+      "0,91": 0,
+      "0,92": 0,
+      "0,93": 0,
+      "0,94": 0,
+      "0,95": 0,
+      "0,96": 0,
+      "0,97": 0,
+      "0,98": 0,
+      "0,99": 0,
+      "0,100": 0,
+      "0,101": 0,
+      "0,102": 0,
+      "0,104": 0,
+      "0,105": 0,
+      "0,106": 0,
+      "1,2": 2,
+      "1,22": 0,
+      "1,23": 3,
+      "1,24": 3,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "1,78": 0,
+      "1,79": 0,
+      "1,80": 0,
+      "1,81": 0,
+      "1,84": 0,
+      "1,85": 0,
+      "1,86": 0,
+      "1,87": 0,
+      "1,88": 0,
+      "1,89": 0,
+      "1,90": 0,
+      "1,91": 0,
+      "1,92": 0,
+      "1,93": 0,
+      "1,94": 0,
+      "1,95": 0,
+      "1,96": 0,
+      "1,97": 0,
+      "1,98": 0,
+      "1,99": 0,
+      "1,100": 0,
+      "1,101": 0,
+      "1,102": 0,
+      "1,104": 0,
+      "1,105": 0,
+      "1,106": 0,
+      "2,22": 0,
+      "2,23": 3,
+      "2,24": 3,
+      "2,25": 0,
+      "2,26": 4,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,55": 1,
+      "2,56": 5,
+      "2,57": 5,
+      "2,58": 5,
+      "2,59": 5,
+      "2,61": 0,
+      "2,62": 0,
+      "2,78": 0,
+      "2,79": 0,
+      "2,80": 0,
+      "2,81": 0,
+      "2,82": 0,
+      "2,83": 0,
+      "2,84": 0,
+      "2,85": 0,
+      "2,86": 0,
+      "2,87": 0,
+      "2,88": 0,
+      "2,89": 0,
+      "2,90": 0,
+      "2,91": 0,
+      "2,92": 0,
+      "2,93": 0,
+      "2,94": 0,
+      "2,95": 0,
+      "2,96": 0,
+      "2,97": 0,
+      "2,98": 0,
+      "2,99": 0,
+      "2,100": 0,
+      "2,101": 0,
+      "2,102": 0,
+      "2,103": 0,
+      "2,104": 0,
+      "2,105": 0,
+      "2,106": 0,
+      "3,1": 6,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 0,
+      "3,6": 0,
+      "3,7": 0,
+      "3,8": 0,
+      "3,15": 0,
+      "3,16": 0,
+      "3,17": 0,
+      "3,18": 0,
+      "3,19": 0,
+      "3,20": 0,
+      "3,21": 0,
+      "3,22": 0,
+      "3,23": 0,
+      "3,24": 0,
+      "3,25": 0,
+      "3,26": 0,
+      "3,27": 0,
+      "3,28": 0,
+      "3,29": 0,
+      "3,30": 0,
+      "3,31": 0,
+      "3,32": 0,
+      "3,33": 0,
+      "3,34": 0,
+      "3,35": 0,
+      "3,36": 0,
+      "3,37": 0,
+      "3,38": 0,
+      "3,39": 0,
+      "3,40": 0,
+      "3,41": 0,
+      "3,42": 0,
+      "3,105": 0,
+      "3,109": 7,
+      "4,1": 0,
+      "4,2": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "4,16": 0,
+      "4,17": 0,
+      "4,18": 0,
+      "4,19": 0,
+      "4,20": 0,
+      "4,21": 0,
+      "4,23": 0,
+      "4,24": 0,
+      "4,25": 0,
+      "4,26": 0,
+      "4,27": 0,
+      "4,28": 0,
+      "4,29": 0,
+      "4,30": 0,
+      "4,31": 0,
+      "4,32": 0,
+      "4,34": 0,
+      "4,35": 0,
+      "4,36": 0,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 0,
+      "4,40": 0,
+      "4,41": 0,
+      "4,42": 0,
+      "4,43": 0,
+      "4,45": 0,
+      "4,46": 0,
+      "4,47": 0,
+      "4,48": 0,
+      "4,49": 0,
+      "4,50": 0,
+      "4,51": 0,
+      "4,52": 0,
+      "4,53": 0,
+      "4,54": 0,
+      "4,56": 0,
+      "4,57": 0,
+      "4,58": 0,
+      "4,59": 0,
+      "4,60": 0,
+      "4,61": 0,
+      "4,63": 0,
+      "4,64": 0,
+      "4,65": 0,
+      "4,66": 0,
+      "4,67": 0,
+      "4,68": 0,
+      "4,69": 0,
+      "4,70": 0,
+      "4,71": 0,
+      "4,72": 0,
+      "4,73": 0,
+      "4,74": 0,
+      "4,75": 0,
+      "4,76": 0,
+      "4,77": 0,
+      "4,105": 0,
+      "4,106": 0,
+      "4,108": 0,
+      "4,109": 8,
+      "5,1": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "5,16": 0,
+      "5,17": 0,
+      "5,18": 0,
+      "5,19": 0,
+      "5,20": 0,
+      "5,21": 0,
+      "5,23": 0,
+      "5,24": 0,
+      "5,25": 0,
+      "5,26": 0,
+      "5,27": 0,
+      "5,28": 0,
+      "5,29": 0,
+      "5,30": 0,
+      "5,31": 0,
+      "5,32": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,36": 0,
+      "5,37": 0,
+      "5,38": 0,
+      "5,39": 0,
+      "5,40": 0,
+      "5,41": 0,
+      "5,42": 0,
+      "5,43": 0,
+      "5,45": 0,
+      "5,46": 0,
+      "5,47": 0,
+      "5,48": 0,
+      "5,49": 0,
+      "5,50": 0,
+      "5,51": 0,
+      "5,52": 0,
+      "5,53": 0,
+      "5,54": 0,
+      "5,56": 0,
+      "5,57": 0,
+      "5,58": 0,
+      "5,59": 0,
+      "5,60": 0,
+      "5,61": 0,
+      "5,63": 0,
+      "5,64": 0,
+      "5,65": 0,
+      "5,66": 0,
+      "5,67": 0,
+      "5,68": 0,
+      "5,69": 0,
+      "5,70": 0,
+      "5,71": 0,
+      "5,72": 0,
+      "5,73": 0,
+      "5,74": 0,
+      "5,75": 0,
+      "5,76": 0,
+      "5,77": 0,
+      "5,105": 9,
+      "5,108": 0,
+      "5,109": 8,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,6": 0,
+      "6,7": 0,
+      "6,8": 0,
+      "6,9": 0,
+      "6,10": 0,
+      "6,18": 0,
+      "6,19": 0,
+      "6,20": 0,
+      "6,21": 0,
+      "6,22": 0,
+      "6,23": 0,
+      "6,24": 0,
+      "6,25": 0,
+      "6,40": 0,
+      "6,41": 0,
+      "6,42": 0,
+      "6,105": 0,
+      "7,1": 0,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,6": 0,
+      "7,7": 0,
+      "7,8": 0,
+      "7,9": 7,
+      "7,10": 0,
+      "7,11": 0,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "7,16": 0,
+      "7,17": 0,
+      "7,18": 0,
+      "7,19": 0,
+      "7,20": 0,
+      "7,21": 0,
+      "7,22": 0,
+      "7,23": 0,
+      "7,24": 0,
+      "7,25": 0,
+      "7,40": 0,
+      "7,41": 0,
+      "7,42": 0,
+      "7,105": 0,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,6": 0,
+      "8,7": 0,
+      "8,8": 0,
+      "8,9": 0,
+      "8,10": 0,
+      "8,11": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,16": 0,
+      "8,17": 0,
+      "8,18": 0,
+      "8,19": 0,
+      "8,20": 0,
+      "8,21": 0,
+      "8,22": 0,
+      "8,23": 0,
+      "8,24": 0,
+      "8,25": 0,
+      "8,40": 0,
+      "8,41": 0,
+      "8,42": 0,
+      "8,105": 0,
+      "9,2": 10,
+      "9,14": 11,
+      "9,15": 0,
+      "9,17": 0,
+      "9,18": 0,
+      "9,19": 0,
+      "9,20": 0,
+      "9,21": 0,
+      "9,22": 0,
+      "9,25": 0,
+      "9,26": 0,
+      "9,27": 0,
+      "9,28": 11,
+      "9,29": 0,
+      "9,30": 0,
+      "9,32": 0,
+      "9,33": 0,
+      "9,34": 0,
+      "9,35": 0,
+      "9,36": 0,
+      "9,37": 0,
+      "9,40": 0,
+      "9,41": 0,
+      "9,42": 11,
+      "9,43": 0,
+      "9,45": 0,
+      "9,46": 0,
+      "9,47": 0,
+      "9,48": 0,
+      "9,49": 0,
+      "9,50": 0,
+      "9,51": 0,
+      "9,54": 0,
+      "9,55": 0,
+      "9,56": 11,
+      "9,57": 0,
+      "9,59": 0,
+      "9,60": 0,
+      "9,61": 0,
+      "9,62": 0,
+      "9,63": 0,
+      "9,64": 0,
+      "9,65": 0,
+      "9,68": 0,
+      "9,69": 0,
+      "9,70": 11,
+      "9,71": 0,
+      "9,73": 0,
+      "9,74": 0,
+      "9,75": 0,
+      "9,76": 0,
+      "9,77": 0,
+      "9,78": 0,
+      "9,81": 0,
+      "9,82": 0,
+      "9,83": 0,
+      "9,84": 11,
+      "9,85": 0,
+      "9,87": 0,
+      "9,88": 0,
+      "9,89": 0,
+      "9,90": 0,
+      "9,91": 0,
+      "9,92": 0,
+      "9,93": 0,
+      "9,96": 0,
+      "9,97": 0,
+      "9,98": 11,
+      "9,99": 0,
+      "9,101": 0,
+      "9,102": 0,
+      "9,104": 0,
+      "9,105": 0,
+      "9,106": 0,
+      "10,2": 12,
+      "10,3": 13,
+      "10,4": 13,
+      "10,5": 13,
+      "10,6": 14,
+      "10,7": 12,
+      "10,8": 13,
+      "10,9": 13,
+      "10,10": 13,
+      "10,11": 13,
+      "10,12": 13,
+      "10,13": 14,
+      "10,14": 15,
+      "10,15": 16,
+      "10,16": 16,
+      "10,17": 16,
+      "10,18": 16,
+      "10,19": 17,
+      "10,20": 15,
+      "10,21": 16,
+      "10,22": 16,
+      "10,23": 16,
+      "10,24": 16,
+      "10,25": 17,
+      "10,26": 15,
+      "10,27": 16,
+      "10,28": 16,
+      "10,29": 16,
+      "10,30": 16,
+      "10,31": 17,
+      "10,32": 15,
+      "10,33": 16,
+      "10,34": 16,
+      "10,35": 16,
+      "10,36": 16,
+      "10,37": 17,
+      "10,38": 15,
+      "10,39": 16,
+      "10,40": 16,
+      "10,41": 16,
+      "10,42": 16,
+      "10,43": 17,
+      "10,44": 15,
+      "10,45": 16,
+      "10,46": 16,
+      "10,47": 16,
+      "10,48": 16,
+      "10,49": 17,
+      "10,50": 15,
+      "10,51": 16,
+      "10,52": 16,
+      "10,53": 16,
+      "10,54": 16,
+      "10,55": 17,
+      "10,56": 15,
+      "10,57": 16,
+      "10,58": 16,
+      "10,59": 16,
+      "10,60": 16,
+      "10,61": 17,
+      "10,62": 15,
+      "10,63": 16,
+      "10,64": 16,
+      "10,65": 16,
+      "10,66": 16,
+      "10,67": 17,
+      "10,68": 15,
+      "10,69": 16,
+      "10,70": 16,
+      "10,71": 16,
+      "10,72": 16,
+      "10,73": 17,
+      "10,74": 15,
+      "10,75": 16,
+      "10,76": 16,
+      "10,77": 16,
+      "10,78": 16,
+      "10,79": 17,
+      "10,80": 15,
+      "10,81": 16,
+      "10,82": 16,
+      "10,83": 16,
+      "10,84": 16,
+      "10,85": 17,
+      "10,104": 0,
+      "10,105": 18,
+      "10,106": 19,
+      "11,2": 20,
+      "11,3": 13,
+      "11,4": 13,
+      "11,5": 13,
+      "11,6": 14,
+      "11,7": 20,
+      "11,8": 13,
+      "11,9": 13,
+      "11,10": 13,
+      "11,11": 13,
+      "11,12": 13,
+      "11,13": 14,
+      "11,14": 21,
+      "11,15": 22,
+      "11,16": 22,
+      "11,17": 22,
+      "11,18": 22,
+      "11,19": 23,
+      "11,20": 21,
+      "11,21": 22,
+      "11,22": 22,
+      "11,23": 22,
+      "11,24": 22,
+      "11,25": 23,
+      "11,26": 21,
+      "11,27": 22,
+      "11,28": 22,
+      "11,29": 22,
+      "11,30": 22,
+      "11,31": 23,
+      "11,32": 21,
+      "11,33": 22,
+      "11,34": 22,
+      "11,35": 22,
+      "11,36": 22,
+      "11,37": 23,
+      "11,38": 21,
+      "11,39": 22,
+      "11,40": 22,
+      "11,41": 22,
+      "11,42": 22,
+      "11,43": 23,
+      "11,44": 21,
+      "11,45": 22,
+      "11,46": 22,
+      "11,47": 22,
+      "11,48": 22,
+      "11,49": 23,
+      "11,50": 21,
+      "11,51": 22,
+      "11,52": 22,
+      "11,53": 22,
+      "11,54": 22,
+      "11,55": 23,
+      "11,56": 21,
+      "11,57": 22,
+      "11,58": 22,
+      "11,59": 22,
+      "11,60": 22,
+      "11,61": 23,
+      "11,62": 21,
+      "11,63": 22,
+      "11,64": 22,
+      "11,65": 22,
+      "11,66": 22,
+      "11,67": 23,
+      "11,68": 21,
+      "11,69": 22,
+      "11,70": 22,
+      "11,71": 22,
+      "11,72": 22,
+      "11,73": 23,
+      "11,74": 21,
+      "11,75": 22,
+      "11,76": 22,
+      "11,77": 22,
+      "11,78": 22,
+      "11,79": 23,
+      "11,80": 21,
+      "11,81": 22,
+      "11,82": 22,
+      "11,83": 22,
+      "11,84": 22,
+      "11,85": 23,
+      "11,104": 0,
+      "11,105": 24,
+      "11,106": 25,
+      "12,104": 0,
+      "12,105": 26,
+      "12,106": 27,
+      "15,105": 0,
+      "15,106": 0,
+      "15,108": 7,
+      "15,111": 0,
+      "15,115": 0,
+      "15,118": 0,
+      "15,122": 0,
+      "15,126": 0,
+      "15,130": 0,
+      "15,134": 0,
+      "15,138": 0,
+      "15,142": 0,
+      "15,146": 0,
+      "15,150": 0,
+      "15,154": 0,
+      "15,158": 0,
+      "15,162": 0,
+      "16,105": 0,
+      "16,106": 0,
+      "16,108": 0,
+      "16,111": 0,
+      "16,115": 0,
+      "16,118": 0,
+      "16,122": 0,
+      "16,126": 0,
+      "16,130": 0,
+      "16,134": 0,
+      "16,138": 0,
+      "16,142": 0,
+      "16,146": 0,
+      "16,150": 0,
+      "16,154": 0,
+      "16,158": 0,
+      "16,162": 0,
+      "17,105": 0,
+      "17,106": 0,
+      "18,105": 0,
+      "18,106": 0,
+      "19,105": 0,
+      "19,106": 0,
+      "20,105": 0,
+      "20,106": 0,
+      "21,105": 0,
+      "21,106": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,2,4",
+    "4,7,2,15",
+    "4,23,2,10",
+    "4,34,2,10",
+    "4,45,2,10",
+    "4,56,2,6",
+    "4,63,2,15",
+    "16,108,1,3",
+    "16,111,1,4",
+    "16,115,1,3",
+    "16,118,1,4",
+    "16,122,1,4",
+    "16,126,1,4",
+    "16,130,1,4",
+    "16,134,1,4",
+    "16,138,1,4",
+    "16,142,1,4",
+    "16,146,1,4",
+    "16,150,1,4",
+    "16,154,1,4",
+    "16,158,1,4",
+    "16,162,1,4",
+    "1,2,2,17",
+    "1,61,2,2",
+    "2,55,1,5",
+    "17,105,5,2",
+    "17,108,7,58",
+    "12,2,53,84",
+    "7,2,2,6",
+    "7,9,2,6",
+    "7,16,2,9",
+    "11,2,1,5",
+    "11,7,1,7",
+    "11,14,1,6",
+    "11,20,1,6",
+    "11,26,1,6",
+    "11,32,1,6",
+    "11,38,1,6",
+    "11,44,1,6",
+    "11,50,1,6",
+    "11,56,1,6",
+    "11,62,1,6",
+    "11,68,1,6",
+    "11,74,1,6",
+    "11,80,1,6",
+    "10,2,1,5",
+    "10,7,1,7",
+    "10,14,1,6",
+    "10,20,1,6",
+    "10,26,1,6",
+    "10,32,1,6",
+    "10,38,1,6",
+    "10,44,1,6",
+    "10,50,1,6",
+    "10,56,1,6",
+    "10,62,1,6",
+    "10,68,1,6",
+    "10,74,1,6",
+    "10,80,1,6",
+    "15,108,1,3",
+    "15,111,1,4",
+    "15,115,1,3",
+    "15,118,1,4",
+    "15,122,1,4",
+    "15,126,1,4",
+    "15,130,1,4",
+    "15,134,1,4",
+    "15,138,1,4",
+    "15,142,1,4",
+    "15,146,1,4",
+    "15,150,1,4",
+    "15,154,1,4",
+    "15,158,1,4",
+    "15,162,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=営業外・特別損益入力!10:65"
+            },
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=営業外・特別損益入力!C8"
+            },
+            "PropertyType": 0,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=営業外・特別損益入力!J8"
+            },
+            "PropertyType": 1,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=営業外・特別損益入力!Q8"
+            },
+            "PropertyType": 1,
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "INP_予算_損益計算書",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_損益計算書",
+            "ColumnName": "ID",
+            "GUID": "e9b2df17-c44e-42ac-9162-1401b92857d8"
+          },
+          "Value": "%Null%"
+        },
+        "ID": "42e709f65f964bcc967692615ab506da"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "INP_予算_営業外_特別損益"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//6MGsVGLVgbpv4NNHhetSYbH1P5dLeQJOdSbdf99aaD5VB0FBFJQFf5GmTrNff3LlbwAqA+knZXBELnpjVxul/FnI6hagNXNXSI05atzEnMQm4f6FTtyUg4xWmTJxVXOEXszfzsFVwN9V4uUIXN+lJv+8ikYe40MQkElZ5bBoH4WHQ1vgcI3qEMiI0nZGH9qjtvXX/WnHcuC75BA888joKacn3eam0TOAes1xnWP+dJLY33xky2m/CdpbsjtxjiEO3Jn7fsTcpiVNktL1zcjpmTFa4aPVd0sZaguNp7CrZlS+qeFSwsEZH+DwzvnsmMhH5hMX1KgD3m+P0cPEQHd1T0BCSTsdd+TX4fnUjwvAo614ydAvMduKfgqvldaCeZtFDkH1pcJtlqorCVXymcmRUduVhIPjcWh63sTqAE6/hVLIMhjW96Y8EaIFxiXJhkbV2c+LSJaER9QikCIv5VgHkXqQ1m4lxudCAH6zKfu43XxgITPEcH9Y+ZuM8yhRcB/qCkDhKdjqfVVFXFaXeXyQFZSbfci5P5oyGlQJnFWKhdH3huivx/MufKHi2gVhkBQBi/ThuIhzVRLddM93gIQ5x0hx5JWgxu1zCHKbA2WqzXfEVjQzULnID5znjBqsJMwhLvMvHt044cpOiu6bfGC9V+1qJsMKPf1TYjkOn6jmPzcjOWycodVvQyJgTDbf0Fspzmrg7K9dS9qF4+VaL4++ovWlzQ1RcpCt7IYg2k/ZP06sSu0jfciKB1iY+vIsuN2c4yKaWpxVW4N5S2XpDwyrsI1urnFiHw7XaGMBEKIXWObl4V2OU0alLkZpBsnSedRRFcN02u1q2IkVjKJ8T1AojFnvxqgPR3H+jKe4ssvy2rNxmhJ88NxiPSRpt24K0B7tJnRZuw23Ws039RTkF/dysg==|920

@@ -1,0 +1,598 @@
+{
+  "Rows": {
+    "Count": 86
+  },
+  "Cols": {
+    "Count": 66
+  },
+  "Values": {
+    "1,1": "商品単価マスタ_検証用",
+    "2,34": "検証用メニューに戻る",
+    "4,1": "不要行削除",
+    "4,23": "Excel（エクスポート）",
+    "7,23": "Excel（一括インポート）",
+    "7,33": "Excel（追加インポート）"
+  },
+  "AttachInfos": {
+    "2,34": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "検証用メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "検証用メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "商品単価マスタ_検証用",
+            "UpdateType": "delete",
+            "ShowConfirm": true,
+            "ConfirmText": "本当に削除してもよろしいですか？",
+            "RowsToUpdate": 2,
+            "RowsToUpdateListViewName": "リストビュー1",
+            "ParamNameToSaveNewRowValue": "NewRow"
+          }
+        ],
+        "Text": "不要行削除",
+        "TemplateKey": "_RS_Gradient_Shadow_Style3"
+      }
+    },
+    "4,23": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "ExportExcelListviewNameMode": 1,
+            "ListViewName": "リストビュー1",
+            "NewOtherName": "商品単価マスタ_検証用",
+            "IsOnlyExportValue": false
+          }
+        ],
+        "Text": "Excel（エクスポート）",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,23": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "リストビュー1",
+            "ImportExcelToListViewMode": 2,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!B12"
+                },
+                "ColumnName": "年度",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!G12"
+                },
+                "ColumnName": "月",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!K12"
+                },
+                "ColumnName": "仕入先コード",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!Q12"
+                },
+                "ColumnName": "仕入先名称"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!Y12"
+                },
+                "ColumnName": "商品コード",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!AE12"
+                },
+                "ColumnName": "商品名"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!AM12"
+                },
+                "ColumnName": "単価"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
+          }
+        ],
+        "Text": "Excel（一括インポート）",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "リストビュー1",
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!B12"
+                },
+                "ColumnName": "年度"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!G12"
+                },
+                "ColumnName": "月"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!K12"
+                },
+                "ColumnName": "仕入先コード"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!Q12"
+                },
+                "ColumnName": "仕入先名称"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!Y12"
+                },
+                "ColumnName": "商品コード"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!AE12"
+                },
+                "ColumnName": "商品名"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=商品単価マスタ_検証用登録!AM12"
+                },
+                "ColumnName": "単価"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excelファイルのデータ追加が正常に完了しました。"
+          }
+        ],
+        "Text": "Excel（追加インポート）",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "10,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "商品単価マスタ_検証用",
+        "RowIndex": 10,
+        "ColumnIndex": 1,
+        "RowCount": 73,
+        "ColumnCount": 41,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "11,1": {
+      "BindingInfo": {
+        "TableName": "商品単価マスタ_検証用",
+        "ColumnName": "年度",
+        "GUID": "eeafa22b-878f-4aa4-a14a-0de15c09ac32"
+      }
+    },
+    "11,6": {
+      "BindingInfo": {
+        "TableName": "商品単価マスタ_検証用",
+        "ColumnName": "月",
+        "GUID": "ff7f0132-3d6b-4211-a339-0bd435314dcd"
+      }
+    },
+    "11,10": {
+      "BindingInfo": {
+        "TableName": "商品単価マスタ_検証用",
+        "ColumnName": "仕入先コード",
+        "GUID": "159c5b29-daec-49e0-b2de-b2895e89fb4a"
+      }
+    },
+    "11,16": {
+      "BindingInfo": {
+        "TableName": "商品単価マスタ_検証用",
+        "ColumnName": "仕入先名称",
+        "GUID": "99a79c2b-bae8-4d56-a572-174513939dbd"
+      }
+    },
+    "11,24": {
+      "BindingInfo": {
+        "TableName": "商品単価マスタ_検証用",
+        "ColumnName": "商品コード",
+        "GUID": "915c62fa-c1f1-497e-93fc-d2f348954893"
+      }
+    },
+    "11,30": {
+      "BindingInfo": {
+        "TableName": "商品単価マスタ_検証用",
+        "ColumnName": "商品名",
+        "GUID": "a5a80674-bc52-4143-9030-788627ab86ee"
+      }
+    },
+    "11,38": {
+      "BindingInfo": {
+        "TableName": "商品単価マスタ_検証用",
+        "ColumnName": "単価",
+        "GUID": "cf6840ef-3d28-4911-8421-6e30130d0d49"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Formatter": 5,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 35",
+        "Center",
+        "Blue",
+        "[AUTO]General",
+        "DarkGray"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "1,0": 0,
+      "1,1": 1,
+      "1,19": 0,
+      "1,20": 0,
+      "2,0": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,34": 2,
+      "2,35": 0,
+      "2,36": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "3,0": 3,
+      "3,1": 3,
+      "3,2": 3,
+      "3,3": 3,
+      "3,4": 3,
+      "3,5": 3,
+      "3,6": 3,
+      "3,7": 3,
+      "3,8": 3,
+      "3,9": 3,
+      "3,10": 3,
+      "3,11": 3,
+      "3,12": 3,
+      "3,13": 3,
+      "3,14": 3,
+      "3,15": 3,
+      "4,1": 0,
+      "4,2": 0,
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,23": 4,
+      "4,24": 0,
+      "4,25": 0,
+      "4,26": 0,
+      "4,27": 0,
+      "4,28": 0,
+      "4,29": 0,
+      "4,30": 0,
+      "4,31": 0,
+      "4,32": 0,
+      "4,33": 0,
+      "4,34": 0,
+      "4,35": 0,
+      "4,36": 0,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 0,
+      "4,40": 0,
+      "4,41": 0,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,23": 0,
+      "5,24": 0,
+      "5,25": 0,
+      "5,26": 0,
+      "5,27": 0,
+      "5,28": 0,
+      "5,29": 0,
+      "5,30": 0,
+      "5,31": 0,
+      "5,32": 0,
+      "5,33": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,36": 0,
+      "5,37": 0,
+      "5,38": 0,
+      "5,39": 0,
+      "5,40": 0,
+      "5,41": 0,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,23": 0,
+      "6,24": 0,
+      "6,25": 0,
+      "6,26": 0,
+      "6,27": 0,
+      "6,28": 0,
+      "6,29": 0,
+      "6,30": 0,
+      "6,31": 0,
+      "6,32": 0,
+      "6,33": 0,
+      "6,34": 0,
+      "6,35": 0,
+      "6,36": 0,
+      "6,37": 0,
+      "6,38": 0,
+      "6,39": 0,
+      "6,40": 0,
+      "6,41": 0,
+      "7,1": 0,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,23": 4,
+      "7,24": 5,
+      "7,25": 5,
+      "7,26": 5,
+      "7,27": 5,
+      "7,28": 5,
+      "7,29": 5,
+      "7,30": 5,
+      "7,31": 5,
+      "7,32": 4,
+      "7,33": 4,
+      "7,34": 5,
+      "7,35": 5,
+      "7,36": 5,
+      "7,37": 5,
+      "7,38": 5,
+      "7,39": 5,
+      "7,40": 5,
+      "7,41": 5,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,23": 5,
+      "8,24": 5,
+      "8,25": 5,
+      "8,26": 5,
+      "8,27": 5,
+      "8,28": 5,
+      "8,29": 5,
+      "8,30": 5,
+      "8,31": 5,
+      "8,32": 4,
+      "8,33": 5,
+      "8,34": 5,
+      "8,35": 5,
+      "8,36": 5,
+      "8,37": 5,
+      "8,38": 5,
+      "8,39": 5,
+      "8,40": 5,
+      "8,41": 5,
+      "10,1": 6,
+      "10,2": 7,
+      "10,3": 7,
+      "10,4": 7,
+      "10,5": 7,
+      "10,6": 0,
+      "10,10": 7,
+      "10,11": 7,
+      "10,12": 7,
+      "10,13": 7,
+      "10,14": 7,
+      "10,15": 7,
+      "10,16": 0,
+      "10,24": 8,
+      "10,25": 8,
+      "10,26": 8,
+      "10,27": 8,
+      "10,28": 8,
+      "10,29": 8,
+      "10,30": 0,
+      "10,38": 8,
+      "10,39": 8,
+      "10,40": 8,
+      "10,41": 8,
+      "11,1": 9,
+      "11,6": 0,
+      "11,10": 0,
+      "11,16": 0,
+      "11,24": 0,
+      "11,25": 0,
+      "11,26": 0,
+      "11,27": 0,
+      "11,28": 0,
+      "11,29": 0,
+      "11,30": 0,
+      "11,38": 0,
+      "11,39": 0,
+      "11,40": 0,
+      "11,41": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,1,2,5",
+    "11,1,1,5",
+    "11,6,1,4",
+    "11,10,1,6",
+    "11,16,1,8",
+    "11,24,1,6",
+    "11,30,1,8",
+    "11,38,1,4",
+    "1,1,2,18",
+    "12,1,71,41",
+    "7,33,2,9",
+    "7,23,2,9",
+    "4,23,2,9",
+    "2,34,1,8",
+    "10,1,1,5",
+    "10,6,1,4",
+    "10,10,1,6",
+    "10,16,1,8",
+    "10,24,1,6",
+    "10,30,1,8",
+    "10,38,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "商品単価マスタ_検証用"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Wt67WcjgF5xjh2L4zyA4dLmmjs+OuQ44821DH2OEV0BztTuKXd2KdZx1RQ5lORPuqaMBvcMVl8Ovqg9CTtwEuG3a2t74lVkFJK6lQ/n95MSf/gxednnVSesAmML4k8/HugVuoz7pqi6uKBK4ZUH1IUlBaMnnk21hJo7sDms7SvQxJEIWzl6k3Od8Z8bUR+ssMGCtRolCM6jcn1e9DHFxTyqWqPeXC/UNWGqzO8sYvoedYVI/EzB15EVmxPNmL4OL1AN2Rg17rHPVhWxfnvPiyJAh5LODnBxm1hN6eFUnt4hQogr+pwmiWfvbN5vdDSI/3IoXAdZHtpWw560O6YyCF8PXn0MW/eMHrTgpu0MDqmn2hYodFef3rT0FFgkSzS1nORQvRapqci9DzBvcXwxmBj+NK8J/liVCW+Hw587gV3tenIbTgH5YMcXaO8r/ueRwo8eYf1UEVHpJblkVukUEvWFFp43QpDxf8BiRJiVn4nQ7D7aFmZjeZRpFJAH731UrjHLTXcY2D37wTZB3K0C4kHaj74hP7sEYC/kwU2E6WFSyPgmVwqKOgsta5dhQ3s1pdMGJW1vse8+WdRGqLs1vuWpXm7RWMLFfr06AEABAFJ8m5I8lujx398zEMhqDOdPU0m+oSj+7MpxVtUR/vrsA9PlA/6/h+5GZg1HhkAFAS5AtLdO8BPO5Um3jO1Ob1/n3xLwNCwZQULf1T2ThVvLQseIFfvYj11bJC6TpWuC2lhkSGcufwZ1t76RjqntkCtqR+aFjCTWSwst/Lmsg/I7LpV4aijP3lM1atKYErTkPJFNq7txyHk7vglenCUZlOePmCkq1oiFUbPsJydTcHbitRLdvaKDM4S18gRJdOm6MWNvqlGnGmneQmbpAF4g1ClblnCoBb6wEqKr3A356Cy9EEw==|920

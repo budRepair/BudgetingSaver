@@ -1,0 +1,459 @@
+{
+  "Rows": {
+    "Count": 42
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 83.0
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 129.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "Count": 69
+  },
+  "Values": {
+    "1,2": "配賦結果取込メニュー",
+    "1,61": "",
+    "2,55": "メニューに戻る",
+    "3,64": "■ログアウトコマンド",
+    "4,2": "実績配賦結果取込",
+    "4,11": "実績配賦結果参照",
+    "4,20": "予算配賦結果取込",
+    "4,29": "予算配賦結果参照",
+    "4,65": "処理確認",
+    "4,66": "ログアウトしますか？",
+    "5,65": "リターンコード",
+    "6,65": "処理失敗",
+    "6,66": "ログアウト処理に失敗しました。管理者に確認してください。"
+  },
+  "AttachInfos": {
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=配賦結果取込メニュー!BO5"
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "ログアウトコマンド",
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=配賦結果取込メニュー!BO6"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=配賦結果取込メニュー!BO6"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_ログイン"
+                          }
+                        ],
+                        "ID": "7faa6ee1-6dd6-4cff-bd87-1a0a7b1a5628"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=配賦結果取込メニュー!BO6"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=配賦結果取込メニュー!BO7"
+                            }
+                          }
+                        ],
+                        "ID": "19a4cdcc-4b49-4f9f-9e4d-76ee4008a146"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8b4d08fc-fa95-430e-9e9b-4ff48ef9afcc"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "スタイル14",
+        "Icon": {
+          "Name": "Arrow/321_exit_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 18.0
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "実績配賦結果取込",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "実績配賦結果取込",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "4,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "実績配賦結果参照",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "実績配賦結果参照",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "4,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "予算配賦結果取込",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "予算配賦結果取込",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "4,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "予算配賦結果参照",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "予算配賦結果参照",
+        "TemplateKey": "スタイル13"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "HorizontalAlignment": 1
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Formatter": 5,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 2,
+        "Underline": true
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Center",
+        "Bold",
+        "Text 1 35",
+        "Blue",
+        "[AUTO]General",
+        "Text 2 80",
+        "black"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,22": 1,
+      "1,1": 0,
+      "1,2": 2,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,22": 1,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "2,1": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 1,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,55": 3,
+      "2,56": 4,
+      "2,57": 4,
+      "2,58": 4,
+      "2,59": 4,
+      "2,61": 0,
+      "2,62": 0,
+      "3,64": 0,
+      "3,65": 0,
+      "3,66": 0,
+      "4,1": 0,
+      "4,2": 5,
+      "4,9": 0,
+      "4,11": 5,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "4,16": 0,
+      "4,17": 0,
+      "4,20": 5,
+      "4,21": 0,
+      "4,22": 0,
+      "4,23": 0,
+      "4,24": 0,
+      "4,25": 0,
+      "4,26": 0,
+      "4,28": 0,
+      "4,29": 5,
+      "4,30": 0,
+      "4,31": 0,
+      "4,32": 0,
+      "4,33": 0,
+      "4,34": 0,
+      "4,35": 0,
+      "4,38": 0,
+      "4,64": 0,
+      "4,65": 6,
+      "4,66": 7,
+      "5,1": 0,
+      "5,9": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "5,16": 0,
+      "5,17": 0,
+      "5,20": 0,
+      "5,21": 0,
+      "5,22": 0,
+      "5,23": 0,
+      "5,24": 0,
+      "5,25": 0,
+      "5,26": 0,
+      "5,28": 0,
+      "5,29": 0,
+      "5,30": 0,
+      "5,31": 0,
+      "5,32": 0,
+      "5,33": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,38": 0,
+      "5,64": 0,
+      "5,65": 8,
+      "5,66": 9,
+      "6,64": 0,
+      "6,65": 10,
+      "6,66": 11
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,2,7",
+    "4,11,2,7",
+    "4,20,2,7",
+    "4,29,2,7",
+    "1,2,2,16",
+    "1,61,2,2",
+    "2,55,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//aLVL7Dlq6PfMgdC8+wwVPba0Ozp/P6q31Ampbma2plNdrW7neDYQa+IH89s4M753F0mStnOrR5jaHT6cdWzRMBbL4EIMctpQjGsELeCXI8jaJ9E90klx4Nj3easQkzaWauXK1HuBlnqeFSqCdbfd2Dks8qc56QErsOcqmqNpCcehk/8Or5lCAMM3vjLvjgVUfCvovDx5Rtu1PygSUIJNt6t33I3+J7Wu895Xf1QxnnOVpZp8HmGx/3LYJtfVtYuklbBRZtSUAwg+3rtYZIE+idacL/QIdB/7Eq5Hganm2DLqsuLJhmvh5wPANy0czxLvXHrs6XGLo/gXBRJQtiAI7SHB8/2G1TNs9x7ySDqtHSi74dajxc1tcXT1UiSIIwsb/UhXhU28ZKgyt5Fmhrzt3O/qObclAYN5WPcwzRuoueL+0+E/EPuiuoi+OVWFUqMCJ2C4lfSBQ6pG7m619tZ0eTYbkTL83dLv7mK6N/EWkForDBi9M7vMiq/BoFs0+UnDRyn7jwaH0Dz4plTb8WfmO92I2rNWSGIvDyjnKL4dRPkkIarz5tRQ3SMpCQ+lnaArk+blYWhorBaQgZJuAXkA/gnV4caJ4QriRusSSVWCXqVFKtdOPCExi1WOy6Zn2ZNeb5UWJemQrGVRZUb+hpNm9vXhp+QygBF7YrR+c45XzqMtrKs35x3LOFOwtOaCua6jJ7qkGU7Ns1275u25ulsApYrRNf7WH/i5fr5BtYvBUPszMDS0YX8fq5nqU05/EFmx0tIubopoGBQmDA1N8pWKGMJ4pLq/+FFCJWCsxtdWCCqGuw8tZhsIYnJmI+WCtnIaK7EvCErIuJmU7TiAJNAyklndrh20MckC8j74vgQH4pFBsLomOB0tNYYhNI45ZN7pkKUR7osUzXkjgbdpRh2nKA==|920

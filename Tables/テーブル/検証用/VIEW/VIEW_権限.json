@@ -1,0 +1,47 @@
+{
+  "Name": "VIEW_権限",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "権限レベル",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "マスタ区分",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "マスタ区分名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "コード名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "VIEW_権限",
+    "SourceViewName": "fgc97d4afab3d4e4639be36f2b78c4",
+    "CreateViewSql": "SELECT DISTINCT\r\n \"権限レベル\",\r\n \"マスタ区分\",\r\n \"マスタ区分名\",\r\n \"コード\",\r\n \"コード名\"\r\nFROM (\r\n  SELECT DISTINCT\r\n   a_mst.\"権限レベル\",\r\n   a_mst.\"階層レベル\",\r\n   a_mst.\"マスタ区分\",\r\n   a_mst.\"マスタ区分名\",\r\n   mst_l.\"組織コード\" AS \"コード\",\r\n   mst_l.\"課\"         AS \"コード名\"\r\n  FROM \"TEST_権限マスタ\" a_mst\r\n\r\n  LEFT OUTER JOIN \"TEST_組織マスタ\" mst_l\r\n   ON  (\"階層レベル\" = '1' and a_mst.\"コード\" = mst_l.\"会社コード\")\r\n   OR  (\"階層レベル\" = '2' and a_mst.\"コード\" = mst_l.\"部コード\")\r\n   OR  (\"階層レベル\" = '3' and a_mst.\"コード\" = mst_l.\"組織コード\")\r\n\r\n  WHERE a_mst.\"マスタ区分\" = '01'\r\n)\r\nUNION ALL\r\nSELECT DISTINCT\r\n \"権限レベル\",\r\n \"マスタ区分\",\r\n \"マスタ区分名\",\r\n \"コード\",\r\n \"コード名\"\r\nFROM (\r\n  SELECT DISTINCT\r\n   a_mst.\"権限レベル\",\r\n   a_mst.\"階層レベル\",\r\n   a_mst.\"マスタ区分\",\r\n   a_mst.\"マスタ区分名\",\r\n   mst_l.\"科目コード\" AS \"コード\",\r\n   mst_l.\"科目名\"     AS \"コード名\"\r\n  FROM \"TEST_権限マスタ\" a_mst\r\n\r\n  LEFT OUTER JOIN \"TEST_科目マスタ\" mst_l\r\n   ON  (\"階層レベル\" = '1' and a_mst.\"コード\" = mst_l.\"分類コード\")\r\n   OR  (\"階層レベル\" = '2' and a_mst.\"コード\" = mst_l.\"大項目コード\")\r\n   OR  (\"階層レベル\" = '3' and a_mst.\"コード\" = mst_l.\"中項目コード\")\r\n   OR  (\"階層レベル\" = '4' and a_mst.\"コード\" = mst_l.\"科目コード\")\r\n\r\n  WHERE a_mst.\"マスタ区分\" = '02'\r\n)\r\nUNION ALL\r\nSELECT DISTINCT\r\n \"権限レベル\",\r\n \"マスタ区分\",\r\n \"マスタ区分名\",\r\n \"コード\",\r\n \"コード名\"\r\nFROM (\r\n  SELECT\r\n   a_mst.\"権限レベル\",\r\n   a_mst.\"階層レベル\",\r\n   a_mst.\"マスタ区分\",\r\n   a_mst.\"マスタ区分名\",\r\n   mst_l.\"仕入先コード\" AS \"コード\",\r\n   mst_l.\"仕入先名\"     AS \"コード名\"\r\n  FROM \"TEST_権限マスタ\" a_mst\r\n\r\n  LEFT OUTER JOIN \"TEST_商品単価マスタ\" mst_l\r\n   ON  (\"階層レベル\" = '1' and a_mst.\"コード\" = mst_l.\"仕入先コード\")\r\n\r\n  WHERE a_mst.\"マスタ区分\" = '03'\r\n)\r\nUNION ALL\r\nSELECT DISTINCT\r\n \"権限レベル\",\r\n \"マスタ区分\",\r\n \"マスタ区分名\",\r\n \"コード\",\r\n \"コード名\"\r\nFROM (\r\n  SELECT\r\n   a_mst.\"権限レベル\",\r\n   a_mst.\"階層レベル\",\r\n   a_mst.\"マスタ区分\",\r\n   a_mst.\"マスタ区分名\",\r\n   mst_l.\"商品コード\" AS \"コード\",\r\n   mst_l.\"商品名\"     AS \"コード名\"\r\n  FROM \"TEST_権限マスタ\" a_mst\r\n\r\n  LEFT OUTER JOIN \"TEST_商品単価マスタ\" mst_l\r\n   ON  (\"階層レベル\" = '1' and a_mst.\"コード\" = mst_l.\"商品コード\")\r\n\r\n  WHERE a_mst.\"マスタ区分\" = '04'\r\n)"
+  },
+  "Relations": [],
+  "Indexes": []
+}

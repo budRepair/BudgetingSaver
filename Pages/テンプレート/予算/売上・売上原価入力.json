@@ -1,0 +1,4216 @@
+{
+  "Rows": {
+    "Count": 35
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "81": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "82": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "83": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "97": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "98": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 92.0
+        }
+      },
+      "99": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 131.0
+        }
+      },
+      "100": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "101": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113
+    ],
+    "Count": 116
+  },
+  "Values": {
+    "1,2": "売上・売上原価 入力",
+    "1,61": "",
+    "2,55": "メニューに戻る",
+    "3,107": "↓初期値設定",
+    "4,7": "%CurrentUser.会社コード%",
+    "4,23": "%CurrentUser.組織１コード%",
+    "4,34": "%CurrentUser.組織２コード%",
+    "4,45": "%CurrentUser.組織３コード%",
+    "4,98": "←戻り値設定",
+    "5,107": "Fix",
+    "7,2": "原価入力",
+    "7,9": "データ保存",
+    "7,16": "損益計算書へ反映",
+    "8,97": "■ログアウトコマンド",
+    "9,98": "処理確認",
+    "9,99": "ログアウトしますか？",
+    "10,2": "商品売上",
+    "10,98": "リターンコード",
+    "11,9": "1月",
+    "11,15": "2月",
+    "11,21": "3月",
+    "11,27": "4月",
+    "11,33": "5月",
+    "11,39": "6月",
+    "11,45": "7月",
+    "11,51": "8月",
+    "11,57": "9月",
+    "11,63": "10月",
+    "11,69": "11月",
+    "11,75": "12月",
+    "11,81": "年計",
+    "11,98": "処理失敗",
+    "11,99": "ログアウト処理に失敗しました。管理者に確認してください。",
+    "14,99": "ACC003",
+    "14,101": "戻り値",
+    "15,98": "1月",
+    "16,98": "2月",
+    "17,98": "3月",
+    "18,98": "4月",
+    "19,98": "5月",
+    "20,98": "6月",
+    "21,98": "7月",
+    "22,2": "売上原価入力",
+    "22,98": "8月",
+    "23,9": "1月",
+    "23,15": "2月",
+    "23,21": "3月",
+    "23,27": "4月",
+    "23,33": "5月",
+    "23,39": "6月",
+    "23,45": "7月",
+    "23,51": "8月",
+    "23,57": "9月",
+    "23,63": "10月",
+    "23,69": "11月",
+    "23,75": "12月",
+    "23,81": "年計",
+    "23,98": "9月",
+    "24,98": "10月",
+    "25,98": "11月",
+    "26,98": "12月"
+  },
+  "Formulas": {
+    "16,99": "SUM(P25)",
+    "15,99": "SUM(J25)",
+    "24,81": "J25+P25+V25+AB25+AH25+AN25+AT25+AZ25+BF25+BL25+BR25+BX25",
+    "21,99": "SUM(AT25)",
+    "18,99": "SUM(AB25)",
+    "19,99": "SUM(AH25)",
+    "12,81": "J13+P13+V13+AB13+AH13+AN13+AT13+AZ13+BF13+BL13+BR13+BX13",
+    "25,99": "SUM(BR25)",
+    "3,97": "ODATA(\"INP_予算_売上/$count?$filter=年度 eq \"&IF(ISBLANK(C5),\"null\",\"'\"&C5&\"'\")&\" and 組織コード eq \"&IF(ISBLANK(AT5),\"null\",\"'\"&AT5&\"'\")&\" and バージョン eq \"&IF(ISBLANK(BE5),\"null\",\"'\"&BE5&\"'\"))",
+    "24,99": "SUM(BL25)",
+    "4,107": "YEAR(EDATE(TODAY(),-3))",
+    "22,99": "SUM(AZ25)",
+    "26,99": "SUM(BX25)",
+    "17,99": "SUM(V25)",
+    "23,99": "SUM(BF25)",
+    "20,99": "SUM(AN25)"
+  },
+  "AttachInfos": {
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=売上・売上原価入力!CV10"
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "ログアウトコマンド",
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=売上・売上原価入力!CV11"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=売上・売上原価入力!CV11"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "FGC_ログイン"
+                          }
+                        ],
+                        "ID": "3410eb5c-c01e-44fd-89fd-971390bbf77e"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=売上・売上原価入力!CV11"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=売上・売上原価入力!CV12"
+                            }
+                          }
+                        ],
+                        "ID": "6bd95168-f093-4d4b-8d95-832cebdb6372"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "1ffdfd5f-6e97-46bd-9fb3-dc6da81b2605"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "スタイル14",
+        "Icon": {
+          "Name": "Arrow/321_exit_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 18.0
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）2020",
+        "IsBounding": true,
+        "DataSource": "MST_年度",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "b3ffedb0-3833-4594-9846-308a58d2cd47"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "ac3d4d2e-d513-459f-9ab4-5b90129dd4f5"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・売上原価入力!CT4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "53b36db1-a954-4e49-85c0-b1bb4f3db67a"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "年度",
+                            "GUID": "bbb897fb-bb08-45fc-8eb3-6e29c095b957"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "組織コード",
+                            "GUID": "6516d6de-be5e-4efa-b4ff-4bea4fd63289"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "バージョン",
+                            "GUID": "2c21ff62-5eb4-4334-b800-f6d536a32fb8"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "00b54ddbd8d949308f81e335fa69fbf9"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "親属性コード",
+                            "GUID": "37b9f2f3-e5c6-4faa-85c6-d55e8e00269d"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "b88adf4f7a3e4335affc0052d74bc90e"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上原価",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "年度",
+                            "GUID": "6aa91d37-696c-48bc-8014-2dbac51c2f6f"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "組織コード",
+                            "GUID": "69c46210-c73c-49a7-b843-76e35f13f191"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "バージョン",
+                            "GUID": "0e5e6fb7-f9f9-4375-90ed-a3b25ff954da"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "c805d1f72aa84d9c82a20768400e60db"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー2",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "親属性コード",
+                            "GUID": "afc7e5d4-d80b-4f0a-b21e-f8ba1cb68271"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "8768143981bb4f2fb723e5cfe9d0bd37"
+                  }
+                ],
+                "ID": "041a80b6-7205-4908-b663-d0c860b76c08"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=売上・売上原価入力!DD5"
+        }
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "会社名",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "会社コード",
+          "GUID": "fdcd83b3-2946-474b-81e3-5d7c67954746"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "会社名",
+          "GUID": "abbc0ecc-18f4-4cc1-bbf0-1135b46abb50"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "会社コード",
+                "GUID": "26453052-ce6d-4f24-a416-58630f21a34a"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・売上原価入力!CT4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "29615996-ccf9-4cbc-95e6-e2f1ecce9f4c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "年度",
+                            "GUID": "73f38292-0e20-4c99-8a90-b2509a098356"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "組織コード",
+                            "GUID": "447363c7-c717-4329-83f6-3918c888d0f0"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "バージョン",
+                            "GUID": "e18d548f-68d5-4eea-9a28-c745548c692a"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "a928ecfbe05846e2b2e1b86e6c64a8f4"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上原価",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "年度",
+                            "GUID": "a6db768b-8c17-4848-aeef-72d1b8ad3a98"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "組織コード",
+                            "GUID": "22507d3c-8274-44b7-be84-3f5aebd9432d"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "バージョン",
+                            "GUID": "731a9f50-7451-4339-8eef-6c29ce72a8b3"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "90e722a2651348e79893437feb35fa09"
+                  }
+                ],
+                "ID": "f1f8fee9-e5c3-4b5b-9c3c-33bcad899498"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.会社コード%"
+      }
+    },
+    "4,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織1",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "本部コード",
+          "GUID": "23a8faf3-11e7-4d55-af89-a9f730e20494"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "本部名",
+          "GUID": "cfe136be-6871-4606-92c4-c4b2b6a82356"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "会社コード",
+            "GUID": "b0c3fee7-1f60-4cca-8c5e-58c76f14075a"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=売上・売上原価入力!H5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "本部コード",
+                "GUID": "035d99af-b10e-47d8-aa81-1355e553e75c"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・売上原価入力!CT4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ead02832-392b-413a-8e17-975c88bc7d80"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "年度",
+                            "GUID": "ee845743-4597-4ae1-b31f-c7a72d3717cf"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "組織コード",
+                            "GUID": "bd5e98c8-29f1-44e2-8813-817bff629655"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "バージョン",
+                            "GUID": "ed0979ff-da0a-413e-9b5f-f1a731228605"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "4ba8a0a2a5e241bc8a71974a5b8de110"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上原価",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "年度",
+                            "GUID": "0780b60a-0343-4dc3-b164-2633860fc5cc"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "組織コード",
+                            "GUID": "53ce6d9c-d641-4a45-9e2f-08826a1dcc5d"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "バージョン",
+                            "GUID": "9c3609e2-2718-4128-8d33-fc09c5a274c5"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "36af37360f50405397a63f9e90c7302b"
+                  }
+                ],
+                "ID": "1a3477b3-9d33-48b4-b371-3b05d660500f"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "会社ユーザ"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織１コード%"
+      }
+    },
+    "4,34": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織2",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門コード",
+          "GUID": "df497e1b-b8fa-4032-baba-3463dd442ed7"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "9df6b828-e173-464d-93a9-555756f87abb"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "本部コード",
+            "GUID": "21d6de9e-4c30-4d68-bcb3-d2b64a6245f2"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=売上・売上原価入力!X5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "部門コード",
+                "GUID": "ad1f2e72-e205-4803-aed2-235fa16a7de5"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・売上原価入力!CT4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7488f3b9-5920-421a-8ff1-486540158393"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "年度",
+                            "GUID": "06a65478-62fe-4014-af10-31a377d33544"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "組織コード",
+                            "GUID": "003e2fe1-c8d2-4176-b4fa-1a5abc0fcdf1"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "バージョン",
+                            "GUID": "eb4c6812-1d06-4d7f-997f-28a2f45c5952"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "687afadae18b4d74a328ce28018b1bc9"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上原価",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "年度",
+                            "GUID": "c6b1be6c-1b0e-4e03-8796-fc578a0216ed"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "組織コード",
+                            "GUID": "bf289ef1-92ba-4eef-aeb5-11ed0b26cb38"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "バージョン",
+                            "GUID": "bf2b4d5e-60f4-47ca-adec-2895e7df4f00"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "b8d7acc113a840ac963ab84ff55e7f7f"
+                  }
+                ],
+                "ID": "92d29134-2ebc-4584-8b4b-b755375b9b73"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "会社ユーザ",
+              "組織１ユーザ",
+              "Administrator"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織２コード%"
+      }
+    },
+    "4,45": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "組織3",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織コード",
+          "GUID": "631dfd03-40a2-4fce-83a7-0432a4bdeb2b"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織名",
+          "GUID": "e5800401-8da1-4b90-a0c4-6bf338625f28"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "部門コード",
+            "GUID": "e7a1157e-3432-4484-b9bc-0609ddadecf2"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=売上・売上原価入力!AI5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "組織コード",
+                "GUID": "9a71ccce-2405-495a-80f9-d27b1b498694"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・売上原価入力!CT4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2c2922d8-224d-4ca5-acaa-8a410e839670"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "年度",
+                            "GUID": "84224d8c-9197-4deb-974d-e530e5d1a09e"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "組織コード",
+                            "GUID": "61564650-53fe-47fc-9d44-f0823ae2bf9b"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "バージョン",
+                            "GUID": "2793ac4e-a440-4bf4-8a1e-703b6da7ae47"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "de732bc0af31425b8471be0bf7ba89f2"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "親属性コード",
+                            "GUID": "4091895a-a126-425d-b781-0673b77cb8bc"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "90d49bffcd6e4da5aeddfe053a62c73c"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上原価",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "年度",
+                            "GUID": "181e20be-99f7-426c-a6d7-940ecdcbac97"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "組織コード",
+                            "GUID": "8b65e430-f2e1-4afe-abff-436c03fac8ef"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "バージョン",
+                            "GUID": "8646616e-397a-4af4-bcda-14c94ada51d1"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "8d65f6243a404b5792a4183b9406f522"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー2",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "親属性コード",
+                            "GUID": "43fbfd29-761f-4370-b8c5-dec518642568"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "14d652623b204db3bb8a716891a923bd"
+                  }
+                ],
+                "ID": "d883f0c3-2080-48e0-84c4-4100d3ffe00f"
+              }
+            ]
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "会社ユーザ",
+              "組織１ユーザ",
+              "組織２ユーザ"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "CellDefaultValue": "%CurrentUser.組織３コード%"
+      }
+    },
+    "4,56": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）Ver01",
+        "IsBounding": true,
+        "DataSource": "MST_バージョン",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "fa4f423b-81d6-4f09-97f8-1dc07c5fdaaf"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "d5579b9b-a247-4419-8828-e99e8cc191b5"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=売上・売上原価入力!CT4"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": false
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "24079f40-7e8d-49f6-812c-6f9c783aacec"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!11:21"
+                        },
+                        "Value": true
+                      },
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!23:33"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!C8"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=売上・売上原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "年度",
+                            "GUID": "54d7f199-cb44-4aa3-bd31-9867e422d5de"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "組織コード",
+                            "GUID": "63143da9-db30-4f38-a304-f1b0d1784078"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "バージョン",
+                            "GUID": "c1aeb0cd-538d-4cc8-a119-466530276802"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "c822e42b479a4a59a21cacb1e492bade"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上",
+                            "ColumnName": "親属性コード",
+                            "GUID": "00623073-a56f-4459-9d5f-d42778b1b2a5"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "21cbce71344f45bfbfbe7cffb789438d"
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "INP_予算_売上原価",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "年度",
+                            "GUID": "f802e6c3-d3ca-48f2-a256-68ba2aa519ff"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "組織コード",
+                            "GUID": "bba9f0b2-193a-45d5-960d-e62284fd73cc"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!AT5"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "バージョン",
+                            "GUID": "e7e37b11-2862-4f0c-9849-7f7a83a8168b"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!BE5"
+                          }
+                        }
+                      ]
+                    },
+                    "ID": "baa93b7234364fbf8024afe67e5007ce"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー2",
+                    "OrderByCondition": {
+                      "OrderByColumns": [
+                        {
+                          "ColumnBindingInfo": {
+                            "TableName": "INP_予算_売上原価",
+                            "ColumnName": "親属性コード",
+                            "GUID": "8fd7a6b2-220f-43ef-999c-bafa5722574b"
+                          },
+                          "Order": 0
+                        }
+                      ]
+                    },
+                    "ID": "89a55e177f6d484fa8312cf78981392f"
+                  }
+                ],
+                "ID": "76cba60c-c877-44b4-87b5-d69eb6bda114"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=売上・売上原価入力!DD6"
+        }
+      }
+    },
+    "7,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+            "LoopInfo": {
+              "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+              "ListviewName": "リストビュー1",
+              "ListViewLoopMode": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                "ServerCommandName": "売上・売上原価入力",
+                "Parameters": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "ParamName": "年度",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=売上・売上原価入力!C5"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "ParamName": "組織",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=売上・売上原価入力!AT5"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "ParamName": "親属性名称",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=売上・売上原価入力!C13"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "ParamName": "バージョン",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=売上・売上原価入力!BE5"
+                    }
+                  }
+                ],
+                "ReturnPropertiesTo": [
+                  {
+                    "ResultPropertyName": "v_cnt",
+                    "ResultTo": {
+                      "SerializeProperty": "=売上・売上原価入力!CT5"
+                    }
+                  }
+                ],
+                "RefreshAfterFinish": true,
+                "CheckDataValidation": true
+              },
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!C13"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!C25"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CT5"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=売上・売上原価入力!C13"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=売上・売上原価入力!C25"
+                          },
+                          "compareType": 1
+                        },
+                        {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=売上・売上原価入力!CT5"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "INP_予算_売上原価",
+                        "UpdateType": "add",
+                        "ShowConfirm": false,
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_売上原価",
+                              "ColumnName": "年度",
+                              "GUID": "41d9894e-e2e6-48df-9178-1b56adde4f0e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=売上・売上原価入力!C5"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_売上原価",
+                              "ColumnName": "組織コード",
+                              "GUID": "87d08959-acf2-4d78-836b-5b22e54b53e5"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=売上・売上原価入力!AT5"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_売上原価",
+                              "ColumnName": "親属性コード",
+                              "GUID": "a51e7709-7483-43c7-aa77-fdc1223b8977"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=売上・売上原価入力!CK13"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_売上原価",
+                              "ColumnName": "親属性名称",
+                              "GUID": "07fe14f0-4b16-435c-b82f-720941f7be2f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=売上・売上原価入力!C13"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "INP_予算_売上原価",
+                              "ColumnName": "バージョン",
+                              "GUID": "0fee976b-64ca-40fb-996e-bee9a98ef188"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=売上・売上原価入力!BE5"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+                        "ListViewName": "リストビュー2",
+                        "OrderByCondition": {
+                          "OrderByColumns": [
+                            {
+                              "ColumnBindingInfo": {
+                                "TableName": "INP_予算_売上原価",
+                                "ColumnName": "親属性コード",
+                                "GUID": "511d0a9c-91bb-4b78-a9f5-a3afbdec461f"
+                              },
+                              "Order": 0
+                            }
+                          ]
+                        },
+                        "ID": "b41f7d2566504643b17f44d4cd5c5f1f"
+                      }
+                    ],
+                    "ID": "371feabe-a7fc-4058-87c3-525041ac953a"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Text": "原価入力",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に更新してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー2",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "3601bb66-253d-41e8-a95a-dde0f3ec0633"
+              }
+            ]
+          }
+        ],
+        "Text": "データ保存",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "損益計算書入力",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "年度",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!C5"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "会社",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!H5"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "組織",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!AT5"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "バージョン",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!BE5"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "区分",
+                "Value": "0"
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "INP_予算_損益計算書",
+            "ShowConfirm": true,
+            "ConfirmText": "本当に反映してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "6b101864-2836-42a0-afcc-69a8e5184fc8"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=売上・売上原価入力!C5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "組織コード",
+                    "GUID": "9068695e-8cd6-4d35-a5d2-341e655227cf"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=売上・売上原価入力!AT5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "バージョン",
+                    "GUID": "b9606386-a748-4976-a88a-b512818d41dc"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=売上・売上原価入力!BE5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "科目コード",
+                    "GUID": "e55fc06e-7ee4-4579-9ea1-dc7abe2126a0"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=売上・売上原価入力!CV15"
+                  }
+                }
+              ]
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_4月",
+                  "GUID": "4f4a3b82-fc97-4b39-a4e9-6cb99d615cfa"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV19"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_5月",
+                  "GUID": "0ee889b7-d090-4479-8054-7fd7170140fd"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV20"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_6月",
+                  "GUID": "1c003d8e-c8e0-4ef2-841c-46cc4d2ba900"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV21"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_7月",
+                  "GUID": "5476eb93-e792-4d14-9df8-bce26a1aafc9"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV22"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_8月",
+                  "GUID": "96608c14-7cf9-48ab-8900-54de1f12d569"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV23"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_9月",
+                  "GUID": "abaaba4c-512c-4b1f-8596-523f9ed4bd1e"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV24"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_10月",
+                  "GUID": "62b11205-9698-4157-9b6b-dc3e79a687fa"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV25"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_11月",
+                  "GUID": "2f56856e-b45d-4b39-8525-7760a7243c7c"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV26"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_12月",
+                  "GUID": "281618e5-6d9e-4a3a-a96e-1b49cfb65425"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV27"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_1月",
+                  "GUID": "989a69a7-61c4-42a7-bb0f-7bf4de7a8081"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV16"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_2月",
+                  "GUID": "10eab478-d49f-4e23-9148-09bdd60b2fb3"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV17"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "INP_予算_損益計算書",
+                  "ColumnName": "_3月",
+                  "GUID": "eff6be71-e307-42fd-9560-1b3ca378bf31"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=売上・売上原価入力!CV18"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "損益計算書へ反映",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "11,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "INP_予算_売上",
+        "RowIndex": 11,
+        "ColumnIndex": 2,
+        "RowCount": 10,
+        "ColumnCount": 92,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "12,2": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "親属性名称",
+        "GUID": "5ca23766-59fb-4de2-83a5-7c87dcf3b1e2"
+      }
+    },
+    "12,9": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_1月",
+        "GUID": "4f3944b9-7b9d-4580-b791-383e9b526138"
+      }
+    },
+    "12,15": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_2月",
+        "GUID": "efe3296c-1268-4d7f-bd8f-570f4819d1c0"
+      }
+    },
+    "12,21": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_3月",
+        "GUID": "6e332724-7a82-4073-844e-8993a32c92e5"
+      }
+    },
+    "12,27": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_4月",
+        "GUID": "8941a71d-9cd6-4093-9754-78ebb46d90dc"
+      }
+    },
+    "12,33": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_5月",
+        "GUID": "4b772095-7963-4485-bf16-60a12786d565"
+      }
+    },
+    "12,39": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_6月",
+        "GUID": "d933a54e-6e5d-493e-80a5-80bcc027dc4a"
+      }
+    },
+    "12,45": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_7月",
+        "GUID": "b47508eb-8e7c-46df-9f9c-e10eb3f34e64"
+      }
+    },
+    "12,51": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_8月",
+        "GUID": "f6e0724e-98d6-4481-b6f6-740ef2d5dd37"
+      }
+    },
+    "12,57": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_9月",
+        "GUID": "e2ace67f-a225-4ad9-b07e-87aead66f14e"
+      }
+    },
+    "12,63": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_10月",
+        "GUID": "eec51935-b949-43e0-9e88-b978e6d390a2"
+      }
+    },
+    "12,69": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_11月",
+        "GUID": "80b09d15-4cda-414e-bf83-caf0cfbd6532"
+      }
+    },
+    "12,75": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "_12月",
+        "GUID": "2edcbedc-3f9e-457e-b6a3-4b4a82b79a6f"
+      }
+    },
+    "12,88": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上",
+        "ColumnName": "親属性コード",
+        "GUID": "e992ce98-9e3e-4a83-ad7a-91bd18b70cf3"
+      }
+    },
+    "23,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "INP_予算_売上原価",
+        "RowIndex": 23,
+        "ColumnIndex": 2,
+        "RowCount": 10,
+        "ColumnCount": 92,
+        "TopCondition": null,
+        "ListViewStyleName": "カスタムスタイル1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "24,2": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "親属性コード",
+        "GUID": "00a610a0-5368-438e-9585-e6a209c834c2",
+        "RelationBinding": {
+          "RelatedTable": "MST_属性",
+          "RelatedColumn": "親属性コード",
+          "DisplayColumn": "親属性名称"
+        }
+      }
+    },
+    "24,9": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_1月",
+        "GUID": "4e504f0d-96b9-4aff-b2b1-6eafd76ab018"
+      }
+    },
+    "24,15": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_2月",
+        "GUID": "ed1213af-736f-47ae-825c-b7a4bc71583e"
+      }
+    },
+    "24,21": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_3月",
+        "GUID": "5fe6bc1a-04e1-4d23-a148-39989dbf65ce"
+      }
+    },
+    "24,27": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_4月",
+        "GUID": "3978e6cc-25cb-4028-9eee-02f240131c24"
+      }
+    },
+    "24,33": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_5月",
+        "GUID": "eb9263e0-70b7-4f05-bba1-f0e19aec937d"
+      }
+    },
+    "24,39": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_6月",
+        "GUID": "860836c2-adfc-4bb8-89d0-0e1f43877d92"
+      }
+    },
+    "24,45": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_7月",
+        "GUID": "95c1928b-d04f-4851-8d75-5bc9539f2f67"
+      }
+    },
+    "24,51": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_8月",
+        "GUID": "cb61cded-e3bb-4208-a113-a97afe92f7ec"
+      }
+    },
+    "24,57": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_9月",
+        "GUID": "e0a3d5aa-f36d-47a2-b60d-35f18632568f"
+      }
+    },
+    "24,63": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_10月",
+        "GUID": "141158de-eef7-41f8-b152-74a4bc4f638e"
+      }
+    },
+    "24,69": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_11月",
+        "GUID": "e1d42a10-922f-4b45-a208-347c3644950f"
+      }
+    },
+    "24,75": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "_12月",
+        "GUID": "46f73681-29ff-439c-8466-f014fdcd1b4d"
+      }
+    },
+    "24,81": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "年計",
+        "GUID": "a2565a4b-3283-4954-a964-57ac6f3abb88"
+      }
+    },
+    "24,88": {
+      "BindingInfo": {
+        "TableName": "INP_予算_売上原価",
+        "ColumnName": "親属性コード",
+        "GUID": "13fd08bb-7830-4b89-9fcc-122a280e9ff2"
+      }
+    },
+    "28,98": {
+      "ListViewInfo": {
+        "Name": "リストビュー3",
+        "TableName": "MST_組織",
+        "RowIndex": 28,
+        "ColumnIndex": 98,
+        "RowCount": 7,
+        "ColumnCount": 2,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "29,98": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "会社コード",
+        "GUID": "2601b1f9-1aef-42f2-b1e6-617817a1d39e"
+      }
+    },
+    "29,99": {
+      "BindingInfo": {
+        "TableName": "MST_組織",
+        "ColumnName": "会社名",
+        "GUID": "ed45d03e-5df1-4e21-83c5-59ff35e751cc"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 3,
+        "Foreground": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Background": 6
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Formatter": 9,
+        "HorizontalAlignment": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67
+      },
+      {
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 12,
+        "FontFamily": 0,
+        "FontWeight": 13,
+        "Formatter": 9,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 12,
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "FontWeight": 13,
+        "Formatter": 14,
+        "HorizontalAlignment": 15,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "Background": 12,
+        "FontFamily": 0,
+        "FontWeight": 13,
+        "Formatter": 14,
+        "HorizontalAlignment": 15,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": 2
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderRight": 2
+      },
+      {
+        "Background": 12,
+        "FontFamily": 0,
+        "FontWeight": 13,
+        "Formatter": 14,
+        "HorizontalAlignment": 15,
+        "BorderBottom": 1,
+        "BorderTop": 1
+      },
+      {
+        "FontWeight": 13
+      },
+      {
+        "FontFamily": 17,
+        "Formatter": 9,
+        "HorizontalAlignment": 10
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderTop": 1
+      },
+      {
+        "Background": 12,
+        "FontFamily": 0,
+        "FontWeight": 13,
+        "Formatter": 9,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 13,
+        "Formatter": 14,
+        "HorizontalAlignment": 15,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 2,
+        "BorderTop": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Blue",
+        "[AUTO]General",
+        "Bold",
+        "Text 1 35",
+        "Center",
+        "#FFFFFF00",
+        "Text 2 80",
+        "black",
+        "@",
+        "Left",
+        "DarkGray",
+        "Background 1 -5",
+        "Normal",
+        "#,##0",
+        "Right",
+        "Background 1 -35",
+        "Meiryo UI"
+      ],
+      "Borders": [
+        {
+          "Color": 8
+        },
+        {
+          "Color": 11
+        },
+        {
+          "Color": 16
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,31": 1,
+      "0,32": 1,
+      "0,33": 1,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "1,2": 2,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,36": 3,
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,41": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 0,
+      "2,36": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "2,55": 1,
+      "2,56": 4,
+      "2,57": 4,
+      "2,58": 4,
+      "2,59": 4,
+      "2,61": 0,
+      "2,62": 0,
+      "3,1": 0,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 5,
+      "3,19": 0,
+      "3,20": 0,
+      "3,21": 0,
+      "3,22": 0,
+      "3,23": 0,
+      "3,24": 0,
+      "3,25": 0,
+      "3,26": 0,
+      "3,27": 0,
+      "3,28": 0,
+      "3,29": 0,
+      "3,30": 0,
+      "3,31": 0,
+      "3,32": 0,
+      "3,33": 0,
+      "3,34": 0,
+      "3,35": 0,
+      "3,36": 0,
+      "3,37": 0,
+      "3,38": 0,
+      "3,39": 0,
+      "3,40": 0,
+      "3,41": 0,
+      "3,42": 0,
+      "3,43": 0,
+      "3,49": 3,
+      "3,97": 0,
+      "3,107": 3,
+      "4,1": 0,
+      "4,2": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "4,16": 0,
+      "4,17": 0,
+      "4,18": 0,
+      "4,19": 0,
+      "4,20": 0,
+      "4,21": 0,
+      "4,23": 0,
+      "4,24": 0,
+      "4,25": 0,
+      "4,26": 0,
+      "4,27": 0,
+      "4,28": 0,
+      "4,29": 0,
+      "4,30": 0,
+      "4,31": 0,
+      "4,32": 0,
+      "4,34": 0,
+      "4,35": 0,
+      "4,36": 0,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 0,
+      "4,40": 0,
+      "4,41": 0,
+      "4,42": 0,
+      "4,43": 0,
+      "4,45": 0,
+      "4,46": 0,
+      "4,47": 0,
+      "4,48": 0,
+      "4,49": 0,
+      "4,50": 0,
+      "4,51": 0,
+      "4,52": 0,
+      "4,53": 0,
+      "4,54": 0,
+      "4,56": 0,
+      "4,57": 0,
+      "4,58": 0,
+      "4,59": 0,
+      "4,60": 0,
+      "4,61": 0,
+      "4,97": 6,
+      "4,107": 0,
+      "5,1": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "5,16": 0,
+      "5,17": 0,
+      "5,18": 0,
+      "5,19": 0,
+      "5,20": 0,
+      "5,21": 0,
+      "5,23": 0,
+      "5,24": 0,
+      "5,25": 0,
+      "5,26": 0,
+      "5,27": 0,
+      "5,28": 0,
+      "5,29": 0,
+      "5,30": 0,
+      "5,31": 0,
+      "5,32": 0,
+      "5,34": 0,
+      "5,35": 0,
+      "5,36": 0,
+      "5,37": 0,
+      "5,38": 0,
+      "5,39": 0,
+      "5,40": 0,
+      "5,41": 0,
+      "5,42": 0,
+      "5,43": 0,
+      "5,45": 0,
+      "5,46": 0,
+      "5,47": 0,
+      "5,48": 0,
+      "5,49": 0,
+      "5,50": 0,
+      "5,51": 0,
+      "5,52": 0,
+      "5,53": 0,
+      "5,54": 0,
+      "5,56": 0,
+      "5,57": 0,
+      "5,58": 0,
+      "5,59": 0,
+      "5,60": 0,
+      "5,61": 0,
+      "5,107": 7,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,7": 0,
+      "6,8": 0,
+      "6,9": 0,
+      "6,10": 0,
+      "6,11": 0,
+      "6,12": 0,
+      "6,13": 0,
+      "6,14": 0,
+      "6,15": 0,
+      "6,16": 0,
+      "6,17": 0,
+      "6,18": 0,
+      "6,19": 0,
+      "6,20": 0,
+      "6,21": 0,
+      "6,23": 0,
+      "6,24": 0,
+      "6,25": 0,
+      "6,26": 0,
+      "6,27": 0,
+      "6,28": 0,
+      "6,29": 0,
+      "6,30": 0,
+      "6,31": 0,
+      "6,32": 0,
+      "6,34": 0,
+      "6,35": 0,
+      "6,36": 0,
+      "6,37": 0,
+      "6,38": 0,
+      "6,39": 0,
+      "6,40": 0,
+      "6,41": 0,
+      "6,42": 0,
+      "6,43": 0,
+      "6,45": 0,
+      "6,46": 0,
+      "6,47": 0,
+      "6,48": 0,
+      "6,49": 0,
+      "6,50": 0,
+      "6,51": 0,
+      "6,52": 0,
+      "6,53": 0,
+      "6,54": 0,
+      "6,56": 0,
+      "6,57": 0,
+      "6,58": 0,
+      "6,59": 0,
+      "6,60": 0,
+      "6,61": 0,
+      "6,63": 0,
+      "6,64": 0,
+      "6,65": 0,
+      "6,66": 0,
+      "6,67": 0,
+      "6,68": 0,
+      "6,70": 3,
+      "6,71": 3,
+      "6,72": 3,
+      "6,73": 3,
+      "6,74": 3,
+      "6,75": 3,
+      "6,77": 0,
+      "6,78": 0,
+      "6,79": 0,
+      "6,80": 0,
+      "6,81": 0,
+      "6,82": 0,
+      "6,83": 0,
+      "6,84": 0,
+      "6,85": 0,
+      "6,107": 7,
+      "7,1": 0,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,6": 0,
+      "7,7": 0,
+      "7,8": 0,
+      "7,9": 3,
+      "7,10": 0,
+      "7,11": 0,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "7,16": 0,
+      "7,17": 0,
+      "7,18": 0,
+      "7,19": 0,
+      "7,20": 0,
+      "7,21": 0,
+      "7,22": 0,
+      "7,23": 0,
+      "7,24": 0,
+      "7,25": 0,
+      "7,26": 0,
+      "7,27": 0,
+      "7,28": 0,
+      "7,29": 0,
+      "7,30": 0,
+      "7,31": 0,
+      "7,32": 0,
+      "7,34": 0,
+      "7,35": 0,
+      "7,36": 0,
+      "7,37": 0,
+      "7,38": 0,
+      "7,39": 0,
+      "7,40": 0,
+      "7,41": 0,
+      "7,42": 0,
+      "7,43": 0,
+      "7,45": 0,
+      "7,46": 0,
+      "7,47": 0,
+      "7,48": 0,
+      "7,49": 0,
+      "7,50": 0,
+      "7,51": 0,
+      "7,52": 0,
+      "7,53": 0,
+      "7,54": 0,
+      "7,56": 0,
+      "7,57": 0,
+      "7,58": 0,
+      "7,59": 0,
+      "7,60": 0,
+      "7,61": 0,
+      "7,63": 0,
+      "7,64": 0,
+      "7,65": 0,
+      "7,66": 0,
+      "7,67": 0,
+      "7,68": 0,
+      "7,70": 3,
+      "7,71": 3,
+      "7,72": 3,
+      "7,73": 3,
+      "7,74": 3,
+      "7,75": 3,
+      "7,77": 0,
+      "7,78": 0,
+      "7,79": 0,
+      "7,80": 0,
+      "7,81": 0,
+      "7,82": 0,
+      "7,83": 0,
+      "7,84": 0,
+      "7,85": 0,
+      "7,107": 7,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,6": 0,
+      "8,7": 0,
+      "8,8": 0,
+      "8,9": 0,
+      "8,10": 0,
+      "8,11": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "8,16": 0,
+      "8,17": 0,
+      "8,18": 0,
+      "8,19": 0,
+      "8,20": 0,
+      "8,21": 0,
+      "8,22": 0,
+      "8,23": 0,
+      "8,24": 0,
+      "8,25": 0,
+      "8,38": 0,
+      "8,39": 0,
+      "8,40": 0,
+      "8,41": 0,
+      "8,42": 0,
+      "8,43": 0,
+      "8,95": 0,
+      "8,97": 0,
+      "8,98": 0,
+      "8,99": 0,
+      "9,1": 0,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "9,5": 0,
+      "9,6": 0,
+      "9,7": 0,
+      "9,8": 0,
+      "9,9": 0,
+      "9,10": 0,
+      "9,11": 0,
+      "9,12": 0,
+      "9,13": 0,
+      "9,14": 0,
+      "9,15": 0,
+      "9,16": 0,
+      "9,17": 0,
+      "9,18": 0,
+      "9,19": 0,
+      "9,20": 0,
+      "9,21": 0,
+      "9,22": 0,
+      "9,23": 0,
+      "9,24": 0,
+      "9,25": 0,
+      "9,38": 0,
+      "9,39": 0,
+      "9,40": 0,
+      "9,41": 0,
+      "9,42": 0,
+      "9,43": 0,
+      "9,94": 0,
+      "9,95": 0,
+      "9,97": 0,
+      "9,98": 8,
+      "9,99": 9,
+      "10,1": 0,
+      "10,2": 10,
+      "10,3": 11,
+      "10,4": 11,
+      "10,5": 11,
+      "10,6": 11,
+      "10,8": 0,
+      "10,9": 0,
+      "10,10": 0,
+      "10,11": 0,
+      "10,12": 0,
+      "10,13": 0,
+      "10,14": 0,
+      "10,15": 0,
+      "10,16": 0,
+      "10,17": 0,
+      "10,18": 0,
+      "10,19": 0,
+      "10,20": 0,
+      "10,21": 0,
+      "10,22": 0,
+      "10,23": 0,
+      "10,24": 0,
+      "10,25": 0,
+      "10,26": 0,
+      "10,27": 0,
+      "10,28": 0,
+      "10,29": 0,
+      "10,30": 0,
+      "10,31": 0,
+      "10,32": 0,
+      "10,33": 0,
+      "10,34": 0,
+      "10,35": 0,
+      "10,36": 3,
+      "10,37": 0,
+      "10,38": 0,
+      "10,39": 0,
+      "10,40": 0,
+      "10,41": 0,
+      "10,42": 0,
+      "10,43": 0,
+      "10,94": 0,
+      "10,95": 0,
+      "10,97": 0,
+      "10,98": 12,
+      "10,99": 13,
+      "11,2": 14,
+      "11,9": 15,
+      "11,10": 16,
+      "11,11": 16,
+      "11,12": 16,
+      "11,13": 16,
+      "11,14": 16,
+      "11,15": 15,
+      "11,16": 17,
+      "11,17": 17,
+      "11,18": 17,
+      "11,19": 17,
+      "11,20": 17,
+      "11,21": 15,
+      "11,22": 17,
+      "11,23": 17,
+      "11,24": 17,
+      "11,25": 17,
+      "11,26": 17,
+      "11,27": 15,
+      "11,28": 17,
+      "11,29": 17,
+      "11,30": 17,
+      "11,31": 17,
+      "11,32": 17,
+      "11,33": 15,
+      "11,34": 17,
+      "11,35": 17,
+      "11,36": 17,
+      "11,37": 17,
+      "11,38": 17,
+      "11,39": 15,
+      "11,40": 17,
+      "11,41": 17,
+      "11,42": 17,
+      "11,43": 17,
+      "11,44": 17,
+      "11,45": 15,
+      "11,46": 17,
+      "11,47": 17,
+      "11,48": 17,
+      "11,49": 17,
+      "11,50": 17,
+      "11,51": 15,
+      "11,52": 17,
+      "11,53": 17,
+      "11,54": 17,
+      "11,55": 17,
+      "11,56": 17,
+      "11,57": 15,
+      "11,58": 17,
+      "11,59": 17,
+      "11,60": 17,
+      "11,61": 17,
+      "11,62": 17,
+      "11,63": 15,
+      "11,64": 17,
+      "11,65": 17,
+      "11,66": 17,
+      "11,67": 17,
+      "11,68": 17,
+      "11,69": 15,
+      "11,70": 17,
+      "11,71": 17,
+      "11,72": 17,
+      "11,73": 17,
+      "11,74": 17,
+      "11,75": 15,
+      "11,76": 17,
+      "11,77": 17,
+      "11,78": 17,
+      "11,79": 17,
+      "11,80": 17,
+      "11,81": 18,
+      "11,88": 17,
+      "11,89": 17,
+      "11,90": 17,
+      "11,91": 17,
+      "11,92": 17,
+      "11,93": 19,
+      "11,94": 0,
+      "11,95": 0,
+      "11,97": 0,
+      "11,98": 20,
+      "11,99": 21,
+      "12,2": 22,
+      "12,3": 23,
+      "12,4": 23,
+      "12,5": 23,
+      "12,6": 23,
+      "12,7": 23,
+      "12,8": 24,
+      "12,9": 25,
+      "12,10": 23,
+      "12,11": 23,
+      "12,12": 23,
+      "12,13": 23,
+      "12,14": 24,
+      "12,15": 25,
+      "12,16": 23,
+      "12,17": 23,
+      "12,18": 23,
+      "12,19": 23,
+      "12,20": 24,
+      "12,21": 25,
+      "12,22": 23,
+      "12,23": 23,
+      "12,24": 23,
+      "12,25": 23,
+      "12,26": 24,
+      "12,27": 25,
+      "12,28": 23,
+      "12,29": 23,
+      "12,30": 23,
+      "12,31": 23,
+      "12,32": 23,
+      "12,33": 26,
+      "12,34": 27,
+      "12,35": 27,
+      "12,36": 27,
+      "12,37": 27,
+      "12,38": 28,
+      "12,39": 29,
+      "12,40": 23,
+      "12,41": 23,
+      "12,42": 23,
+      "12,43": 23,
+      "12,44": 24,
+      "12,45": 25,
+      "12,46": 23,
+      "12,47": 23,
+      "12,48": 23,
+      "12,49": 23,
+      "12,50": 24,
+      "12,51": 25,
+      "12,52": 23,
+      "12,53": 23,
+      "12,54": 23,
+      "12,55": 23,
+      "12,56": 24,
+      "12,57": 25,
+      "12,58": 23,
+      "12,59": 23,
+      "12,60": 23,
+      "12,61": 23,
+      "12,62": 24,
+      "12,63": 25,
+      "12,64": 23,
+      "12,65": 23,
+      "12,66": 23,
+      "12,67": 23,
+      "12,68": 24,
+      "12,69": 25,
+      "12,70": 23,
+      "12,71": 23,
+      "12,72": 23,
+      "12,73": 23,
+      "12,74": 24,
+      "12,75": 25,
+      "12,76": 23,
+      "12,77": 23,
+      "12,78": 23,
+      "12,79": 23,
+      "12,80": 23,
+      "12,81": 25,
+      "12,82": 23,
+      "12,83": 23,
+      "12,84": 23,
+      "12,85": 23,
+      "12,86": 23,
+      "12,87": 24,
+      "12,88": 29,
+      "12,89": 23,
+      "12,90": 23,
+      "12,91": 23,
+      "12,92": 23,
+      "12,93": 24,
+      "13,2": 30,
+      "13,3": 30,
+      "13,4": 30,
+      "13,5": 30,
+      "13,6": 30,
+      "13,7": 30,
+      "13,8": 30,
+      "13,9": 30,
+      "13,10": 30,
+      "13,11": 30,
+      "13,12": 30,
+      "13,13": 30,
+      "13,14": 30,
+      "13,15": 30,
+      "13,16": 30,
+      "13,17": 30,
+      "13,18": 30,
+      "13,19": 30,
+      "13,20": 30,
+      "13,21": 30,
+      "13,22": 30,
+      "13,23": 30,
+      "13,24": 30,
+      "13,25": 30,
+      "13,26": 30,
+      "13,27": 30,
+      "13,28": 30,
+      "13,29": 30,
+      "13,30": 30,
+      "13,31": 30,
+      "13,32": 30,
+      "13,33": 30,
+      "13,34": 30,
+      "13,35": 30,
+      "13,36": 30,
+      "13,37": 30,
+      "13,38": 30,
+      "13,39": 30,
+      "13,40": 30,
+      "13,41": 30,
+      "13,42": 30,
+      "13,43": 30,
+      "13,44": 30,
+      "13,45": 30,
+      "13,46": 30,
+      "13,47": 30,
+      "13,48": 30,
+      "13,49": 30,
+      "13,50": 30,
+      "13,51": 30,
+      "13,52": 30,
+      "13,53": 30,
+      "13,54": 30,
+      "13,55": 30,
+      "13,56": 30,
+      "13,57": 30,
+      "13,58": 30,
+      "13,59": 30,
+      "13,60": 30,
+      "13,61": 30,
+      "13,62": 30,
+      "13,63": 30,
+      "13,64": 30,
+      "13,65": 30,
+      "13,66": 30,
+      "13,67": 30,
+      "13,68": 30,
+      "13,69": 30,
+      "13,70": 30,
+      "13,71": 30,
+      "13,72": 30,
+      "13,73": 30,
+      "13,74": 30,
+      "13,75": 30,
+      "13,76": 30,
+      "13,77": 30,
+      "13,78": 30,
+      "13,79": 30,
+      "13,80": 30,
+      "13,81": 30,
+      "13,82": 30,
+      "13,83": 30,
+      "13,84": 30,
+      "13,85": 30,
+      "13,86": 30,
+      "13,87": 30,
+      "13,88": 30,
+      "13,89": 30,
+      "13,90": 30,
+      "13,91": 30,
+      "13,92": 30,
+      "13,93": 30,
+      "14,98": 0,
+      "14,99": 31,
+      "14,100": 0,
+      "14,101": 0,
+      "14,102": 0,
+      "14,103": 0,
+      "15,98": 3,
+      "15,99": 0,
+      "15,100": 0,
+      "15,101": 32,
+      "15,102": 0,
+      "15,103": 0,
+      "16,98": 0,
+      "16,99": 0,
+      "16,100": 0,
+      "16,101": 32,
+      "16,102": 0,
+      "16,103": 0,
+      "17,98": 0,
+      "17,99": 0,
+      "17,100": 0,
+      "17,101": 0,
+      "17,102": 0,
+      "17,103": 0,
+      "18,98": 0,
+      "18,99": 0,
+      "18,100": 0,
+      "19,98": 0,
+      "19,99": 0,
+      "19,100": 0,
+      "20,98": 0,
+      "20,99": 0,
+      "20,100": 0,
+      "20,101": 0,
+      "20,102": 0,
+      "20,103": 0,
+      "21,98": 0,
+      "21,99": 0,
+      "21,100": 0,
+      "22,2": 10,
+      "22,3": 33,
+      "22,4": 33,
+      "22,5": 33,
+      "22,6": 33,
+      "22,98": 0,
+      "22,99": 0,
+      "22,100": 0,
+      "23,2": 34,
+      "23,3": 17,
+      "23,4": 17,
+      "23,5": 17,
+      "23,6": 17,
+      "23,7": 17,
+      "23,8": 17,
+      "23,9": 15,
+      "23,10": 17,
+      "23,11": 17,
+      "23,12": 17,
+      "23,13": 17,
+      "23,14": 17,
+      "23,15": 35,
+      "23,16": 17,
+      "23,17": 17,
+      "23,18": 17,
+      "23,19": 17,
+      "23,20": 17,
+      "23,21": 35,
+      "23,22": 17,
+      "23,23": 17,
+      "23,24": 17,
+      "23,25": 17,
+      "23,26": 17,
+      "23,27": 35,
+      "23,28": 17,
+      "23,29": 17,
+      "23,30": 17,
+      "23,31": 17,
+      "23,32": 17,
+      "23,33": 35,
+      "23,34": 17,
+      "23,35": 17,
+      "23,36": 17,
+      "23,37": 17,
+      "23,38": 17,
+      "23,39": 35,
+      "23,40": 17,
+      "23,41": 17,
+      "23,42": 17,
+      "23,43": 17,
+      "23,44": 17,
+      "23,45": 35,
+      "23,46": 17,
+      "23,47": 17,
+      "23,48": 17,
+      "23,49": 17,
+      "23,50": 17,
+      "23,51": 35,
+      "23,52": 17,
+      "23,53": 17,
+      "23,54": 17,
+      "23,55": 17,
+      "23,56": 17,
+      "23,57": 35,
+      "23,58": 17,
+      "23,59": 17,
+      "23,60": 17,
+      "23,61": 17,
+      "23,62": 17,
+      "23,63": 35,
+      "23,64": 17,
+      "23,65": 17,
+      "23,66": 17,
+      "23,67": 17,
+      "23,68": 17,
+      "23,69": 35,
+      "23,70": 17,
+      "23,71": 17,
+      "23,72": 17,
+      "23,73": 17,
+      "23,74": 17,
+      "23,75": 35,
+      "23,76": 17,
+      "23,77": 17,
+      "23,78": 17,
+      "23,79": 17,
+      "23,80": 17,
+      "23,81": 18,
+      "23,88": 17,
+      "23,89": 17,
+      "23,90": 17,
+      "23,91": 17,
+      "23,92": 17,
+      "23,93": 19,
+      "23,98": 0,
+      "23,99": 0,
+      "23,100": 0,
+      "23,101": 0,
+      "23,102": 0,
+      "23,103": 0,
+      "24,2": 36,
+      "24,3": 27,
+      "24,4": 27,
+      "24,5": 27,
+      "24,6": 27,
+      "24,7": 27,
+      "24,8": 28,
+      "24,9": 37,
+      "24,10": 27,
+      "24,11": 27,
+      "24,12": 27,
+      "24,13": 27,
+      "24,14": 28,
+      "24,15": 37,
+      "24,16": 27,
+      "24,17": 27,
+      "24,18": 27,
+      "24,19": 27,
+      "24,20": 28,
+      "24,21": 37,
+      "24,22": 27,
+      "24,23": 27,
+      "24,24": 27,
+      "24,25": 27,
+      "24,26": 28,
+      "24,27": 37,
+      "24,28": 27,
+      "24,29": 27,
+      "24,30": 27,
+      "24,31": 27,
+      "24,32": 28,
+      "24,33": 37,
+      "24,34": 27,
+      "24,35": 27,
+      "24,36": 27,
+      "24,37": 27,
+      "24,38": 28,
+      "24,39": 37,
+      "24,40": 27,
+      "24,41": 27,
+      "24,42": 27,
+      "24,43": 27,
+      "24,44": 28,
+      "24,45": 37,
+      "24,46": 27,
+      "24,47": 27,
+      "24,48": 27,
+      "24,49": 27,
+      "24,50": 28,
+      "24,51": 37,
+      "24,52": 27,
+      "24,53": 27,
+      "24,54": 27,
+      "24,55": 27,
+      "24,56": 28,
+      "24,57": 37,
+      "24,58": 27,
+      "24,59": 27,
+      "24,60": 27,
+      "24,61": 27,
+      "24,62": 28,
+      "24,63": 37,
+      "24,64": 27,
+      "24,65": 27,
+      "24,66": 27,
+      "24,67": 27,
+      "24,68": 28,
+      "24,69": 37,
+      "24,70": 27,
+      "24,71": 27,
+      "24,72": 27,
+      "24,73": 27,
+      "24,74": 28,
+      "24,75": 37,
+      "24,76": 27,
+      "24,77": 27,
+      "24,78": 27,
+      "24,79": 27,
+      "24,80": 27,
+      "24,81": 37,
+      "24,82": 27,
+      "24,83": 27,
+      "24,84": 27,
+      "24,85": 27,
+      "24,86": 27,
+      "24,87": 28,
+      "24,88": 38,
+      "24,89": 27,
+      "24,90": 27,
+      "24,91": 27,
+      "24,92": 27,
+      "24,93": 28,
+      "24,98": 0,
+      "24,99": 0,
+      "24,100": 0,
+      "25,98": 0,
+      "25,99": 0,
+      "25,100": 0,
+      "26,98": 0,
+      "26,99": 0,
+      "26,100": 0,
+      "26,101": 0,
+      "26,102": 0,
+      "26,103": 0,
+      "28,98": 0,
+      "28,99": 0,
+      "29,98": 0,
+      "29,99": 0,
+      "30,98": 0,
+      "30,99": 0,
+      "31,98": 0,
+      "31,99": 0,
+      "32,98": 0,
+      "32,99": 0,
+      "33,98": 0,
+      "33,99": 0,
+      "34,98": 0,
+      "34,99": 0
+    },
+    "RowStyles": {
+      "13": 30
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,2,4",
+    "24,2,1,7",
+    "12,2,1,7",
+    "4,7,2,15",
+    "4,23,2,10",
+    "4,34,2,10",
+    "4,45,2,10",
+    "4,56,2,6",
+    "12,88,1,6",
+    "24,88,1,6",
+    "24,81,1,7",
+    "12,15,1,6",
+    "12,21,1,6",
+    "12,27,1,6",
+    "12,33,1,6",
+    "12,39,1,6",
+    "12,45,1,6",
+    "12,51,1,6",
+    "12,57,1,6",
+    "12,69,1,6",
+    "12,75,1,6",
+    "12,63,1,6",
+    "12,9,1,6",
+    "24,9,1,6",
+    "24,15,1,6",
+    "24,21,1,6",
+    "24,27,1,6",
+    "24,33,1,6",
+    "24,39,1,6",
+    "24,45,1,6",
+    "24,51,1,6",
+    "24,57,1,6",
+    "24,63,1,6",
+    "24,69,1,6",
+    "24,75,1,6",
+    "12,81,1,7",
+    "1,2,2,16",
+    "1,61,2,2",
+    "30,98,5,2",
+    "25,2,8,92",
+    "13,2,8,92",
+    "7,2,2,6",
+    "7,9,2,6",
+    "7,16,2,9",
+    "10,2,1,5",
+    "22,2,1,5",
+    "2,55,1,5",
+    "11,2,1,7",
+    "11,9,1,6",
+    "11,15,1,6",
+    "11,21,1,6",
+    "11,27,1,6",
+    "11,33,1,6",
+    "11,39,1,6",
+    "11,45,1,6",
+    "11,51,1,6",
+    "11,57,1,6",
+    "11,63,1,6",
+    "11,69,1,6",
+    "11,75,1,6",
+    "11,81,1,7",
+    "11,88,1,6",
+    "23,2,1,7",
+    "23,9,1,6",
+    "23,15,1,6",
+    "23,21,1,6",
+    "23,27,1,6",
+    "23,33,1,6",
+    "23,39,1,6",
+    "23,45,1,6",
+    "23,51,1,6",
+    "23,57,1,6",
+    "23,63,1,6",
+    "23,69,1,6",
+    "23,75,1,6",
+    "23,81,1,7",
+    "23,88,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=売上・売上原価入力!11:21"
+            },
+            "Value": false
+          },
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=売上・売上原価入力!23:33"
+            },
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "INP_予算_売上",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_売上",
+            "ColumnName": "ID",
+            "GUID": "4d5ebe8e-5f9f-40e2-9ddb-a10b49b6412a"
+          },
+          "Value": "%Null%"
+        },
+        "ID": "b3bfdb6b6afd4c66986d39a841539170"
+      },
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "INP_予算_売上原価",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "INP_予算_売上原価",
+            "ColumnName": "ID",
+            "GUID": "710b0978-7273-42b9-899a-f69bc767de12"
+          },
+          "Value": "%Null%"
+        },
+        "ID": "e06519be29994cc38e4f3f522e335eb8"
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=売上・売上原価入力!C8"
+            },
+            "PropertyType": 0,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=売上・売上原価入力!J8"
+            },
+            "PropertyType": 1,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=売上・売上原価入力!Q8"
+            },
+            "PropertyType": 1,
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "INP_予算_売上"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//IdK3gGlIKVPWBzfPz9Dq8TzP10fzsMbOqydF+b7tPOF3jazzSQzeCIczoKDSKjfcZE7vn4QIZIy7YJIQ6DMOheWOI5A8tJHovNXvjppmQwmiDsI5Sp6W3ElvzRHf8piMkS8tufXowWVJrUVkauxqLnfyf/exssKGAc5Ag+39vnFHEBw1ydGJ9BPmXkB2H71n/ixf1WnrZPFG9QnZaWjuGTw7K5GTlFACoAw7qTY5Hxl5nG6MEYhKd1yKYyf3CD1j+2hxowReQf+bL6tq3ICS2bp2Wp35qPxbCcpitUYPPDwyD5CPmuxrHTn4q2l3qXjrE9B2d/2fj3xpE1op40MTAWF6+rMQ8gRUZseimYjSvHUq41ZFEaJCGgPo8qJv9YciDx3NRaCHEe35gXM2H5GoDVbUxkgSe2P1WSVzabXlCFFmeOknJy1UzsYV0Taco5BtV0DyArdHwaOhy5fvjEzbEf04UOsa2LpJa+s2YauVKE+QeseCnL4tcr2T3rL46fecmOwjDEuE9mCgJdOzlev+2W8+l3+VXYhWYPF56wYUorg4LyqJ3JwDBiZdnJspb4lFWHBjU9fryKlrP3+LeYe4v/thm4BA74KLO0fjXuNBzm0nnWb2Sgk1nxup72aoTY4uTNF6ebM/0lDRIdoGUzD2USbOi++i9o+pQ9RyDBAYrN8ZuiOwHee1jYsMMonmMQ9p6MYqSZT0vRnSwRrcMj6QisVan8d3OcHNbTgxRntNf0wBdLOYQtJ1y+jaWrcMjzG749GabIPK3GpWxlumPNJQoL+Jatz0l3gly/aV/0VeKUhmidGTaZ5LGHoEA8AmBiJG40G/87IG+8jBSUOgxxxPwP1ndWRn3kTdr1K/G66xh1o3JeQg0HHq0+rv4heUIdpXXl4qd8pj31wOta+2VY7x7A==|920

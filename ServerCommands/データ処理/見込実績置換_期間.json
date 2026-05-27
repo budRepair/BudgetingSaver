@@ -1,0 +1,107 @@
+{
+  "Name": "見込実績置換_期間",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "年度",
+          "DataValidationInfo": {},
+          "TestData": "2023"
+        },
+        {
+          "Name": "開始月",
+          "DataValidationInfo": {},
+          "TestData": "2"
+        },
+        {
+          "Name": "終了月",
+          "DataValidationInfo": {},
+          "TestData": "5"
+        },
+        {
+          "Name": "バージョン",
+          "DataValidationInfo": {},
+          "TestData": "Fix"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {
+        "@pmt1": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=年度"
+          },
+          "Item2": 16
+        },
+        "@pmt2": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=開始月"
+          },
+          "Item2": 16
+        },
+        "@pmt3": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=終了月"
+          },
+          "Item2": 16
+        },
+        "@pmt4": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=バージョン"
+          },
+          "Item2": 16
+        }
+      },
+      "SqlStatement": "WITH act as ( \r\n    SELECT\r\n        \"年度\"\r\n        , \"組織コード\"\r\n        , \"科目コード\"\r\n        , \"月\"\r\n        , \"金額\" \r\n    FROM\r\n        ( \r\n            SELECT\r\n                @pmt1 AS \"年度\"\r\n                , tb.\"組織コード\"\r\n                , tb.\"科目コード\"\r\n                , mst.\"ソート\"\r\n                , mst.\"月コード\" AS \"月\"\r\n                , SUM( \r\n                    CASE mst.\"月コード\" \r\n                        WHEN '04' THEN tb.\"4月\" \r\n                        WHEN '05' THEN tb.\"5月\" \r\n                        WHEN '06' THEN tb.\"6月\" \r\n                        WHEN '07' THEN tb.\"7月\" \r\n                        WHEN '08' THEN tb.\"8月\" \r\n                        WHEN '09' THEN tb.\"9月\" \r\n                        WHEN '10' THEN tb.\"10月\" \r\n                        WHEN '11' THEN tb.\"11月\" \r\n                        WHEN '12' THEN tb.\"12月\" \r\n                        WHEN '01' THEN tb.\"1月\" \r\n                        WHEN '02' THEN tb.\"2月\" \r\n                        WHEN '03' THEN tb.\"3月\" \r\n                        END\r\n                ) AS \"金額\" \r\n            FROM\r\n                \"VIEW_実績_損益計算書\" tb \r\n                INNER JOIN \"INP_見込_損益計算書\" wk \r\n                    ON tb.\"組織コード\" = wk.\"組織コード\" \r\n                    AND tb.\"科目コード\" = wk.\"科目コード\" \r\n                    AND wk.\"年度\" = @pmt1 \r\n                    AND wk.\"バージョン\" = @pmt4 \r\n                LEFT JOIN \"MST_月\" mst \r\n                    ON 1 = 1 \r\n            WHERE\r\n                tb.\"年度\" = @pmt1 \r\n            GROUP BY\r\n                tb.\"組織コード\"\r\n                , tb.\"科目コード\"\r\n                , mst.\"ソート\"\r\n        ) wk \r\n    WHERE\r\n        \"ソート\" >= @pmt2 \r\n        AND \"ソート\" <= @pmt3\r\n) \r\n, per as ( \r\n    SELECT\r\n        \"年度\"\r\n        , \"組織コード\"\r\n        , \"科目コード\"\r\n        , \"月\"\r\n        , \"金額\" \r\n    FROM\r\n        ( \r\n            SELECT\r\n                @pmt1 AS \"年度\"\r\n                , tb.\"組織コード\"\r\n                , tb.\"科目コード\"\r\n                , mst.\"ソート\"\r\n                , mst.\"月コード\" AS \"月\"\r\n                , SUM( \r\n                    CASE mst.\"月コード\" \r\n                        WHEN '04' THEN tb.\"_4月\" \r\n                        WHEN '05' THEN tb.\"_5月\" \r\n                        WHEN '06' THEN tb.\"_6月\" \r\n                        WHEN '07' THEN tb.\"_7月\" \r\n                        WHEN '08' THEN tb.\"_8月\" \r\n                        WHEN '09' THEN tb.\"_9月\" \r\n                        WHEN '10' THEN tb.\"_10月\" \r\n                        WHEN '11' THEN tb.\"_11月\" \r\n                        WHEN '12' THEN tb.\"_12月\" \r\n                        WHEN '01' THEN tb.\"_1月\" \r\n                        WHEN '02' THEN tb.\"_2月\" \r\n                        WHEN '03' THEN tb.\"_3月\" \r\n                        END\r\n                ) AS \"金額\" \r\n            FROM\r\n                \"INP_見込_損益計算書\" tb \r\n                LEFT JOIN \"MST_月\" mst \r\n                    ON 1 = 1 \r\n            WHERE\r\n                \"年度\" = @pmt1 \r\n                AND \"バージョン\" = @pmt4 \r\n            GROUP BY\r\n                tb.\"組織コード\"\r\n                , tb.\"科目コード\"\r\n                , mst.\"ソート\"\r\n        ) wk \r\n    WHERE\r\n        \"ソート\" < @pmt2 \r\n        OR \"ソート\" > @pmt3\r\n) \r\nINSERT \r\nINTO \"WK_見込_損益計算書\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , SUM(CASE WHEN \"月\" = \"04\" THEN \"金額\" END) AS \"_4月\"\r\n    , SUM(CASE WHEN \"月\" = \"05\" THEN \"金額\" END) AS \"_5月\"\r\n    , SUM(CASE WHEN \"月\" = \"06\" THEN \"金額\" END) AS \"_6月\"\r\n    , SUM(CASE WHEN \"月\" = \"07\" THEN \"金額\" END) AS \"_7月\"\r\n    , SUM(CASE WHEN \"月\" = \"08\" THEN \"金額\" END) AS \"_8月\"\r\n    , SUM(CASE WHEN \"月\" = \"09\" THEN \"金額\" END) AS \"_9月\"\r\n    , SUM(CASE WHEN \"月\" = \"10\" THEN \"金額\" END) AS \"_10月\"\r\n    , SUM(CASE WHEN \"月\" = \"11\" THEN \"金額\" END) AS \"_11月\"\r\n    , SUM(CASE WHEN \"月\" = \"12\" THEN \"金額\" END) AS \"_12月\"\r\n    , SUM(CASE WHEN \"月\" = \"01\" THEN \"金額\" END) AS \"_1月\"\r\n    , SUM(CASE WHEN \"月\" = \"02\" THEN \"金額\" END) AS \"_2月\"\r\n    , SUM(CASE WHEN \"月\" = \"03\" THEN \"金額\" END) AS \"_3月\"\r\n    , @pmt4 AS \"バージョン\" \r\nFROM\r\n    ( \r\n        SELECT\r\n            \"年度\"\r\n            , \"組織コード\"\r\n            , \"科目コード\"\r\n            , \"月\"\r\n            , \"金額\" \r\n        FROM\r\n            act \r\n        UNION ALL \r\n        SELECT\r\n            \"年度\"\r\n            , \"組織コード\"\r\n            , \"科目コード\"\r\n            , \"月\"\r\n            , \"金額\" \r\n        FROM\r\n            per\r\n    ) \r\nGROUP BY\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\";",
+      "ID": "e52fb434f5c540cdbdcc463d99b2a489",
+      "Comments": "WKテーブルに期間データ作成"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {},
+      "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_見込_損益計算書\" \r\nWHERE\r\n    EXISTS ( \r\n        SELECT\r\n            'x' \r\n        FROM\r\n            \"WK_見込_損益計算書\" wk \r\n        WHERE\r\n            \"INP_見込_損益計算書\".\"年度\" = wk.\"年度\" \r\n            AND \"INP_見込_損益計算書\".\"バージョン\" = wk.\"バージョン\"\r\n    ); \r\n\r\nINSERT \r\nINTO \"INP_見込_損益計算書\" ( \r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\"\r\n) \r\nSELECT\r\n    \"年度\"\r\n    , \"組織コード\"\r\n    , \"科目コード\"\r\n    , \"_4月\"\r\n    , \"_5月\"\r\n    , \"_6月\"\r\n    , \"_7月\"\r\n    , \"_8月\"\r\n    , \"_9月\"\r\n    , \"_10月\"\r\n    , \"_11月\"\r\n    , \"_12月\"\r\n    , \"_1月\"\r\n    , \"_2月\"\r\n    , \"_3月\"\r\n    , \"バージョン\" \r\nFROM\r\n    \"WK_見込_損益計算書\";",
+      "ReturnsName": "return1",
+      "ID": "5275354e687e4fa2951cca8b53757102",
+      "Comments": "見込データ作成処理"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "1B77D134-B2AA-4867-AD46-053B8AD0D7E6",
+      "Params": {},
+      "SqlStatement": "DELETE \r\nFROM\r\n    \"WK_見込_損益計算書\";",
+      "ReturnsName": "return1",
+      "ID": "24fcd105cbb14e65a214e0df3651725d",
+      "Comments": "WKテーブル削除処理"
+    }
+  ]
+}

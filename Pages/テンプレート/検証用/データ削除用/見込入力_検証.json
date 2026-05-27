@@ -1,0 +1,1556 @@
+{
+  "Rows": {
+    "Count": 63
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "63": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "64": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "67": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "68": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "69": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "70": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "71": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "72": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "73": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 95.0
+        }
+      },
+      "74": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 73.0
+        }
+      },
+      "75": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 53.0
+        }
+      },
+      "76": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "77": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "Count": 78
+  },
+  "Values": {
+    "0,23": "メニューに戻る",
+    "1,2": "見込入力_検証",
+    "3,63": "↓初期値設定",
+    "4,30": "データ表示",
+    "5,63": "Fix",
+    "8,63": "TEST_見込",
+    "9,67": "科目",
+    "9,68": "検索キー",
+    "9,69": "月コード",
+    "9,71": "予算",
+    "9,72": "見込",
+    "9,73": "見込差",
+    "9,74": "見込比"
+  },
+  "Formulas": {
+    "22,68": "BL23&BM23&BO23&BR23",
+    "10,73": "BU11-BT11",
+    "10,71": "SUMIFS($BT$23:$BT$30,$BQ$23,$BQ$11)",
+    "10,74": "IFERROR(BU11/BT11,\"\")",
+    "4,63": "YEAR(EDATE(TODAY(),-3))",
+    "10,68": "BL11&BM11&BO11&BR11"
+  },
+  "AttachInfos": {
+    "0,23": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メニュー",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "メニューに戻る",
+        "ClickMode": 1
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）2020",
+        "IsBounding": true,
+        "DataSource": "MST_年度",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "5732be65-af01-4b24-966a-8946d76e2f8c"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_年度",
+          "ColumnName": "年度",
+          "GUID": "fce7cebe-5e0b-4bff-a1b1-1f82a11a0416"
+        },
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=見込入力_検証!BL5"
+        }
+      }
+    },
+    "4,9": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事部",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "c13fcd60-1d2c-4e48-b491-633334867376"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "部門名",
+          "GUID": "b82d41dc-9878-42c6-9293-be429067c6a0"
+        }
+      }
+    },
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）人事課",
+        "IsBounding": true,
+        "DataSource": "MST_組織",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織コード",
+          "GUID": "3590d6ea-eff0-4973-b090-a40a3a658f98"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_組織",
+          "ColumnName": "組織名",
+          "GUID": "9ee4de02-06d4-4db4-91a8-8b953d1f7a2b"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "MST_組織",
+            "ColumnName": "部門名",
+            "GUID": "78a70e7a-b033-430a-be56-0f5493715312"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=見込入力_検証!J5"
+          }
+        }
+      }
+    },
+    "4,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "例）Ver01",
+        "IsBounding": true,
+        "DataSource": "MST_バージョン",
+        "ValueColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "dc672043-df28-4db8-8480-ee8c5cca69ae"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "MST_バージョン",
+          "ColumnName": "バージョン名",
+          "GUID": "ce8ac55b-fd41-4eab-a3f7-0e83d609cf1a"
+        },
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=見込入力_検証!BL6"
+        }
+      }
+    },
+    "4,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "TEST_見込",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_見込",
+                    "ColumnName": "年度",
+                    "GUID": "cf8a297d-7c1a-49cc-a0c1-3ebde8fe88bd"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=見込入力_検証!C5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_見込",
+                    "ColumnName": "組織コード",
+                    "GUID": "156da7e2-2cab-47a4-ab4a-ffd865b45eef"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=見込入力_検証!Q5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "TEST_見込",
+                    "ColumnName": "バージョン",
+                    "GUID": "1811bbf9-4be4-4484-a63f-8cbaef38c117"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=見込入力_検証!X5"
+                  }
+                }
+              ]
+            },
+            "ID": "7d2de7d60d7b4bcaa6727a44c8c1e157"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "VIEW_TEST_予算",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "VIEW_TEST_予算",
+                    "ColumnName": "年度",
+                    "GUID": "ab94618b-0cb0-4a2b-b039-731d8712b346"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=見込入力_検証!C5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "VIEW_TEST_予算",
+                    "ColumnName": "組織コード",
+                    "GUID": "f49a6f67-c4fc-4216-8278-2f50acfdfdb3"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=見込入力_検証!Q5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "VIEW_TEST_予算",
+                    "ColumnName": "バージョン",
+                    "GUID": "763fe1a1-8a85-4aa5-98f3-3fc2f3f8c3ff"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=見込入力_検証!X5"
+                  }
+                }
+              ]
+            },
+            "ID": "27ea95d6bb49434cbe50ef6c4916962a"
+          }
+        ],
+        "Text": "データ表示",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "7,2": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "リストビュー2",
+          "Rows": [
+            {
+              "DatabaseColumnName": "年度",
+              "DisplayName": "年度",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BL11"
+              },
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "科目",
+              "DisplayName": "科目",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BP11"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Cols": [
+            {
+              "DatabaseColumnName": "月",
+              "DisplayName": "月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BS11"
+              },
+              "BackgroundValue": {}
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "予算",
+              "DisplayName": "予算",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BT11"
+              },
+              "Aggregator": 6,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "見込",
+              "DisplayName": "見込",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BU11"
+              },
+              "Aggregator": 6,
+              "TotalAggregator": 0,
+              "KeepTotalAggregatorSameWithValue": false,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "見込差",
+              "DisplayName": "見込差",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BV11"
+              },
+              "Format": "0",
+              "Aggregator": 6,
+              "BackgroundValue": {}
+            },
+            {
+              "DatabaseColumnName": "見込比",
+              "DisplayName": "見込比",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BW11"
+              },
+              "Format": "0.00%",
+              "Aggregator": 6,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "年度",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BL11"
+              }
+            },
+            {
+              "DatabaseColumnName": "組織コード",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BM11"
+              }
+            },
+            {
+              "DatabaseColumnName": "課",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BN11"
+              }
+            },
+            {
+              "DatabaseColumnName": "科目コード",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BO11"
+              }
+            },
+            {
+              "DatabaseColumnName": "科目",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BP11"
+              }
+            },
+            {
+              "DatabaseColumnName": "検索キー",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BQ11"
+              }
+            },
+            {
+              "DatabaseColumnName": "月コード",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BR11"
+              }
+            },
+            {
+              "DatabaseColumnName": "月",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BS11"
+              }
+            },
+            {
+              "DatabaseColumnName": "予算",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BT11"
+              }
+            },
+            {
+              "DatabaseColumnName": "見込",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BU11"
+              }
+            },
+            {
+              "DatabaseColumnName": "見込差",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BV11"
+              }
+            },
+            {
+              "DatabaseColumnName": "見込比",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BW11"
+              }
+            },
+            {
+              "DatabaseColumnName": "バージョン",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=見込入力_検証!BX11"
+              }
+            }
+          ],
+          "IsFillFormMode": true,
+          "ForceFrozenRowHeader": true
+        },
+        "ShowSubtotal": false,
+        "ShowRowsTotal": false,
+        "ShowColsTotal": false,
+        "PivotTableStyle": {
+          "DataColumnWidth": "50",
+          "RowHeaderColumnWidth": "90",
+          "UseSimpleBar": true
+        },
+        "PivotTableID": "1791fffb-0d79-4ee3-a9d8-68e85e4fc221",
+        "TemplateKey": "スタイル2"
+      }
+    },
+    "9,63": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "TEST_見込",
+        "RowIndex": 9,
+        "ColumnIndex": 63,
+        "RowCount": 10,
+        "ColumnCount": 13,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2
+      }
+    },
+    "10,63": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "年度",
+        "GUID": "8cbfb197-f798-4c59-99e9-863a459bd384"
+      }
+    },
+    "10,64": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "組織コード",
+        "GUID": "ef3ba2fe-e6e3-40ea-b827-24310872bf52"
+      }
+    },
+    "10,65": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "組織コード",
+        "GUID": "ad72023c-3bae-4540-bf11-080476dffa0e",
+        "RelationBinding": {
+          "RelatedTable": "MST_組織",
+          "RelatedColumn": "組織コード",
+          "DisplayColumn": "組織名"
+        }
+      }
+    },
+    "10,66": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "科目コード",
+        "GUID": "5fef8836-a970-40a2-802e-44b7342217da"
+      }
+    },
+    "10,67": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "科目コード",
+        "GUID": "24130d23-0901-495c-948f-b9bbd6570393",
+        "RelationBinding": {
+          "RelatedTable": "MST_科目",
+          "RelatedColumn": "科目コード",
+          "DisplayColumn": "科目名"
+        }
+      }
+    },
+    "10,69": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "月",
+        "GUID": "b662c318-07df-4b91-8f83-766dd427ad9f"
+      }
+    },
+    "10,70": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "月",
+        "GUID": "d921f25a-da72-4d26-a509-01c6d86cf5cb",
+        "RelationBinding": {
+          "RelatedTable": "MST_年度_検証用",
+          "RelatedColumn": "月コード",
+          "DisplayColumn": "月"
+        }
+      }
+    },
+    "10,72": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "金額",
+        "GUID": "5e52ea44-c486-44a7-9c23-960f930a7f38"
+      }
+    },
+    "10,75": {
+      "BindingInfo": {
+        "TableName": "TEST_見込",
+        "ColumnName": "バージョン",
+        "GUID": "7e43fa61-8938-4355-91b2-55d1d26e19fb"
+      }
+    },
+    "21,63": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "VIEW_TEST_予算",
+        "RowIndex": 21,
+        "ColumnIndex": 63,
+        "RowCount": 9,
+        "ColumnCount": 13,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "22,63": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "年度",
+        "GUID": "4e422b14-5bc6-4f5a-97ef-29ec6097192d"
+      }
+    },
+    "22,64": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "組織コード",
+        "GUID": "84432045-e872-4662-bf72-45372b2c9897"
+      }
+    },
+    "22,65": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "組織コード",
+        "GUID": "c15d263b-31c1-40a6-8429-f67b2cb7625b",
+        "RelationBinding": {
+          "RelatedTable": "MST_組織",
+          "RelatedColumn": "組織コード",
+          "DisplayColumn": "組織名"
+        }
+      }
+    },
+    "22,66": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "科目コード",
+        "GUID": "c738d575-465d-4acb-866f-ace44ae813f7"
+      }
+    },
+    "22,67": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "科目コード",
+        "GUID": "ff97021b-51e3-4877-b0b9-d1ce363fdf2d",
+        "RelationBinding": {
+          "RelatedTable": "MST_科目",
+          "RelatedColumn": "科目コード",
+          "DisplayColumn": "科目名"
+        }
+      }
+    },
+    "22,69": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "月",
+        "GUID": "bd48b2f4-1483-4090-8e05-e7ab8002235f"
+      }
+    },
+    "22,70": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "月",
+        "GUID": "6c9064f4-47c9-4bbc-967e-5a5ec7fa474a",
+        "RelationBinding": {
+          "RelatedTable": "MST_年度_検証用",
+          "RelatedColumn": "月コード",
+          "DisplayColumn": "月"
+        }
+      }
+    },
+    "22,71": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "金額",
+        "GUID": "b3a58a7b-27b3-4e48-a8af-a3b754841593"
+      }
+    },
+    "22,72": {
+      "BindingInfo": {
+        "TableName": "VIEW_TEST_予算",
+        "ColumnName": "バージョン",
+        "GUID": "287d5478-618b-48ca-a22a-11b92122d471"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Foreground": 1,
+        "Formatter": 2,
+        "Underline": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "Foreground": 1,
+        "Formatter": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 34.666666666666664,
+        "Formatter": 2,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 5
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Blue",
+        "[AUTO]General",
+        "HGP創英角ﾎﾟｯﾌﾟ体",
+        "Center",
+        "Bold",
+        "0%"
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,22": 0,
+      "0,23": 1,
+      "0,24": 2,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 2,
+      "0,28": 3,
+      "0,29": 3,
+      "0,30": 0,
+      "0,31": 0,
+      "0,32": 0,
+      "0,33": 0,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 0,
+      "0,48": 0,
+      "0,49": 0,
+      "0,50": 0,
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,55": 0,
+      "0,56": 0,
+      "0,57": 0,
+      "0,58": 0,
+      "0,59": 0,
+      "0,60": 4,
+      "0,61": 4,
+      "0,62": 4,
+      "0,63": 4,
+      "0,64": 4,
+      "0,65": 4,
+      "0,66": 4,
+      "0,67": 4,
+      "0,68": 4,
+      "0,69": 4,
+      "0,70": 4,
+      "0,71": 4,
+      "0,72": 4,
+      "0,73": 4,
+      "0,74": 4,
+      "0,75": 4,
+      "0,76": 4,
+      "0,77": 4,
+      "1,1": 0,
+      "1,2": 5,
+      "1,15": 0,
+      "1,16": 0,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 6,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,36": 0,
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,41": 0,
+      "1,42": 0,
+      "1,43": 0,
+      "1,44": 0,
+      "1,45": 0,
+      "1,46": 0,
+      "1,47": 0,
+      "1,48": 0,
+      "1,49": 0,
+      "1,50": 0,
+      "1,51": 0,
+      "1,52": 0,
+      "1,53": 0,
+      "1,54": 0,
+      "1,55": 0,
+      "1,56": 0,
+      "1,57": 0,
+      "1,58": 0,
+      "1,59": 0,
+      "1,60": 4,
+      "1,61": 4,
+      "1,62": 4,
+      "1,63": 4,
+      "1,64": 4,
+      "1,65": 4,
+      "1,66": 4,
+      "1,67": 4,
+      "1,68": 4,
+      "1,69": 4,
+      "1,70": 4,
+      "1,71": 4,
+      "1,72": 4,
+      "1,73": 4,
+      "1,74": 4,
+      "1,75": 4,
+      "1,76": 4,
+      "1,77": 4,
+      "2,1": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 7,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 0,
+      "2,36": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "2,42": 0,
+      "2,43": 0,
+      "2,44": 0,
+      "2,45": 0,
+      "2,46": 0,
+      "2,47": 0,
+      "2,48": 0,
+      "2,49": 0,
+      "2,50": 0,
+      "2,51": 0,
+      "2,52": 0,
+      "2,53": 0,
+      "2,54": 0,
+      "2,55": 0,
+      "2,56": 0,
+      "2,57": 0,
+      "2,58": 0,
+      "2,59": 0,
+      "2,60": 4,
+      "2,61": 4,
+      "2,62": 4,
+      "2,63": 4,
+      "2,64": 4,
+      "2,65": 4,
+      "2,66": 4,
+      "2,67": 4,
+      "2,68": 4,
+      "2,69": 4,
+      "2,70": 4,
+      "2,71": 4,
+      "2,72": 4,
+      "2,73": 4,
+      "2,74": 4,
+      "2,75": 4,
+      "2,76": 4,
+      "2,77": 4,
+      "3,1": 4,
+      "3,2": 4,
+      "3,3": 4,
+      "3,4": 4,
+      "3,5": 4,
+      "3,6": 4,
+      "3,7": 4,
+      "3,8": 4,
+      "3,9": 4,
+      "3,10": 4,
+      "3,11": 4,
+      "3,12": 4,
+      "3,13": 4,
+      "3,14": 4,
+      "3,15": 4,
+      "3,16": 4,
+      "3,17": 4,
+      "3,18": 4,
+      "3,19": 4,
+      "3,20": 4,
+      "3,21": 4,
+      "3,22": 4,
+      "3,23": 4,
+      "3,24": 4,
+      "3,25": 4,
+      "3,26": 4,
+      "3,27": 4,
+      "3,28": 4,
+      "3,29": 4,
+      "3,30": 4,
+      "3,31": 4,
+      "3,32": 4,
+      "3,33": 4,
+      "3,34": 4,
+      "3,35": 4,
+      "3,36": 4,
+      "3,37": 4,
+      "3,38": 4,
+      "3,39": 4,
+      "3,40": 4,
+      "3,41": 4,
+      "3,42": 4,
+      "3,43": 4,
+      "3,44": 4,
+      "3,45": 4,
+      "3,46": 4,
+      "3,47": 4,
+      "3,48": 4,
+      "3,49": 4,
+      "3,50": 4,
+      "3,51": 4,
+      "3,52": 4,
+      "3,53": 4,
+      "3,54": 4,
+      "3,55": 4,
+      "3,56": 4,
+      "3,57": 4,
+      "3,58": 4,
+      "3,59": 4,
+      "4,1": 4,
+      "4,2": 4,
+      "4,3": 4,
+      "4,4": 4,
+      "4,5": 4,
+      "4,6": 4,
+      "4,7": 4,
+      "4,8": 4,
+      "4,9": 4,
+      "4,10": 4,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 4,
+      "4,15": 4,
+      "4,16": 4,
+      "4,17": 4,
+      "4,18": 4,
+      "4,19": 4,
+      "4,20": 4,
+      "4,21": 4,
+      "4,22": 4,
+      "4,23": 4,
+      "4,24": 4,
+      "4,25": 4,
+      "4,26": 4,
+      "4,27": 4,
+      "4,28": 4,
+      "4,29": 4,
+      "4,30": 8,
+      "4,31": 4,
+      "4,32": 4,
+      "4,33": 4,
+      "4,34": 4,
+      "4,35": 4,
+      "4,38": 4,
+      "4,39": 4,
+      "4,40": 4,
+      "4,41": 4,
+      "4,42": 4,
+      "4,43": 4,
+      "4,44": 4,
+      "4,45": 4,
+      "4,46": 4,
+      "4,47": 9,
+      "4,53": 4,
+      "4,54": 4,
+      "4,55": 4,
+      "4,56": 4,
+      "4,57": 4,
+      "4,58": 4,
+      "4,59": 4,
+      "4,63": 4,
+      "4,64": 4,
+      "5,1": 4,
+      "5,2": 4,
+      "5,3": 4,
+      "5,4": 4,
+      "5,5": 4,
+      "5,6": 4,
+      "5,7": 4,
+      "5,8": 4,
+      "5,9": 4,
+      "5,10": 4,
+      "5,11": 4,
+      "5,12": 4,
+      "5,13": 4,
+      "5,14": 4,
+      "5,15": 4,
+      "5,16": 4,
+      "5,17": 4,
+      "5,18": 4,
+      "5,19": 4,
+      "5,20": 4,
+      "5,21": 4,
+      "5,22": 4,
+      "5,23": 4,
+      "5,24": 4,
+      "5,25": 4,
+      "5,26": 4,
+      "5,27": 4,
+      "5,28": 4,
+      "5,29": 4,
+      "5,30": 4,
+      "5,31": 4,
+      "5,32": 4,
+      "5,33": 4,
+      "5,34": 4,
+      "5,35": 4,
+      "5,38": 4,
+      "5,39": 4,
+      "5,40": 4,
+      "5,41": 4,
+      "5,42": 4,
+      "5,43": 4,
+      "5,44": 4,
+      "5,45": 4,
+      "5,46": 4,
+      "5,53": 4,
+      "5,54": 4,
+      "5,55": 4,
+      "5,56": 4,
+      "5,57": 4,
+      "5,58": 4,
+      "5,59": 4,
+      "5,63": 10,
+      "5,64": 10,
+      "6,1": 4,
+      "6,2": 4,
+      "6,3": 4,
+      "6,4": 4,
+      "6,5": 4,
+      "6,6": 4,
+      "6,7": 4,
+      "6,8": 4,
+      "6,9": 4,
+      "6,10": 4,
+      "6,11": 4,
+      "6,12": 4,
+      "6,13": 4,
+      "6,14": 4,
+      "6,15": 4,
+      "6,16": 4,
+      "6,17": 4,
+      "6,18": 4,
+      "6,19": 4,
+      "6,20": 4,
+      "6,21": 4,
+      "6,22": 4,
+      "6,23": 4,
+      "6,24": 4,
+      "6,25": 4,
+      "6,26": 4,
+      "6,27": 4,
+      "6,28": 4,
+      "6,29": 4,
+      "6,30": 4,
+      "6,31": 4,
+      "6,32": 4,
+      "6,33": 4,
+      "6,34": 4,
+      "6,35": 4,
+      "6,36": 4,
+      "6,37": 4,
+      "6,38": 4,
+      "6,39": 4,
+      "6,40": 4,
+      "6,41": 4,
+      "6,42": 4,
+      "6,43": 4,
+      "6,44": 4,
+      "6,45": 4,
+      "6,46": 4,
+      "6,47": 4,
+      "6,48": 4,
+      "6,49": 4,
+      "6,50": 4,
+      "6,51": 4,
+      "6,52": 4,
+      "6,53": 4,
+      "6,54": 4,
+      "6,55": 4,
+      "6,56": 4,
+      "6,57": 4,
+      "6,58": 4,
+      "6,59": 4,
+      "8,63": 9,
+      "8,64": 9,
+      "8,65": 4,
+      "8,66": 4,
+      "8,67": 4,
+      "8,68": 4,
+      "8,69": 4,
+      "8,70": 4,
+      "8,71": 4,
+      "8,72": 4,
+      "8,73": 4,
+      "8,74": 4,
+      "8,75": 4,
+      "9,63": 4,
+      "9,64": 4,
+      "9,65": 4,
+      "9,66": 4,
+      "9,67": 9,
+      "9,68": 9,
+      "9,69": 9,
+      "9,70": 4,
+      "9,71": 9,
+      "9,72": 9,
+      "9,73": 9,
+      "9,74": 9,
+      "9,75": 4,
+      "10,63": 4,
+      "10,64": 4,
+      "10,65": 4,
+      "10,66": 4,
+      "10,67": 4,
+      "10,68": 4,
+      "10,69": 4,
+      "10,70": 4,
+      "10,71": 4,
+      "10,72": 4,
+      "10,73": 4,
+      "10,74": 11,
+      "10,75": 4,
+      "11,63": 4,
+      "11,64": 4,
+      "11,65": 4,
+      "11,66": 4,
+      "11,67": 4,
+      "11,68": 4,
+      "11,69": 4,
+      "11,70": 4,
+      "11,71": 4,
+      "11,72": 4,
+      "11,73": 4,
+      "11,74": 4,
+      "11,75": 4,
+      "12,63": 4,
+      "12,64": 4,
+      "12,65": 4,
+      "12,66": 4,
+      "12,67": 4,
+      "12,68": 4,
+      "12,69": 4,
+      "12,70": 4,
+      "12,71": 4,
+      "12,72": 4,
+      "12,73": 4,
+      "12,74": 4,
+      "12,75": 4,
+      "13,63": 4,
+      "13,64": 4,
+      "13,65": 4,
+      "13,66": 4,
+      "13,67": 4,
+      "13,68": 4,
+      "13,69": 4,
+      "13,70": 4,
+      "13,71": 4,
+      "13,72": 4,
+      "13,73": 4,
+      "13,74": 4,
+      "13,75": 4,
+      "14,63": 4,
+      "14,64": 4,
+      "14,65": 4,
+      "14,66": 4,
+      "14,67": 4,
+      "14,68": 4,
+      "14,69": 4,
+      "14,70": 4,
+      "14,71": 4,
+      "14,72": 4,
+      "14,73": 4,
+      "14,74": 4,
+      "14,75": 4,
+      "15,63": 4,
+      "15,64": 4,
+      "15,65": 4,
+      "15,66": 4,
+      "15,67": 4,
+      "15,68": 4,
+      "15,69": 4,
+      "15,70": 4,
+      "15,71": 4,
+      "15,72": 4,
+      "15,73": 4,
+      "15,74": 4,
+      "15,75": 4,
+      "16,63": 4,
+      "16,64": 4,
+      "16,65": 4,
+      "16,66": 4,
+      "16,67": 4,
+      "16,68": 4,
+      "16,69": 4,
+      "16,70": 4,
+      "16,71": 4,
+      "16,72": 4,
+      "16,73": 4,
+      "16,74": 4,
+      "16,75": 4,
+      "17,63": 4,
+      "17,64": 4,
+      "17,65": 4,
+      "17,66": 4,
+      "17,67": 4,
+      "17,68": 4,
+      "17,69": 4,
+      "17,70": 4,
+      "17,71": 4,
+      "17,72": 4,
+      "17,73": 4,
+      "17,74": 4,
+      "17,75": 4,
+      "18,63": 4,
+      "18,64": 4,
+      "18,65": 4,
+      "18,66": 4,
+      "18,67": 4,
+      "18,68": 4,
+      "18,69": 4,
+      "18,70": 4,
+      "18,71": 4,
+      "18,72": 4,
+      "18,73": 4,
+      "18,74": 4,
+      "18,75": 4,
+      "19,63": 4,
+      "19,64": 4,
+      "19,65": 4,
+      "19,66": 4,
+      "19,67": 4,
+      "19,68": 4,
+      "19,69": 4,
+      "19,70": 4,
+      "19,71": 4,
+      "19,72": 4,
+      "19,73": 4,
+      "19,74": 4,
+      "19,75": 4,
+      "20,63": 4,
+      "20,64": 4,
+      "20,65": 4,
+      "20,66": 4,
+      "20,67": 4,
+      "20,68": 4,
+      "20,69": 4,
+      "20,70": 4,
+      "20,71": 4,
+      "20,72": 4,
+      "20,73": 4,
+      "20,74": 4,
+      "20,75": 4,
+      "21,63": 4,
+      "21,64": 4,
+      "21,65": 4,
+      "21,66": 4,
+      "21,67": 4,
+      "21,68": 4,
+      "21,69": 4,
+      "21,70": 4,
+      "21,71": 4,
+      "21,72": 4,
+      "21,73": 4,
+      "21,74": 4,
+      "21,75": 4,
+      "22,63": 4,
+      "22,64": 4,
+      "22,66": 4,
+      "22,69": 4,
+      "22,70": 4,
+      "22,71": 4,
+      "22,72": 4,
+      "22,73": 4,
+      "22,74": 4,
+      "22,75": 4,
+      "23,63": 4,
+      "23,64": 4,
+      "23,65": 4,
+      "23,66": 4,
+      "23,67": 4,
+      "23,68": 4,
+      "23,69": 4,
+      "23,70": 4,
+      "23,71": 4,
+      "23,72": 4,
+      "23,73": 4,
+      "23,74": 4,
+      "23,75": 4,
+      "24,63": 4,
+      "24,64": 4,
+      "24,65": 4,
+      "24,66": 4,
+      "24,67": 4,
+      "24,68": 4,
+      "24,69": 4,
+      "24,70": 4,
+      "24,71": 4,
+      "24,72": 4,
+      "24,73": 4,
+      "24,74": 4,
+      "24,75": 4,
+      "25,63": 4,
+      "25,64": 4,
+      "25,65": 4,
+      "25,66": 4,
+      "25,67": 4,
+      "25,68": 4,
+      "25,69": 4,
+      "25,70": 4,
+      "25,71": 4,
+      "25,72": 4,
+      "25,73": 4,
+      "25,74": 4,
+      "25,75": 4,
+      "26,63": 4,
+      "26,64": 4,
+      "26,65": 4,
+      "26,66": 4,
+      "26,67": 4,
+      "26,68": 4,
+      "26,69": 4,
+      "26,70": 4,
+      "26,71": 4,
+      "26,72": 4,
+      "26,73": 4,
+      "26,74": 4,
+      "26,75": 4,
+      "27,63": 4,
+      "27,64": 4,
+      "27,65": 4,
+      "27,66": 4,
+      "27,67": 4,
+      "27,68": 4,
+      "27,69": 4,
+      "27,70": 4,
+      "27,71": 4,
+      "27,72": 4,
+      "27,73": 4,
+      "27,74": 4,
+      "27,75": 4,
+      "28,63": 4,
+      "28,64": 4,
+      "28,65": 4,
+      "28,66": 4,
+      "28,67": 4,
+      "28,68": 4,
+      "28,69": 4,
+      "28,70": 4,
+      "28,71": 4,
+      "28,72": 4,
+      "28,73": 4,
+      "28,74": 4,
+      "28,75": 4,
+      "29,63": 4,
+      "29,64": 4,
+      "29,65": 4,
+      "29,66": 4,
+      "29,67": 4,
+      "29,68": 4,
+      "29,69": 4,
+      "29,70": 4,
+      "29,71": 4,
+      "29,72": 4,
+      "29,73": 4,
+      "29,74": 4,
+      "29,75": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,23,1,5",
+    "4,9,2,6",
+    "4,16,2,6",
+    "4,2,2,6",
+    "4,30,2,6",
+    "4,23,2,6",
+    "7,2,54,56",
+    "23,63,7,13",
+    "11,63,8,13",
+    "1,2,2,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "VIEW_TEST_予算"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//f+r4A8vnmsQunuYbQU+A6qwKur9dtyYnrLNb7vYvPyPh6V0b27UGGiWQGdlsM8Z8NBJLqqg46+6SogJ25Cwf5TCxduxA38ZbO43BPqH2rEOkfq2ToTZ6uCfAdlLAfE4G+VewcCdzI0ZnOszGyBFqdEk1r8TFeBDp2tdKBWwa8kRZCDBegdCpgq7OYsEcw1SRKJmz5JmXT/0Pt5D9L1ESOwb/E7R134ON+LveqGWEzU6Eat7x6BHLROY/i5jZMzylLnKfcAGdJbe9RULrXXlMtItXjPrcKbvsW0UqGxUxDSM92H2XC2+y5XOuRBa3uyql8hhAxzLM3bH1KI9ZhljJf3fLfISFqtExuiTa7mCGxY+V572ozXC+OSrQrb2206WAPCM4dkExu+J/HAsm+YYQjwgOCZzdilM8K/5aV2TQw64gODzqDsX8Mrx9FlDiBTFdrReDx0ocRldzDjprYEr1U1KZ/UhOPUCemfBP+y+4IAfo4787FBiwkkIUgeZUnpsPEc7+KL+bsin7PRItk7P2fVhdD3gu/pV3/S5WQVZDATr2rDWuoxjMJPatyrEBwzxMh+IBBnX+bqglUW5bZLtv9BWooLQ67zUBH9FJ4w8T3MpPakHhouvvTB18D2rUdd7LR0T7DDvzH/j+tyOU7rJ9LVjNVVAIysmDoPKVsrZ6I+yzVIOy44QbOmLDi+hZ0gSkeG2hUTQ84THQFYIaQi9IO+vnDoXvZSsxHXjAZrRk77B/IN/yx3pKl0s8Tr2oAk/Ee95tzO/il1p3rszNDJhGVy3MKslseUtS5M/x8QPeIGNb09LQYyTqOn0YhvZ/tDmloGVm4+u5Z8FDF2T/xQyyvSuzUTSOxv8htsEIebjjaiCtN8EFymQAvBupC8aiQzzMDowEFBrUOGeUB9vOmkfOFw==|920

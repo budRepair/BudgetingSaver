@@ -1,0 +1,1580 @@
+{
+  "Name": "INP_予算_損益計算書",
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionResource, Forguncy.RbacPermission.Core",
+      "enabledTypes": 4
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 5,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 1
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 1,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 2
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 5,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "8911d409-5052-47a4-b4a9-5852e5113249",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "1"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "7a2eabf2-f751-4155-aedc-e03e70ba1721",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 5,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "de08236f-0316-4ced-9f4d-a21347dfd32e",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "2"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "6b9233a2-bb52-4df3-a68e-e607ce924f8b",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 5,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "d9d3d0bd-5cea-4484-ae29-2c3a4c2ac364",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "3"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "8734a3aa-a73b-43d2-8437-06d2ea868d0c",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 5,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "3d66e8e1-1065-4b1b-aa3b-599664b1a23a",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "4"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "9f976239-fd11-45f2-9ddd-bc26c0c4b16a",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 5,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "429fb95c-588f-4080-9219-4ddf71e6180a",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "5"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "56c2fd0a-2ca1-4bbe-a2cf-40330e02df4c",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 5,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "6d7188e6-2830-4f36-9c64-713ae005a50c",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "6"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "a156ef02-6a0e-4b69-85a6-ab1220fe9063",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 5,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "c1fdf159-b72d-4fa1-a966-d1249ea1c5e4",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "7"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "33fdc087-35c6-46bf-bdd8-e01e283ecf41",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 5,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "ed1b788e-c1ee-473c-8efe-6cd283189125",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "8"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "d8419354-9032-4ecd-83a8-31d97c2d414d",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 5,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "89271014-893e-43f8-896f-236227f1fbf2",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "9"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "0fac2353-4746-4883-9eff-c0c75daaaf75",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 5,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "077476a3-d77f-4351-a597-14c30f3dea97",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "10"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "d6cdf24e-e228-4e1b-bf7f-fd138e2d474d",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 5,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 1,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "be6956fd-0595-4ea8-9664-e516dd0bc760",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "11"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "bd40c2cc-a56b-4a1b-93c1-4077b8f00b4c",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 5,
+            "年度": 5,
+            "組織コード": 5,
+            "科目コード": 5,
+            "_4月単価": 5,
+            "_4月数量": 5,
+            "_4月": 1,
+            "_5月単価": 5,
+            "_5月数量": 5,
+            "_5月": 1,
+            "_6月単価": 5,
+            "_6月数量": 5,
+            "_6月": 1,
+            "_7月単価": 5,
+            "_7月数量": 5,
+            "_7月": 1,
+            "_8月単価": 5,
+            "_8月数量": 5,
+            "_8月": 1,
+            "_9月単価": 5,
+            "_9月数量": 5,
+            "_9月": 1,
+            "_10月単価": 5,
+            "_10月数量": 5,
+            "_10月": 1,
+            "_11月単価": 5,
+            "_11月数量": 5,
+            "_11月": 1,
+            "_12月単価": 5,
+            "_12月数量": 5,
+            "_12月": 1,
+            "_1月単価": 5,
+            "_1月数量": 5,
+            "_1月": 1,
+            "_2月単価": 5,
+            "_2月数量": 5,
+            "_2月": 1,
+            "_3月単価": 5,
+            "_3月数量": 5,
+            "_3月": 5,
+            "バージョン": 5,
+            "フラグ": 5,
+            "区分": 5,
+            "予算部門コード": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core",
+            "filterType": 4,
+            "condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "f3f9525a-dda4-423e-8435-e5d7332bf608",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "ソート"
+                    }
+                  },
+                  "Value": "12"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "INP_予算_損益計算書",
+                    "ColumnName": "年度",
+                    "GUID": "8cd60f95-118d-481c-97de-5a8f26e3065b",
+                    "RelationBinding": {
+                      "RelatedTable": "MST_年度",
+                      "RelatedColumn": "年度",
+                      "DisplayColumn": "月_ロック区分"
+                    }
+                  },
+                  "Value": "0"
+                }
+              ]
+            }
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "年度",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "組織コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "科目コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_4月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_4月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_4月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_5月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_5月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_5月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_6月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_6月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_6月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_7月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_7月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_7月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_8月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_8月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_8月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_9月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_9月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_9月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_10月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_10月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_10月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_11月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_11月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_11月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_12月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_12月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_12月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_1月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_1月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_1月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_2月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_2月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_2月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_3月単価",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_3月数量",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "_3月",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "バージョン",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "Name": "フラグ",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "Name": "区分",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Name": "予算部門コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "MST_科目",
+      "PrimaryColumn": "科目コード",
+      "ForeignTable": "INP_予算_損益計算書",
+      "ForeignColumn": "科目コード",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "MST_年度",
+      "PrimaryColumn": "年度",
+      "ForeignTable": "INP_予算_損益計算書",
+      "ForeignColumn": "年度",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "MST_バージョン",
+      "PrimaryColumn": "バージョンコード",
+      "ForeignTable": "INP_予算_損益計算書",
+      "ForeignColumn": "バージョン",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "MST_組織",
+      "PrimaryColumn": "組織コード",
+      "ForeignTable": "INP_予算_損益計算書",
+      "ForeignColumn": "組織コード",
+      "IsDetailTableRelation": false
+    }
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,73 @@
+{
+  "Name": "VIEW_TEST_予算",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "年度",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "組織コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "科目コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "月",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Object",
+      "MaxLength": -1,
+      "Name": "金額",
+      "ColumnType": "System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "バージョン",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "VIEW_TEST_予算",
+    "SourceViewName": "fgc4134a369037e45e0849c1b81e94",
+    "CreateViewSql": "SELECT\r\n tbl.\"年度\",\r\n tbl.\"組織コード\",\r\n tbl.\"科目コード\",\r\n mst.\"月コード\" AS \"月\",\r\n CASE mst.\"月コード\"\r\n   WHEN '04' THEN tbl.\"_4月\"\r\n   WHEN '05' THEN tbl.\"_5月\"\r\n   WHEN '06' THEN tbl.\"_6月\"\r\n   WHEN '07' THEN tbl.\"_7月\"\r\n   WHEN '08' THEN tbl.\"_8月\"\r\n   WHEN '09' THEN tbl.\"_9月\"\r\n   WHEN '10' THEN tbl.\"_10月\"\r\n   WHEN '11' THEN tbl.\"_11月\"\r\n   WHEN '12' THEN tbl.\"_12月\"\r\n   WHEN '01' THEN tbl.\"_1月\"\r\n   WHEN '02' THEN tbl.\"_2月\"\r\n   WHEN '03' THEN tbl.\"_3月\"\r\n END  AS \"金額\",\r\n \"バージョン\"\r\nFROM \"INP_予算_損益計算書\" tbl\r\n\r\nLEFT OUTER JOIN \"MST_年度_検証用\" mst\r\nON  tbl.\"年度\" = mst.\"年度\""
+  },
+  "Relations": [
+    {
+      "PrimaryTable": "MST_組織",
+      "PrimaryColumn": "組織コード",
+      "ForeignTable": "VIEW_TEST_予算",
+      "ForeignColumn": "組織コード"
+    },
+    {
+      "PrimaryTable": "MST_科目",
+      "PrimaryColumn": "科目コード",
+      "ForeignTable": "VIEW_TEST_予算",
+      "ForeignColumn": "科目コード"
+    },
+    {
+      "PrimaryTable": "MST_年度_検証用",
+      "PrimaryColumn": "月コード",
+      "ForeignTable": "VIEW_TEST_予算",
+      "ForeignColumn": "月"
+    }
+  ],
+  "Indexes": []
+}
