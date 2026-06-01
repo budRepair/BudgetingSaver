@@ -1,1 +1,935 @@
-[{"ModuleName":"Tables/テーブル","ModuleType":22},{"ModuleName":"Tables/テーブル/マスタ管理","ModuleType":22},{"ModuleName":"Table/MST_バージョン","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/MST_属性","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/MST_年度","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/MST_月","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/MST_科目","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/MST_組織","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/予実","ModuleType":22},{"ModuleName":"TableView/VIEW_予算_損益計算書","ModuleType":23,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_実績_損益計算書","ModuleType":23,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_予算_損益計算書_参照","ModuleType":23,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_実績_損益計算書_参照","ModuleType":23,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/予算","ModuleType":22},{"ModuleName":"Table/INP_予算_売上","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_予算_売上原価","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_予算_損益計算書","ModuleType":7,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_予算_売上","ModuleType":23,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_予算_損益計算書エクスポート用","ModuleType":23,"ExclusiveType":0},{"ModuleName":"Table/WK_予算_バージョンコピー用","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_予算_販管費_一般管理費","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_予算_営業外_特別損益","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/WK_予算_売上_外注費_バージョンコピー用","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/共通","ModuleType":22},{"ModuleName":"Table/TRN_エラー一覧","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/WK_共通_取込用","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/実績","ModuleType":22},{"ModuleName":"Table/INP_実績_売上","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_実績_損益計算書","ModuleType":7,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_実績_売上","ModuleType":23,"ExclusiveType":0},{"ModuleName":"Table/WK_実績_売上","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/検証用","ModuleType":22},{"ModuleName":"Tables/テーブル/検証用/VIEW","ModuleType":22},{"ModuleName":"TableView/VIEW_TEST_予算","ModuleType":23,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_TEST_予算_02","ModuleType":23,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_権限","ModuleType":23,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/検証用/テーブル","ModuleType":22},{"ModuleName":"Tables/テーブル/検証用/テーブル/マスタ","ModuleType":22},{"ModuleName":"Table/TEST_商品単価マスタ","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_商品単価マスタ_bk","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_権限マスタ","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_科目マスタ","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_組織マスタ","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/MST_年度_検証用","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_0714","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_T01_権限","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_予算_001","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_見込","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/TEST_見込_詳細","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/商品単価マスタ_検証用","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/売上予算_検証用","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/見込","ModuleType":22},{"ModuleName":"Table/INP_見込_損益計算書","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/WK_見込_損益計算書","ModuleType":7,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_見込_損益計算書_参照","ModuleType":23,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/配賦","ModuleType":22},{"ModuleName":"Table/INP_予算_配賦後","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_実績_配賦後","ModuleType":7,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_予算_配賦前後","ModuleType":23,"ExclusiveType":0},{"ModuleName":"TableView/VIEW_実績_配賦前後","ModuleType":23,"ExclusiveType":0},{"ModuleName":"Tables/テーブル/サンプル","ModuleType":22},{"ModuleName":"Table/INP_予算_製造原価","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_予算_外注費","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/INP_予算_給与","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Pages/テンプレート","ModuleType":6},{"ModuleName":"Pages/テンプレート/データ処理","ModuleType":6},{"ModuleName":"PCPage/データ処理","ModuleType":1},{"ModuleName":"Pages/テンプレート/予実","ModuleType":6},{"ModuleName":"PCPage/予実対比_ダッシュボード","ModuleType":1},{"ModuleName":"PCPage/損益計算書（参照）","ModuleType":1},{"ModuleName":"Pages/テンプレート/予算","ModuleType":6},{"ModuleName":"PCPage/営業外・特別損益入力","ModuleType":1},{"ModuleName":"PCPage/売上入力","ModuleType":1},{"ModuleName":"PCPage/損益計算書入力","ModuleType":1},{"ModuleName":"PCPage/売上・売上原価入力","ModuleType":1},{"ModuleName":"PCPage/販管費・一般管理費入力","ModuleType":1},{"ModuleName":"Pages/テンプレート/共通","ModuleType":6},{"ModuleName":"PCPage/エラー一覧画面","ModuleType":1},{"ModuleName":"Pages/テンプレート/実績","ModuleType":6},{"ModuleName":"Pages/テンプレート/実績/実績取込メニュー","ModuleType":6},{"ModuleName":"PCPage/商品別売上高参照","ModuleType":1},{"ModuleName":"PCPage/商品別売上高取込","ModuleType":1},{"ModuleName":"PCPage/実績参照","ModuleType":1},{"ModuleName":"PCPage/実績取込","ModuleType":1},{"ModuleName":"PCPage/実績取込メニュー","ModuleType":1},{"ModuleName":"Pages/テンプレート/検証用","ModuleType":6},{"ModuleName":"Pages/テンプレート/検証用/コンボボックス","ModuleType":6},{"ModuleName":"PCPage/売上入力_検証用","ModuleType":1},{"ModuleName":"Pages/テンプレート/検証用/データ削除用","ModuleType":6},{"ModuleName":"PCPage/BS表_検証","ModuleType":1},{"ModuleName":"PCPage/BS表_検証_2","ModuleType":1},{"ModuleName":"PCPage/一覧_検証","ModuleType":1},{"ModuleName":"PCPage/予算データ_検証用","ModuleType":1},{"ModuleName":"PCPage/予算データ_検証用2","ModuleType":1},{"ModuleName":"PCPage/損益計算書入力_収益計算","ModuleType":1},{"ModuleName":"PCPage/損益計算書入力_収益計算_bk0619","ModuleType":1},{"ModuleName":"PCPage/見込入力_検証","ModuleType":1},{"ModuleName":"Pages/テンプレート/検証用/マスタ管理","ModuleType":6},{"ModuleName":"PCPage/商品単価マスタ_検証用登録","ModuleType":1},{"ModuleName":"PCPage/権限マスタ_検証用","ModuleType":1},{"ModuleName":"PCPage/組織マスタ_検証用","ModuleType":1},{"ModuleName":"Pages/テンプレート/検証用/会計期間ロック","ModuleType":6},{"ModuleName":"PCPage/予算_入力制御","ModuleType":1},{"ModuleName":"PCPage/入力制御","ModuleType":1},{"ModuleName":"PCPage/商品単価マスタ_月ロック","ModuleType":1},{"ModuleName":"PCPage/商品単価マスタ_月横変換","ModuleType":1},{"ModuleName":"PCPage/売上入力_会計期間ロック検証","ModuleType":1},{"ModuleName":"PCPage/検証用メニュー","ModuleType":1},{"ModuleName":"Pages/テンプレート/管理メニュー","ModuleType":6},{"ModuleName":"PCPage/データエクスポート","ModuleType":1},{"ModuleName":"PCPage/バージョンマスタ","ModuleType":1},{"ModuleName":"PCPage/属性マスタ","ModuleType":1},{"ModuleName":"PCPage/年度マスタ","ModuleType":1},{"ModuleName":"PCPage/月マスタ","ModuleType":1},{"ModuleName":"PCPage/科目マスタ","ModuleType":1},{"ModuleName":"PCPage/組織マスタ","ModuleType":1},{"ModuleName":"PCPage/売上・外注費テーブル","ModuleType":1},{"ModuleName":"Pages/テンプレート/見込","ModuleType":6},{"ModuleName":"PCPage/予実見込_ダッシュボード","ModuleType":1},{"ModuleName":"PCPage/見込入力","ModuleType":1},{"ModuleName":"PCPage/予実見込_ダッシュボード（営業利益）","ModuleType":1},{"ModuleName":"Pages/テンプレート/配賦","ModuleType":6},{"ModuleName":"Pages/テンプレート/配賦/配賦結果取込メニュー","ModuleType":6},{"ModuleName":"PCPage/Excel出力用_損益計算書入力予算","ModuleType":1},{"ModuleName":"PCPage/予算配賦結果参照","ModuleType":1},{"ModuleName":"PCPage/予算配賦結果取込","ModuleType":1},{"ModuleName":"PCPage/実績配賦結果参照","ModuleType":1},{"ModuleName":"PCPage/実績配賦結果取込","ModuleType":1},{"ModuleName":"PCPage/配賦前後比較","ModuleType":1},{"ModuleName":"PCPage/配賦結果取込メニュー","ModuleType":1},{"ModuleName":"PCPage/メニュー","ModuleType":1},{"ModuleName":"Pages/テンプレート/サンプル","ModuleType":6},{"ModuleName":"PCPage/外注費入力","ModuleType":1},{"ModuleName":"PCPage/給与入力","ModuleType":1},{"ModuleName":"PCPage/製造原価入力","ModuleType":1},{"ModuleName":"PCPage/損益計算書（参照）_カスタマイズ","ModuleType":1},{"ModuleName":"PCPage/予実比較_ダッシュボード（営業利益）","ModuleType":1},{"ModuleName":"Pages/ビルトイン ページ","ModuleType":6},{"ModuleName":"PCPage/FGC_401ページ","ModuleType":1},{"ModuleName":"PCPage/FGC_ただいまメンテナンス中です","ModuleType":1},{"ModuleName":"PCPage/FGC_コードの入力","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードのリセット","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードのリセット用リンクの送信","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードの変更","ModuleType":1},{"ModuleName":"PCPage/FGC_パスワードを忘れた場合","ModuleType":1},{"ModuleName":"PCPage/FGC_プロファイルの編集","ModuleType":1},{"ModuleName":"PCPage/FGC_メールサブスクリプション","ModuleType":1},{"ModuleName":"PCPage/FGC_ログイン","ModuleType":1},{"ModuleName":"PCPage/FGC_認証アプリの構成","ModuleType":1},{"ModuleName":"PCPage/FGC_接続タイムアウト","ModuleType":1},{"ModuleName":"Pages/ビルトイン モバイルページ","ModuleType":6},{"ModuleName":"MobilePage/FGC_401ページ_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_ただいまメンテナンス中です_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_コードの入力_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードのリセット_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードのリセット用リンクの送信_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードの変更_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_パスワードを忘れた場合_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_プロファイルの編集_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_メールサブスクリプション_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_ログイン_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_認証アプリの構成_モバイル","ModuleType":2},{"ModuleName":"MobilePage/FGC_接続タイムアウト_モバイル","ModuleType":2},{"ModuleName":"MasterPCPage/FGC_ユーザーマスターページ","ModuleType":3},{"ModuleName":"ServerCommands/backup","ModuleType":20},{"ModuleName":"ServerCommand/見込入力初期値_bk0712","ModuleType":15},{"ModuleName":"ServerCommand/見込実績置換_単月_bk0712","ModuleType":15},{"ModuleName":"ServerCommand/見込実績置換_期間_bk0712","ModuleType":15},{"ModuleName":"ServerCommand/見込実績置換_期間_bk0714","ModuleType":15},{"ModuleName":"ServerCommands/データ処理","ModuleType":20},{"ModuleName":"ServerCommand/バージョンコピー","ModuleType":15},{"ModuleName":"ServerCommand/見込入力初期値","ModuleType":15},{"ModuleName":"ServerCommand/見込実績置換_単月","ModuleType":15},{"ModuleName":"ServerCommand/見込実績置換_期間","ModuleType":15},{"ModuleName":"ServerCommands/ユーザー管理","ModuleType":20},{"ModuleName":"ServerCommand/ログアウトコマンド","ModuleType":15},{"ModuleName":"ServerCommands/予算","ModuleType":20},{"ModuleName":"ServerCommand/損益計算書入力","ModuleType":15},{"ModuleName":"ServerCommand/売上・売上原価入力","ModuleType":15},{"ModuleName":"ServerCommand/販管費・一般管理費入力","ModuleType":15},{"ModuleName":"ServerCommand/営業外・特別損益入力","ModuleType":15},{"ModuleName":"ServerCommands/実績","ModuleType":20},{"ModuleName":"ServerCommand/取引先別売上高取込","ModuleType":15},{"ModuleName":"ServerCommand/実績取込","ModuleType":15},{"ModuleName":"ServerCommands/検証用","ModuleType":20},{"ModuleName":"ServerCommand/予算データ_作成用","ModuleType":15},{"ModuleName":"ServerCommand/予算データ_検証用","ModuleType":15},{"ModuleName":"ServerCommand/売上計画_検証用","ModuleType":15},{"ModuleName":"ServerCommands/見込","ModuleType":20},{"ModuleName":"ServerCommand/見込入力","ModuleType":15},{"ModuleName":"ServerCommands/配賦","ModuleType":20},{"ModuleName":"ServerCommand/予算配賦結果取込","ModuleType":15},{"ModuleName":"ServerCommand/実績配賦結果取込","ModuleType":15},{"ModuleName":"ServerCommands/サンプル","ModuleType":20},{"ModuleName":"ServerCommand/製造原価入力","ModuleType":15},{"ModuleName":"ApplicationSetting","ModuleType":8},{"ModuleName":"Theme","ModuleType":9},{"ModuleName":"image/組み込み画像","ModuleType":37},{"ModuleName":"Image/fgc_built_in_page_disconnected.png","ModuleType":38},{"ModuleName":"Image/fgc_loading.gif","ModuleType":38},{"ModuleName":"Image/fgc_logo_dark.png","ModuleType":38},{"ModuleName":"Image/fgc_logo_dark.svg","ModuleType":38},{"ModuleName":"Image/3D3D3D.PNG","ModuleType":38},{"ModuleName":"Image/43475.jpg","ModuleType":38},{"ModuleName":"Image/Forguncy_budgetingSaverロゴ.jpg","ModuleType":38},{"ModuleName":"Image/loading.gif","ModuleType":38},{"ModuleName":"Image/キャプチャ.PNG","ModuleType":38},{"ModuleName":"Image/キャプチャ_.PNG","ModuleType":38},{"ModuleName":"Image/スクリーンショット 2025-01-08 115509.png","ModuleType":38},{"ModuleName":"Image/画像1.jpg","ModuleType":38},{"ModuleName":"UserService","ModuleType":11},{"ModuleName":"CustomLibrary","ModuleType":12},{"ModuleName":"MapJsonFile","ModuleType":14},{"ModuleName":"DataContectionSet","ModuleType":25},{"ModuleName":"Upload","ModuleType":26},{"ModuleName":"PublishConfiguration","ModuleType":39},{"ModuleName":"Plugin","ModuleType":40},{"ModuleName":"PublishSetting","ModuleType":41}]
+[
+  {
+    "ModuleName": "Tables/テーブル",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Tables/テーブル/マスタ管理",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/MST_バージョン",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/MST_属性",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/MST_年度",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/MST_月",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/MST_科目",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/MST_組織",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/予実",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/VIEW_予算_損益計算書",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_実績_損益計算書",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_予算_損益計算書_参照",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_実績_損益計算書_参照",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/予算",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/INP_予算_売上",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_予算_売上原価",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_予算_損益計算書",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_予算_売上",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_予算_損益計算書エクスポート用",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/WK_予算_バージョンコピー用",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_予算_販管費_一般管理費",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_予算_営業外_特別損益",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/WK_予算_売上_外注費_バージョンコピー用",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/共通",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/TRN_エラー一覧",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/WK_共通_取込用",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/実績",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/INP_実績_売上",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_実績_損益計算書",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_実績_売上",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/WK_実績_売上",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/検証用",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Tables/テーブル/検証用/VIEW",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/VIEW_TEST_予算",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_TEST_予算_02",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_権限",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/検証用/テーブル",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Tables/テーブル/検証用/テーブル/マスタ",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/TEST_商品単価マスタ",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_商品単価マスタ_bk",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_権限マスタ",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_科目マスタ",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_組織マスタ",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/MST_年度_検証用",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_0714",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_T01_権限",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_予算_001",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_見込",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/TEST_見込_詳細",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/商品単価マスタ_検証用",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/売上予算_検証用",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/見込",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/INP_見込_損益計算書",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/WK_見込_損益計算書",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_見込_損益計算書_参照",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/配賦",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/INP_予算_配賦後",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_実績_配賦後",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_予算_配賦前後",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/VIEW_実績_配賦前後",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Tables/テーブル/サンプル",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/INP_予算_製造原価",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_予算_外注費",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/INP_予算_給与",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Pages/テンプレート",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/テンプレート/データ処理",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/データ処理",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/予実",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/予実対比_ダッシュボード",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/損益計算書（参照）",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/予算",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/営業外・特別損益入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/売上入力",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-01T09:19:34.4345471+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\予算\\売上入力.json",
+      "Pages\\テンプレート\\予算\\売上入力.rd"
+    ]
+  },
+  {
+    "ModuleName": "PCPage/損益計算書入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/売上・売上原価入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/販管費・一般管理費入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/共通",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/エラー一覧画面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/実績",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/テンプレート/実績/実績取込メニュー",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/商品別売上高参照",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/商品別売上高取込",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/実績参照",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/実績取込",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/実績取込メニュー",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/検証用",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/テンプレート/検証用/コンボボックス",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/売上入力_検証用",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/検証用/データ削除用",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/BS表_検証",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/BS表_検証_2",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/一覧_検証",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/予算データ_検証用",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/予算データ_検証用2",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/損益計算書入力_収益計算",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/損益計算書入力_収益計算_bk0619",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/見込入力_検証",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/検証用/マスタ管理",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/商品単価マスタ_検証用登録",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/権限マスタ_検証用",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/組織マスタ_検証用",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/検証用/会計期間ロック",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/予算_入力制御",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/入力制御",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/商品単価マスタ_月ロック",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/商品単価マスタ_月横変換",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/売上入力_会計期間ロック検証",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/検証用メニュー",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/管理メニュー",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/データエクスポート",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/バージョンマスタ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/属性マスタ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/年度マスタ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/月マスタ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/科目マスタ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/組織マスタ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/売上・外注費テーブル",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/見込",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/予実見込_ダッシュボード",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/見込入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/予実見込_ダッシュボード（営業利益）",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/配賦",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/テンプレート/配賦/配賦結果取込メニュー",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/Excel出力用_損益計算書入力予算",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/予算配賦結果参照",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/予算配賦結果取込",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/実績配賦結果参照",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/実績配賦結果取込",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配賦前後比較",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配賦結果取込メニュー",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/メニュー",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/テンプレート/サンプル",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/外注費入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/給与入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/製造原価入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/損益計算書（参照）_カスタマイズ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/予実比較_ダッシュボード（営業利益）",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/ビルトイン ページ",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/FGC_401ページ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_ただいまメンテナンス中です",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_コードの入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードのリセット",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードのリセット用リンクの送信",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードの変更",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードを忘れた場合",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_プロファイルの編集",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_メールサブスクリプション",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_ログイン",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_認証アプリの構成",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_接続タイムアウト",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/ビルトイン モバイルページ",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/FGC_401ページ_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_ただいまメンテナンス中です_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_コードの入力_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードのリセット_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードのリセット用リンクの送信_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードの変更_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードを忘れた場合_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_プロファイルの編集_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_メールサブスクリプション_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_ログイン_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_認証アプリの構成_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_接続タイムアウト_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "ServerCommands/backup",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/見込入力初期値_bk0712",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/見込実績置換_単月_bk0712",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/見込実績置換_期間_bk0712",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/見込実績置換_期間_bk0714",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/データ処理",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/バージョンコピー",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/見込入力初期値",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/見込実績置換_単月",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/見込実績置換_期間",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/ユーザー管理",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/ログアウトコマンド",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/予算",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/損益計算書入力",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/売上・売上原価入力",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/販管費・一般管理費入力",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/営業外・特別損益入力",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/実績",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/取引先別売上高取込",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/実績取込",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/検証用",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/予算データ_作成用",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/予算データ_検証用",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/売上計画_検証用",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/見込",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/見込入力",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/配賦",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/予算配賦結果取込",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/実績配賦結果取込",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/サンプル",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/製造原価入力",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ApplicationSetting",
+    "ModuleType": 8
+  },
+  {
+    "ModuleName": "Theme",
+    "ModuleType": 9
+  },
+  {
+    "ModuleName": "image/組み込み画像",
+    "ModuleType": 37
+  },
+  {
+    "ModuleName": "Image/fgc_built_in_page_disconnected.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_loading.gif",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_dark.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_dark.svg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/3D3D3D.PNG",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/43475.jpg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/Forguncy_budgetingSaverロゴ.jpg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/loading.gif",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/キャプチャ.PNG",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/キャプチャ_.PNG",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/スクリーンショット 2025-01-08 115509.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/画像1.jpg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "UserService",
+    "ModuleType": 11
+  },
+  {
+    "ModuleName": "CustomLibrary",
+    "ModuleType": 12
+  },
+  {
+    "ModuleName": "MapJsonFile",
+    "ModuleType": 14
+  },
+  {
+    "ModuleName": "DataContectionSet",
+    "ModuleType": 25
+  },
+  {
+    "ModuleName": "Upload",
+    "ModuleType": 26
+  },
+  {
+    "ModuleName": "PublishConfiguration",
+    "ModuleType": 39
+  },
+  {
+    "ModuleName": "Plugin",
+    "ModuleType": 40
+  },
+  {
+    "ModuleName": "PublishSetting",
+    "ModuleType": 41
+  }
+]
