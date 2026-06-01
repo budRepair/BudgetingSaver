@@ -340,7 +340,17 @@
   },
   {
     "ModuleName": "PCPage/売上入力",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-01T09:49:32.0715028+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\予算\\売上入力.json",
+      "Pages\\テンプレート\\予算\\売上入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/損益計算書入力",
