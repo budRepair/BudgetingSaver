@@ -144,7 +144,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "567082b3-63b2-4786-87d6-3fc179bccdd7"
+                        "ID": "77b7763d-d879-4b80-81d8-0cfc064bff5b"
                       },
                       {
                         "Condition": {
@@ -169,12 +169,12 @@
                             }
                           }
                         ],
-                        "ID": "21deb9a4-cede-4295-b218-4f07eebe3a23"
+                        "ID": "e0e0f184-1907-456a-95c2-9f281c8e48c1"
                       }
                     ]
                   }
                 ],
-                "ID": "a098c8f4-c154-4498-82fc-3c7ffe0815b5"
+                "ID": "efe837f2-7ef5-4175-8134-3ee2c4cd0ab8"
               }
             ]
           }
@@ -343,7 +343,7 @@
                     ]
                   }
                 ],
-                "ID": "57843f3c-d1f4-46fd-84b6-2bdcb2581f67"
+                "ID": "1c221789-64d7-4e8a-9aee-6d4b99ef6579"
               },
               {
                 "CommandList": [
@@ -361,7 +361,7 @@
                     ]
                   }
                 ],
-                "ID": "ec7fde03-afdb-4cd8-b41d-0d9d0e2bba95"
+                "ID": "1e6d9ba2-bac8-4457-8c8e-843202bf1f8f"
               }
             ]
           }
@@ -524,7 +524,7 @@
                     ]
                   }
                 ],
-                "ID": "48e34b24-2e8a-4c5a-9b25-75428c578298"
+                "ID": "30084f7c-45ae-4651-be82-93c7e2efed6c"
               },
               {
                 "CommandList": [
@@ -542,7 +542,7 @@
                     ]
                   }
                 ],
-                "ID": "2ecf01d5-b196-4e8e-a3b7-ca3af38e2f3e"
+                "ID": "af641498-09c8-4054-8d31-f9a46c0e637d"
               }
             ]
           }
@@ -701,7 +701,7 @@
                     ]
                   }
                 ],
-                "ID": "60ef4e9a-120d-47a9-b7a1-a8c5844af001"
+                "ID": "d07ee02b-4367-4e84-94f2-fda47b104380"
               },
               {
                 "CommandList": [
@@ -719,7 +719,7 @@
                     ]
                   }
                 ],
-                "ID": "b5c90108-dfb8-42e3-975d-ed86643ca17e"
+                "ID": "880cc7ae-2894-4fa5-9dc9-50594dbb6cd0"
               }
             ]
           }
@@ -920,7 +920,7 @@
                     ]
                   }
                 ],
-                "ID": "c7665b23-e924-4186-874e-f849821a2a9e"
+                "ID": "9d5cbb87-d744-4e71-8e52-b8eed0dcecdb"
               },
               {
                 "CommandList": [
@@ -938,7 +938,7 @@
                     ]
                   }
                 ],
-                "ID": "182ff9a0-d2c2-495c-b293-874b3b2210dc"
+                "ID": "5093fd48-c783-449b-bdfc-c3db62baa49b"
               }
             ]
           }
@@ -1140,7 +1140,7 @@
                     ]
                   }
                 ],
-                "ID": "afa78d11-fbd5-4473-87e8-f1dd25889680"
+                "ID": "387de10b-a590-428d-8c48-baa9edc8e4dd"
               },
               {
                 "CommandList": [
@@ -1158,7 +1158,7 @@
                     ]
                   }
                 ],
-                "ID": "2e6f38db-42e5-4c35-8d52-09ce6000befa"
+                "ID": "b8f84ea5-9aae-4f09-9ce8-bdea469cdd53"
               }
             ]
           }
@@ -1361,7 +1361,7 @@
                     ]
                   }
                 ],
-                "ID": "ee22aa99-5d02-4ef1-958e-3f12e48d5407"
+                "ID": "e2f74e82-b600-438c-8c22-705dd12067e8"
               },
               {
                 "CommandList": [
@@ -1379,7 +1379,7 @@
                     ]
                   }
                 ],
-                "ID": "23b15e31-afa0-490d-a292-45d8439def7e"
+                "ID": "9e0bdb4f-dfec-4163-96bb-87854f07dde7"
               }
             ]
           }
@@ -1444,12 +1444,33 @@
             "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
             "ListviewName": "リストビュー1",
             "UpdateType": 2,
-            "UpdateRowType": 2
+            "UpdateRowType": 2,
+            "Comments": "2026/06/02 修正（ページロードでリストビューにデータを表示してないので、これでは削除ができないため）",
+            "Disabled": true
           },
           {
             "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
             "ListviewName": "リストビュー1",
-            "UpdateType": 3
+            "UpdateType": 3,
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "WK_実績_売上",
+            "UpdateType": "delete",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "WK_実績_売上",
+                "ColumnName": "ID",
+                "GUID": "dc88797d-c23c-45a5-904e-e120ff3ee959"
+              },
+              "Value": "%Null%"
+            },
+            "Comments": "2026/6/2　修正（全件削除するよう修正）"
           },
           {
             "$type": "ImportExportCSV.ImportExportCSV, ImportExportCSV",
@@ -1620,7 +1641,7 @@
                     ]
                   }
                 ],
-                "ID": "f9ce4edf-2471-4b03-bf3c-6a7b956bdba5"
+                "ID": "4d01a2f8-6950-4565-8633-d321ed73cb34"
               }
             ]
           }
@@ -1786,7 +1807,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "58e50f6d-f0a0-490e-8c32-fcde56aa5c35"
+                "ID": "a17892d7-f86b-4924-b446-8bcca58892af"
               },
               {
                 "CommandList": [
@@ -1895,7 +1916,7 @@
                     ]
                   }
                 ],
-                "ID": "8fdf8267-f153-465b-8abf-e9b7564d7e46"
+                "ID": "535c0777-ddbd-470f-9fd6-1b643638a21e"
               }
             ]
           }
@@ -2944,4 +2965,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//jk7kEToWujKyB7S3CwpF2JdaMBqhOsbqVy3pdlU6o/QdGPEjuIiharFnMnpJf7xKPNurQ/Oiz6zcWyZ17zu2/LBFMLGP+4BAj6O9a+NC0EtPD6YedsyULBMLouVpwmKDUp9DLdqFVBpTHjvVJqDrzyoe7MossoxaN+bfIfr2tPi/pRsXwm7s2TOttBfnQiK1/wb7Xq2JjN1W3kF4VwAfPC2d53RqOSRHycq0WLMm0eOsaiz4A71Kz6FubeiDkE2gRMbL8Cmq45ZZ3auyw620I2hpT/vy9oJR5f8CGmniI9n+QNBcEaASAEuMadO7N0PwHOq2d7RqAXAwUWRGlnLKNqx+IM78qTnuniYUCedvkQDDNRaRzkmECSNYxr78eZT9yKUlWy/8F24V0HMa7q7RT1eAW7o61EKHtlDYZETIU22+aKBkYHwG55rQ8Ru100SwS3vrQ5ZU1WjJ2ihg1m2NtSmDwY19tvYLXJEWo9/Qp+6Lo2yFaAfzOKMUobVwd34fSBhNXtR4EdUgkqH9xkAE+y0VZM4Z0KBreb8OTRGrfuBWR90HpOtAcqRqiZRtWx+dP7AQ6pGEczHdoAy0xHa3Cy+MUQ92Ne55INLqV4eBTQctjDSfhxm+EoaBkbK30c2EiUTgcPCjwh/MBNNHYaj+rDI3zv3y9vVTPmWQHJGK/qNWWY2miNEBvOE5u9HNYsZzAz37dhEUCtqpjVegb3ecW86Oe5jxfJPnZaDz1Vah8xuw46rObUfZFBZQ4+tQe0oEC4OijA3PcX2ocY6uoz5UDYIKRZqW6gboMs4fQxvJv2fhoPoV2tzbrO6xOAiJ08pUO+WjTqsDhy6Q3pkzpSrQsPnq29MH+aqhALTgndv284nsWFHRB7QOhtPu/0gbeuXv6I27maqIkf6EQ9lmEr7nbQ==|920
+}//Coi4YljTphK1R0uMPm4VOe5hBTFBi8sw/JGX97Mqb3Srit6Ly/0Cgh6mFOsC+OvBoYASkKX+DLEt935kCSdrGlt5M6MXinRvk5xDUKkAKtmtifR0RFUoCN6MVQUE4bNZk4j+i42H3XrQCSrTDQqOtoMRctJuRCgjz6aoVajdLJVGVutmcVO7KRCcU21rujchtPaAHeyPZvDeQAimCKmixlQ3bFHqIPpXtVU5KhSCC7KchKVN8nSkNiSttkxyHcMQvSCZ90GnMipAD7H+2wIkAErDnmFwXxDuwJ/B/NGRRczvD9iYdolOP2x/LN8o9blMSg5AhjBY5xED5G00MmD9Cdd3piC0mVMzd+1jMecdVsiDcaVEV7GL903thQsLFJcu3JRkuNkKKfScharXquqrZT6BOxCLcz7YbE01E+kZwfo3/t6uQZYNd4JJruwIiJvlzXJtbqt6wuxqL0VuIc4Y3HcSJSu6R6FOZYDSF05JEM14keXEEmyQT8FUI7+wngT1exzRwZpC55kDYeU1ns0QbsGsM9ydX9tOTZipERSHTPel/kqzog8nLFZ5iaOA7+4VCfdwvZ+wzCqo2eJ5CT4PacnK/5qsiR8FLENnES6eiVXj3jin0ndKYi4TEvkCrspXXYFgOL0Rh7kbiNcXlzV9nr9o+3tXYc+F/kEDnFiDpx5VjqpYkgUhym7CTsaXy+zjqCyaATfS7QLQsoMGZl/wVsY2skBp+1hLRy0bdkbrSyMQDUgagOASltuqjKC3HyElq/vq48T5Yd+r8hEbd32viy1iT3kjO7fN38a8j5hE/gql9dAzq7iY/NJpB8hj5d150LmBWAdJGrE862W0DG0HnU3zOBFfW/lq0az4AYjy3rBZzVNrIcvTPjxBLnK2WdMStTuBpSu/WeZapI45Gj3BUA==|920
