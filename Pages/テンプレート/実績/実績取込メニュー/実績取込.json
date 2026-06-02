@@ -206,7 +206,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "9f4c22d1-1c40-434f-8610-91fd101d9db8"
+                        "ID": "de4cd586-6e66-40a6-b59d-9b0457c52cbc"
                       },
                       {
                         "Condition": {
@@ -231,12 +231,12 @@
                             }
                           }
                         ],
-                        "ID": "6ab006c8-ebca-4173-af42-2647ef735af8"
+                        "ID": "d0762e46-b97e-4ec5-aba1-ce953a55db6d"
                       }
                     ]
                   }
                 ],
-                "ID": "2a94ff36-1e61-45a9-bbdf-6ae92925afed"
+                "ID": "4c9bea66-eedf-4ee8-a4fc-629f0cfdff11"
               }
             ]
           }
@@ -410,7 +410,7 @@
                     ]
                   }
                 ],
-                "ID": "fbddde23-f781-46b0-92fa-7f77813b08b3"
+                "ID": "f845fa61-1045-46fb-8535-6e77bb5832b2"
               },
               {
                 "CommandList": [
@@ -428,7 +428,7 @@
                     ]
                   }
                 ],
-                "ID": "36d0df07-bd50-40b9-88e2-95b817b08aae"
+                "ID": "8627433c-757f-42d2-b229-8dc8959d9d49"
               }
             ]
           }
@@ -591,7 +591,7 @@
                     ]
                   }
                 ],
-                "ID": "489d7cd8-f578-4994-af7d-96a9e19d5d8d"
+                "ID": "5e4265cc-c7bc-48cf-ac9b-7d64afe3e6e4"
               },
               {
                 "CommandList": [
@@ -609,7 +609,7 @@
                     ]
                   }
                 ],
-                "ID": "a1e58798-f58a-4b4a-b741-53a30dcf9fbe"
+                "ID": "1ea70f0d-af90-42f7-b3e0-361fab2bbdfb"
               }
             ]
           }
@@ -768,7 +768,7 @@
                     ]
                   }
                 ],
-                "ID": "91f63484-1b6c-4769-9bb4-747ce273d913"
+                "ID": "ae05c92a-5759-4fdd-99b5-226d7beffb08"
               },
               {
                 "CommandList": [
@@ -786,7 +786,7 @@
                     ]
                   }
                 ],
-                "ID": "d396e7db-3f23-49e6-8adb-89b004e4d5d5"
+                "ID": "54308f8f-55d3-4cd1-835e-343599ccac53"
               }
             ]
           }
@@ -987,7 +987,7 @@
                     ]
                   }
                 ],
-                "ID": "42d7b035-3421-4023-963e-533fedc4b4cb"
+                "ID": "f79c7f5b-19b1-4c02-9da6-fc84a3a76a59"
               },
               {
                 "CommandList": [
@@ -1005,7 +1005,7 @@
                     ]
                   }
                 ],
-                "ID": "fd950cbe-0907-4901-8717-1ee36fc9aa05"
+                "ID": "8c9bd0c0-f5e7-470a-bfb1-06186cb9ffa5"
               }
             ]
           }
@@ -1207,7 +1207,7 @@
                     ]
                   }
                 ],
-                "ID": "9ed2e0f5-34f7-46b5-8067-d45d4fa3022a"
+                "ID": "03df5f8c-1756-4efb-a4e8-250822813798"
               },
               {
                 "CommandList": [
@@ -1225,7 +1225,7 @@
                     ]
                   }
                 ],
-                "ID": "b227e6e1-3efa-4368-a9b8-e9bd7dcd65be"
+                "ID": "85a1d5e9-0549-43f0-8121-9b2608d73dd2"
               }
             ]
           }
@@ -1428,7 +1428,7 @@
                     ]
                   }
                 ],
-                "ID": "0b02100f-9dd1-4374-bcb5-3c86c44efac7"
+                "ID": "9c1122e5-c624-4b61-adf4-01b29ab8c12e"
               },
               {
                 "CommandList": [
@@ -1446,7 +1446,7 @@
                     ]
                   }
                 ],
-                "ID": "4dc45814-bf8f-482b-9098-331b2836f3c4"
+                "ID": "16f22f49-0bfa-4f24-ae02-be37389d9897"
               }
             ]
           }
@@ -1689,7 +1689,7 @@
                     ]
                   }
                 ],
-                "ID": "0ca8e4de-43af-472b-9d59-3321492dd887"
+                "ID": "d6c9d63d-017d-4526-a5c4-1107ce91f780"
               }
             ]
           }
@@ -1784,12 +1784,18 @@
                 "Value": "2"
               }
             ],
-            "ResultErrorCodeTo": {
-              "SerializeProperty": "=実績取込!CJ6"
-            },
             "ResultMessageTo": {
               "SerializeProperty": "=実績取込!CJ10"
             },
+            "ReturnPropertiesTo": [
+              {
+                "ResultPropertyName": "エラー件数",
+                "ResultTo": {
+                  "SerializeProperty": "=実績取込!CJ6"
+                },
+                "Remark": "2026/6/2　追加（リターンコードを使用していたため新規追加）"
+              }
+            ],
             "RefreshAfterFinish": true,
             "CheckDataValidation": true
           },
@@ -1855,7 +1861,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "fc2cab7d-3ab1-4352-ac15-59d96bf64c45"
+                "ID": "84bdceb9-5c5d-41e9-9de9-eb50ad836398"
               },
               {
                 "CommandList": [
@@ -1925,12 +1931,18 @@
                         "Value": "1"
                       }
                     ],
-                    "ResultErrorCodeTo": {
-                      "SerializeProperty": "=実績取込!CJ6"
-                    },
                     "ResultMessageTo": {
                       "SerializeProperty": "=実績取込!CJ10"
                     },
+                    "ReturnPropertiesTo": [
+                      {
+                        "ResultPropertyName": "エラー件数",
+                        "ResultTo": {
+                          "SerializeProperty": "=実績取込!CJ6"
+                        },
+                        "Remark": "2026/6/2　追加（リターンコードを使用していたため新規追加）"
+                      }
+                    ],
                     "RefreshAfterFinish": true,
                     "CheckDataValidation": true
                   },
@@ -1964,7 +1976,7 @@
                     ]
                   }
                 ],
-                "ID": "8544434f-627e-4386-a016-2f813e59eed0"
+                "ID": "c82b4fe1-a645-4683-a51c-7e3e4ba027ad"
               }
             ]
           }
@@ -2811,6 +2823,7 @@
     "7,1,2,6",
     "7,8,2,6",
     "12,1,37,52",
+    "27,80,5,2",
     "10,1,1,4",
     "10,5,1,4",
     "10,9,1,6",
@@ -2818,8 +2831,7 @@
     "10,23,1,5",
     "10,28,1,11",
     "10,39,1,11",
-    "10,50,1,3",
-    "27,80,5,2"
+    "10,50,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2894,4 +2906,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//NkTCJwc+TG2EPGBCUvqI2zo9wWU0lP37lY8WA7QqbWMulJTL/9JmJvHEm7vj13iEZiqh6wSQgj1J+1XR2HeuaS2y9ZE8fOwUlJnTAjXJPTb/5Brp0Xxq0NOmidzuSW9jGCxQJDMRpb5hOnqWK6J4RqaROFGNO47qATCFxMROOpM9NWvSIew1DOiffXEpt1N/UlzjnuwOctR0AW5RNF/68GqS3xhJhQgjIWug2TuM0yCEQPcf7nnpFyQKxYvS5JgYl3Pyd5jRpr8apbsBENU1PQ1nJhy/opvkXz2JKRoy6Mto12IoqpzLzr4gYL66cpH6ebU6uAEeyGhBuboH8D+4wXf9KtCn5s8YChARuZh9jWJL0KnrAeyOMrn0D9avQZNMA9FPaO62r9RNz8gGdP6pOx6jSlBc1sJKi3O+RhB1UCpTNQ5GtB4X/7Z4a/wbE4F1H4W/cGt0Ng0a3fLGW0ED8Gu+WiqyfLjsHhzXgMrIRk482jTjYtEMe80YT298/HyHEUBuvFZ0EVdjbvwWGr2WXhImv4JRMqR8VvK6E+aamRv45BDEQqBayiB2wy/9S7OJRFCT+xgbiUfNVe1Fbu9Oq48m89dPzWG0hFJWVyA0TM7kprwlIjOa2zmoaoNTVOSu5N55+V5ANvsThEzoIAVHsqsA1+bvrifZAfT42h5Fr0P3gq5JNnWkkC4AroDShngj61WaouTQBg23RJylxO30ZFGFjcFdloLOrt5qkUnnCpivaYGMRjPqU6WGuBByUYCErgbj7jkkKF7RPERgsSIC3bF7UkoX0FAAr0tLQDRDDXzqhFYckd14yEdhrf9MVlDVlijYwRjK3wAWjyziiQf/zwgJctFkKuQOU0Hk3cGtKKEUXdz5c9FOkaFzZ8Yphd33/+pwTMbetc+Wh5r2ll8f5g==|920
+}//n4ThPO8TmrDOz9P6Je6Xw3GL7jev1tuEOO89tKNLhi3TRdlg4drf3akVheUdOn5hF9Hut7QJtFTXxxYdihGoQvImul1XIO+NWgR+1sIvf0n4kL2O/boIbX7kvkn2NZHI4GuE+0tfk/UwDy5xYY4vGexk5bN8qG+p4kNA7HZqiggE54I/JeqUGs6Ga9tOsWD2UjTQ6oJfsxqT5LN+MSg3sWD/NuUiaxLaHzQ2AZlfE5k8Z1HP9CsEU374cx32wvNqLwhyvAQ8UyD1cSvB7I3lpLxchm6CdE6Mm2pF+I2HDzDfvxrFAtaZAKHcfXyItdyT8Txx/zwOay1KsoUpWb369TK3acfnwxLUnvQmUo8aTdpm6BKFaC6GHtSeHozk1LMpfHpM0/uRVOmlqC4uHd9UOvqcq1TxkCIVrjjbyh3i8wVSS1RJXtOdcP+id2M+KBiPLmlD/gkBeA7SxV9VK/ZL8xqG5GuhvTJ0kpMbdVW5e2HluCsuBxxO1d2xb4vmS94hzPgmzZDmlWi0iYZgMgEW6Jq7TbFsYgIzInHahnARxHSXsZJFDjMuXETNOr/7LwNKJt43lL4ao773YzsD1TGkcoSFEILPg6ZOPN4a0OlnotISrZ68WjBpcDzP2/2Clvp7jyWmrEJ2yMe5118l1WWrGWXE8OiqDJlML4FRi3JPPrPp59mQbBqv8wDqQGwfsUKsKPivcV91i8ES3CL2UtvVkbkVO05sPfQpecfLT9tNXoyGKfOW+Mnq3NtTDaOiDhU/RASrODg2H1DNy9qhnuzAoJRba5phFGbb65hBtZgAp5wnmpcscLTw6u/7AVSX/yrCX5zUi4W9Yh8bwnf3wrBInjff960aF/5Dgycz7k9JEo85+Wdb1DKag+bTavW/m+yMgbHthovDgkg2aBDwI6Os6Q==|920
