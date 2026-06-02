@@ -376,17 +376,7 @@
   },
   {
     "ModuleName": "PCPage/商品別売上高取込",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-02T11:32:54.3438005+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\実績\\実績取込メニュー\\商品別売上高取込.json",
-      "Pages\\テンプレート\\実績\\実績取込メニュー\\商品別売上高取込.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/実績参照",
@@ -790,16 +780,7 @@
   },
   {
     "ModuleName": "ServerCommand/取引先別売上高取込",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-02T11:32:54.3434239+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\実績\\取引先別売上高取込.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/実績取込",
