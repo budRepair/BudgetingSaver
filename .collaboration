@@ -886,7 +886,17 @@
   },
   {
     "ModuleName": "PCPage/商品別売上高取込",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-02T10:20:18.4724965+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\実績\\実績取込メニュー\\商品別売上高取込.json",
+      "Pages\\テンプレート\\実績\\実績取込メニュー\\商品別売上高取込.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/実績参照",
