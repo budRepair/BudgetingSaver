@@ -324,7 +324,17 @@
   },
   {
     "ModuleName": "PCPage/予実対比_ダッシュボード",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\jonghyuk.kim",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-05T16:41:20.3963507+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\予実\\予実対比_ダッシュボード.json",
+      "Pages\\テンプレート\\予実\\予実対比_ダッシュボード.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/損益計算書（参照）",
