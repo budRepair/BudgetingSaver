@@ -584,7 +584,17 @@
   },
   {
     "ModuleName": "PCPage/給与入力",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-08T15:57:15.2081995+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\サンプル\\給与入力.json",
+      "Pages\\テンプレート\\サンプル\\給与入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/製造原価入力",
