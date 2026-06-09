@@ -562,7 +562,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "2f0f6b9f-d274-46d4-ade1-b31d143ea984"
+                        "ID": "21544ccd-ebc0-4c72-8af2-9741bf62330b"
                       },
                       {
                         "Condition": {
@@ -587,12 +587,12 @@
                             }
                           }
                         ],
-                        "ID": "851a415d-11e4-4db5-bfcd-438dd69fc4a9"
+                        "ID": "e2ca9901-c2c1-4761-9c12-2f0aa32f94b6"
                       }
                     ]
                   }
                 ],
-                "ID": "7e3bcf66-4b41-45f6-8399-3cc23b0e502f"
+                "ID": "23644d2c-a92e-48c3-8b42-65515e1afc05"
               }
             ]
           }
@@ -733,7 +733,7 @@
                     ]
                   }
                 ],
-                "ID": "5cbeb3d6-4989-4945-8ffd-a4dc1039b5c7"
+                "ID": "3b443de4-7071-46a4-8d36-c221bab60c26"
               },
               {
                 "CommandList": [
@@ -751,7 +751,7 @@
                     ]
                   }
                 ],
-                "ID": "e5435253-e3b6-4d4b-a0d3-7a1603461a3a"
+                "ID": "17fd6878-2c10-4bab-a374-8068b2a3e4ba"
               }
             ]
           }
@@ -886,7 +886,7 @@
                     ]
                   }
                 ],
-                "ID": "fd7837c2-24e3-4368-8deb-57c73a52705f"
+                "ID": "0fba9e15-b737-419b-adf1-0273b2607cff"
               },
               {
                 "CommandList": [
@@ -904,7 +904,7 @@
                     ]
                   }
                 ],
-                "ID": "8694e3b8-279d-41e6-adcf-18d376cd10f4"
+                "ID": "242b3e4b-9850-4499-8a07-eee61fcc36a1"
               }
             ]
           }
@@ -1069,7 +1069,7 @@
                     ]
                   }
                 ],
-                "ID": "245c0a20-53fa-4bd2-bdb7-4e7180c1416c"
+                "ID": "0a4b9e85-8709-48c9-bb52-1a1eb1374e55"
               },
               {
                 "CommandList": [
@@ -1087,7 +1087,7 @@
                     ]
                   }
                 ],
-                "ID": "4d3b98e7-4be9-4a7a-abca-837e127a00cf"
+                "ID": "2ee33aaf-9fb1-4893-9480-dbd3ff869eda"
               }
             ]
           }
@@ -1254,7 +1254,7 @@
                     ]
                   }
                 ],
-                "ID": "015a7e77-4ce8-435f-8b85-ee21177ecdef"
+                "ID": "a5004163-b474-489d-8e59-487248ad3f18"
               },
               {
                 "CommandList": [
@@ -1272,7 +1272,7 @@
                     ]
                   }
                 ],
-                "ID": "e356617a-c7fb-49d0-872b-97197d752152"
+                "ID": "2f17c1b5-02a1-4f10-83b7-046c30993911"
               }
             ]
           }
@@ -1440,7 +1440,7 @@
                     ]
                   }
                 ],
-                "ID": "8010ed19-9c35-41e7-8bd0-eb0efcd21429"
+                "ID": "2af54a98-98d7-4388-bf0c-2bcd68ab7773"
               },
               {
                 "CommandList": [
@@ -1458,7 +1458,7 @@
                     ]
                   }
                 ],
-                "ID": "139ca5d6-6581-4d0d-a377-f9521c7c7272"
+                "ID": "854c0b66-4ce6-42ed-8178-363aa8ad3feb"
               }
             ]
           }
@@ -1513,8 +1513,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "MST_バージョン",
-                "ColumnName": "バージョン名",
-                "GUID": "2477c932-8071-4e30-8d8e-baa56493cc85"
+                "ColumnName": "バージョンコード",
+                "GUID": "c6b0ccba-7af3-4fa0-b8d6-98581fb64e85"
               },
               "Order": 0
             }
@@ -1615,7 +1615,7 @@
                     ]
                   }
                 ],
-                "ID": "195b132a-c81b-48b7-8d8b-ee2126d8767c"
+                "ID": "b06d2a87-e29e-4c47-b128-38832a95e07f"
               },
               {
                 "CommandList": [
@@ -1633,7 +1633,7 @@
                     ]
                   }
                 ],
-                "ID": "1e6e6399-166e-417d-a168-3df9852d0037"
+                "ID": "10fb8073-3559-4549-adcf-20e752ad227f"
               }
             ]
           }
@@ -1819,7 +1819,7 @@
                     ]
                   }
                 ],
-                "ID": "c18ecd63-9c38-4e9a-b978-eed9f37e544f"
+                "ID": "5138d15c-b1e6-4dfc-abbf-93872fbc03f0"
               },
               {
                 "CommandList": [
@@ -1837,7 +1837,7 @@
                     ]
                   }
                 ],
-                "ID": "7011b4a2-4511-4d58-b659-22a8fa45b4e1"
+                "ID": "3c239553-2cfb-48a2-b286-dfe8fd15d3df"
               }
             ]
           }
@@ -1933,7 +1933,7 @@
                     ]
                   }
                 ],
-                "ID": "25f7883b-6cc8-4990-93c9-4c961c7883ee"
+                "ID": "555a5f7f-b160-4920-a717-6405c1111002"
               },
               {
                 "CommandList": [
@@ -2104,10 +2104,10 @@
                                                         }
                                                       ]
                                                     },
-                                                    "ID": "78cad06ad3a846daab5ef70e06411b98"
+                                                    "ID": "0495af18d2d145368bf2b39dba81951c"
                                                   }
                                                 ],
-                                                "ID": "4dcce959-0cde-43b0-b4f7-0353ee11fbd4"
+                                                "ID": "eb96c623-01f3-479d-9120-1c536b738d5a"
                                               },
                                               {
                                                 "CommandList": [
@@ -2143,7 +2143,7 @@
                                                           },
                                                           "Value": {
                                                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                            "SerializeProperty": "=給与入力!X5"
+                                                            "SerializeProperty": "=給与入力!H5"
                                                           }
                                                         },
                                                         {
@@ -2189,15 +2189,97 @@
                                                         }
                                                       ]
                                                     },
-                                                    "ID": "00e7afb37798460f91092df0e0327aed"
+                                                    "ID": "89d4d3f876d1411f84d258896faa3e63"
+                                                  },
+                                                  {
+                                                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                                    "TargetTableName": "INP_予算_給与",
+                                                    "SqlCondition": {
+                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                      "SubConditions": [
+                                                        {
+                                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "INP_予算_給与",
+                                                            "ColumnName": "年度",
+                                                            "GUID": "8739f9b7-72af-4596-84dc-efccb9cfd5c5"
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=給与入力!C5"
+                                                          }
+                                                        },
+                                                        {
+                                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "INP_予算_給与",
+                                                            "ColumnName": "組織コード",
+                                                            "GUID": "859cb70a-4b36-45b2-b4c4-0420c4e21dde",
+                                                            "RelationBinding": {
+                                                              "RelatedTable": "MST_組織",
+                                                              "RelatedColumn": "組織コード",
+                                                              "DisplayColumn": "会社コード"
+                                                            }
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=給与入力!X5"
+                                                          }
+                                                        },
+                                                        {
+                                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "INP_予算_給与",
+                                                            "ColumnName": "科目コード",
+                                                            "GUID": "3d3cd7b6-dd54-41f3-9efe-3fd21007cf7c"
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=給与入力!BL5"
+                                                          }
+                                                        },
+                                                        {
+                                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "INP_予算_給与",
+                                                            "ColumnName": "科目コード",
+                                                            "GUID": "0d6db682-071e-4d19-9900-26b83f0c32a6",
+                                                            "RelationBinding": {
+                                                              "RelatedTable": "MST_科目",
+                                                              "RelatedColumn": "科目コード",
+                                                              "DisplayColumn": "会社コード"
+                                                            }
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=給与入力!H5"
+                                                          }
+                                                        },
+                                                        {
+                                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "INP_予算_給与",
+                                                            "ColumnName": "バージョン",
+                                                            "GUID": "bf56cc44-c661-414a-8bba-d68f2bb011d7"
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=給与入力!BE5"
+                                                          }
+                                                        }
+                                                      ]
+                                                    },
+                                                    "ID": "7e8d9065f51e4fd5990ac192eaa2210e",
+                                                    "Comments": "2026/06/09　組織コード→会社コード=組織１になっているが、組織１は未入力のため、会社に修正",
+                                                    "Disabled": true
                                                   }
                                                 ],
-                                                "ID": "ff31f1f0-2909-4b25-9e93-7a25720ce336"
+                                                "ID": "374ab88f-467b-452e-b807-c4fef1f46e6c"
                                               }
                                             ]
                                           }
                                         ],
-                                        "ID": "679657d0-d9c3-4c05-a264-d0aebd5f4621"
+                                        "ID": "6a57da1d-a0bb-4a85-b1c0-13f0bdb9e90e"
                                       },
                                       {
                                         "CommandList": [
@@ -2279,15 +2361,15 @@
                                                 }
                                               ]
                                             },
-                                            "ID": "42d2821490b34cbb82143ae23e4103f2"
+                                            "ID": "4681b720673e4bf4a93f0c3818a954d6"
                                           }
                                         ],
-                                        "ID": "25c39b0e-1290-435f-b818-dbfc7042bdb5"
+                                        "ID": "c5baa395-646e-4372-9d6b-00f2ed7bf62b"
                                       }
                                     ]
                                   }
                                 ],
-                                "ID": "f89cc1c7-96e3-4857-8982-03e853fc180d"
+                                "ID": "c1fb4e0c-205f-476a-a2ac-67e030e20ef0"
                               },
                               {
                                 "CommandList": [
@@ -2369,10 +2451,10 @@
                                         }
                                       ]
                                     },
-                                    "ID": "04b430a9b5904c8eb39bb65d39e899df"
+                                    "ID": "3d5e339a2a814a0589fb65ee6b8a23cc"
                                   }
                                 ],
-                                "ID": "f9412436-b67c-425e-b837-b7f32ea9121a"
+                                "ID": "d88ec33f-6a2b-437c-bc6b-1455e7020385"
                               }
                             ]
                           },
@@ -2398,7 +2480,7 @@
                             ]
                           }
                         ],
-                        "ID": "edfbe1c9-409f-4abc-8ba3-100551be50bb"
+                        "ID": "2445a29a-da24-4eca-b869-eb279aa6c626"
                       },
                       {
                         "CommandList": [
@@ -2669,7 +2751,7 @@
                                     }
                                   }
                                 ],
-                                "ID": "3a41f496-e479-46c0-8ffd-f6b63121feba"
+                                "ID": "5b8c2d18-354b-4cfb-a8c2-7419df104bfe"
                               }
                             ]
                           },
@@ -2746,7 +2828,7 @@
                                 }
                               ]
                             },
-                            "ID": "1b9c3ba48a8d4836afd9631a5aa21c1d"
+                            "ID": "67a47f73e8b145df897ec156af3081ce"
                           },
                           {
                             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2786,7 +2868,7 @@
                             ]
                           }
                         ],
-                        "ID": "6c369205-9fd5-4e01-9f6f-f9a48d3d8e6b"
+                        "ID": "58a47a52-a592-4b83-ad40-7ffd475ee349"
                       }
                     ]
                   },
@@ -2806,7 +2888,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "8169e8c1-2ad9-4249-9f53-255435ded950"
+                "ID": "40c83eb7-bde8-41aa-8b2e-cb9f9dfbeeb5"
               }
             ]
           }
@@ -10534,34 +10616,6 @@
     "7,9,2,6",
     "7,16,2,9",
     "11,2,1,12",
-    "10,188,1,3",
-    "10,191,1,4",
-    "10,195,1,4",
-    "10,199,1,4",
-    "10,203,1,3",
-    "10,206,1,3",
-    "10,209,1,3",
-    "10,212,1,3",
-    "10,215,1,3",
-    "10,218,1,2",
-    "10,220,1,3",
-    "10,223,1,3",
-    "10,226,1,3",
-    "10,229,1,3",
-    "10,232,1,3",
-    "10,235,1,3",
-    "10,238,1,3",
-    "10,241,1,3",
-    "10,244,1,3",
-    "10,247,1,3",
-    "10,250,1,3",
-    "10,253,1,3",
-    "10,256,1,3",
-    "10,259,1,3",
-    "10,262,1,3",
-    "10,265,1,3",
-    "10,268,1,3",
-    "10,271,1,3",
     "14,18,1,3",
     "15,18,1,3",
     "18,18,1,3",
@@ -10777,7 +10831,35 @@
     "16,178,1,6",
     "17,178,1,6",
     "18,178,1,6",
-    "19,178,1,6"
+    "19,178,1,6",
+    "10,188,1,3",
+    "10,191,1,4",
+    "10,195,1,4",
+    "10,199,1,4",
+    "10,203,1,3",
+    "10,206,1,3",
+    "10,209,1,3",
+    "10,212,1,3",
+    "10,215,1,3",
+    "10,218,1,2",
+    "10,220,1,3",
+    "10,223,1,3",
+    "10,226,1,3",
+    "10,229,1,3",
+    "10,232,1,3",
+    "10,235,1,3",
+    "10,238,1,3",
+    "10,241,1,3",
+    "10,244,1,3",
+    "10,247,1,3",
+    "10,250,1,3",
+    "10,253,1,3",
+    "10,256,1,3",
+    "10,259,1,3",
+    "10,262,1,3",
+    "10,265,1,3",
+    "10,268,1,3",
+    "10,271,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -10861,4 +10943,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//GAY8Ns4AsNvuwKSR4XYAkGIw5OR5r0Yp1nADn7Y+4myqm2ijC5CrCPqenaZpRZwHhybLEfE9pdw/zIH5aubvJyG4C12Mq7ZEu9NSus1x6P5lEjRGjXJKzOnGA87Tr0WqabTeaUJu0aOMJ3lVMGg30sV75weXGHgUgleucgTUWUwxwWGuS/nLWFd68TWQLWv0UmoQlibALEmMzFdsLaH2xbG6rQdUs42i0O+3upEaEjfp9wJvw8nR6kpcl/2PjvwOmctrftaYg1PQeUS8ueje6mkrwrt3ZDy+iaJXqQNehoDlPubHqByovyv6kMXNSzs5QsQ1AUp5dUZECinYScX+Piv7QFsfmD+PE9UZ4y99+OVIXQlEF+Bwunpw59wkGsGiiMqhYJbXLkM+XXqLtkfsX792bFblgq4pHobwB79A7t5wU9yiOcQ5As1Svf2/9OU8TIFuKDRoAKoXW61TzAFbodCWt1NzATgpF2LmOYdNhDglKEEL5q44/1141IL05x9lJB1bU9Os6bCjqsCEB9h70eqalB74sNmjH5Pmy1FipGvvRJnRewv3SYCxwbJoXckhFbYurYEgJ0T6gcOiqiEwZKpju9b9YA058kSY8tu3qr2bQk7YfEP/nQqiPREqmB/W4jsvwkvU2fYC6GurDBS6JRPcn3C7pS8gsDiYkJ+kV0X2hAFzR2jHDWTpvQR8WrLsH+T0C7dOq4cwGt+q5T6oiW/XJXmj7GsIIKkkI5dKo2L9pDEWD6DdzflW4lcoE0u5M1DRzGIhWhYe2132jVkRLCyi78AAymcqRD6rwNSkCd0awtUWXgIbQKOMXXEof5/aetkS6S2vTccM/MdtBc1HQtqt63gUdmLsYu0Z0GFA+sfO1NxcEewfEeUikeYJJs8PWePhpwdMDhfDlb4kGbBxVg==|920
+}//nITuBEU0SNscgQdLSBxd932nVHhN9ZkxATzmopRygZE2OpNuFhg4iWNcn1ICrfZFMv5r3slgTEEMhOE6jPH9yp1Eoe4nuu4Tsav62YR+qbCvfI0zToOKUsxH3UQm0sIKORQ5o2GkMtiLDd8prCgddZacApDUehJw3cF0WfV5KJm4djsfpWHn4B0Hl3TnHHtMDzsLEqoEvkvkBDBrXHFk6VoNKqs7NZEEi+OknkS1g5gMUuKccr3VKW8al7fKc/+A1cG7pYsjIK9hZditQfB3WrY57TzW0Mof6eiHKCbjpS/jzcSNmsPiKiKhWlZCLOyhtGSjJtvnYKbwYg/j2NywcHCT77cAiCNMwRysi7U2KIngsnSm3y2s8dWDpOTnaHBvCjvEmjqCvjsxNk53ZWCdrqopTWixTOjA2YiW7pQ+ypLivxhcXpB5KdyhloUGbDe+y4HyTVZRJVJZmbQSR+9s2cjgqlhSgFhdZPf/ENOS8qLuq+ECMXD4v1pzfnj3J3ot7CPOxENbqu0ML81+VOQxw944oQrErxoyrHHL112hiHfbpAje14Af91FJuTWdjkk0QxE3wnP8eiJtiH5TsMWn0smZCKrn6wqosWNSymrF9yXOfxYkvwcQTKZMv7mB/IoCTE4RQfXW58bc9DZ39OGBQ8N6NZypzXf7+UyJJqSt8FEMjsd6Y7aifds+c8o0DHf7aoqQrvtKEcy7nAtxZ6+1JITqzMIK0fkRQBnnB4vvhLUZi4qzUUr3K5ETJSiSd3jw6v85OWf4a8IMYSKT6B1kIZbN6x5P7ZECO8IHvGKZYYeXbt2bpmjw47meTSjuzE5ZBuy+jJhtZPOF5df6GVlZV5xA6ocYZTU1GYvLGWxO6FuY+tI9AXRKTGuV28vBIfaW4TIH6Ck9y7YuGFd3s13sSg==|920
