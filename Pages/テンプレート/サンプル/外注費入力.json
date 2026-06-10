@@ -207,7 +207,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "22220599-e39c-4ece-8eb3-58dfe85eaa2e"
+                        "ID": "226ae23c-d6e9-4bed-9aab-08e429ed4d91"
                       },
                       {
                         "Condition": {
@@ -232,12 +232,12 @@
                             }
                           }
                         ],
-                        "ID": "78f3271a-dd9d-42a8-a24e-88b932fd3711"
+                        "ID": "51837e40-4598-46f7-bc75-12d71a15c45c"
                       }
                     ]
                   }
                 ],
-                "ID": "5e8abdb9-1122-4f0e-9d83-8d13b0bbfe08"
+                "ID": "13902580-1383-4e99-86d6-e7bb692faf39"
               }
             ]
           }
@@ -414,7 +414,7 @@
                     ]
                   }
                 ],
-                "ID": "d910547e-03d8-454f-b102-46b2f73f21b4"
+                "ID": "fe496e86-e062-41e6-80d9-b99d83d35afb"
               },
               {
                 "CommandList": [
@@ -432,7 +432,7 @@
                     ]
                   }
                 ],
-                "ID": "6673b505-dca7-46fc-847a-90bbcf3f1e48"
+                "ID": "dc87df07-153e-4176-afc2-91dcba067bae"
               }
             ]
           }
@@ -603,7 +603,7 @@
                     ]
                   }
                 ],
-                "ID": "f7d2190a-9ef0-46f6-b76d-8399489739f2"
+                "ID": "2e8a901a-50a4-4222-a4fa-5458b76da84c"
               },
               {
                 "CommandList": [
@@ -621,7 +621,7 @@
                     ]
                   }
                 ],
-                "ID": "a700b35d-769b-4600-b0fc-d657e0035a08"
+                "ID": "83e00152-f905-49d4-b93f-c5ac29b18d67"
               }
             ]
           }
@@ -822,7 +822,7 @@
                     ]
                   }
                 ],
-                "ID": "9d94dcb4-f535-46f1-b5fb-ddd21a4b2a75"
+                "ID": "32cb0ba8-a260-4a25-8223-5efb8aa846cb"
               },
               {
                 "CommandList": [
@@ -840,7 +840,7 @@
                     ]
                   }
                 ],
-                "ID": "38faee32-b584-4c4e-a423-5535dd1a10a5"
+                "ID": "7b38a372-6393-4336-a097-8695edbc7dfd"
               }
             ]
           }
@@ -1042,7 +1042,7 @@
                     ]
                   }
                 ],
-                "ID": "d7788334-3af3-4fa1-afa0-87000a6a23ae"
+                "ID": "e0d2cfa7-607d-4706-8aed-cf6102738382"
               },
               {
                 "CommandList": [
@@ -1060,7 +1060,7 @@
                     ]
                   }
                 ],
-                "ID": "015c78f1-7265-4389-9d83-c4ec8ec3f5fc"
+                "ID": "f1e61cd8-6868-443b-9da7-74bfb5d65e0d"
               }
             ]
           }
@@ -1263,7 +1263,7 @@
                     ]
                   }
                 ],
-                "ID": "0c8ae49e-ce2c-419b-90f7-4118c091902f"
+                "ID": "917a1dce-3adc-4646-88b4-b972d7b38815"
               },
               {
                 "CommandList": [
@@ -1281,7 +1281,7 @@
                     ]
                   }
                 ],
-                "ID": "0bdc3448-cd07-4b76-91b7-ec9114039ced"
+                "ID": "3f609f95-9a8d-4b3a-aef4-204cfa9f3542"
               }
             ]
           }
@@ -1335,8 +1335,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "MST_バージョン",
-                "ColumnName": "バージョン名",
-                "GUID": "033df878-784e-40fa-9e62-d4acd75b24cd"
+                "ColumnName": "バージョンコード",
+                "GUID": "f7f63f54-c7ee-4312-8be4-993bec8f31d0"
               },
               "Order": 0
             }
@@ -1473,7 +1473,7 @@
                     ]
                   }
                 ],
-                "ID": "15fbdd6c-1abf-49a5-bdcf-8febb3ca40f4"
+                "ID": "e684df8a-a897-464f-b783-0c9926cf4d22"
               },
               {
                 "CommandList": [
@@ -1491,7 +1491,7 @@
                     ]
                   }
                 ],
-                "ID": "a12b278f-cb94-460c-b815-e6b100783363"
+                "ID": "83b53b16-3cad-4d3d-b1b7-f2fc5d5733a1"
               }
             ]
           }
@@ -1650,7 +1650,7 @@
                     ]
                   }
                 ],
-                "ID": "24ff7a1f-db49-40b0-a0e7-25944d6ff1ca"
+                "ID": "d4e6779c-08b6-459c-806b-c28f9b17291f"
               },
               {
                 "CommandList": [
@@ -1668,7 +1668,7 @@
                     ]
                   }
                 ],
-                "ID": "e6dd7423-7c25-418d-8c69-32fa61805d8a"
+                "ID": "7b960566-1502-4829-8fe3-26c6ecfbf9d1"
               }
             ]
           }
@@ -1870,7 +1870,7 @@
                     ]
                   }
                 ],
-                "ID": "20d66388-3c88-4cb2-aa2b-cd518cd11a05"
+                "ID": "70534fae-db07-4cab-aafd-c11a1780fa2b"
               },
               {
                 "CommandList": [
@@ -1888,7 +1888,7 @@
                     ]
                   }
                 ],
-                "ID": "b2ebca2a-73c0-44da-951e-05dca20a38ba"
+                "ID": "25af8ab7-30e2-47d8-b08c-45d3a8c682a1"
               }
             ]
           }
@@ -2004,7 +2004,7 @@
                     ]
                   }
                 ],
-                "ID": "06e9b489-081d-425f-b7c4-f259f180caa0"
+                "ID": "0c70483e-1a73-46d9-9398-9ddf7eb998cf"
               },
               {
                 "CommandList": [
@@ -2280,7 +2280,7 @@
                             ]
                           }
                         ],
-                        "ID": "b56f6281-c12b-476d-bc9f-56f0b20f9b62"
+                        "ID": "2584be84-b2b8-4156-8cf7-3acb6a41917d"
                       },
                       {
                         "CommandList": [
@@ -2376,7 +2376,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "d9156372-de49-4e59-bb43-1bccf32f1763"
+                                "ID": "9122cd7b-a11d-4c93-b380-c9ff451cbf10"
                               }
                             ]
                           },
@@ -2451,7 +2451,7 @@
                             "ID": "79957963410441c5929359567b316c0f"
                           }
                         ],
-                        "ID": "862d57c2-190d-4bed-8025-96ce947a9c7e"
+                        "ID": "af97131f-76d3-465c-a4f3-f814eb0f97b1"
                       }
                     ]
                   },
@@ -2501,7 +2501,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "8f9542b7-54b0-495e-ba57-cbd87fe039ef"
+                "ID": "0d4ec7ed-ed0a-4951-8853-69a9ddd58dd1"
               }
             ]
           }
@@ -2532,7 +2532,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "7b8df82e-3c0e-4d6f-b5ea-50108462863e"
+                "ID": "f25b24ed-b16f-443c-87cc-59e7c51967dc"
               }
             ]
           }
@@ -2831,7 +2831,7 @@
       "BindingInfo": {
         "TableName": "INP_予算_外注費",
         "ColumnName": "_1月",
-        "GUID": "38779baa-db12-45d2-822c-2ed0d9d83d9f"
+        "GUID": "7839fbab-122e-4ef5-83b1-8461d315720b"
       }
     },
     "12,28": {
@@ -4637,7 +4637,7 @@
       "12,20": 28,
       "12,21": 29,
       "12,22": 32,
-      "12,23": 32,
+      "12,23": 28,
       "12,24": 28,
       "12,25": 28,
       "12,26": 28,
@@ -4936,7 +4936,6 @@
     "12,7,1,7",
     "12,14,1,5",
     "12,19,1,3",
-    "12,22,1,6",
     "12,28,1,5",
     "12,33,1,3",
     "12,36,1,6",
@@ -5005,7 +5004,6 @@
     "11,7,1,7",
     "11,14,1,5",
     "11,19,1,3",
-    "11,22,1,6",
     "11,28,1,5",
     "11,33,1,3",
     "11,36,1,6",
@@ -5040,7 +5038,9 @@
     "11,173,1,3",
     "11,176,1,6",
     "11,182,1,4",
-    "11,186,1,6"
+    "11,186,1,6",
+    "12,22,1,6",
+    "11,22,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -5060,17 +5060,17 @@
       },
       {
         "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-        "TargetTableName": "INP_予算_売上",
+        "TargetTableName": "INP_予算_外注費",
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
-            "TableName": "INP_予算_売上",
+            "TableName": "INP_予算_外注費",
             "ColumnName": "ID",
-            "GUID": "8f1cad8e-af94-40a3-9e94-b56276da3772"
+            "GUID": "b2e58c89-93bb-4caf-8f98-e557001bc055"
           },
           "Value": "%Null%"
         },
-        "ID": "5dc6c590a5de46628844c945a8c134d9"
+        "ID": "7d8f8d0de04646feac0f6100fba2e212"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -5087,6 +5087,14 @@
             "TargetCells": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=外注費入力!Q8"
+            },
+            "PropertyType": 1,
+            "Value": false
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=外注費入力!J8"
             },
             "PropertyType": 1,
             "Value": false
@@ -5110,10 +5118,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "INP_予算_売上"
+    "RelatedDataTableName": "INP_予算_外注費"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//uya4HnZTNo+9/ubFrCfnq/ogudNsctELt3KaKeU0c9n+aQbOy9/Uas66YqCPsFZeksvI3jqB0Y8fLkQiTePrURDaM0nhzDIA4Hb4jAxJdovbBXhkPKVhV5+PfKPVOa/Acg7dXdiqokpXN0hKqGAgtIW0IY76vP/56eguM2FLnR2wI3Bb41LUiQhhsS9DysGDob3wnG6UWIYvLdq8mcdvnOx3WOuTf+cNcyEU5m6eWaD8Ie4wplF+r8n/aw9Aw0xOb6StJ1BzndcfhbKzOhEG6fx14Jelp7KvQKq9VJ0XfYnr6CensL2oSU3cKlGgFqEyMgFBWH0Rvcja8siAjl+m+mLQMzvvr4+4cEsfVk7FUmpeZzbxKGamWtMcysVDIrl2R8ZvDnzcDINj6DSdufHJ+tKS2LQPvSfUPjhy289OQvrVq2RGrvX86b1Z5EWOOg8pLpIARBoCYshsMwYp2K6CzJ60GmCmWh9r9avN1OjfVkigtkUDjnVSsyVyGWY+o7wps07j9Q8mAkrzNvuBP8MZlDslX0zvrRSevLn4jn1/Xt8Fkf7XkMyxqE6YFWmAK15O/t5u6Cm4RDTHHTS1GhgBqOIAtEyO1RDWMDxFFz/tmTsfol4xy5UMpbPaDO9q3PRo7MtS19QuMnIHoi26rgE/ZD14QBgmNFazCFsf0ZSFy6o4x3vDm8//mpky88cMk6i7aMZKUm3x0xil/nLx2vAofrZcwE5+MFFNuTNJJGak6otl21AkbCikhp90aPUV1Toim5Et+zYwSsyML037x+2z0pv5zjp1q+sZEOeSp3EOsES/Rs1OtbflGIUg2sfRIJfyPlUPw3P7aKfiyZewRLZ+kjxzTnC9C5BQsYeO4TL7GlE5lOhrZheWdqZu0BQgAdC6EnKRJETq2uvtQK3yMOMqkw==|920
+}//7SCBao77HyESA6tRBqSeLGdhMVrNf14u+7TmotA3tV7LPpB6ZQETnwYGlX8ZHhoo/mxijylDZ5Ya1qIUnNrgeXsoM3Qh5NU814FdgOAQlKo1i6DDtp38heGvC+8BQD4ZcE2o4ogNiacuMAwvwCZ7QApkVKoisWjXkmsadKGoMT+7r4p7OuQHsIy+dHQR0B9TWZiM+xB+LeTxg6bVMTWEuTVgxe3iFka8GtlKXz8vZR9/LKjYYYYqpCd2fc1NMgyXEo0tVgngYdsHAP8EPSxFiVp3LBVxV60hKhrc4KofE1Qf0TeBoTR8a1srHpEtBh7noOjjT9q3XHs9e1Fs8WzlcCiYKwWKU3V+WtfdU3LyL8UBeO+eVjKPbwPfLtHp/CGu27nggsuiTCvgZlt8kX4t6YjBEpQvOdkgQgZ5gNgvy3XAhFlDb5eifmcxjrqkPK7lOGRaWyuaPMK/tt9mo/vlDgO9m2h4Nn534O6IUKz2e8O/bVVwtZCx3IWVyMmhNjmcij4yF3TyKYoRBM585XX/upA0lEclH264OXvdO4LX7wgDIesOQjT6PqXWRJFl74JXHkpbzYtEgy+u1rJY9omXryrXExwpc27LMQ/TxzD2svxVDut2aFJul5RUk65sK2JwKs0RLMYRG48tIK1xixpF8kWSnttKb9o2ZHSrUw2+y51Zx/7dYUWCW9qUjbaN/xOQsaysRR9zonVwOCdYJBE5mkiiieSRPg45C1SvKkZ2D6WoAW9D+IxXkOA2TlFdN7P47FM88uMIAy7OgCUDkfr78zK8TcHVpLqiRY8N4mETkmrX8jocXaR+WbbahQpC+whxyyShKaTRmYa03wDM6mNDLr4fGFXhzpBcDMup1pHQH3P/Q+m9IoeIkYoIiK/XTpIt254Bu/jfKsKPwkdSZye+qA==|920

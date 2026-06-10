@@ -6252,7 +6252,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "be68d901-b46b-4558-bf83-885c637fb43d"
+                        "ID": "227400c2-4652-492b-b25b-a345f6d602e9"
                       },
                       {
                         "Condition": {
@@ -6277,12 +6277,12 @@
                             }
                           }
                         ],
-                        "ID": "7ff2cfa5-0770-4407-b291-337d89346797"
+                        "ID": "d8afe77e-9f26-4401-a1dd-16fcba89330f"
                       }
                     ]
                   }
                 ],
-                "ID": "8f340f41-561b-4a86-8df0-4fac9d9b3bf2"
+                "ID": "eaaa6d4c-8104-44fe-9e7b-576b751aec98"
               }
             ]
           }
@@ -6779,7 +6779,7 @@
                                     "ID": "3ada93dc844c4fa38f8d1ca0eafc54d0"
                                   }
                                 ],
-                                "ID": "5bf5d484-9cd2-45ae-8e84-52ff32b1a461"
+                                "ID": "34ad64c5-9557-4559-99ab-3348159191fc"
                               },
                               {
                                 "CommandList": [
@@ -6925,12 +6925,12 @@
                                     "ID": "b7cc9f02b8524ac699428bc72b591c3b"
                                   }
                                 ],
-                                "ID": "f29373c9-7927-4673-a89d-198ede80674c"
+                                "ID": "a13e1386-5ad1-4929-9c8e-54e08aa4c482"
                               }
                             ]
                           }
                         ],
-                        "ID": "7b9baa86-e218-4660-86be-d4f0b7246980"
+                        "ID": "7d2cb937-fcc3-4e6a-b94d-6db901a8ae83"
                       },
                       {
                         "CommandList": [
@@ -7076,12 +7076,12 @@
                             "ID": "0c7aa705d8bf4ef8aa6ca82362260471"
                           }
                         ],
-                        "ID": "14b8dfc2-cef9-4569-8e7e-36ba1b85be41"
+                        "ID": "179f53ca-29c6-49b4-9fdb-138d5219bfb8"
                       }
                     ]
                   }
                 ],
-                "ID": "7cb424d1-0a7d-47e0-b1f3-617da0abbb97"
+                "ID": "268c0fd0-4bcb-4480-a161-fae36e4dea7e"
               },
               {
                 "CommandList": [
@@ -7244,7 +7244,7 @@
                             "ID": "22a9873654f74f298fdcefd20900c880"
                           }
                         ],
-                        "ID": "2b1602a8-c045-46df-b2b1-b309c87a7f46"
+                        "ID": "1c2efd8e-7343-47d5-9706-3ae747afe4ff"
                       },
                       {
                         "CommandList": [
@@ -7375,12 +7375,12 @@
                             "ID": "f448c315691c4cb6b1b9179d67c7ff2c"
                           }
                         ],
-                        "ID": "3fbfe0b9-b3fa-4e0f-aafa-ca0eac162353"
+                        "ID": "298dc44e-f9a5-4bc6-86f2-bc073216531a"
                       }
                     ]
                   }
                 ],
-                "ID": "54833f0e-5f08-403a-a619-b83b587c999a"
+                "ID": "9896e81c-46b7-4ec4-8370-ebd1dc7f5b9a"
               }
             ]
           },
@@ -7431,7 +7431,7 @@
                     ]
                   }
                 ],
-                "ID": "ada59d6c-522c-4b0e-b9de-12a2198adfb4"
+                "ID": "7c0eb357-01bc-477e-8283-698308b8bd32"
               },
               {
                 "Condition": {
@@ -7477,7 +7477,7 @@
                     ]
                   }
                 ],
-                "ID": "1123d6d5-42db-4679-acc4-4db5f69594d3"
+                "ID": "995be58a-ef5d-4e0f-848e-a5e808ce888c"
               }
             ]
           },
@@ -53123,7 +53123,7 @@
       },
       "XAxises": [
         {
-          "ItemsFormula": "予実比較_ダッシュボード（営業利益）!$I$8:$CB$8",
+          "ItemsFormula": "予実比較_ダッシュボード（営業利益）!$E$27:$BL$27",
           "LabelFormatter": "General",
           "ShowMajorGridlines": false
         }
@@ -53149,21 +53149,114 @@
       "DataSeries": [
         {
           "ChartType": 7,
-          "ValueFormula": "予実比較_ダッシュボード（営業利益）!I9:CB9",
-          "Name": "予算",
-          "MarkerSize": "7,7"
+          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$28:$BL$28",
+          "NameFormula": "予実比較_ダッシュボード（営業利益）!$C$28:$D$28",
+          "DataLabelSettings": {
+            "ShowBubbleSize": false,
+            "ShowCategoryName": false,
+            "ShowPercent": false,
+            "ShowSeriesName": false,
+            "ShowValue": false
+          },
+          "DataLabelStyle": {
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false,
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "Body",
+              "FontSize": 12.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": null,
+              "Formatter": null,
+              "StrokeDashType": 8,
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            }
+          },
+          "MarkerSize": "7,7",
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false,
+          "StyleInfo": {
+            "Fill": "Accent 1",
+            "StrokeDashType": 8,
+            "Stroke": "Accent 1",
+            "StrokeThickness": 0.0
+          }
         },
         {
           "ChartType": 7,
-          "ValueFormula": "予実比較_ダッシュボード（営業利益）!I10:CB10",
-          "Name": "実績",
-          "MarkerSize": "7,7"
+          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$29:$BL$29",
+          "NameFormula": "予実比較_ダッシュボード（営業利益）!$C$29:$D$29",
+          "DataLabelSettings": {
+            "ShowBubbleSize": false,
+            "ShowCategoryName": false,
+            "ShowPercent": false,
+            "ShowSeriesName": false,
+            "ShowValue": false
+          },
+          "DataLabelStyle": {
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false,
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "Body",
+              "FontSize": 12.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": null,
+              "Formatter": null,
+              "StrokeDashType": 8,
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            }
+          },
+          "MarkerSize": "7,7",
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false,
+          "StyleInfo": {
+            "Fill": "Accent 2",
+            "StrokeDashType": 8,
+            "Stroke": "Accent 2",
+            "StrokeThickness": 0.0
+          }
         },
         {
           "ChartType": 7,
-          "ValueFormula": "予実比較_ダッシュボード（営業利益）!I11:CB11",
-          "Name": "差異",
-          "MarkerSize": "7,7"
+          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$30:$BL$30",
+          "NameFormula": "予実比較_ダッシュボード（営業利益）!$C$30:$D$30",
+          "DataLabelSettings": {
+            "ShowBubbleSize": false,
+            "ShowCategoryName": false,
+            "ShowPercent": false,
+            "ShowSeriesName": false,
+            "ShowValue": false
+          },
+          "DataLabelStyle": {
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false,
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "Body",
+              "FontSize": 12.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": null,
+              "Formatter": null,
+              "StrokeDashType": 8,
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            }
+          },
+          "MarkerSize": "7,7",
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false,
+          "StyleInfo": {
+            "Fill": "Accent 3",
+            "StrokeDashType": 8,
+            "Stroke": "Accent 3",
+            "StrokeThickness": 0.0
+          }
         }
       ],
       "PlotArea": {},
@@ -53172,4 +53265,4 @@
       "Size": "1238,300"
     }
   ]
-}//lVd+bx7fu20xPYRRq/sdDPaz8xMhtTSWbXBO+GNj40OrBDCx7lTWr3+yj2nreZacyJeS0iFk7lGfvHQgfZHEOwhfi9nNTcCR7AtB/Gdy7i6b1jCjLOonKAnuw965EK1qTnhONSJghkkLOuCAg0UvG+3tA4Ejbw+E+7JkM0dhJbWAcn6WoZ7yxycsEBq0/+JdEU/jxbcRfNBIBE5z1/170YODY2PLTPpZMAl3WkMF/wiG+UIi/vUyZscZeAi1QLWAJDpf5zb04g53Jn8Uh0WjBN/BgmuHmDhiomXnHHY0Xt+BVWWbtqqvpS8pzH10faTNIS7mLdWqNMeQXCXSSFyrrkFSBOQlDjJb/tf+60ZPZsXn97fDlxxgFc4jYRXN6IoGeDPoSImmJSOHjj7Bhud6ix4PgRTO3tYCHIR2HxGnawAIemLy09YqwsTjynBquDgiPw7UFcf/nlbKsVKR3vn6p0c/feXSr8zXPVsn9A/BrJicENSt22cJy38hGylaukoj/e+pwTSyqb4eIBmebl5KPWPOdl/BP+2aJ/C8LjUzfiUb64o2pgO6+t/tOGWBrfUjwjwqSlzXhYj7QE4JzLQku6S5yV67mHIFViE4yttqR9duDWeqT9EEEJxkhzYmcMR6Rp6CpiSFaSYB6pUpXPbCn0LUY2V+UdRUptp30NVFcIWtqlozycCKts+qDVaJDPcsbTpVEFoDVijUnvQsL4b0HyVzOqP5CwhkIIaqE08S0YrHexBlwAH0DKclquQURFMhLhiNCQBt97RcuLY7sipnzHLuj8QxNelRoCzb3z197eFxudGGBrXqSljSAudTJTSmJ8bK9rQs90Vya90YZYPziB4j/V7wWrpM4dXxywyps1tfw3ZS05HVDszMdkfVrwgvZ0ddN+FbDXhNwMfUGH93+w==|920
+}//bqq+JOXa01EOhDxc5IVN+q22jJ1nJUaX6gwAYanA8hAtN28666zXF6JkUjtAZ9Ymqvx0fnHVhap8NldExSweGf2xz7S5pXTg6jyeQJjz9VHatv8mU6ywJR1YT/4CXTkncLfuwLFawRyImGh5VIpRyzTkdxpkMUgBTB+yEAsWim5otCoalt2O4M9tAKUF2kVdlOUyDtrH0b7W8wv7N92D0QRI2GBUeIM02vLYOG8NfEYrAmlGJt7K0k5L7P5CUMd0RfovwiHRHLE/iTfwbW24acgycgQsGm9aG/aCo1+wYS6hM0tYLrvmW/dFB+6+jGe8c4jDY4IqKMw7D+2YnMEYYP+iFkTX9TtQQfOJM1uaHwG6SQpOxcH1tw1V3U9eMhOid48SUbKHWCKcLW1h/HOPW6jFumYlnHI/Y9a/n3lJ7+z6P/wAObBqhuKzkpyn9OmiRZePg/0YgEc2Q0+ZDhKUnPrg7WcOor0eqrnCzUybiUcgKO/RSbdY5EpG7/LhcgPbZWj+z00jTPUX1/0RKhB8QSxsHpZF9xFd3ulgrWcXbofbrkSKYfygpnp1mveGGA2se16mPcOMwB1wpJsgTW1IVFVOf4EoGJqntN28JWdKUGWrtn9s4b7yQiIn+3FQ8izpRULPxmYnRP834Ce4DjrWTpMTMkp6J6hEjsrOHu+LGpnHAK1QMrJVuMfKz24CL2MslcRpqqSzVp66RDwPmFsy5SRnDVmA5outKW+fEbZfU97ELqShiMjzFR2VykQ/ZchbkwrMU5ot/7KfiJAwK2ABpPXn5PeCvSM1kPFOpPmNSqFe4HrsgIEq0bP9FX79c05TaDuY4T3MNoQiZtskADPx+dVpGbDsv6IUyDXJnbfC016PlIMR4c6WVCcL71h5UWQjZv6AZujz858yxnHhkhikoQ==|920
