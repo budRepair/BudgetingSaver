@@ -1108,7 +1108,17 @@
   },
   {
     "ModuleName": "PCPage/製造原価入力",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-10T17:26:50.1046971+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\サンプル\\製造原価入力.json",
+      "Pages\\テンプレート\\サンプル\\製造原価入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/損益計算書（参照）_カスタマイズ",
