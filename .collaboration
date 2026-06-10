@@ -1090,7 +1090,17 @@
   },
   {
     "ModuleName": "PCPage/外注費入力",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-10T10:09:22.156725+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\サンプル\\外注費入力.json",
+      "Pages\\テンプレート\\サンプル\\外注費入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/給与入力",
