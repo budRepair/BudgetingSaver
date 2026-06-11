@@ -592,7 +592,17 @@
   },
   {
     "ModuleName": "PCPage/損益計算書（参照）_カスタマイズ",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-11T15:56:27.1654471+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\サンプル\\損益計算書（参照）_カスタマイズ.json",
+      "Pages\\テンプレート\\サンプル\\損益計算書（参照）_カスタマイズ.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/予実比較_ダッシュボード（営業利益）",
