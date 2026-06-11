@@ -6060,7 +6060,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "7bbac4cd-7568-413b-8539-dc0e466be7db"
+                        "ID": "079e9147-8913-49ed-918e-8d5aa429d116"
                       },
                       {
                         "Condition": {
@@ -6085,12 +6085,12 @@
                             }
                           }
                         ],
-                        "ID": "e35f1743-9b41-4a16-b761-4261ac5099ba"
+                        "ID": "71511b19-1d7b-4ada-8692-8bf96e4dc690"
                       }
                     ]
                   }
                 ],
-                "ID": "d00af57c-e976-4c25-a675-cfd0d54e60d8"
+                "ID": "aa2fd921-1689-4d19-8dab-709fbab7d91f"
               }
             ]
           }
@@ -6158,6 +6158,18 @@
           "TableName": "MST_組織",
           "ColumnName": "会社名",
           "GUID": "98b478d4-8453-41a1-9f77-59491a07c981"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "会社コード",
+                "GUID": "c901908c-d1c3-496a-9851-c02dc1db0e42"
+              },
+              "Order": 0
+            }
+          ]
         },
         "UIPermissions": [
           {
@@ -6414,8 +6426,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "MST_バージョン",
-                "ColumnName": "バージョン名",
-                "GUID": "272547e3-ae16-4902-88c9-c1456c0ef3c2"
+                "ColumnName": "バージョンコード",
+                "GUID": "a1d903a1-1702-480f-b32a-9d0d574c92c0"
               },
               "Order": 0
             }
@@ -6591,7 +6603,7 @@
                                     "ID": "d68fb76ac38f46cb9b6ee651bec16912"
                                   }
                                 ],
-                                "ID": "c1d63495-4433-40c9-bd77-a256d7357409"
+                                "ID": "2f28336a-fb33-4f28-929f-848d4eab6f41"
                               },
                               {
                                 "CommandList": [
@@ -6737,12 +6749,12 @@
                                     "ID": "a664193f1a56485ca28ed6be31713043"
                                   }
                                 ],
-                                "ID": "5d56c7a8-e7f4-4d71-ae11-3209512a36fe"
+                                "ID": "12aabf8f-68d8-4d5b-b00c-d2968314cfdd"
                               }
                             ]
                           }
                         ],
-                        "ID": "76c5e699-ab46-4ee7-8da4-02279280e1f9"
+                        "ID": "daf0f7d4-cb6b-4a6a-a8d2-0ba39691e69b"
                       },
                       {
                         "CommandList": [
@@ -6888,12 +6900,12 @@
                             "ID": "6219309997bf400e97a094415a0756be"
                           }
                         ],
-                        "ID": "678d36fd-df55-4f95-9739-c84d31ce726b"
+                        "ID": "8753845e-21df-4b6c-a0e4-ec19697a8707"
                       }
                     ]
                   }
                 ],
-                "ID": "4ac2340b-d5b4-4797-aba8-1a87cb120f3d"
+                "ID": "230f87ba-5d5d-47d9-82a7-18c962d91d57"
               },
               {
                 "CommandList": [
@@ -7056,7 +7068,7 @@
                             "ID": "0aedd7c589ec43e8bbd480de7e5a11a1"
                           }
                         ],
-                        "ID": "aaad6a9d-0d20-42b4-b047-7297ee85f57d"
+                        "ID": "2c72d20c-0aee-4051-858c-65dc524e3025"
                       },
                       {
                         "CommandList": [
@@ -7187,12 +7199,12 @@
                             "ID": "c9715f7a7e084e3aacedb238490a592b"
                           }
                         ],
-                        "ID": "96bf8d58-8ec6-4cb2-a7bb-237e765a60f6"
+                        "ID": "97cfbb7d-4673-42fd-b5da-ab426cc4bd0f"
                       }
                     ]
                   }
                 ],
-                "ID": "6ed2e660-fe00-43aa-a509-f127ccdc1733"
+                "ID": "94129a86-7599-4d88-aa21-3a65f21c1b5f"
               }
             ]
           },
@@ -7243,7 +7255,7 @@
                     ]
                   }
                 ],
-                "ID": "ab530290-fabc-4148-b82a-41824ce6d8b6"
+                "ID": "35c48836-02c5-4f67-b9a4-283455923575"
               },
               {
                 "Condition": {
@@ -7289,7 +7301,7 @@
                     ]
                   }
                 ],
-                "ID": "fbc03ce4-598d-439f-92c0-4c5d5a2a88e1"
+                "ID": "4f7cbc29-5380-4d5b-99a4-bb7a6e27f774"
               }
             ]
           },
@@ -51149,4 +51161,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//b6s5JXHLlvvRpe3Lov3Uojrp6aa8urQ5wy1Tu5dvUuwzvERE6XhYnhuqWZJZ50CXVO70GIGHCaJYkdwsVpGMYZeOMnwAiZSmj2rKsfOeKbXvBks2TsIgl3oMk2O4uObfr9QojrHa21kXNj4rHUHS3WG1IijUtRI6ma9T+6oAB/d/Jf4ZHV8vSuj3EMG5kWbJp539Rzf15qkl7KHumLu7h1Pcsg+ZhUOLO2GRGoytDs6OCPuFLpYmtPDPdYpkbjObeekeZa5TPxCAqkDgMiyGwU4ZjD2cQWuVHjZQCowXYFeU+TDmiJN7u2Hteg59ZnMM/1cchMJN8gjx8fMnWtDMSb1RPhcbAfsCK2DLCKa8KpMtKFCEUYp8nCD3gLqLykvDq3AkBguHjfs6rliKqA9Dv1x7gSWcrw8w2NwnoFrrzrNVqYuz69HlRXaDnNC20yuxCMjRTIZI7JL8/Y3JSoXANGCMTbS/tYW2tWok0LvdgvA60UbDH0Bo6TYFCuUGHGNkodWDqDOLzhx+b8n+IxGNKOmFSV/pHDYugC8Ic2oqsJBMmGefozO++sSHvyuGZ8IAJInypY3cyhrJW32B0U1IWiOMZ8W49nrb3/xNilOaeoBsyL8ACCgl67qfJMK9Du2HkDy7xJVTfGfwcOWbtx5fP5HJmnnc4uhvan9MBP4vvM4wvpSX3PT1qShQfud7Khe4PScaXxsOxnDytt32kqKiLj7sC/3Ih3pvTxmFLcTI3vKB+uvC+Sq3bOenRZaZuB4vftx4O3IEMmOGPYm1lGNJgtvHKXQrxSZi71hbWdCGbfow3NHGxnfuAzsLNHE8W+PZujn6tBOlKKSaENIaRIl5GrSnjrY1RXO07Nj0xwOOVWe9vhMeQa7R1bQ3qtTCAuRo3quHMwfbBEK4YKFckGaJ3w==|920
+}//jp8NXnlpH1yXMFDCynUwy615sJqEsSvxo4yHQRxjQFg737T29WFSvEXPZPTAMzYiROPLqx2swOfI/nyAPgTrZTHvdmgspI3VoPGOgEV1ToB/ddNxxspLwpyi1rYbJD40untgrbhPKk/n4PF0eKLaZBdFZ/Ll2wfs4syLcZII18C6cQOPbya//Goe3DUGRHJa+DJdHfteSYV5LemfMmYZnLCywZ7IqQ05aJpJh98qkRygG+16TlueIfMkDrwFkXx5cy1r9bCS6YsWEFRHMfC4/lYEP91yk1PDjQiaxOGDcmA/DNICgBCpZd1SuLFz4CY7JTK78dvvzxhTKHq51TXpXhwEJ8MluQrIPB7bDVTnxlDh08RjZyN91VA2wGuSerBOjrho9cpM85l8y3UbE1gWenUcMC0i9sEGO4ICGe3N42bsk7OYeAAejRRhriT5KhABdPv14+DPCEW0v014A96dL85nVkcP1LL0+wA8lFAmoaZdOYQfDwCGoFlygq0TPr7zn/4lFAjxcV5btiR1he0n/IqbdC7hlJp3jyPEj4kdXzC3I7srwt8bk+KBmSLHqycDQA3zK67BNB9/5GyxW/7/7mSUJoMfKhQEngUbNRuInJ1cXz6+Q8eeGbZXoJ9bRpvMlBFLOZ54NdRaTbjRpwnQfXdXWYftM2ytaVgpLRVvrkTeXEs+/K/UrfCdWsvAHY1toRo9E7EUZ++DYG5PM6aTe15Q2La6D+zz/u/6cpv8t9MkGZd5W9rph5iyGG1CscbVsLiDTBilW4CHcf4PXjnw/hiU1eABKQWynepOvUvju36IuSyzX3Qy5BUYaE+KPfRzjpB3GudywOI32/C9rAJGxlPRwCxcUswbQjH8p2v0ob1GECDkWpHudtu8d0T1bYZKkYAkF3KEcTQxYA0znvNYkA==|920
