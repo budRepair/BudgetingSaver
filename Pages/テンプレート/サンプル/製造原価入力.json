@@ -231,7 +231,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "1e08e24e-deca-4efc-8bba-b31d404aed8b"
+                        "ID": "8214a883-b517-4a97-8f67-a95616c1d892"
                       },
                       {
                         "Condition": {
@@ -256,12 +256,12 @@
                             }
                           }
                         ],
-                        "ID": "1ff0914e-908c-4e57-94c5-e1de5f7ebbe4"
+                        "ID": "20d5436b-d3eb-45e2-89f2-0d7dba371344"
                       }
                     ]
                   }
                 ],
-                "ID": "558ff3b6-6182-4b55-b505-254cf6d1357d"
+                "ID": "8c511899-f7f3-4012-8b07-c271f99202e4"
               }
             ]
           }
@@ -426,7 +426,7 @@
                     ]
                   }
                 ],
-                "ID": "06a15985-30e5-4e6d-a636-ca856caebafd"
+                "ID": "4945dbe4-6283-4490-a127-dc2ec67f731f"
               },
               {
                 "CommandList": [
@@ -444,7 +444,7 @@
                     ]
                   }
                 ],
-                "ID": "4af7aabd-3b9c-40c5-8c44-d1a15887d8dc"
+                "ID": "7df0cfcd-ff5b-4f1f-a367-c7e34c76f480"
               }
             ]
           }
@@ -603,7 +603,7 @@
                     ]
                   }
                 ],
-                "ID": "538fbfd7-c24d-4dbe-8452-bb8faca724eb"
+                "ID": "844f0f42-fa0e-4b40-bb71-263c0b9e9681"
               },
               {
                 "CommandList": [
@@ -621,7 +621,7 @@
                     ]
                   }
                 ],
-                "ID": "07d4f3a9-4f10-49c0-923a-faea5e0c8fb5"
+                "ID": "c91a8ced-193e-4c56-8c76-7938b9b2878f"
               }
             ]
           }
@@ -810,7 +810,7 @@
                     ]
                   }
                 ],
-                "ID": "328289f3-ff6d-49c6-bf25-d7d6916bc6ef"
+                "ID": "2d7ea327-2cb3-4d9b-a4a3-59f459a789a8"
               },
               {
                 "CommandList": [
@@ -828,7 +828,7 @@
                     ]
                   }
                 ],
-                "ID": "bf6eb81e-c9df-4ef8-8d08-39ac0c8055b0"
+                "ID": "5d5e912d-a22f-463d-86f6-bd12df8f8738"
               }
             ]
           }
@@ -1018,7 +1018,7 @@
                     ]
                   }
                 ],
-                "ID": "391d5b44-c03e-454f-b29e-4438417286b4"
+                "ID": "f1720a2f-0294-4406-8495-e1d25fbf394f"
               },
               {
                 "CommandList": [
@@ -1036,7 +1036,7 @@
                     ]
                   }
                 ],
-                "ID": "2ae01699-4b67-4862-81a4-2cf2af609753"
+                "ID": "2f928971-0801-4187-81c9-84a536709b2d"
               }
             ]
           }
@@ -1227,7 +1227,7 @@
                     ]
                   }
                 ],
-                "ID": "792498f8-350b-4879-8a73-65b5744ad2b9"
+                "ID": "099d83df-5fce-4d5a-9802-8e0a906b6911"
               },
               {
                 "CommandList": [
@@ -1245,7 +1245,7 @@
                     ]
                   }
                 ],
-                "ID": "0f0e1d90-e843-4f76-a174-cff1fe7db711"
+                "ID": "735e5191-d222-4116-b28b-ae014ce8b0c1"
               }
             ]
           }
@@ -1425,7 +1425,7 @@
                     ]
                   }
                 ],
-                "ID": "5ec16434-0aa9-442a-ba8e-6e61413b9ab2"
+                "ID": "d3dd0207-de15-4339-8b8e-e8ff2e55a9e0"
               },
               {
                 "CommandList": [
@@ -1443,7 +1443,7 @@
                     ]
                   }
                 ],
-                "ID": "070935a8-5e9d-4137-a3aa-e4160832b592"
+                "ID": "ac65494e-569b-4daf-81ef-fdc8e14bef06"
               }
             ]
           }
@@ -1590,7 +1590,7 @@
                     ]
                   }
                 ],
-                "ID": "a45df5bd-6cac-4e51-868c-fd90f4b181e7"
+                "ID": "878870c4-7703-4ebc-a397-da5934d71c9a"
               },
               {
                 "CommandList": [
@@ -1608,7 +1608,7 @@
                     ]
                   }
                 ],
-                "ID": "1ac57593-f0e0-4b02-9079-7a2c596a301b"
+                "ID": "dfb6767e-8a49-4043-8cd7-5eecd4ccca28"
               }
             ]
           }
@@ -1703,9 +1703,31 @@
                         "Value": false
                       }
                     ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=製造原価入力!J8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=製造原価入力!Q8"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ],
+                    "Comments": "2026/6/11　抜けていたため追加"
                   }
                 ],
-                "ID": "6cefa705-ef58-4fbc-97fb-c1ac8d3731fe"
+                "ID": "1971af96-09ee-4b7b-a42b-08d76b21927e"
               },
               {
                 "CommandList": [
@@ -1885,7 +1907,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "bf4a8828-20c3-4acd-9d72-637038a81861"
+                "ID": "cd13fa04-2080-4dfb-af99-8ec3997c563f"
               }
             ]
           }
@@ -1916,7 +1938,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "43ff5d63-28b7-4afd-9590-0e289464a1df"
+                "ID": "0ffd309a-5ef2-42f5-b094-f93992b66e49"
               }
             ]
           }
@@ -2144,7 +2166,7 @@
                     ]
                   }
                 ],
-                "ID": "504e1633-8957-4657-81f8-7597f6f12879"
+                "ID": "05639870-ab70-4067-809b-e95f27a276cb"
               }
             ]
           }
@@ -5779,4 +5801,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//wUplyQ9qNJLtFQPKCAGqXm4t2sgjlin3a1sV/SE+q68Jg4yqUkwZwnQl5Y5r/Q0RWrKcqd9/+WzlGFaqOxhbGtWGh4NQQRpnQ3ZtrFSBAi2k0/J6pY/zAS+a/FQZ0roXJGimhyH2Ydkjlx7E2UIe6vZzF6GcyZXbY2wJRlvtTrUjgEQjoM+VBu4LZ5FDc7Lj60geSUAbf1uXsgiSvchbfk+kPQsPoJDUJF8mWDEJcu9N8us824njocjaHomtSuKK0id6RwlG5nfozGZLAbNmQbHkJlf2KXKXHBdys4/P/i0AlN2dnZW47GrsoCMoK5xfHjntDjYDDFMgSdrHwXVzblXw7PmvevFajsaQPIJ9/ArT25/hJ+1FqY0pu2lcrdZ4RjQk//p1B8brGbkU3zHYD0dngfHmLDGZgrqpMO3rkpkQkNaFpCouezjL56HFmPeCVX8e3mrKkbGaoHPbAfULViix99ldSapCODxM3eVxqKeHPtTdRvTZjqRfyYH8lU0kr17e76z6Z2F1ut2eKEksORJBSoP677M5ppk77W7hOjhrGZNNaukBjH1tZTJ24x05jtXSwm4kd8m/Ulqjb2rINXzVSaHlwwIJzB8Yxe0u1ZeDL5dhp0ls5kGWmSQYoVu6B/G46ColWCnZsxa++z8unfl46n8tq0W0fR+jnVQTrOZNtKIxEX6lWq0hTw5MHkM475ZDWIhajIbx0CeD1EHQKfVTvuy/W4QfMwUIo6JJ97MSdijV9OB0zxfRFcTR/iaIZochxawJKi1m6aV+XJO4vZbqSaztXjozdwChGaW2Z4wBqTeqVE8PgaEBmMM+UjjMAOx/v4zo/DNJAT0gllyAftlgtXeNDCt8pMw2vG2FksfsZstSEiiFzsCnmLB7DHegIjWEPCHY2sJ8zr6jUhrVvQ==|920
+}//jQ1HUwXVPsjPDXvDQbtr5wWEAoSfidte64BXYvxg9jg+tUQw74OoSCoL17rdND3jAWTuWvctBgx2nPgU4Rml2UTBWfKq7X0uV6951K1xtyzyVA4XFStcbJKhBxes5Kh1bu/SU5t8rOwyc9JgMKtB0C3OxMf2EwoJlSiZAOsgY4jo+0Nw5f4U57fRBUVwyJ2sV8EyThYcIbHgDM2IS2gTtObC4vIizLgyLfxlSH1jb89NN3x6AmCXufWpChOxF1JcX6nqeHxQYGds2f6Pnscg9Xb0RMtyeF3kE/Mi/Sua2J/DEw0Nzj2TkX9/vbszjV3b4renBU5mU7B2GhuWEYPpO/ER7KsJnmerlSzqPJix0tI6Dpu3N8PWnnY7TroYvc9E5CKbV1L7bGRDdcInj9muwAhlpRj2d0GZ7cl6dN6SH0j0xh3zjZo1rDOHqt5B3NMOuVEjehuHh1HMdNhoq2lhSvw8zEw/C6uBnZH63kKn1zDY784s0Ek2EKvNEb7w9aSjv6RkTsfEoO0OPBKU/Roi7mI7l++Z6KC4ezv0FPfPghw0WloZ7Vqcqn8ViDVrT0SRVaE0Hcj666us/10G7aqDrMBRVqD2Cwa3M73g5G15ycP664SGK5A50YNozAIXr5g2UVW7zGpedusefzc04TaZcOU2CeoipY+KkyUdp2jij/nlLfz8U6unBZs/Ke346ylJhYcSjBMiA75gSL/NWFIqBC9LfNGN722uIrpd3Uz6ktTijzcpvTIppZbtM37pVy+DtD2x/pO+VlykNC+pmqyHldj1B3sgunBrJ5aZcUOLB2uW9Jmv0mLOB5b+5GJCHTnhwgujXAFaCEU9XNRxkPuR7zDZ/dpmedIlngfJvHCiQNWFFElLe2Ge4HhjoFSiDHV61MGTQ4dO9Uekd4PDYl5G7g==|920
