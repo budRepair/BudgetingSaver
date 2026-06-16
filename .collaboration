@@ -740,16 +740,7 @@
   },
   {
     "ModuleName": "ServerCommand/見込実績置換_単月",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-16T09:18:42.8377681+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\データ処理\\見込実績置換_単月.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/見込実績置換_期間",
