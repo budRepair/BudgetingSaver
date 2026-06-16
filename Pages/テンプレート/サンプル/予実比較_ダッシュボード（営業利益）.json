@@ -6252,7 +6252,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "227400c2-4652-492b-b25b-a345f6d602e9"
+                        "ID": "88d16836-e3e3-4ae8-a2f0-a01f558a93bd"
                       },
                       {
                         "Condition": {
@@ -6277,12 +6277,12 @@
                             }
                           }
                         ],
-                        "ID": "d8afe77e-9f26-4401-a1dd-16fcba89330f"
+                        "ID": "9bfc662d-5374-4b6d-9de1-fe4b9eaa949e"
                       }
                     ]
                   }
                 ],
-                "ID": "eaaa6d4c-8104-44fe-9e7b-576b751aec98"
+                "ID": "f940b1f8-aa2b-45ed-ad80-f38de0b2dc1b"
               }
             ]
           }
@@ -6779,7 +6779,7 @@
                                     "ID": "3ada93dc844c4fa38f8d1ca0eafc54d0"
                                   }
                                 ],
-                                "ID": "34ad64c5-9557-4559-99ab-3348159191fc"
+                                "ID": "bca3646f-df87-443d-9f29-1fb822e5580a"
                               },
                               {
                                 "CommandList": [
@@ -6925,12 +6925,12 @@
                                     "ID": "b7cc9f02b8524ac699428bc72b591c3b"
                                   }
                                 ],
-                                "ID": "a13e1386-5ad1-4929-9c8e-54e08aa4c482"
+                                "ID": "aa5ba87f-c6b5-4efb-ada1-63c9df8cfb16"
                               }
                             ]
                           }
                         ],
-                        "ID": "7d2cb937-fcc3-4e6a-b94d-6db901a8ae83"
+                        "ID": "de2a8ba3-1742-4b06-b608-5697d168f31a"
                       },
                       {
                         "CommandList": [
@@ -7076,12 +7076,12 @@
                             "ID": "0c7aa705d8bf4ef8aa6ca82362260471"
                           }
                         ],
-                        "ID": "179f53ca-29c6-49b4-9fdb-138d5219bfb8"
+                        "ID": "b70a495f-7fba-4ee4-b2f4-b83055526160"
                       }
                     ]
                   }
                 ],
-                "ID": "268c0fd0-4bcb-4480-a161-fae36e4dea7e"
+                "ID": "90ee150c-a079-4d50-b6fc-1605fbe70fb1"
               },
               {
                 "CommandList": [
@@ -7244,7 +7244,7 @@
                             "ID": "22a9873654f74f298fdcefd20900c880"
                           }
                         ],
-                        "ID": "1c2efd8e-7343-47d5-9706-3ae747afe4ff"
+                        "ID": "65340b25-8527-4eea-85c6-2baf8beef8c0"
                       },
                       {
                         "CommandList": [
@@ -7375,12 +7375,12 @@
                             "ID": "f448c315691c4cb6b1b9179d67c7ff2c"
                           }
                         ],
-                        "ID": "298dc44e-f9a5-4bc6-86f2-bc073216531a"
+                        "ID": "78d331d0-9ffc-4db4-a30a-7b6db5e79974"
                       }
                     ]
                   }
                 ],
-                "ID": "9896e81c-46b7-4ec4-8370-ebd1dc7f5b9a"
+                "ID": "4ebdc049-dba9-42c5-8a0f-7d904e30a261"
               }
             ]
           },
@@ -7431,7 +7431,7 @@
                     ]
                   }
                 ],
-                "ID": "7c0eb357-01bc-477e-8283-698308b8bd32"
+                "ID": "cedc4a4f-2f3b-4c11-9756-2affe8785f08"
               },
               {
                 "Condition": {
@@ -7477,7 +7477,7 @@
                     ]
                   }
                 ],
-                "ID": "995be58a-ef5d-4e0f-848e-a5e808ce888c"
+                "ID": "24ff4733-d03a-41bc-899f-4b87ac40335d"
               }
             ]
           },
@@ -53123,7 +53123,68 @@
       },
       "XAxises": [
         {
-          "ItemsFormula": "予実比較_ダッシュボード（営業利益）!$E$27:$BL$27",
+          "Items": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60
+          ],
           "LabelFormatter": "General",
           "ShowMajorGridlines": false
         }
@@ -53149,8 +53210,8 @@
       "DataSeries": [
         {
           "ChartType": 7,
-          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$28:$BL$28",
-          "NameFormula": "予実比較_ダッシュボード（営業利益）!$C$28:$D$28",
+          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$27:$BL$27",
+          "Name": "系列1",
           "DataLabelSettings": {
             "ShowBubbleSize": false,
             "ShowCategoryName": false,
@@ -53186,8 +53247,8 @@
         },
         {
           "ChartType": 7,
-          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$29:$BL$29",
-          "NameFormula": "予実比較_ダッシュボード（営業利益）!$C$29:$D$29",
+          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$28:$BL$28",
+          "Name": "系列2",
           "DataLabelSettings": {
             "ShowBubbleSize": false,
             "ShowCategoryName": false,
@@ -53223,8 +53284,8 @@
         },
         {
           "ChartType": 7,
-          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$30:$BL$30",
-          "NameFormula": "予実比較_ダッシュボード（営業利益）!$C$30:$D$30",
+          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$29:$BL$29",
+          "Name": "系列3",
           "DataLabelSettings": {
             "ShowBubbleSize": false,
             "ShowCategoryName": false,
@@ -53257,6 +53318,43 @@
             "Stroke": "Accent 3",
             "StrokeThickness": 0.0
           }
+        },
+        {
+          "ChartType": 7,
+          "ValueFormula": "予実比較_ダッシュボード（営業利益）!$E$30:$BL$30",
+          "Name": "系列4",
+          "DataLabelSettings": {
+            "ShowBubbleSize": false,
+            "ShowCategoryName": false,
+            "ShowPercent": false,
+            "ShowSeriesName": false,
+            "ShowValue": false
+          },
+          "DataLabelStyle": {
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false,
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "Body",
+              "FontSize": 12.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": null,
+              "Formatter": null,
+              "StrokeDashType": 8,
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            }
+          },
+          "MarkerSize": "7,7",
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false,
+          "StyleInfo": {
+            "Fill": "Accent 4",
+            "StrokeDashType": 8,
+            "Stroke": "Accent 4",
+            "StrokeThickness": 0.0
+          }
         }
       ],
       "PlotArea": {},
@@ -53265,4 +53363,4 @@
       "Size": "1238,300"
     }
   ]
-}//bqq+JOXa01EOhDxc5IVN+q22jJ1nJUaX6gwAYanA8hAtN28666zXF6JkUjtAZ9Ymqvx0fnHVhap8NldExSweGf2xz7S5pXTg6jyeQJjz9VHatv8mU6ywJR1YT/4CXTkncLfuwLFawRyImGh5VIpRyzTkdxpkMUgBTB+yEAsWim5otCoalt2O4M9tAKUF2kVdlOUyDtrH0b7W8wv7N92D0QRI2GBUeIM02vLYOG8NfEYrAmlGJt7K0k5L7P5CUMd0RfovwiHRHLE/iTfwbW24acgycgQsGm9aG/aCo1+wYS6hM0tYLrvmW/dFB+6+jGe8c4jDY4IqKMw7D+2YnMEYYP+iFkTX9TtQQfOJM1uaHwG6SQpOxcH1tw1V3U9eMhOid48SUbKHWCKcLW1h/HOPW6jFumYlnHI/Y9a/n3lJ7+z6P/wAObBqhuKzkpyn9OmiRZePg/0YgEc2Q0+ZDhKUnPrg7WcOor0eqrnCzUybiUcgKO/RSbdY5EpG7/LhcgPbZWj+z00jTPUX1/0RKhB8QSxsHpZF9xFd3ulgrWcXbofbrkSKYfygpnp1mveGGA2se16mPcOMwB1wpJsgTW1IVFVOf4EoGJqntN28JWdKUGWrtn9s4b7yQiIn+3FQ8izpRULPxmYnRP834Ce4DjrWTpMTMkp6J6hEjsrOHu+LGpnHAK1QMrJVuMfKz24CL2MslcRpqqSzVp66RDwPmFsy5SRnDVmA5outKW+fEbZfU97ELqShiMjzFR2VykQ/ZchbkwrMU5ot/7KfiJAwK2ABpPXn5PeCvSM1kPFOpPmNSqFe4HrsgIEq0bP9FX79c05TaDuY4T3MNoQiZtskADPx+dVpGbDsv6IUyDXJnbfC016PlIMR4c6WVCcL71h5UWQjZv6AZujz858yxnHhkhikoQ==|920
+}//Of2NYYT+9Are3/52hPHpBBR39yhl4dOE4dTxnfpfpIcyrymlJFIImga5ipo9CdVaXTJNMCjSgEZB7VAxct8hOruvnhv//zNgycKlK4er1+q7U9i42/aJ/uiJHbkm/74c8Ki8QmVS115xkzEWQq+kRYiD3FfZlVk5PKvr2T4YMreJVMxfnVZ1pBg2Sl3Fpu5/H36w40MSKCiXx5YgZHvAXCgeWLQLOAP1CBH4cm/suMrqhsfBhtWhA3ftf0mtg43napiPk+zjEuX71KXre0c5BwrOe/qo0clX/4/oa3+38k1ICnVqaymxBvgih9epQsHJZsE31JiVX02MxaDP5RRazot8wHkJYjYYT1YNL9C7Yauc/MSXDR4diD6w8qcG8Gr8IVXXcwwe2B0PUTNsWqN8OFHi+QzERjypVX+eosjuuYfuMLZkVUlvmy0rJg3kOII/E7jd1NMiE9cKkuxPGHowKU0OvAq5cWgVOpWcXpokwsyvkaGcTdzJzaPPAlF8tGvDkImqXQZZuGfSuWfWPd+Av7DVtJu/5fK7JHADaLSzvlR56mZX1Z7NxBxxqVftnRkmVJ4iNUI4zDYZ5ljxNr4k2mH3VnfliaOBwYKHD6ZAlmf2g2RxEO9cnWPZgY7GqOLaltzdmAob6XahzlZ0wrSmaPlXIdkuzGgBL3kQWl43MCXKMV4G/G1mQpwd/tORkNLjCq9Z+Tgvi3zIhNvU6oVFhM2g6/n/tHbvSbYcI1Ml1lnyuM2CniY6HKL1DuIuCT46iz830uHlQOBAwLtl6XFTW2Z5TFB08wrXW4TvhU/L0CODaLML/7b2VkUJp3Cdo0j0YXe0yeCYNqjoKHpz/InLIwZkq2aIClVZbshCqtGw/94pciixSbXjXuT0JpkdlDob3yo83xGhcXDVKWARFpjVTA==|920
