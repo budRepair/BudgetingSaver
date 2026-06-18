@@ -564,7 +564,17 @@
   },
   {
     "ModuleName": "PCPage/配賦前後比較",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-18T14:31:24.39575+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\配賦\\配賦前後比較.json",
+      "Pages\\テンプレート\\配賦\\配賦前後比較.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/配賦結果取込メニュー",
