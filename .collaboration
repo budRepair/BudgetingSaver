@@ -544,45 +544,15 @@
   },
   {
     "ModuleName": "PCPage/Excel出力用_損益計算書入力予算",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T09:30:07.185007+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\Excel出力用_損益計算書入力予算.json",
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\Excel出力用_損益計算書入力予算.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/予算配賦結果参照",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T09:29:42.8133228+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\予算配賦結果参照.json",
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\予算配賦結果参照.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/予算配賦結果取込",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T09:29:09.2950296+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\予算配賦結果取込.json",
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\予算配賦結果取込.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/実績配賦結果参照",
@@ -590,17 +560,7 @@
   },
   {
     "ModuleName": "PCPage/実績配賦結果取込",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T09:28:37.7666852+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\実績配賦結果取込.json",
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\実績配賦結果取込.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/配賦前後比較",
