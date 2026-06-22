@@ -100,7 +100,7 @@
               "ID": "448a76c5b0d648f1af9a4de84f93637f"
             }
           ],
-          "ID": "583a4fde-5bc3-4942-86e6-a78c7064f2ed"
+          "ID": "da146d82-a92b-430d-833e-9e5dd917d81d"
         },
         {
           "Condition": {
@@ -229,7 +229,7 @@
                   ]
                 }
               },
-              "ID": "7a626458e5b747bbb541ea16480df982"
+              "ID": "077f700eecb04a659c074a5ccdba07b9"
             },
             {
               "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -279,21 +279,34 @@
                       "Comments": ""
                     }
                   ],
-                  "ID": "9aba9ecd-0ee0-4389-b464-21c0bf4ef502"
+                  "ID": "bcc2a8fd-09df-4c0a-ad21-7abd43954e49"
                 }
               ]
             },
             {
               "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
-              "ErrorCode": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=_cnt"
-              }
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "エラー件数",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=_cnt"
+                  },
+                  "Remark": "2026/6/22　リターンコードを使用していたため戻り値に設定"
+                }
+              ],
+              "Comments": "2026/6/22　リターンコードを使用していたため戻り値に設定"
             }
           ],
-          "ID": "e1babf46-47fd-4594-b026-2f46159f4050"
+          "ID": "684e61d5-21d6-4f83-9c89-2babeb9134d8"
         }
       ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "エラー件数",
+      "Remark": "2026/6/22　リターンコードを使用していたため戻り値に設定"
     }
   ]
 }

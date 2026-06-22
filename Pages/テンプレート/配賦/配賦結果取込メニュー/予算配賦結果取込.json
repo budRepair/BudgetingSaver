@@ -296,7 +296,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "1902f9a2-956e-4099-95ae-2ce854ba8399"
+                        "ID": "62ddd0c5-f100-4958-9268-f6cb90054be4"
                       },
                       {
                         "Condition": {
@@ -321,12 +321,12 @@
                             }
                           }
                         ],
-                        "ID": "53d2870d-db8e-4102-b1dc-a46866d1d2de"
+                        "ID": "ac03ef8a-40af-459e-91bc-ed60a19c54d3"
                       }
                     ]
                   }
                 ],
-                "ID": "366e4ff4-fefd-4046-816d-f0849c44106d"
+                "ID": "b79215f2-4735-46b0-b557-47b12bde7134"
               }
             ]
           }
@@ -463,7 +463,7 @@
                     ]
                   }
                 ],
-                "ID": "178929b3-4494-4822-829e-675031d584ce"
+                "ID": "e5b43f18-5c92-4636-b40e-77d8f0081716"
               }
             ]
           },
@@ -576,7 +576,7 @@
                     ]
                   }
                 ],
-                "ID": "3da82cac-6836-4824-8044-9230a3924a05"
+                "ID": "654f5a30-45f7-41c0-be67-8ec9fdae936c"
               },
               {
                 "CommandList": [
@@ -594,7 +594,7 @@
                     ]
                   }
                 ],
-                "ID": "49dc6d7a-8379-4445-b29d-575238ee1a01"
+                "ID": "5a5f8a68-32ce-4cd1-a6ab-ed3e030bb1d7"
               }
             ]
           }
@@ -738,7 +738,7 @@
                     ]
                   }
                 ],
-                "ID": "01306329-3e5c-48d2-9a46-8575c8dff087"
+                "ID": "09a872c0-74a9-42dd-8574-6fd12adb3624"
               }
             ]
           },
@@ -851,7 +851,7 @@
                     ]
                   }
                 ],
-                "ID": "58fab374-1fb8-4a4a-996a-341d12c425cb"
+                "ID": "47e6aa91-1334-43a1-87bd-e836c14f5450"
               },
               {
                 "CommandList": [
@@ -869,7 +869,7 @@
                     ]
                   }
                 ],
-                "ID": "fbe99793-9d9c-48cc-bed4-c6b74f968451"
+                "ID": "fa5d9200-ee3a-4cd9-a001-6b344a3b6eb9"
               }
             ]
           }
@@ -1043,7 +1043,7 @@
                     ]
                   }
                 ],
-                "ID": "057f06d2-a65b-46ee-9d76-fa0cc45a8a6a"
+                "ID": "06025cbd-8b9c-4d29-95c7-29098439211e"
               }
             ]
           },
@@ -1156,7 +1156,7 @@
                     ]
                   }
                 ],
-                "ID": "dc3e5e08-9d3d-4975-9633-b4d707da2215"
+                "ID": "bae0d01c-ec38-4650-bc43-09233d4e1848"
               },
               {
                 "CommandList": [
@@ -1174,7 +1174,7 @@
                     ]
                   }
                 ],
-                "ID": "dc35f75a-8342-4b66-aa9a-c0039f667b30"
+                "ID": "f1245de3-7004-4d14-befc-c2c80d37f6db"
               }
             ]
           }
@@ -1349,7 +1349,7 @@
                     ]
                   }
                 ],
-                "ID": "aee671a5-443b-4724-aa93-1ed307a3e03e"
+                "ID": "7022e930-ffbb-4f97-b02f-66d236997f36"
               }
             ]
           },
@@ -1462,7 +1462,7 @@
                     ]
                   }
                 ],
-                "ID": "9a62fdd3-e22c-4ae6-9a10-ed841063e5d0"
+                "ID": "1535584e-3f58-4bbd-a12b-ca04678cbdb2"
               },
               {
                 "CommandList": [
@@ -1480,7 +1480,7 @@
                     ]
                   }
                 ],
-                "ID": "ba039c53-796a-4369-bf35-b7fdde64fe3c"
+                "ID": "0e80ede1-e461-4aca-993e-9b228aa423df"
               }
             ]
           }
@@ -1656,7 +1656,7 @@
                     ]
                   }
                 ],
-                "ID": "4b944d25-18c9-405f-b340-7a68112c919a"
+                "ID": "2d2ab924-5965-4670-aa08-28df5022008d"
               }
             ]
           },
@@ -1769,7 +1769,7 @@
                     ]
                   }
                 ],
-                "ID": "ba5357b1-9674-4ab0-85eb-1fcc552ed209"
+                "ID": "eef87f0c-4ac4-4ac0-847c-cdd626828167"
               },
               {
                 "CommandList": [
@@ -1787,7 +1787,7 @@
                     ]
                   }
                 ],
-                "ID": "7e2f0ec8-ba3f-4bcb-8d25-c01e7834541a"
+                "ID": "c3399858-27a5-4553-9379-62673b9c8281"
               }
             ]
           }
@@ -1939,7 +1939,7 @@
                     ]
                   }
                 ],
-                "ID": "27fe42e4-231f-4241-b0e7-09589de76786"
+                "ID": "93c013b6-fbcd-49c0-ac73-3192e1f661df"
               }
             ]
           },
@@ -2052,7 +2052,7 @@
                     ]
                   }
                 ],
-                "ID": "2f559d11-f335-473f-b390-d699406dc2fe"
+                "ID": "4763e3c5-4138-4c86-858e-2320584f8580"
               },
               {
                 "CommandList": [
@@ -2070,7 +2070,7 @@
                     ]
                   }
                 ],
-                "ID": "f4471631-24a1-4f9b-8712-99848fc7ee5c"
+                "ID": "11835e0a-3939-4af0-be9e-9f5de53c1871"
               }
             ]
           }
@@ -2304,7 +2304,27 @@
                         "SerializeProperty": "=予算配賦結果取込!CJ12"
                       }
                     },
-                    "ID": "1dc7b198e85646a5bdbe08eea7f48142"
+                    "ID": "c505cd9d58124bf9acd4a0cbaa54c00d",
+                    "Comments": "2026/6/22　不具合（セルの位置が違う）",
+                    "Disabled": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "WK_共通_取込用",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "WK_共通_取込用",
+                        "ColumnName": "画面ID",
+                        "GUID": "a0c298f5-3e2e-4580-a826-b54bbf317977"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=予算配賦結果取込!CM13"
+                      }
+                    },
+                    "ID": "18d72f59fef2487cbe46017c25661760",
+                    "Comments": "2026/6/22　不具合修正"
                   },
                   {
                     "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -2365,7 +2385,7 @@
                     ]
                   }
                 ],
-                "ID": "f9f10b91-5059-4106-b091-c8152851a5fd"
+                "ID": "9ed6f077-52c0-45b4-bb29-89a553d3e40b"
               }
             ]
           }
@@ -2457,12 +2477,18 @@
                 "Value": "2"
               }
             ],
-            "ResultErrorCodeTo": {
-              "SerializeProperty": "=予算配賦結果取込!CP6"
-            },
             "ResultMessageTo": {
               "SerializeProperty": "=予算配賦結果取込!CP7"
             },
+            "ReturnPropertiesTo": [
+              {
+                "ResultPropertyName": "エラー件数",
+                "ResultTo": {
+                  "SerializeProperty": "=予算配賦結果取込!CP6"
+                },
+                "Remark": "2026/6/22　リターンコードを使用していたため戻り値に設定"
+              }
+            ],
             "RefreshAfterFinish": true,
             "CheckDataValidation": true
           },
@@ -2525,7 +2551,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "fecbffd7-f02f-43d8-9f2b-9cd41d0b093a"
+                "ID": "781ca686-0448-4b4c-87df-1625cd4cb1b8"
               },
               {
                 "CommandList": [
@@ -2587,12 +2613,18 @@
                         "Value": "1"
                       }
                     ],
-                    "ResultErrorCodeTo": {
-                      "SerializeProperty": "=予算配賦結果取込!CP6"
-                    },
                     "ResultMessageTo": {
                       "SerializeProperty": "=予算配賦結果取込!CP7"
                     },
+                    "ReturnPropertiesTo": [
+                      {
+                        "ResultPropertyName": "エラー件数",
+                        "ResultTo": {
+                          "SerializeProperty": "=予算配賦結果取込!CP6"
+                        },
+                        "Remark": "2026/6/22　リターンコードを使用していたため戻り値に設定"
+                      }
+                    ],
                     "RefreshAfterFinish": true,
                     "CheckDataValidation": true
                   },
@@ -2626,7 +2658,7 @@
                     "MessageFormula": "予算配賦結果へ反映しました。"
                   }
                 ],
-                "ID": "73e38d05-f010-482e-be6c-7d0f902ed2d8"
+                "ID": "14b8c4b4-b5fb-485a-b62f-bb0648171b15"
               }
             ]
           }
@@ -5472,4 +5504,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//WBz4QUw4B9sbDwC6YtVPoB9Pv8KDHHtTnSCrFDEoLpn+IgQ/THv1JmVZNjY4Mo4Ke1hjO65J1EMVLgec+qUX4qWnkvtOUZeVpwRITxuG9ycXv6k9y07VkqFa1wicxwhzuICIilLVdrGgdlPZIRMFJSC1XugL+vrgB82Ce6XXJF2Tmq20o2JiCO5qV9m4xHhosu/YLI8IccEgGs/YaOIN7rTmPFG2KGw/G5JnHgxKt0zUxTnbXNDgBs/zlhbCbcAu9j5TRWOiold/Vi9VcWAWBfzFKJTWTG68P2evEjsiDCRfHjemD+FuB1GzdLgxK1rF73I37MHgEODgzqsGsZ/ZDc18/C2p1i0/F64mMHJ4HvPGR8XcleFLf5DzY4PlKqDsm7tciHyhir2UumAS5cpr6WF3qfxYkFJ/FXB1UBdIIH6Yvf5UT0Zrom1t1U3kIQL7/g0sddveLTWoaexV4o35g3jGGl5CwwdNMXu7BwAICf18VukNoAyWLshctwJPo0cfDSp/DDRmOVKPfu29IPmIn/b0ymDelX2jXaVOlwqhCKe8f44HhGTMMgP5yH6nfp0t2ABAyb6SkV3Y5DLQgnCh9SNQ8Cp/SmSbWUzNr/H0MJrZYiE0NGhSZUVKA0FVr/RmsktOSXYULh8HU4lZgPk4UrpN1/pLmCPT4IxNpFwxIZzrE9bLurtRNSNv0bW7Gc87xVhuhR7bLk6KWyb+qqI6jYsA+6P9o9YVRB0jVR+5F3vPY9pYq0U72VT0SR7DWzQInSmxBPAsJ80MHYe3q5TWeGkY6Gqoyfg8a8jxD1+iw2QAyuqjPB1IKnSrv+Z7ZHSrIskhb4Y5vevp/YYx8dRFDUDDZ1lsmdaJsgiU9cQlaDdSvLrCGjxnpx14W9oOUwB5FOi+CgrDVLEtZz6F3kmTYw==|920
+}//6Wtlif6WDaXqLPR4Y6E8BtcLfFOPrphgnPpPOCJuMZYt7qhfTCbtv3mBblhRY01zxvKoctg7Siykgt7ZEkTBSgmXV+nwp4NohnOXcfts0r04fXLSlhUnI+s+8aRGH4NOZkV6OuG8bbkQ0wvqtxdqu1Q0yuX9bzpUu75YVBWS3LvuNacQVC3BnEC+aj2g/7JU6S5pYUaKOtuK1/7HViiXpgpiVVY0vyGYUVjThthHeHbMEclOHR/5WicX8yDClr5cDuaXQDJ4fRW7zFzTllL5XbYCdL8vFcNEinejfKO/onbfFhSURPkhEM8piqvCsRGGV6LyHvheJ+JP5odoXQOdKtJ9LHVx/YhGhhvVj6FoZm55Xqgwav6PP9spHFlJFUvPqQNfFOkqn2yNJJO3MTLOmFP/qbwdbYjraD7qRYX4Bo+z0qXSQ1NsX8kPodAt5a9EGVhSCSyiL6GF2p6++3w1Oqx9zCoXaRdH5BLrznGhBYt0zK7frLxFfz776R1e8fd987xlWIwdpZ8DQxVAT0ursXBqkDVxhhqT1slKSPp+JTIbkeUApmwHnaaFvSGv0R/9Q3pmAGG8glCfssgPhKX1EcG3zM9Bl7l3TjvoEwxPcUHFzOMYwx0cjtABELt/85CMwR0tn7jULZ6ahuCukBxv/A3q7YoXfi9baZaHAGY2nMv3jjXueVU2tF8Y3ZtaEQNo6D+LGhjb+IlM6czmlRuccUabqNlgURZ4tcSppCcF/M1hmE1f52ecgaYIV3SjS/yaynH3D1Z7rFZoG6yeL/6UdTlm5JL4U0yQQDyvQboukGw+jYbPLiYXYrq2JRhkl3mHyd9jCmJAuqwoN0UbaJviI90B6PONG4gxt3VV6OdPy6wwnvDinc0zU8/kgCMBlYc4gZgjbiPYh4Ymzg1xFjBATA==|920
