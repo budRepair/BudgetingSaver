@@ -557,7 +557,7 @@
       "UserName": "AD\\yuka.hatakeyama",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-22T10:58:58.4497974+09:00",
+    "LockDateTime": "2026-06-22T14:15:12.9382194+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\予算配賦結果取込.json",
@@ -826,7 +826,16 @@
   },
   {
     "ModuleName": "ServerCommand/予算配賦結果取込",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-22T14:15:12.9378374+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\配賦\\予算配賦結果取込.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/実績配賦結果取込",
