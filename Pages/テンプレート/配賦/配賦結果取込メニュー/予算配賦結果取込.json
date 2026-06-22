@@ -296,7 +296,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "3eed1375-ffcc-4a8f-b941-663397e03731"
+                        "ID": "1902f9a2-956e-4099-95ae-2ce854ba8399"
                       },
                       {
                         "Condition": {
@@ -321,12 +321,12 @@
                             }
                           }
                         ],
-                        "ID": "6aabd02f-fd55-4cdf-acdf-04e0ed247394"
+                        "ID": "53d2870d-db8e-4102-b1dc-a46866d1d2de"
                       }
                     ]
                   }
                 ],
-                "ID": "edb10e09-6e1d-4016-9cc8-dcc31d043680"
+                "ID": "366e4ff4-fefd-4046-816d-f0849c44106d"
               }
             ]
           }
@@ -463,7 +463,7 @@
                     ]
                   }
                 ],
-                "ID": "bbdb83ac-8ea0-43de-a647-eb775f7ef61a"
+                "ID": "178929b3-4494-4822-829e-675031d584ce"
               }
             ]
           },
@@ -576,7 +576,7 @@
                     ]
                   }
                 ],
-                "ID": "2356db87-f204-47a7-b37f-a2b4aa8362f6"
+                "ID": "3da82cac-6836-4824-8044-9230a3924a05"
               },
               {
                 "CommandList": [
@@ -594,7 +594,7 @@
                     ]
                   }
                 ],
-                "ID": "07afc412-0b3e-4035-9873-e0a40d42b41a"
+                "ID": "49dc6d7a-8379-4445-b29d-575238ee1a01"
               }
             ]
           }
@@ -738,7 +738,7 @@
                     ]
                   }
                 ],
-                "ID": "a44ab9d6-f244-475a-9f7b-619402ad1304"
+                "ID": "01306329-3e5c-48d2-9a46-8575c8dff087"
               }
             ]
           },
@@ -831,7 +831,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=予算配賦結果取込!BJ5"
+                          "SerializeProperty": "=予算配賦結果取込!C8"
                         },
                         "PropertyType": 0,
                         "Value": false
@@ -851,7 +851,7 @@
                     ]
                   }
                 ],
-                "ID": "3d1a06b1-5d57-40eb-82f7-0e5c73ce2a2a"
+                "ID": "58fab374-1fb8-4a4a-996a-341d12c425cb"
               },
               {
                 "CommandList": [
@@ -861,7 +861,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=予算配賦結果取込!BJ5"
+                          "SerializeProperty": "=予算配賦結果取込!C8"
                         },
                         "PropertyType": 0,
                         "Value": true
@@ -869,7 +869,7 @@
                     ]
                   }
                 ],
-                "ID": "2dfac31a-8dba-474f-a608-3f700534c9d6"
+                "ID": "fbe99793-9d9c-48cc-bed4-c6b74f968451"
               }
             ]
           }
@@ -926,6 +926,18 @@
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=予算配賦結果取込!J5"
           }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "本部コード",
+                "GUID": "81df99d7-2c89-4218-8c1c-bf1cf262ec71"
+              },
+              "Order": 0
+            }
+          ]
         },
         "CommandList": [
           {
@@ -1031,7 +1043,7 @@
                     ]
                   }
                 ],
-                "ID": "46c8b17e-4ae8-45b2-b2b5-57bf70b34433"
+                "ID": "057f06d2-a65b-46ee-9d76-fa0cc45a8a6a"
               }
             ]
           },
@@ -1144,7 +1156,7 @@
                     ]
                   }
                 ],
-                "ID": "67a186c5-18e5-4169-b168-635f2f330b10"
+                "ID": "dc3e5e08-9d3d-4975-9633-b4d707da2215"
               },
               {
                 "CommandList": [
@@ -1162,7 +1174,7 @@
                     ]
                   }
                 ],
-                "ID": "3b85e32f-f38a-4ffe-afbe-488b3891b779"
+                "ID": "dc35f75a-8342-4b66-aa9a-c0039f667b30"
               }
             ]
           }
@@ -1220,6 +1232,18 @@
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=予算配賦結果取込!Z5"
           }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "部門コード",
+                "GUID": "77cc0d28-5a0f-4f87-82ac-c3bb284e7bf2"
+              },
+              "Order": 0
+            }
+          ]
         },
         "CommandList": [
           {
@@ -1325,7 +1349,7 @@
                     ]
                   }
                 ],
-                "ID": "39191ca1-443f-49ce-984a-dcfe3c2fd588"
+                "ID": "aee671a5-443b-4724-aa93-1ed307a3e03e"
               }
             ]
           },
@@ -1438,7 +1462,7 @@
                     ]
                   }
                 ],
-                "ID": "6f655cda-c484-419d-a70a-f1887aff1298"
+                "ID": "9a62fdd3-e22c-4ae6-9a10-ed841063e5d0"
               },
               {
                 "CommandList": [
@@ -1456,7 +1480,7 @@
                     ]
                   }
                 ],
-                "ID": "449bed08-2ce0-4c74-b0a6-cbcfd99093ba"
+                "ID": "ba039c53-796a-4369-bf35-b7fdde64fe3c"
               }
             ]
           }
@@ -1521,8 +1545,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "MST_組織",
-                "ColumnName": "部門コード",
-                "GUID": "55927630-1dc1-449c-b3cf-ff8a4ede0288"
+                "ColumnName": "組織コード",
+                "GUID": "b6fdbcae-336d-462d-88b1-650121f1bd96"
               },
               "Order": 0
             }
@@ -1632,7 +1656,7 @@
                     ]
                   }
                 ],
-                "ID": "db36317a-bc0d-4fa0-886d-33fd7419b8f8"
+                "ID": "4b944d25-18c9-405f-b340-7a68112c919a"
               }
             ]
           },
@@ -1745,7 +1769,7 @@
                     ]
                   }
                 ],
-                "ID": "21b263b6-c8a1-4fd5-bfff-ba1e96460e89"
+                "ID": "ba5357b1-9674-4ab0-85eb-1fcc552ed209"
               },
               {
                 "CommandList": [
@@ -1763,7 +1787,7 @@
                     ]
                   }
                 ],
-                "ID": "70704559-3ff2-44f3-aae0-b0e73da9c605"
+                "ID": "7e2f0ec8-ba3f-4bcb-8d25-c01e7834541a"
               }
             ]
           }
@@ -1811,6 +1835,18 @@
           "TableName": "MST_バージョン",
           "ColumnName": "バージョン名",
           "GUID": "04f70a09-d710-46f2-822d-08f2c32e2927"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_バージョン",
+                "ColumnName": "バージョンコード",
+                "GUID": "a887ff66-f93e-4ae2-8152-289580cb30d6"
+              },
+              "Order": 0
+            }
+          ]
         },
         "CommandList": [
           {
@@ -1903,7 +1939,7 @@
                     ]
                   }
                 ],
-                "ID": "85330035-030b-4e42-acc1-70aee284f1ed"
+                "ID": "27fe42e4-231f-4241-b0e7-09589de76786"
               }
             ]
           },
@@ -2016,7 +2052,7 @@
                     ]
                   }
                 ],
-                "ID": "a62ab24f-385d-450b-98be-2ecda5694ed8"
+                "ID": "2f559d11-f335-473f-b390-d699406dc2fe"
               },
               {
                 "CommandList": [
@@ -2034,7 +2070,7 @@
                     ]
                   }
                 ],
-                "ID": "99178fae-3485-4a67-96f1-d741f13b5167"
+                "ID": "f4471631-24a1-4f9b-8712-99848fc7ee5c"
               }
             ]
           }
@@ -2329,7 +2365,7 @@
                     ]
                   }
                 ],
-                "ID": "d0a905b4-6322-4c8d-a824-9fbb48ced70d"
+                "ID": "f9f10b91-5059-4106-b091-c8152851a5fd"
               }
             ]
           }
@@ -2489,7 +2525,7 @@
                     "DeleteCachedQuery": true
                   }
                 ],
-                "ID": "651f1d33-2441-4b34-9003-8b6650a4b2a4"
+                "ID": "fecbffd7-f02f-43d8-9f2b-9cd41d0b093a"
               },
               {
                 "CommandList": [
@@ -2590,7 +2626,7 @@
                     "MessageFormula": "予算配賦結果へ反映しました。"
                   }
                 ],
-                "ID": "2ad5b8fe-f8fe-4474-bd03-5395e8aa7a51"
+                "ID": "73e38d05-f010-482e-be6c-7d0f902ed2d8"
               }
             ]
           }
@@ -5436,4 +5472,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//i/a2VvGDCVracV71kygSkEVT2d3IY1Ojt311Bq6geU1otG+PS7b8CJ+gu1x3s+EgiqVqLORcQP6wqaioUqKhKgoNqLCVijO1gEPJRF36AM5oQOmtzjlzfHu9nwUU4KcGGvo2fMJaLP+oLkCuPwhY6vxM1IjTkIzJ3dtKuHDKc2jzlk1+/49tLw7mufVivwQ5JuQ7FrnnWPosJOaqLwrmAi6nHJtKpidMpLody61G3jva8Bxp4xB4RXljMmTc3tpsf4RpfUlRmLPGzHggb9hPf9gSestjlJxZbzot+xJZ6kxi+BZzjt+R8MjCrFahrRokQ76fkxBVVevP9sIbvy/OChCSkPjwBtoppRTdvZnw4blhYRdAuFHSHS00NcTo077DkoStxyXequ+uOjAHYia86Ju1q33v4ufjyAw+LOr+JFv87HO4W/JKOZ4D+1ML6eBPJtSchY2FZw3FvDAd6rYluM4KSAPY2+acaJMHliRmkLO0lIlERePi59VwDs8oJAon72QAzEYYtPPDA3jaykY9+bx+UM/pEZISsnVEW2mHxJ/nK5zjrLRW8zGnmKd/MYMcEUhDGw0QIg1YyaNKJ3h4/WtrkR6u6y5rpZLZ/85abEgLJ2J/99C5K6npAPulql/JsZRByQYZ80/SrVKuLGICnO+VVGwnN29TO2CpECK0Ysm+3PuqqgZ5IBis9tIZvwxOePI10dyaX+PfW3xJPm/O+hebvuIhjUOlMYZUjApOqjxF6FDqBSUVa0YB2nLQ79mri+qkkk5nCWNzAeYMSi7Kaw2W5JAKhon78rlpNNR2lUnlzOaGksBruDNG87L5q3oaKHtk/lFm+0DfsaRrozNwwMVA+88Cdzw3VHfyCg9FCXJDrjmU2IU2A29n8gGcLlKqra1YnOodrCjIa+JTqMG6lg==|920
+}//WBz4QUw4B9sbDwC6YtVPoB9Pv8KDHHtTnSCrFDEoLpn+IgQ/THv1JmVZNjY4Mo4Ke1hjO65J1EMVLgec+qUX4qWnkvtOUZeVpwRITxuG9ycXv6k9y07VkqFa1wicxwhzuICIilLVdrGgdlPZIRMFJSC1XugL+vrgB82Ce6XXJF2Tmq20o2JiCO5qV9m4xHhosu/YLI8IccEgGs/YaOIN7rTmPFG2KGw/G5JnHgxKt0zUxTnbXNDgBs/zlhbCbcAu9j5TRWOiold/Vi9VcWAWBfzFKJTWTG68P2evEjsiDCRfHjemD+FuB1GzdLgxK1rF73I37MHgEODgzqsGsZ/ZDc18/C2p1i0/F64mMHJ4HvPGR8XcleFLf5DzY4PlKqDsm7tciHyhir2UumAS5cpr6WF3qfxYkFJ/FXB1UBdIIH6Yvf5UT0Zrom1t1U3kIQL7/g0sddveLTWoaexV4o35g3jGGl5CwwdNMXu7BwAICf18VukNoAyWLshctwJPo0cfDSp/DDRmOVKPfu29IPmIn/b0ymDelX2jXaVOlwqhCKe8f44HhGTMMgP5yH6nfp0t2ABAyb6SkV3Y5DLQgnCh9SNQ8Cp/SmSbWUzNr/H0MJrZYiE0NGhSZUVKA0FVr/RmsktOSXYULh8HU4lZgPk4UrpN1/pLmCPT4IxNpFwxIZzrE9bLurtRNSNv0bW7Gc87xVhuhR7bLk6KWyb+qqI6jYsA+6P9o9YVRB0jVR+5F3vPY9pYq0U72VT0SR7DWzQInSmxBPAsJ80MHYe3q5TWeGkY6Gqoyfg8a8jxD1+iw2QAyuqjPB1IKnSrv+Z7ZHSrIskhb4Y5vevp/YYx8dRFDUDDZ1lsmdaJsgiU9cQlaDdSvLrCGjxnpx14W9oOUwB5FOi+CgrDVLEtZz6F3kmTYw==|920
