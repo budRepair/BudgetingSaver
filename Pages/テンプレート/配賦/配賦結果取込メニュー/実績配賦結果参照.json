@@ -138,7 +138,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "0b485ae3-c2c4-4f32-9258-6d5e11b98e7e"
+                        "ID": "858763ee-d3c9-47c1-bfc0-19b468e3fe59"
                       },
                       {
                         "Condition": {
@@ -163,12 +163,12 @@
                             }
                           }
                         ],
-                        "ID": "cdb20b08-0196-4459-9e3f-46f5d651eec7"
+                        "ID": "0811c30d-6be2-4580-b850-14483e8f052c"
                       }
                     ]
                   }
                 ],
-                "ID": "52c7aa3d-96ff-4c79-a80b-81c2dc66be40"
+                "ID": "c2c642d6-dc49-4b3f-9bc7-8509399dbc25"
               }
             ]
           }
@@ -259,7 +259,7 @@
                     ]
                   }
                 ],
-                "ID": "22354b7c-0d90-4b79-a1b1-e1a41a346653"
+                "ID": "4d9bd2e6-67d7-4207-8e87-191b766358ad"
               },
               {
                 "CommandList": [
@@ -277,7 +277,7 @@
                     ]
                   }
                 ],
-                "ID": "c74e16a1-c19a-4c78-b98f-8746dae6570f"
+                "ID": "0fd9e0e0-bc95-4c41-80ff-eadb98c2eac2"
               }
             ]
           }
@@ -631,7 +631,7 @@
                     ]
                   }
                 ],
-                "ID": "2a81a644-51c1-436d-9928-85b89831ef0e"
+                "ID": "6f01c880-9c8a-46c8-884e-9a701e1d5eb8"
               },
               {
                 "CommandList": [
@@ -711,10 +711,11 @@
                                         }
                                       ]
                                     },
-                                    "ID": "8204c8b29bde483baec485e7a3b847c7"
+                                    "ID": "93eeec28e8c442c9b48eca1b948c1878",
+                                    "Disabled": true
                                   }
                                 ],
-                                "ID": "ab3aa480-79ba-420b-ae1a-9706491cb034"
+                                "ID": "3f380ee2-a08e-422b-a71a-a7b728f17f86"
                               },
                               {
                                 "CommandList": [
@@ -755,15 +756,17 @@
                                         }
                                       ]
                                     },
-                                    "ID": "0989fd18d5f14ee386de6d25383d3ead"
+                                    "ID": "e9444cbf226c426092f60efdd91a91aa",
+                                    "Disabled": true
                                   }
                                 ],
-                                "ID": "707610d7-53f9-496d-9cb8-4029dc38cd9c"
+                                "ID": "b23f0fdd-9d29-40e3-9c13-26e952094e79"
                               }
-                            ]
+                            ],
+                            "Disabled": true
                           }
                         ],
-                        "ID": "73118497-4ea9-4b14-90fd-5691d1e0f277"
+                        "ID": "a09fda64-7f99-4029-a574-39d532d21876"
                       },
                       {
                         "CommandList": [
@@ -799,12 +802,226 @@
                                 }
                               ]
                             },
-                            "ID": "fe6627c7c2744225bb7d78c15c3f4ac0"
+                            "ID": "78367a1ba3a3403dba89429e1d494dc9",
+                            "Disabled": true
                           }
                         ],
-                        "ID": "884ac27c-b07e-4e18-b786-17b9b652f083"
+                        "ID": "fc6be5ee-1795-430c-8b46-9b8932659f6a"
                       }
-                    ]
+                    ],
+                    "Comments": "2026/6/23 条件に不具合ありのため無効で修正",
+                    "Disabled": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=実績配賦結果参照!X5"
+                              }
+                            ]
+                          },
+                          "value": "%Null%"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=実績配賦結果参照!AI5"
+                                      }
+                                    ]
+                                  },
+                                  "value": "%Null%"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                    "ConditionAndCommandPairList": [
+                                      {
+                                        "Condition": {
+                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                          "param": {
+                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                            "cellLocations": [
+                                              {
+                                                "SerializeProperty": "=実績配賦結果参照!AT5"
+                                              }
+                                            ]
+                                          },
+                                          "value": "%Null%"
+                                        },
+                                        "CommandList": [
+                                          {
+                                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                            "TargetTableName": "INP_実績_配賦後",
+                                            "SqlCondition": {
+                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                              "ColumnBindingInfo": {
+                                                "TableName": "INP_実績_配賦後",
+                                                "ColumnName": "年度",
+                                                "GUID": "ef46fa3b-3709-449e-8b87-0f8ddb5d6849"
+                                              },
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=実績配賦結果参照!C5"
+                                              }
+                                            },
+                                            "ID": "dff77e26f2fa4eb9ab06b68d2ebba857"
+                                          }
+                                        ],
+                                        "ID": "d9a3cba3-980c-49b3-98b1-1c3c744d797e"
+                                      },
+                                      {
+                                        "CommandList": [
+                                          {
+                                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                            "TargetTableName": "INP_実績_配賦後",
+                                            "SqlCondition": {
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "SubConditions": [
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "INP_実績_配賦後",
+                                                    "ColumnName": "年度",
+                                                    "GUID": "0bb76cdf-e45e-458c-9ef2-772bd87be990"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=実績配賦結果参照!C5"
+                                                  }
+                                                },
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "INP_実績_配賦後",
+                                                    "ColumnName": "組織コード",
+                                                    "GUID": "afa1f3ef-a1ea-4dde-98b2-b57ce56eb261"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=実績配賦結果参照!AT5"
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            "ID": "24e1b1c8fb894c66a5873b7c0967667c"
+                                          }
+                                        ],
+                                        "ID": "ae78bd83-36be-4225-9c31-692ebe63bb05"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "db4c0e05-0624-4b6e-803b-1e79c40fda48"
+                              },
+                              {
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                    "TargetTableName": "INP_実績_配賦後",
+                                    "SqlCondition": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "SubConditions": [
+                                        {
+                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                          "ColumnBindingInfo": {
+                                            "TableName": "INP_実績_配賦後",
+                                            "ColumnName": "年度",
+                                            "GUID": "e93f110b-5f1d-421c-923b-93c8a8a4a19c"
+                                          },
+                                          "Value": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=実績配賦結果参照!C5"
+                                          }
+                                        },
+                                        {
+                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                          "ColumnBindingInfo": {
+                                            "TableName": "INP_実績_配賦後",
+                                            "ColumnName": "組織コード",
+                                            "GUID": "66ef2f12-e2e2-42c0-8809-ad6620b1a0b2",
+                                            "RelationBinding": {
+                                              "RelatedTable": "MST_組織",
+                                              "RelatedColumn": "組織コード",
+                                              "DisplayColumn": "部門コード"
+                                            }
+                                          },
+                                          "Value": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=実績配賦結果参照!AI5"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "ID": "25c4b7d13bb94d1a89b5030c9551561a"
+                                  }
+                                ],
+                                "ID": "83d176e9-f769-43c2-b4a2-e38d7eb2cc0c"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "797f5b44-aad1-4223-9b41-889dde59e7c3"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                            "TargetTableName": "INP_実績_配賦後",
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_実績_配賦後",
+                                    "ColumnName": "年度",
+                                    "GUID": "b70cb9d6-9e2a-4610-a39d-22700db3c7ab"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=実績配賦結果参照!C5"
+                                  }
+                                },
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "INP_実績_配賦後",
+                                    "ColumnName": "組織コード",
+                                    "GUID": "99aa9e3e-452e-4ac8-9e15-d20a04384612",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MST_組織",
+                                      "RelatedColumn": "組織コード",
+                                      "DisplayColumn": "本部コード"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=実績配賦結果参照!X5"
+                                  }
+                                }
+                              ]
+                            },
+                            "ID": "8b079390c8514e85bc25be0bf82fa1b8"
+                          }
+                        ],
+                        "ID": "54bb6d4f-7b8f-495b-8936-7cb3fcea333d"
+                      }
+                    ],
+                    "Comments": "2026/6/23 条件に不具合ありのため修正"
                   },
                   {
                     "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -821,7 +1038,7 @@
                         }
                       ]
                     },
-                    "ID": "238f6e3207c748b0bd9ef55be1d6ec51"
+                    "ID": "2bf5bb94455f4934be7b385ae05e6c1d"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -840,7 +1057,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "3f5c44db-9a28-4386-86e1-1fab0e423e58"
+                "ID": "46ae71bf-62d3-45e7-9a45-3c98be91d9ac"
               }
             ]
           }
@@ -1666,7 +1883,7 @@
                 ]
               }
             ],
-            "ID": "b7bab039-b462-488a-9962-a165e88fc342"
+            "ID": "4d24c903-1152-4870-9a3b-a5f283be455d"
           },
           {
             "CommandList": [
@@ -1684,7 +1901,7 @@
                 ]
               }
             ],
-            "ID": "9e1a6b34-1ff2-4983-857a-8a6ad274eb6e"
+            "ID": "dacca6a7-9ece-41a9-9436-06a9b39ed11e"
           }
         ]
       }
@@ -1711,4 +1928,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//YVTaFNYildpH1E9hvi3MjJLGDCCkG8uxoelje/xOtRI8c1qmcGtZwS5pF98Qa7S/ouRZ14petCfCNyk8EW32PdQmNMhU7+tNU89Tzv+tqYIrnNDpWTEXUUkApr+o33jwZJ0243/AV11xf90Grtc5hLaZ+hhr9V2EQE6hwbxLXgR5TjCfxvb4UtTasq/zzxUxCpa36frMZY+WbiZwIp0GxKR4mxfZP3e5mnHp5tFvUG503uqWGVXrE5U/1K2V3PNo/YNBIKc9Feo1Wxhy76ssvx3+0BTExObQNHVnbejiaw0GAB9jVVsJs1QRSmzNV+rXADHNya/uWixIgEci/QDyxU54N4olw/Fpw1grQtj38stB/q7SVDgkUkgDT4E8f1WKWEo9K4u2bWWDhASp8NlFJS+Wf8YVlTQtX2Tg8qdadT7f0EoIyEh7WvJZsvbfOtlb0bUQcrtdLi6JBaW+zbiMx64Zj3ttsduOYrBhAs4ndVtIcm0W4CXcCEOSX7YE0qQBJEWGAp6fz1ZOcvuAkwm4LTSKVuX8qTLRmp9Fk7eAKmd7gFFJ4UU0aURdHYsGEhEeLdQwPi5BtWO/g+Nv/ZX/xYMrQo8VGvPsLJcoNwR8tHzN350mGNSJB4mYQNgslMoagqDH0BZxKrCDaPJi+uZFx3pTFxeIz3kUrGrpQTsamVOhPMjpzgbA/QttD5iPw/mXvEsEBbghWgNANt9u55GUwfXXHlnbcX7eIr6QDp8WFO2SKN/0MQKTFSruaQu3p51xrFbIEPSzVfvJ3+pALI+TX3PPdc7+nNx7/09Ilw1sUFfn0WezgkZ7/LRw714pQQ2BjbwjZEmGykXUh2wHPNt/GHEhNv3j/6iFLzQFstmok7GVyUfOkVF/6nLMOyLWEe9uYZev50khyo6CRsYbsdOEQg==|920
+}//M/O++yGgsOyGiBt4C8jyEFAXODhecBBxoIYPVE7uXvVULwJ4S4O2NAhgMahJ2EtFiX1yIudv3XGSKAboRx42XxUF77mJUXjbSk6yGOQvns25ZWS2QUId32Hi3LQIgPv+o4kp1LfaAReDgltCwtU0tD3pivWPKqJGyGfIdbL7zdkxqp4uKaof1vpJfsLZOCPqFGqhtBHnyh4licTVX0smapgCt9kRnDnSfXH7/z3mZOdWGfEvgiM2a4zZqmw8fQGRYgF27Ojkpt8z2KCdSUYa6Ao05b9R+O6EB0fD+4m8ObeWdeXfMfQRSV/vrxmXejDXq6FwT+mccxCzy+XWkJ7mudv6r1PcovWDVx5yCmYRZ0xe/p19/rgar6MQvTT9RKYlcMOsu5lHCL4V+6/MJBpPG2wokncMmga2Jan7yS/EXisLHktWgfbyM+t1MgzflZ7bRLgb7KkyQteT2FQvuVrXfLDkvWu19Ee7hvv3ZamQSZexxnNXZbcedHWLBI4/59+WjQPj67j8wu65Cl6Mpxf5OdAPjxlwiK1EbR66yPu3XsXbQhMkDsRur15KWIjfXGdRtPfVRQ1EP2KNZQ9IFpIg1TVQEO2iM48yuIi547VWzoeErgdOBzJ4LT0qm/bi1fxZaf0p68c7YL4HAuJirBCWrGgm7nON21PbzprVw1vJ0mmMNWo5DvV5iZGNDMqNygf4JVxApDqe++GarreIcnvs2d7boFpMso6DtwxmWujnmPA0jy57i+ZGWfgOoFazSSU3xUzrnhTab4Qg7i884MQ8MuEyCfWmJTgCNYTchs+RQSj/jn13zfJiMk+95gAQr5p5gX9wXxCVFsKpwzLujynp8CY0YdHxmZTbSMqRqkC8q7BSx7YXCtu0FEKoJesYW6w6oKSZheVYNGbiNHC7NITJGg==|920

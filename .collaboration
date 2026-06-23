@@ -556,17 +556,7 @@
   },
   {
     "ModuleName": "PCPage/実績配賦結果参照",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T10:16:10.0756228+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\実績配賦結果参照.json",
-      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\実績配賦結果参照.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/実績配賦結果取込",
