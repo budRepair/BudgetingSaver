@@ -544,7 +544,17 @@
   },
   {
     "ModuleName": "PCPage/Excel出力用_損益計算書入力予算",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T13:05:38.2707487+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\Excel出力用_損益計算書入力予算.json",
+      "Pages\\テンプレート\\配賦\\配賦結果取込メニュー\\Excel出力用_損益計算書入力予算.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/予算配賦結果参照",
