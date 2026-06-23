@@ -145,7 +145,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "107511ce-0b9e-47df-8b18-d51e2cbf6aaf"
+                        "ID": "000ae5e9-f418-48fe-966f-2a1f0a64aff9"
                       },
                       {
                         "Condition": {
@@ -170,12 +170,12 @@
                             }
                           }
                         ],
-                        "ID": "cca67ee2-d05f-40a5-a89d-bf309bd26707"
+                        "ID": "d4779599-de47-4bbc-8ecb-87c6d2010646"
                       }
                     ]
                   }
                 ],
-                "ID": "63a37ed1-5efd-4853-9e8b-0b6122966aad"
+                "ID": "b1c97cb7-89b8-47a3-99b1-d53f5fbcc4e5"
               }
             ]
           }
@@ -284,7 +284,7 @@
                     ]
                   }
                 ],
-                "ID": "7be5226b-ac28-42b3-8f09-4b80ca6f54ea"
+                "ID": "40328929-a131-47ab-ad0e-3e122b56af5c"
               },
               {
                 "CommandList": [
@@ -302,7 +302,7 @@
                     ]
                   }
                 ],
-                "ID": "e2d3bc9a-bdc4-4aef-bdd4-4ca686160cf3"
+                "ID": "fee75479-5d9e-4748-ab5b-5b3ddc21474b"
               }
             ]
           }
@@ -638,6 +638,18 @@
           "ColumnName": "バージョン名",
           "GUID": "1b774abd-f85d-4383-affe-ebd82a3b8de3"
         },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_バージョン",
+                "ColumnName": "バージョンコード",
+                "GUID": "3d6052d3-0f3a-435c-aa9d-863cba998763"
+              },
+              "Order": 0
+            }
+          ]
+        },
         "CommandList": [
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -701,7 +713,7 @@
                     ]
                   }
                 ],
-                "ID": "85bd7bcb-f5f9-4980-a1dd-4b182c4f74c8"
+                "ID": "d45b5aa0-2cb5-4847-9d37-aa1e97b48ddb"
               },
               {
                 "CommandList": [
@@ -719,7 +731,7 @@
                     ]
                   }
                 ],
-                "ID": "41733142-e40e-455f-840b-03c5b9eca686"
+                "ID": "837a387c-2316-4282-a726-b2f93ba11fef"
               }
             ]
           }
@@ -783,7 +795,7 @@
                     ]
                   }
                 ],
-                "ID": "30157c10-4811-4a79-996d-b227e1d9fdd9"
+                "ID": "032550b0-b3d8-48ae-a9c0-a56375e636ca"
               },
               {
                 "CommandList": [
@@ -878,7 +890,7 @@
                                             "ID": "28070ecf8b9643e384f509d9f39cca63"
                                           }
                                         ],
-                                        "ID": "b041f7f4-0398-42d9-9e04-665773ce6679"
+                                        "ID": "a96eaff2-e455-4bc6-a44b-89855dc4b99d"
                                       },
                                       {
                                         "CommandList": [
@@ -934,12 +946,12 @@
                                             "ID": "bb159326c2dd4d148ba8fc03df2321e3"
                                           }
                                         ],
-                                        "ID": "f88ebb9e-37d4-4c2f-b9a6-189b812f88a1"
+                                        "ID": "3eb38400-bb3f-4f06-8204-3941cb220e32"
                                       }
                                     ]
                                   }
                                 ],
-                                "ID": "06255f1e-9eb1-4627-ac19-8a881dadc7c0"
+                                "ID": "88e575b5-1d4d-4b89-8ad7-9a089014e5d3"
                               },
                               {
                                 "CommandList": [
@@ -995,12 +1007,12 @@
                                     "ID": "81504c0bd7fd4b2784ee568aecfcfc46"
                                   }
                                 ],
-                                "ID": "c8db797e-7ea8-47b5-9861-7b8457167d00"
+                                "ID": "2e52b9bc-f623-45bb-9d83-9a0c8c6fadbc"
                               }
                             ]
                           }
                         ],
-                        "ID": "5e85958e-3d39-400c-9fef-f712e131708f"
+                        "ID": "a4b74414-153d-465e-9d11-312ac7fd196a"
                       },
                       {
                         "CommandList": [
@@ -1051,7 +1063,7 @@
                             "ID": "890043450ebf4872b5ce3968d4a93cca"
                           }
                         ],
-                        "ID": "65827e75-35c7-4844-beae-173bac955a8d"
+                        "ID": "34e7d89d-864e-4e8f-b764-1121260860f5"
                       }
                     ]
                   },
@@ -1089,7 +1101,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "5a0ed1e4-d7d3-475c-a2ff-f3e7a7eb2f59"
+                "ID": "27c0967d-507a-41d9-b2c9-c67bfa2d0b3a"
               }
             ]
           }
@@ -1940,7 +1952,7 @@
                 ]
               }
             ],
-            "ID": "35eec47d-bed9-40c2-b9b3-5ece313333ed"
+            "ID": "670b2d70-df86-46c3-9547-657625773af9"
           },
           {
             "CommandList": [
@@ -1958,7 +1970,7 @@
                 ]
               }
             ],
-            "ID": "9f51d657-6aa1-48d0-8e6d-94123ed95300"
+            "ID": "953f528c-461e-4fdb-9948-0659950887a9"
           }
         ]
       },
@@ -1999,4 +2011,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//8Dvqtv/oxD89nD55OHDJ2Q4hClH6INfDst5z0zStdI8EMqVxk/BuhM9PFx4cXVLeE4GZ2KmaHBxhv17Y0XvlIOcRLLkU8lAzd57e2yYUjhT9OuvMURygSOMKmKd6pBTW1BNV+onAu2sU/AB3mAnWkJB6w93rpVx12QlGPwd+KoXvL4F4ZIJ2zlQeiEBPgBU7XJJe8GYtRpWmQVwzvSOg5dYVKsi37z8gQGtv82Ez/9d3P1+I9yQCyHxiYJUs7wkR8f/e7eCkNB7mw9zhusU7yLTdg5h4XlRFUwKH8pEAuQBd9ySRJXa1bNGubzTQ+qObiXVlAovUVfyC2CqAqzy0RlvePFU4wopKMU6u86m5ZDEDfJH6+wZxUrX4RnLGrFifKPov5PAw3jIjR7P9C9g3ydxn7DI1ZjSsX71nJ60nZEKLxIhQb0pJxWYuWGWSQlxGncfcUXvXaxfI9u60Wi7D2wjPKd3AhMX31MDHy0gOE7UTItkzMBI/KWkrP+oyg2a3vhSZbHadL0eHNzWIHCrpXvRG29CQCd7trSr/QmhZcjNbT4eDHlUGpeEh2vvmDo2NT0vItwJQ5Kaegl9ZMoLmJPxZTthF1HzldOfYNjfJq9h88frt5nJ90nsq4xhNZpkPmiasUc6RXQPDAbxAx4mEzCJDauOxGzuTuE4jcTLWacDgNQUllUHvkftJB9VAnW4DeoHlK1n/5qkz0wP9Zs3sdcfQKOpl/yFQnBkBzLmfoJ3Btm4MIGIhVkb4uEea9eqOcEf9vRe++UmWfjnuu4JIp3v4q+lmL+nc50F7G8N2qZnnYsLQeZGC/0aivp/HQDYmdOjIpnvg7uGfJtX75T5pik7dsSFJk9e++7MAO+O6eVSW75+LaW76VAFl5oOK/b/XTj/ZxuVgmtheLQRJ3gAW9g==|920
+}//beD/PVXd0ocw9EYeyw8GotDtDSJ+lc0DJP3/pB/CfXPKss0Ex5phLir6oQ5/at5NwPrECydDUelvz65fUGPzXLFrIeBNIGXkAgGHxvkW3ve0X/UWEs4fGgEuJP0WIx/59JSv0Ze6ak8QGAhpP/paKK0waYWacoo1+avr2QSA/jlPgZsRJJt0UwZ53k+8k1L3kATuQYO3EqpKpXOCMRrKrGhOFnWVBfi/NYdM3UJA19t2gybVIxCN6tGYfdL3kn5Pd9KmHhJuFCS13SJJZ1C6mghz9b5j+PeJ1vtGh4NTKk8Ew3HTz/l75TsGH6SgrLIjx7HTkZ0bkpWB+euPSwf98yXD3qI+aa3UcuTpEar2VHb7KMrWOnqiDSoZ5xNQCFfbWzMIOuEEB880Ls2IqtQZYmhDtJmH1zrLHPzGuOnyFjuXWlWRpkb1tfseMiTfsPOPWG/l6eclyC4WfVtqn8n+D6FjjVAkg9tq5KcxIar0PFRJ+ORpyHn8h7Oi8UB15JUaCc8Hbrjkzk2Lj1eqDrlkj5BMuvCehZcbVCeZgeoWbgmhLcG5SYdNw81IXSt93cxJyMsMi/z5hZtBJlL7kWSg4u7ITud57O1NOTKP4glXsVGzQHS4/tLlT6smOGmYgzyyUizMJmxorU3uTQT1EthXDV9c4Cb9csh7ALMU1Si5mRViR6xk1905Qfhpwsmjc+41nh8R5dG88xFRJeVTW6pfg7gPVs0qrgpCcelOjutyQgsmNARutlLxec0gDq7L7Zip3ut2zQBpLbybOHNmYrKoH2OmkNXyA37fKO6WZTvJxCI7g4sJCNWHV9fxa0aSc5vPHeYeeVBN+0rrbOcgnxrYiiLPTz/WJShyZfi9ByhieiKx0VRmoe8NyXnHlpiCNpeE33vnbMSlZKOPskgsETYtag==|920
