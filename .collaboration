@@ -500,17 +500,7 @@
   },
   {
     "ModuleName": "PCPage/年度マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-25T10:38:21.6960671+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\管理メニュー\\年度マスタ.json",
-      "Pages\\テンプレート\\管理メニュー\\年度マスタ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/月マスタ",
