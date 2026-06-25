@@ -97,7 +97,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "662ec7dd-e8ef-4911-97e5-20b90af853b2"
+                        "ID": "a89c4bfc-9056-4640-b313-ec66ff7b2e73"
                       },
                       {
                         "Condition": {
@@ -122,12 +122,12 @@
                             }
                           }
                         ],
-                        "ID": "4acabfce-ae7f-4700-8965-298188f19181"
+                        "ID": "23f2da90-a299-4b47-9b80-69d62659aca1"
                       }
                     ]
                   }
                 ],
-                "ID": "5a32221a-9b4a-4d72-9f5d-e5bd0301b2c5"
+                "ID": "210ea9aa-ebaa-48b7-b4d1-0abea10ae675"
               }
             ]
           }
@@ -275,7 +275,7 @@
                     "ID": "406166ec341242fb8d946234601cb5ed"
                   }
                 ],
-                "ID": "55c31677-c4e3-4066-839e-b57dd43e8f0e"
+                "ID": "40e2732e-75a4-4fb5-be47-1e8dcdf4930e"
               },
               {
                 "CommandList": [
@@ -438,7 +438,7 @@
                             "ID": "831ea27c963148d6a8f664343d465372"
                           }
                         ],
-                        "ID": "47c05489-7347-4ceb-b85b-c734595a1dd3"
+                        "ID": "a27e92eb-1f88-4153-b0d3-28faf21c4b7c"
                       },
                       {
                         "CommandList": [
@@ -569,12 +569,12 @@
                             "ID": "916f79d74c4b4ba6b5c96acd8e27cc0e"
                           }
                         ],
-                        "ID": "40bd1192-29eb-439a-9e4a-a9cc2d5b85ce"
+                        "ID": "7fdd9531-4e06-484b-b8e1-6d18366aa7b0"
                       }
                     ]
                   }
                 ],
-                "ID": "5e8c7183-550d-42cb-be8a-e4d02e1bd0ef"
+                "ID": "362bfe43-bea2-40be-90d1-59fdae8f7a6a"
               }
             ]
           }
@@ -674,7 +674,7 @@
                     }
                   }
                 ],
-                "ID": "7891f90b-e10f-4b77-82ec-1931be3a4198"
+                "ID": "57c2653e-41fb-4372-b397-8dfa406fa455"
               },
               {
                 "Condition": {
@@ -698,7 +698,7 @@
                     "IsOnlyExportValue": false
                   }
                 ],
-                "ID": "a63853be-dbbf-42f0-96d6-ce136e809f6b"
+                "ID": "6b382bd7-a107-4737-b733-6820bacb4977"
               }
             ]
           }
@@ -804,7 +804,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "f6aab1c3-9892-4fbf-8418-f25d1c301f46"
+                "ID": "724620ad-1d90-44d4-8346-975591e513c4"
               },
               {
                 "Condition": {
@@ -878,7 +878,7 @@
                     ]
                   }
                 ],
-                "ID": "a6d1be2e-5bf2-4af0-96be-2a6f4b034c9b"
+                "ID": "76f995ac-6386-4cc2-bf89-3414f7cc30ff"
               }
             ]
           }
@@ -984,7 +984,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "e9a2ab71-6f7c-48bb-a1b0-790db1a284f5"
+                "ID": "ef096dea-8c42-48e5-8c7a-6da8244e0529"
               },
               {
                 "Condition": {
@@ -1058,7 +1058,7 @@
                     ]
                   }
                 ],
-                "ID": "d7cad5b0-9bef-48a6-8e1f-900e84191079"
+                "ID": "798ca362-0076-4d5b-898a-026c6416375d"
               }
             ]
           }
@@ -1676,14 +1676,16 @@
             }
           ]
         },
-        "ID": "99e8b2879e1149be8913b3aa9f78d7ca"
+        "ID": "4988c6c250744b8891d70f2cb6bc2739"
       },
       {
         "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
         "TargetCell": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=年度マスタ!B10"
-        }
+        },
+        "Comments": "2026/6/25 不具合修正（不必要なコマンド、セル位置おかしい）",
+        "Disabled": true
       }
     ],
     "PermissionData": {
@@ -1907,4 +1909,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//DI2SyPDxci4OZYFFu+V991cyYj62ZMtNNz/7OAL4qs+6RKA7lcM8apNpgXB8NTDLBzXZKSAAkqs6rQWIwJm6H3+2TOE04nMDRdWFLlqzfy4b129xY2FIJ7TkULXeod2rBjNWxeUWV6TINl+wS3S264CwagjYYqEwrO6AvWMlBZOEQyMm9YyroLUiQRRWtZ9zlWV1cltCggoH3WdLb1bomugLHOY8UZubJwDvqEEdgiEXaLaMcA5Ne+TcgZDqi4gQ94bkFOqrb8umUp3tr8eccnSwWnFruCBmCw1kmi/tx8SgriR8TKzXBJ796PBVNN7WoQcyXGLCZf7lEw1gubtE35wyKT5h4F08J6hSAfDKSXWXQ/xbXXiD3uOIvdS6f+YRfRThT9sHGEKn4TBbrwUNzl1J5TPeAf36LA5zCuWM//lMurxXZ7uisW9AJ1HQIa04zsG1IY01E3XIXCcOztjKLakE0lE8sOieIBin0o31apdQdi1D1l4IryxkCKnqqyTKK00+tVcOgjMGles9By8GK0dslsQhNTnpMJxw/jsNi6mPediJWYjyTNxBXzNzk+mzjw3+k0xjWLz4oTjlwjPQOomnL/p2VsH9u5E5lmrppPffO1BOy9egLXtMW/4IYtmMHkB2bA7YsInXeGGMGUxjtg6PEr4Tohl076LNS0jBrN+40eU0tbhE/k0g+4Ylua2LoOSlAuuerfmyEV2Lu7i9Li6AV0a6jZl01hM9f9lJDepYCQRg5K42BG9tST0omw3Ni4C0qj4SGMo4ZA94nWwr1HFPqU1YE5t7oYXmBd7T6+rOpEngYtCEXyZXrOaj8tmIHfzjE8ECSyqMcdSw/rLgUaP16NysE3ENQtUcQyQ/4yoixqSfUCXVEmP8ICr/6ucCe8iLoA/sFt2C8ztXnVWZTA==|920
+}//AHkqsFMVNMDZychOKMOf3nDD3s6wv0AmzWGBd+0uLeyn00+Ho6nCSxNRugYgosAVxdgm8STCXREy7n4/nl10EznVQm33e6vblGmouWI3Qsx/OJJ9QmSFmWCnEWxdrtPcq4PJUEWFYErn0CH8wRceaGr8d0Nylw2FWx2ZsaZs0sHRZGSk0ranN2CK/97IaCfZrjiN8Du+czrW/hLAZXkSZtbH0IKCLLOnhLt1sl5W6YLRBatydqv8Ylm5WFWFyqO+2h2GlnrQnucU+CG296HgUL3qzfCbFthOctTrcGYtHkms+bw+R0BKTkbdDUPMyTV2YeJI8HqyNhouxfEaoZafSssU8YbMzJYG7TEy7GzGC05Pq71Pkpavx1rb3Oa9D8bT1Nvzia4EforLBv9IPPOyMpgeInMlYVd07+qWgNRUA+lmgd1MsT548vXk3aP8sdy+SVfhjtIhrmzOvHwdbxf7Hob6XNtalglVmhf7H/UYELtNYiAYNugdAGU2uj3IZ9opV4nxTP3YGif+spAHmbjTqBh23X85YlsKIuAmoppewHPJcdIo+qVpXbfzwk2DkEn8LU3NbKetUbh694kQqeo4NgTTlCIpzAcSNPXEsZHbI6sXQqVygpZMoxu1WPdOyu1HpU61XX7tqXVTNeudmRkKzpsHBTaJQy0kPyUCZXks1DMbAu2utvN92grXJoqdyTD7sqqsEY8QjVVmyuUkbWD89ubGNUKb3u3Hwzn4wRICmmqaygC7poDzCzB6e3qXqBAMUADG0g3Uk1JDoVMGkhn7MHuT68x/v0meurGdkQCw1idNv7LWH7T6Ugg5SEYGK8GfSZ4mMc5vgXyXmMhYptfDDUBSASQTJ1F4LTa76qE4gT2gd2UgZrUxCPUEVKQwe1uW067V7EXVQPTMNguj7Mv4wA==|920
