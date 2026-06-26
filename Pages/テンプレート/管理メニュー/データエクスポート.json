@@ -548,7 +548,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "68f9003b-e22d-4bd1-bd0e-60ec838598a7"
+                        "ID": "a2177460-9972-431b-9332-362520648b62"
                       },
                       {
                         "Condition": {
@@ -573,12 +573,12 @@
                             }
                           }
                         ],
-                        "ID": "48b19984-a493-4039-969b-7898a954f77e"
+                        "ID": "db891ef5-5f16-46a3-b2ef-1a8294ac1e94"
                       }
                     ]
                   }
                 ],
-                "ID": "dcce642a-eaf3-4afe-a7d5-77621b9f1578"
+                "ID": "4bbce768-5dbe-478c-a378-ff66c4913613"
               }
             ]
           }
@@ -698,7 +698,7 @@
                     ]
                   }
                 ],
-                "ID": "f00e8d2f-1f27-46be-9f47-94da02d6d62a"
+                "ID": "8d952b9e-8787-45d1-ae2e-f0057a7c1dbe"
               }
             ],
             "Comments": "2026/6/26 追加（年度には処理入っているのにここには入ってなかったため）"
@@ -935,7 +935,7 @@
                             }
                           }
                         ],
-                        "ID": "4b981598-bbaa-4003-9782-8d6f08c6af11"
+                        "ID": "a8bad18b-590b-4fb4-8c47-56e4a4605eca"
                       },
                       {
                         "Condition": {
@@ -1101,7 +1101,7 @@
                             }
                           }
                         ],
-                        "ID": "a7db3eb6-ea7b-4efa-bae2-201d88d685f4"
+                        "ID": "15fe721c-8b89-4bdb-b48e-45711b1e0a48"
                       },
                       {
                         "Condition": {
@@ -1424,12 +1424,12 @@
                             }
                           }
                         ],
-                        "ID": "208059c3-c0f8-4b48-ac92-863de6c5b1ed"
+                        "ID": "d175e1f4-a17d-4a2d-bda3-53efb135ac70"
                       }
                     ]
                   }
                 ],
-                "ID": "40ac7148-9f1a-48de-b37f-999b8457b2af"
+                "ID": "67753ae1-7d67-4c3a-8170-3b13e5af919a"
               },
               {
                 "Condition": {
@@ -1655,7 +1655,7 @@
                             }
                           }
                         ],
-                        "ID": "1eac958d-8c37-4daf-9985-33673c80fef0"
+                        "ID": "5dcad385-7f52-4249-a9d1-a9ef83f40993"
                       },
                       {
                         "Condition": {
@@ -1821,7 +1821,7 @@
                             }
                           }
                         ],
-                        "ID": "8ed101b8-fea4-49ea-94e0-f2bb840860e7"
+                        "ID": "ceee085b-8c32-4661-98b7-7c22b7809b85"
                       },
                       {
                         "Condition": {
@@ -2144,12 +2144,12 @@
                             }
                           }
                         ],
-                        "ID": "b105770d-23d0-4f74-a7b0-3507675ad5b7"
+                        "ID": "3c372ede-f48d-4670-915a-1a6e13dd8ee8"
                       }
                     ]
                   }
                 ],
-                "ID": "c4126a24-a462-46cc-bfc4-5ba28e7b5177"
+                "ID": "a72b3ae8-6142-4232-865c-6a8beabed1d1"
               }
             ]
           },
@@ -2254,11 +2254,24 @@
                     "Disabled": true
                   }
                 ],
-                "ID": "37014df5-4cc8-4b09-a274-299520dbe4d4"
+                "ID": "9be61d6b-9093-446b-a80c-fcbdf739b378"
               }
             ],
             "Comments": "2026/6/26 不具合のため無効（指定セル位置誤り）",
             "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=データエクスポート!X9"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ]
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2310,7 +2323,7 @@
                     ]
                   }
                 ],
-                "ID": "c1e00965-1e02-47fc-87e9-01a1cd18cf65"
+                "ID": "38273ca7-770e-4aca-ae6e-d20734c596b7"
               }
             ],
             "Comments": "2026/6/26 不具合修正（指定セル位置誤り）"
@@ -3863,4 +3876,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//JtC6WRzM1P9Jpb4rXQ2MQWlZ31R0H31DnDHZtMOlOZJeZn9qtgas1vBHef/ONEntoq0r/vGS9QiWdLNbhm/0NmlBfvGgP/W8YSkT4l3dm3krmqjPZ/QOoxEvuelqKh1FiBlAoy46x08k0ZB2reMmUcXw7sj+UO81EyG35+rR6MYwOie3enLRHZDb8Mubuy7qJ4uYChH9dG9nf7lWUuMw2RZF5sHxJLDAKEOxYYMLgVmeGyK+MfK193lumpmzWj5abrTSSbTR5fZBuP5xw6Em3dftgsz8fQTMZBZndFB+sldhsnGPvzt7IxqJQHdww5Cr5RV/GUuI5ZYcC9JJdmKC+NPrJPJuUZn89aMWakryJ/CuX2nWaouexRQfFKbX0jSKYHkoVaqJPeQ6F25Vt8Lbf7iQH7n34ObYNGEw8B7eSNkTUlwZQKwjg4Zk53IlP4Hyg9IXZpkCw9CsDFwiHFyg0VdYX4QJxfANs/EXVIHMg1Y3l/sFyYFe055KAu1opAbb0cYz5eE2AJfsdOlHkIH0LdmMRgfg8agDiEZHwGNV2sD0oVYTH/d6uHYu2aNbfkdAyd9Nxkghnc/w1F4Dm4C8O/ZfsAYvIAt4ub1tHNT6TtcN+nw45XZEUXT/N/Qxb+do/kRJ0uEHkp/w5VrUyAU8qBuceHtnFDjxbhwnBxeQ50rAuqHJbraqfB53e9r3HUikHD7d/b0yeGnwGdKcy96qktEGb7fXOqS2BWmZ37ZvQXzSNV4xQmOSqUYu/uuKNpkUsSzRj13zRQUQS9NSvlK+pZQxDUMhP0AUZ4R+BxEFePyToM47j5rgaAagYRiScV6oolIzktG3K9tNrcju8k/feEgPMh8SMv15t9HpcnW6dnOmJciUzl+ZI2dM9JBIEhZdVD1enpw4chXT9G7py46fuw==|920
+}//fpJKVHeNFv2U2SnblVxVdkjz1HVc+mmqSL3sSo89DrJHCcCpsDsatYtSBuEwhPby5xlvknQYB0LL1a8uyteUdZG0r4TVxQK8E8UvoFIQaql6o51e32GiGFiDNVoavlCfWQF4wvvC7+fXNAOP7+gSZ8l23HwuDT/ljU8k8xwVTVXRibTjrjb/UJJuebD2/WmAX7HCA7vnjl84kQ4B3meeXukiwMDaNkA+sz1FORLTK2QvlOV/r55cnLn26g+u36UzLgnMhVaTwXOdGIxz/3LLE45s+NK6r4Gj32iwiLJjitHgKPGANZEAhIjHxMidi4/bU4tM2GXp/wP43IqIEn7Typ2XxCG63qhA+zKUb+tlbIGlQdLMM4tHH199O/BpZ3mCJYnTPanIqYGQOd124na92pnTtRwa6sx66T5ZeFoasfB+gXwb7HqjRK08GDtcAUYhpVS+SoSQv36bTJysnYu9/7Sgwq02ONCoLitimOcVsIiJtjQtNux8TO6N+/F3yPtOFWktYV9Fo9/eajw/zWjDMmTIlm1H+AGe2aKvcAx6zhnmCwBe5dukT6Zt63neLOjuANQw7Dkz4h2hWkQSsZsjzTlwrO1S0lSvXVhTOMwO6vSXIA31ev7SuOXZKqCzbUe2AJexO5hNxlC3Cc2kwwW9ns3XL4QYkrHI5n32aVVBPoA+TuuTQiVIw7LLrEAP7LMCmDEE3A5q2v9C82E2d5zi72lpVgFAl/iFfsbsRuLP+nHHZLOPWbtyiXabFf9ghqtOhhLse/6bXvFZvV1Me4iKziN3bWC02Ao3RVo1KUjqhfg8bdw5aaP9LmvuIwDiim/ecQ2bz8cDStsXMz2BjelpWnbWb4RSzNQfCBfffR14OpW7f/GZvhWa5lK4Kug8awcl4h4snyO8I4uK0i7YHZe11w==|920
