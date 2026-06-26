@@ -548,7 +548,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "833f960b-50ed-4d30-9c4f-ac0c6bb9d2fd"
+                        "ID": "68f9003b-e22d-4bd1-bd0e-60ec838598a7"
                       },
                       {
                         "Condition": {
@@ -573,12 +573,12 @@
                             }
                           }
                         ],
-                        "ID": "9ae2e6d1-b2f4-4516-8af5-f692132f41f2"
+                        "ID": "48b19984-a493-4039-969b-7898a954f77e"
                       }
                     ]
                   }
                 ],
-                "ID": "aa237c68-f793-4fc3-a95b-6e7bc1b98a60"
+                "ID": "dcce642a-eaf3-4afe-a7d5-77621b9f1578"
               }
             ]
           }
@@ -632,6 +632,76 @@
           {
             "Value": "3",
             "DisplayValue": "予算・実績（2ファイル）"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=データエクスポート!X9"
+                },
+                "PropertyType": 0,
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=データエクスポート!L9"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=データエクスポート!C10"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=データエクスポート!X9"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "f00e8d2f-1f27-46be-9f47-94da02d6d62a"
+              }
+            ],
+            "Comments": "2026/6/26 追加（年度には処理入っているのにここには入ってなかったため）"
           }
         ]
       }
@@ -865,7 +935,7 @@
                             }
                           }
                         ],
-                        "ID": "fea4599b-62df-4226-aae6-9afcc42d538d"
+                        "ID": "4b981598-bbaa-4003-9782-8d6f08c6af11"
                       },
                       {
                         "Condition": {
@@ -1031,7 +1101,7 @@
                             }
                           }
                         ],
-                        "ID": "09dd2487-8739-4f32-b903-216c70997b84"
+                        "ID": "a7db3eb6-ea7b-4efa-bae2-201d88d685f4"
                       },
                       {
                         "Condition": {
@@ -1354,12 +1424,12 @@
                             }
                           }
                         ],
-                        "ID": "ae3856dc-f1d8-430f-85a8-23e5da023468"
+                        "ID": "208059c3-c0f8-4b48-ac92-863de6c5b1ed"
                       }
                     ]
                   }
                 ],
-                "ID": "15d40627-ea35-4ec8-a4ee-1f5fd5ec4e14"
+                "ID": "40ac7148-9f1a-48de-b37f-999b8457b2af"
               },
               {
                 "Condition": {
@@ -1585,7 +1655,7 @@
                             }
                           }
                         ],
-                        "ID": "da70e42f-a1a1-4c1a-9eba-ac084c65db67"
+                        "ID": "1eac958d-8c37-4daf-9985-33673c80fef0"
                       },
                       {
                         "Condition": {
@@ -1751,7 +1821,7 @@
                             }
                           }
                         ],
-                        "ID": "118b4dce-cbac-4521-865f-aefbce149c6d"
+                        "ID": "8ed101b8-fea4-49ea-94e0-f2bb840860e7"
                       },
                       {
                         "Condition": {
@@ -2074,12 +2144,12 @@
                             }
                           }
                         ],
-                        "ID": "84207626-126c-40d0-99f9-a1c20b321996"
+                        "ID": "b105770d-23d0-4f74-a7b0-3507675ad5b7"
                       }
                     ]
                   }
                 ],
-                "ID": "e172beaf-339b-4a4d-ba80-33153d451624"
+                "ID": "c4126a24-a462-46cc-bfc4-5ba28e7b5177"
               }
             ]
           },
@@ -2179,12 +2249,71 @@
                         "PropertyType": 0,
                         "Value": true
                       }
+                    ],
+                    "Comments": "",
+                    "Disabled": true
+                  }
+                ],
+                "ID": "37014df5-4cc8-4b09-a274-299520dbe4d4"
+              }
+            ],
+            "Comments": "2026/6/26 不具合のため無効（指定セル位置誤り）",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=データエクスポート!C10"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=データエクスポート!L9"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=データエクスポート!X9"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      }
                     ]
                   }
                 ],
-                "ID": "edae3adf-248d-40ea-a92d-c27d30864f9c"
+                "ID": "c1e00965-1e02-47fc-87e9-01a1cd18cf65"
               }
-            ]
+            ],
+            "Comments": "2026/6/26 不具合修正（指定セル位置誤り）"
           }
         ]
       }
@@ -3693,7 +3822,23 @@
             "PropertyType": 0,
             "Value": false
           }
-        ]
+        ],
+        "Comments": "2026/6/26 不具合のため無効（指定セル位置誤り）",
+        "Disabled": true
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=データエクスポート!X9"
+            },
+            "PropertyType": 0,
+            "Value": false
+          }
+        ],
+        "Comments": "2026/6/26 不具合修正（指定セル位置誤り）"
       }
     ],
     "PermissionData": {
@@ -3718,4 +3863,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//UYow6i741Y1xJP8VMqJVVFKglLMzuUXOyCg2TNxFODMrAMkGW6GGMfigfQ3sJ6rP8INZNwkiZ51mHpBhe+yo1UkC50fkXgR2fBuCXxJx0TrDVHGfQTc6KBMjEZ/PsbK5TtscWzchVM6Dx1wV3qQnL0ieaib7iYrW1TTg99BJ3xUyPtAslZga034PSqT11NW9nTBkoqoHzu7XSeOkXYgwZ5Oknx66bx18fuw2NIFgyRTqzs2wI1AOpTme69FE2xhJXXbyPHwZTwdpV3g7KPMtncQLFbSK7gm/DL1i0B17Bah5j7mjwxNJyE010W1q7ZurhzklamPyaxsgLQlM0oCMnDkd/6LFMung5yQJOrmVu100T9mYuafVXBCXMUNpAkgaNB16wPlruFmUP8eEKetC7BKOtAzFDI5/XjSe0xfGcV/r8vcZ6Qxycz30yEKsz5edtqGhlRhMs3LsfFQ9RAFouhli+0cyly5ltdrSvZleJe9mfzIbZ+gWuWWFMJllKRgo96KlLW4U8sVHWH9NyCGjY2/LjiMi6cDsikUFSYMf3xl090c1o5Jopa+32ZszvKobUSyzdI8Gxdn7ZRuJqYj2vBCOUXXhPVpsi3KjLxRa2wHy76dnD6Xoeq5FMeC+cbNWGNbeKQd2nNCNFKrcYRliWg0KR3AArVRcr8WcPPYxmuistZDPLkmQqJEq4nR0p31kRB+gJIvESVssKQ2a6MuyKQvPbqfmz49rc198hOkkPU5mBgXyWuQ9XIBeEOTvq5ybXQjGTc+dtIicmvZXc9FCe4HueV3/hTGeSzSIom7Pdb5hz2pqWJZnKbzwR5cH4VcDqMySWHESxnZZrXiR7TZqMku3MWHBGZO0tKgzjhTazMvc0nRiJxZn7wENqtLeYbJOanDWDx58HyCu7MFSV5zDhQ==|920
+}//JtC6WRzM1P9Jpb4rXQ2MQWlZ31R0H31DnDHZtMOlOZJeZn9qtgas1vBHef/ONEntoq0r/vGS9QiWdLNbhm/0NmlBfvGgP/W8YSkT4l3dm3krmqjPZ/QOoxEvuelqKh1FiBlAoy46x08k0ZB2reMmUcXw7sj+UO81EyG35+rR6MYwOie3enLRHZDb8Mubuy7qJ4uYChH9dG9nf7lWUuMw2RZF5sHxJLDAKEOxYYMLgVmeGyK+MfK193lumpmzWj5abrTSSbTR5fZBuP5xw6Em3dftgsz8fQTMZBZndFB+sldhsnGPvzt7IxqJQHdww5Cr5RV/GUuI5ZYcC9JJdmKC+NPrJPJuUZn89aMWakryJ/CuX2nWaouexRQfFKbX0jSKYHkoVaqJPeQ6F25Vt8Lbf7iQH7n34ObYNGEw8B7eSNkTUlwZQKwjg4Zk53IlP4Hyg9IXZpkCw9CsDFwiHFyg0VdYX4QJxfANs/EXVIHMg1Y3l/sFyYFe055KAu1opAbb0cYz5eE2AJfsdOlHkIH0LdmMRgfg8agDiEZHwGNV2sD0oVYTH/d6uHYu2aNbfkdAyd9Nxkghnc/w1F4Dm4C8O/ZfsAYvIAt4ub1tHNT6TtcN+nw45XZEUXT/N/Qxb+do/kRJ0uEHkp/w5VrUyAU8qBuceHtnFDjxbhwnBxeQ50rAuqHJbraqfB53e9r3HUikHD7d/b0yeGnwGdKcy96qktEGb7fXOqS2BWmZ37ZvQXzSNV4xQmOSqUYu/uuKNpkUsSzRj13zRQUQS9NSvlK+pZQxDUMhP0AUZ4R+BxEFePyToM47j5rgaAagYRiScV6oolIzktG3K9tNrcju8k/feEgPMh8SMv15t9HpcnW6dnOmJciUzl+ZI2dM9JBIEhZdVD1enpw4chXT9G7py46fuw==|920
