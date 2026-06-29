@@ -512,7 +512,17 @@
   },
   {
     "ModuleName": "PCPage/組織マスタ",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T10:21:51.2807591+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\管理メニュー\\組織マスタ.json",
+      "Pages\\テンプレート\\管理メニュー\\組織マスタ.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/売上・外注費テーブル",
