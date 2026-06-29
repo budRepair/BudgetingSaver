@@ -4,39 +4,39 @@
   },
   "Cols": {
     "RowColumnAttachedInfos": {
-      "90": {
+      "91": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 83.0
         }
       },
-      "91": {
+      "92": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 143.0
         }
       }
     },
     "InLogicalVisibleIndexes": [
-      89,
       90,
       91,
-      92
+      92,
+      93
     ],
-    "Count": 93
+    "Count": 94
   },
   "Values": {
     "1,2": "科目マスタ",
     "1,61": "",
     "2,55": "メニューに戻る",
-    "3,89": "■ログアウトコマンド",
+    "3,90": "■ログアウトコマンド",
     "4,2": "ファイル種類",
     "4,7": "EXCEL",
     "4,16": "エクスポート",
     "4,25": "インポート",
-    "4,90": "処理確認",
-    "4,91": "ログアウトしますか？",
-    "5,90": "リターンコード",
-    "6,90": "処理失敗",
-    "6,91": "ログアウト処理に失敗しました。管理者に確認してください。"
+    "4,91": "処理確認",
+    "4,92": "ログアウトしますか？",
+    "5,91": "リターンコード",
+    "6,91": "処理失敗",
+    "6,92": "ログアウト処理に失敗しました。管理者に確認してください。"
   },
   "AttachInfos": {
     "1,61": {
@@ -51,7 +51,7 @@
                   "Title": "確認",
                   "FormulaText": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=科目マスタ!CN5"
+                    "SerializeProperty": "=科目マスタ!CO5"
                   },
                   "YesButtonText": "はい",
                   "NoButtonText": "いいえ",
@@ -62,7 +62,7 @@
                     "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
                     "ServerCommandName": "ログアウトコマンド",
                     "ResultErrorCodeTo": {
-                      "SerializeProperty": "=科目マスタ!CN6"
+                      "SerializeProperty": "=科目マスタ!CO6"
                     },
                     "RefreshAfterFinish": true,
                     "CheckDataValidation": true
@@ -77,7 +77,7 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=科目マスタ!CN6"
+                                "SerializeProperty": "=科目マスタ!CO6"
                               }
                             ]
                           },
@@ -89,7 +89,7 @@
                             "PageName": "FGC_ログイン"
                           }
                         ],
-                        "ID": "b0d39381-b9fc-44e3-9402-7a62a2ceda06"
+                        "ID": "6ade8efa-7a73-49bb-9bfb-1f65a322cc4b"
                       },
                       {
                         "Condition": {
@@ -98,7 +98,7 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=科目マスタ!CN6"
+                                "SerializeProperty": "=科目マスタ!CO6"
                               }
                             ]
                           },
@@ -110,16 +110,16 @@
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=科目マスタ!CN7"
+                              "SerializeProperty": "=科目マスタ!CO7"
                             }
                           }
                         ],
-                        "ID": "407ec710-6b21-4380-a2cb-bbaf7e80978d"
+                        "ID": "fa826e1b-d8ce-47f1-afc6-4e724090f3aa"
                       }
                     ]
                   }
                 ],
-                "ID": "c7ca63f3-4dce-46f9-99c6-a7ac37acc895"
+                "ID": "94953f04-fbc8-4b93-afb6-08fdcfda60a7"
               }
             ]
           }
@@ -267,7 +267,7 @@
                     "ID": "28b70cfa7c3b412d90f6ea245de4c38c"
                   }
                 ],
-                "ID": "16b42cd0-a8f7-4bd6-a696-e2c581bac92c"
+                "ID": "aa023445-d7a7-4d88-933b-5e97d76db497"
               },
               {
                 "CommandList": [
@@ -430,7 +430,7 @@
                             "ID": "6abff1970a954937a52b94f4a37c62d6"
                           }
                         ],
-                        "ID": "cefa4ad1-9172-4226-8e13-1480273ce7a4"
+                        "ID": "f621fd6a-719a-4250-8869-08f3009f77fd"
                       },
                       {
                         "CommandList": [
@@ -561,12 +561,12 @@
                             "ID": "9206ffaeafab497a8f828ffabe79647c"
                           }
                         ],
-                        "ID": "d6255e49-4b1e-4727-94df-d7081d8b552a"
+                        "ID": "9d27cb09-4280-4130-bc26-7a89d919e0e4"
                       }
                     ]
                   }
                 ],
-                "ID": "ae109356-fceb-4ab4-bd13-c19514f0ed80"
+                "ID": "7c7c45a7-ec7e-4393-8353-1f279f4c844f"
               }
             ]
           }
@@ -726,7 +726,7 @@
                     }
                   }
                 ],
-                "ID": "0957aea2-b0e4-44df-ae55-aa1676908fab"
+                "ID": "10c0a1d8-b7d5-4fcc-8af3-d3cf609f9c2a"
               },
               {
                 "Condition": {
@@ -750,7 +750,7 @@
                     "IsOnlyExportValue": false
                   }
                 ],
-                "ID": "4e78d88f-c50a-459a-ab5a-89668463a8fe"
+                "ID": "3bb5cf9d-2b0d-4c22-b182-5b43d1aed403"
               }
             ]
           }
@@ -917,7 +917,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "891b4983-908d-48ad-bc2a-dedb0fb60825"
+                "ID": "fe48cbc6-7145-4f07-8246-8a096588df3a"
               },
               {
                 "Condition": {
@@ -1048,7 +1048,7 @@
                     ]
                   }
                 ],
-                "ID": "62454f39-992a-4473-a4ba-f3bd76ab18d5"
+                "ID": "f4d9686a-290b-4447-9d58-0c0514c7bb7b"
               }
             ]
           }
@@ -1377,9 +1377,9 @@
       "0,20": 0,
       "0,21": 0,
       "0,31": 1,
-      "0,89": 0,
       "0,90": 0,
       "0,91": 0,
+      "0,92": 0,
       "1,1": 0,
       "1,2": 2,
       "1,10": 0,
@@ -1396,9 +1396,9 @@
       "1,21": 0,
       "1,61": 0,
       "1,62": 0,
-      "1,89": 0,
       "1,90": 0,
       "1,91": 0,
+      "1,92": 0,
       "2,1": 0,
       "2,10": 0,
       "2,11": 0,
@@ -1425,6 +1425,7 @@
       "2,89": 0,
       "2,90": 0,
       "2,91": 0,
+      "2,92": 0,
       "3,1": 5,
       "3,2": 5,
       "3,3": 5,
@@ -1466,6 +1467,7 @@
       "3,89": 0,
       "3,90": 0,
       "3,91": 0,
+      "3,92": 0,
       "4,2": 7,
       "4,3": 8,
       "4,4": 8,
@@ -1509,8 +1511,9 @@
       "4,87": 0,
       "4,88": 0,
       "4,89": 0,
-      "4,90": 11,
-      "4,91": 12,
+      "4,90": 0,
+      "4,91": 11,
+      "4,92": 12,
       "5,2": 8,
       "5,3": 8,
       "5,4": 8,
@@ -1554,14 +1557,16 @@
       "5,87": 0,
       "5,88": 0,
       "5,89": 0,
-      "5,90": 13,
-      "5,91": 14,
+      "5,90": 0,
+      "5,91": 13,
+      "5,92": 14,
       "6,86": 0,
       "6,87": 0,
       "6,88": 0,
       "6,89": 0,
-      "6,90": 15,
-      "6,91": 16,
+      "6,90": 0,
+      "6,91": 15,
+      "6,92": 16,
       "7,2": 17,
       "7,3": 18,
       "7,4": 18,
@@ -1829,4 +1834,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//I4AO+tJrNQosEJ70iQqWbfYIhZUjuPBDLD7ZfiVDWxRc3iN9CjNiaIwyDpfacQb06TmxRnVG0PUpqUNlR2q+wClp9iSMc0MgyWJXOzDdgsPUrHFnfVdHU6rAx6bpVkavUutl5A+1V5HSXbVqnEK84g5tP9dtvLk+fofu2YT2v1kRA6TSYef5X5ixSbL8hgSXLSBhjNraQcZEHAYM8dVL4TnUYXPJb1iP1N+rgargKMHIw8FwY9DAniFDtoToQ2AajG67R1h83b1rrHqQ58YLZxOQKQ0d6qsqztlPq8JCzzrTpyi7rXvkj+qidpWiHdqZNfRXQQgNq86yPoU1Z2FVibZaNS/W9J67VhF5SKf/MOh6F2IJVUoBVMd/lay0flV2ePdkwOArqS9+sl+sJNlLZqqgpE5glqVI9uAY/KfAtUi3v5PA9uhy+WJ/nFL7a0Ee4BGtbk/24QZ0qFlyhwJaBEeZLfv8mDE8GV1xPAfbGIv0VZIkGV7B0AowgnAW0KKnuIkuWB1Yfwp0B/xVyjvXFmb3hP/3ujyqC3m8Gac6yDIeZqh9PoNdz1SBhjkD/KED3bbUDG3c7Qj9WEoY9y8SLPyb8eONtCeWoGu9+DgCC57DKrtwiMO1Gb3WbAZtS0O4OuYEJ5Z5fDs6yPnODmjcJtzvXX5ueAyZC7u2eszDBvCSaF8lGqD5xNWghCOS7n8DngqPmHlAQlUeqnsgOG/0oWlezIPX9gB3c/9J6OxE6kkKlT7KKLl7jCid3ibgNhQs5w0mPLoNK02jyJSwzvPYMk/RajFuXeHCaB+Xvc5p0sOksqjlTk4SmJ9Xti3aXMQqgkvytqb9V/30wRHd67MWZQLnVdqbMhPk+FHHzjMc1nN/zWtrhvrX7NQ7zhodB+tYH2gHbglNyWDdT7wXt/p8mw==|920
+}//m+GquaczGbFPnjwKrZUbgLVzpaquap5Y0C0X4DLONskeSLamHDwfnbsNFI7AlFrtoAM6Sz1oD0PiwIjei+j83Nj8YbzjLY9Bbp5Idr0pd0sqoD+ISYQ2bnUbZPh7oISNTnt+1NkmZ/KwLayhCrcKNhFTEQZzRHUkadzXrz/MIfGqAhfdHkP0SpX/ld8s6mW5KHUssniUGNHk7l8Nk2pPCqKe+llGE2cz71j2srG3y3Npsa9mscfhUeDmcuxMG15WJUIVkpxvXR1DWr4MBo+vLhkdSe6f9HndZFaNJTEvB0oe/2JEllFe7MjygCqAEVQQyZBsQ6+wHr7tB2AmFTCbxJ2j4Xwc8cjOVTp0Ke7HT8Vzn1s22setoYL3vulDs7j3aM+IwfZ6ehDVhDaYZ40nMVrKClQI8iQo3G/q08NHDD/8odSSZLcUx8EZAgt5cpDMWWGth+ll4NjhgDxGdL05FJ10COBprctpx0r8sf1uahe3GA1uK/eEjCWaPwTN8XBb6dcJTcKw29KKsgLAIq9DSlqhqnF8U8IHHr73dhOhbi2tHtkcMVdzuHpKCSKzg+S5z1XdM3iAa8Bt5bYdVXdVHtyk0op1Q6e0TWgcPg1QKYU+7sznQYUJAk/crssFfJANiyLF4Rd6x9d4AxKztPFo9Rx/fiCEYgparSo1iP2IkB23wxeZHcHB1AQ+lbOLigutpEj6XFkTyBc1eCk9G49xC9o8d2SCCkKQ/Q5hsakuyfT4IVu9nNdpUcxt3bsglHuIqY5IvSZ9KW1SXN4278jZ2zE5JT7fpfFnjYSCsdGHklrIBLHhD2Ln8ZMnekRSlNXcJFt4sIWhAqVbLXKp1+NEd7T6WkuV5KHSQfyqzXpUkLrWSsPeMpqw9bLGAF6Wdf7dITdu5DIvPUidJmn3OizBjQ==|920

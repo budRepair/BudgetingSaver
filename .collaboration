@@ -508,17 +508,7 @@
   },
   {
     "ModuleName": "PCPage/科目マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T10:55:12.0647798+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\管理メニュー\\科目マスタ.json",
-      "Pages\\テンプレート\\管理メニュー\\科目マスタ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/組織マスタ",
