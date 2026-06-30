@@ -528,17 +528,7 @@
   },
   {
     "ModuleName": "PCPage/見込入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T10:49:02.543231+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\見込\\見込入力.json",
-      "Pages\\テンプレート\\見込\\見込入力.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/予実見込_ダッシュボード（営業利益）",
