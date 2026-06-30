@@ -524,17 +524,7 @@
   },
   {
     "ModuleName": "PCPage/予実見込_ダッシュボード",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T16:24:43.906638+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\見込\\予実見込_ダッシュボード.json",
-      "Pages\\テンプレート\\見込\\予実見込_ダッシュボード.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/見込入力",
