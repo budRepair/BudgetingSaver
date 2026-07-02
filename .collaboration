@@ -572,17 +572,7 @@
   },
   {
     "ModuleName": "PCPage/メニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-02T10:18:43.1649984+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\メニュー.json",
-      "Pages\\テンプレート\\メニュー.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/テンプレート/サンプル",
