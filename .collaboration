@@ -472,7 +472,17 @@
   },
   {
     "ModuleName": "PCPage/商品単価マスタ_月横変換",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-03T11:00:14.4430784+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\検証用\\会計期間ロック\\商品単価マスタ_月横変換.json",
+      "Pages\\テンプレート\\検証用\\会計期間ロック\\商品単価マスタ_月横変換.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/売上入力_会計期間ロック検証",
