@@ -1,6 +1,6 @@
 {
   "PageType": 0,
-  "ColumnCount": 94,
+  "ColumnCount": 95,
   "RowCount": 64,
   "Formulas": {
     "51,7": "DSUM($C$51:$G$57,$G$51,$L$51:$L$52)",
@@ -9,7 +9,7 @@
     "54,7": "DSUM($C$51:$G$57,$G$51,$L$51:$L$52)",
     "55,7": "DSUM($C$51:$G$57,$G$51,$L$51:$L$52)",
     "56,7": "DSUM($C$51:$G$57,$G$51,$L$51:$L$52)",
-    "5,89": "YEAR(EDATE(TODAY(),-3))",
-    "6,89": "TEXT(MONTH(TODAY()),\"00\")"
+    "6,90": "TEXT(MONTH(TODAY()),\"00\")",
+    "5,90": "YEAR(EDATE(TODAY(),-3))"
   }
 }

@@ -460,17 +460,7 @@
   },
   {
     "ModuleName": "PCPage/予算_入力制御",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-06T09:29:23.0449321+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\検証用\\会計期間ロック\\予算_入力制御.json",
-      "Pages\\テンプレート\\検証用\\会計期間ロック\\予算_入力制御.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/入力制御",
