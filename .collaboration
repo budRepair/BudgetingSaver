@@ -452,17 +452,7 @@
   },
   {
     "ModuleName": "PCPage/組織マスタ_検証用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-07T13:43:55.3622099+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\検証用\\マスタ管理\\組織マスタ_検証用.json",
-      "Pages\\テンプレート\\検証用\\マスタ管理\\組織マスタ_検証用.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/テンプレート/検証用/会計期間ロック",
