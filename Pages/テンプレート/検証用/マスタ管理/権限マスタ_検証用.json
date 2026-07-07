@@ -55,28 +55,30 @@
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "WaterMark": "例）権限1",
-        "Items": [
-          {
-            "Value": "1",
-            "DisplayValue": "権限1"
-          },
-          {
-            "Value": "2",
-            "DisplayValue": "権限2"
-          },
-          {
-            "Value": "3",
-            "DisplayValue": "権限3"
-          },
-          {
-            "Value": "4",
-            "DisplayValue": "権限4"
-          },
-          {
-            "Value": "5",
-            "DisplayValue": "権限5"
-          }
-        ]
+        "IsBounding": true,
+        "DataSource": "TEST_権限マスタ",
+        "ValueColumnBindingInfo": {
+          "TableName": "TEST_権限マスタ",
+          "ColumnName": "権限レベル",
+          "GUID": "df9e90d6-6a69-4720-bab1-44a5897bfc7a"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "TEST_権限マスタ",
+          "ColumnName": "権限レベル",
+          "GUID": "320070ae-a32f-4056-b23c-746291a58003"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "TEST_権限マスタ",
+                "ColumnName": "権限レベル",
+                "GUID": "d6ba7c45-c089-4678-8312-16b9d09ab3b3"
+              },
+              "Order": 0
+            }
+          ]
+        }
       }
     },
     "4,10": {
@@ -1951,4 +1953,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//pGKPp97khHBJ3sOJq5mjPJjp3T7aoCDOvVqD8ipzNDi0aotW0CAF6N7eKlwoSyZpEpx/+Fde5ioGTypRlut4MjV32EOSNiO3qC+kLwZBIIe25Jr7pqcwGVAzaGh++myaTgmL1iHzLRknljUY8fcJX75crOxWcoRJ/K3GD6xqVCSPFWKbBJigzUbvr0mSgYd0sVU2Iohaxd0BkBD5n1l+fAlJKchigOO9CsiEuuB8qyJ5tcV1kagSnCJEnAwJGUtEgcihLylhpEGO2AeBNAWIO3zHwaOUWmGnKnHm/UbxSkV+OJnxyMfHlwmnag8gUFN4XbPXFpE00uNrrrebQPyAiM0z/yyRw82jssUK3s2bgGf5NWyRTyqcbd6jm7t1VY2b6dLSs8KquVTTt33Dbl4GNiH4t0uY1SrINa6r9UwUCvMkkGKQOswM2Sd5VfT+6fDs0Ri/pE1OZOO13UqNlSEDOKWwNO4hNiF4JUCUg0oJFlCLVYF1bQ39907gMcz/owegwkwZd8Deiod7Ds4oJoLDRdk86EXvYjx9dqJrHmkQHxOrOL51FhJwCy1aU1IkDeq9WRIfdhTn/68SI+6c7+MvSp7b2HZbGSKLybWGqvTRbDGgPPgL7N2nBg0Dl0k0GEADPjm1ZMaIFyR30sn/hv+PSta3KgpVFWeN+2ZurO9DWYzprJ09jKBj5EIZyb6l1VGcy+RAbIwLwuzzViGkVIa2lWAt43k1Vut/6L3/jc4CyuPxRqo401OSSX0fShNCAZ9v/CcV03Nz7zFH2txh6hNRrh2xZLbDSQgLpFlRX3bDl+4a0IRpmmeQQtax0KwQRFDehPXjwGnF/gXAOfC3hNG5N8E8zf3mTN/4aD03UOb7bCpwSW+Ks30hJX0Fclr59fFFOjw3mFwcBZV97jA7itCJsg==|920
+}//1FpVGlsY9mk4Zhlwitqv9bIH5FF0OGqkdGGcNTbRudk3+KD2bDlaMGYmPgoDV85sYKBhQFSHsXkWULvnE+BC1Bp7LapFv19XQIHjWA+n0/Xi0AU+/gbTMUni6fzRICAUYYf0LU330YW8CWvbqIrviuO8E4OyOTsURbRPhZdI3efJRjHf5WPYvhtIU2xADwvNnF/DKOo2vO6MWsQxJgrw57Qjhnn0hZeWXDjFaIRA8RDBXsIL7cD2AG/elep18S8MPMH490OoX33aSSSAaOCcHxl2LzVzcsnoatPRYrZJe5RjpErexTmDl2MwW8HjFWCF7Lx16MCFarf4DOE4b2RSntX9X0JBiF0G8RRtjqocHbH7Uo3STUvptPGrFHIZj38aNxuf4YeO2B715dFGv0OETVH5tPMm2rH+fCH+mJhTV0Uilhlj/dbKAmFoRwS7MW00bKF19ps4ck4iMqiz5YyqbL1yPLzegzOaIuVmFRWl+GE21YRD/WzVfnX9MKXYGp3cl0mnqjEyY/K8jE/7hPI3aBrIqUKTx398FIOwopXH1hF+zNvkRgjMDf63o1ut159r7ikD6G1hEEoCbK3iXITN23yehuVETi/Zv29l4ynOz/2lnQ+UzROuvDtsRhccEQxrKWQZxE1HsEkRYSzVwesRtXAo3Yfbcr9JDF2RMUXpG49XMco6i8gUEKMXPD5h+4aXheIpK1doZ10siKetkcoPx0rOsyaMz6JzwGkJlb1lhUXFjX+B66/bkBTvtQVaWYE2F3Tk3Py0UZ2uqTM+jkAR2BeLItqFOLwHF5sw2BEBhgrBjGajsxadBfLaRRdrgyB9NX47eUPWOchGSQu0RYDI0w/3nYBJCWvSJhhLlHs9oNtX4B+2sArmVrnBeK8Ty4eySBb/A24Hs1LD//zCI7ru0w==|920
