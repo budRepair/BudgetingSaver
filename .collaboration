@@ -810,7 +810,16 @@
   },
   {
     "ModuleName": "ServerCommand/売上計画_検証用",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-08T13:58:19.3147236+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\検証用\\売上計画_検証用.json"
+    ]
   },
   {
     "ModuleName": "ServerCommands/見込",
