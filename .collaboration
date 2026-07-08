@@ -9,92 +9,32 @@
   },
   {
     "ModuleName": "Table/MST_バージョン",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338567+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\マスタ管理\\MST_バージョン.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/MST_属性",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338521+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\マスタ管理\\MST_属性.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/MST_年度",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338417+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\マスタ管理\\MST_年度.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/MST_月",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.533868+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\マスタ管理\\MST_月.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/MST_科目",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338628+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\マスタ管理\\MST_科目.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/MST_組織",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338462+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\マスタ管理\\MST_組織.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -103,62 +43,22 @@
   },
   {
     "ModuleName": "TableView/VIEW_予算_損益計算書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338096+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予実\\VIEW_予算_損益計算書.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_実績_損益計算書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338182+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予実\\VIEW_実績_損益計算書.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_予算_損益計算書_参照",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.533814+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予実\\VIEW_予算_損益計算書_参照.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_実績_損益計算書_参照",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338014+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予実\\VIEW_実績_損益計算書_参照.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -167,137 +67,47 @@
   },
   {
     "ModuleName": "Table/INP_予算_売上",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341772+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\INP_予算_売上.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_予算_売上原価",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342035+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\INP_予算_売上原価.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_予算_損益計算書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342117+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\INP_予算_損益計算書.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_予算_売上",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.534221+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\VIEW_予算_売上.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_予算_損益計算書エクスポート用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341952+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\VIEW_予算_損益計算書エクスポート用.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/WK_予算_バージョンコピー用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342386+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\WK_予算_バージョンコピー用.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_予算_販管費_一般管理費",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342473+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\INP_予算_販管費_一般管理費.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_予算_営業外_特別損益",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341862+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\INP_予算_営業外_特別損益.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/WK_予算_売上_外注費_バージョンコピー用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342299+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\予算\\WK_予算_売上_外注費_バージョンコピー用.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -306,32 +116,12 @@
   },
   {
     "ModuleName": "Table/TRN_エラー一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.534295+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\共通\\TRN_エラー一覧.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/WK_共通_取込用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5343044+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\共通\\WK_共通_取込用.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -340,62 +130,22 @@
   },
   {
     "ModuleName": "Table/INP_実績_売上",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342757+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\実績\\INP_実績_売上.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_実績_損益計算書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342564+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\実績\\INP_実績_損益計算書.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_実績_売上",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342854+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\実績\\VIEW_実績_売上.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/WK_実績_売上",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5342663+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\実績\\WK_実績_売上.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -408,47 +158,17 @@
   },
   {
     "ModuleName": "TableView/VIEW_TEST_予算",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338745+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\VIEW\\VIEW_TEST_予算.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_TEST_予算_02",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338881+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\VIEW\\VIEW_TEST_予算_02.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_権限",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338805+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\VIEW\\VIEW_権限.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -461,197 +181,67 @@
   },
   {
     "ModuleName": "Table/TEST_商品単価マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5339021+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\マスタ\\TEST_商品単価マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_商品単価マスタ_bk",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5339229+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\マスタ\\TEST_商品単価マスタ_bk.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_権限マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5339166+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\マスタ\\TEST_権限マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_科目マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338958+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\マスタ\\TEST_科目マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_組織マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5339093+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\マスタ\\TEST_組織マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/MST_年度_検証用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341215+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\MST_年度_検証用.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_0714",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5339367+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\TEST_0714.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_T01_権限",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5340951+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\TEST_T01_権限.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_予算_001",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5339299+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\TEST_予算_001.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_見込",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5340763+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\TEST_見込.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/TEST_見込_詳細",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341138+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\TEST_見込_詳細.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/商品単価マスタ_検証用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341051+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\商品単価マスタ_検証用.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/売上予算_検証用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5337543+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\検証用\\テーブル\\売上予算_検証用.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -660,47 +250,17 @@
   },
   {
     "ModuleName": "Table/INP_見込_損益計算書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341289+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\見込\\INP_見込_損益計算書.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/WK_見込_損益計算書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341449+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\見込\\WK_見込_損益計算書.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_見込_損益計算書_参照",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341361+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\見込\\VIEW_見込_損益計算書_参照.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -709,62 +269,22 @@
   },
   {
     "ModuleName": "Table/INP_予算_配賦後",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338222+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\配賦\\INP_予算_配賦後.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_実績_配賦後",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338363+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\配賦\\INP_実績_配賦後.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_予算_配賦前後",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338262+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\配賦\\VIEW_予算_配賦前後.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "TableView/VIEW_実績_配賦前後",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5338299+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\配賦\\VIEW_実績_配賦前後.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -773,47 +293,17 @@
   },
   {
     "ModuleName": "Table/INP_予算_製造原価",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.534161+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\サンプル\\INP_予算_製造原価.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_予算_外注費",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341689+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\サンプル\\INP_予算_外注費.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/INP_予算_給与",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:32:14.5341534+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\テーブル\\サンプル\\INP_予算_給与.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -910,17 +400,7 @@
   },
   {
     "ModuleName": "PCPage/売上入力_検証用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T09:28:06.3898937+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\検証用\\コンボボックス\\売上入力_検証用.json",
-      "Pages\\テンプレート\\検証用\\コンボボックス\\売上入力_検証用.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/テンプレート/検証用/データ削除用",
