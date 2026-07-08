@@ -410,7 +410,7 @@
                     ]
                   }
                 ],
-                "ID": "c2ac26d3-73bb-4f30-ae7d-b53c9ff50076"
+                "ID": "7d1fa553-d5e6-44b2-9301-d1d00efd5858"
               },
               {
                 "CommandList": [
@@ -428,7 +428,7 @@
                     ]
                   }
                 ],
-                "ID": "0741ef41-a0a3-4d83-946b-1c4251de3527"
+                "ID": "ea5ff015-e6e0-4857-aa7a-d112d0d92796"
               }
             ]
           }
@@ -448,13 +448,25 @@
         "DataSource": "MST_組織",
         "ValueColumnBindingInfo": {
           "TableName": "MST_組織",
-          "ColumnName": "部門名",
-          "GUID": "abc2108e-7f1a-4eb6-aab3-63c31f878573"
+          "ColumnName": "部門コード",
+          "GUID": "b543cffa-ec97-4d31-b8a6-7cd17a85d91f"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "MST_組織",
           "ColumnName": "部門名",
           "GUID": "5b4e43d3-a4f7-4c2c-a549-dfaa884b1072"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "部門コード",
+                "GUID": "8fd97fe4-a90c-40f0-9834-e762fa7738f3"
+              },
+              "Order": 0
+            }
+          ]
         },
         "CommandList": [
           {
@@ -538,7 +550,7 @@
                     ]
                   }
                 ],
-                "ID": "efe56bc1-c730-4759-9a86-9bb7f0fbb143"
+                "ID": "578c1c45-2613-437e-aa97-40b69247016d"
               },
               {
                 "CommandList": [
@@ -556,7 +568,7 @@
                     ]
                   }
                 ],
-                "ID": "f619220a-2358-47c4-ad57-406ee9761f77"
+                "ID": "bd1baf0a-7744-4f5b-81f7-70f45084a494"
               }
             ]
           }
@@ -592,6 +604,18 @@
             "SerializeProperty": "=売上入力_検証用!L6"
           }
         },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_組織",
+                "ColumnName": "組織コード",
+                "GUID": "431b4c36-719e-42f0-bd5d-746e7378eaf1"
+              },
+              "Order": 0
+            }
+          ]
+        },
         "CommandList": [
           {
             "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -674,7 +698,7 @@
                     ]
                   }
                 ],
-                "ID": "9113a085-0c82-48af-9324-6e1763591034"
+                "ID": "144693e9-89bc-46b5-b915-8e5880bc7546"
               },
               {
                 "CommandList": [
@@ -692,7 +716,7 @@
                     ]
                   }
                 ],
-                "ID": "04dace21-7b77-4cee-8bf9-df9d20bfb11c"
+                "ID": "49c86f8a-171d-40a3-a275-0cf3b851e4ce"
               }
             ]
           }
@@ -708,13 +732,25 @@
         "DataSource": "MST_バージョン",
         "ValueColumnBindingInfo": {
           "TableName": "MST_バージョン",
-          "ColumnName": "バージョン名",
-          "GUID": "1c5dc1ab-273a-40f4-94c7-e96b0c3b9ed0"
+          "ColumnName": "バージョンコード",
+          "GUID": "b2456fa0-14e9-4a5f-9094-3540fb6484a8"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "MST_バージョン",
           "ColumnName": "バージョン名",
           "GUID": "b3db6f31-366f-4af3-a128-cffcae89d3fc"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "MST_バージョン",
+                "ColumnName": "バージョンコード",
+                "GUID": "f5f0f7e8-3770-4640-9fa1-251fd2b90f37"
+              },
+              "Order": 0
+            }
+          ]
         },
         "CommandList": [
           {
@@ -798,7 +834,7 @@
                     ]
                   }
                 ],
-                "ID": "9929b9db-a212-4112-aa22-cebfa01c4ec5"
+                "ID": "e9803e1c-b60d-4959-a228-449e6cc3ef26"
               },
               {
                 "CommandList": [
@@ -816,7 +852,7 @@
                     ]
                   }
                 ],
-                "ID": "6198272c-5355-46dc-81ee-e8c5e23201d8"
+                "ID": "7179e0a8-abc4-4a3f-9ff8-a12ab1f10909"
               }
             ]
           }
@@ -887,7 +923,7 @@
                     ]
                   }
                 ],
-                "ID": "e0f80745-a2a5-45c3-aca1-e9a41b7de474"
+                "ID": "0309d987-126e-463f-a441-6c2a6b96cc4c"
               },
               {
                 "CommandList": [
@@ -1041,7 +1077,7 @@
                             "Disabled": true
                           }
                         ],
-                        "ID": "a57f6e0d-04f0-433b-a36e-92bc7aaeb5ed"
+                        "ID": "eaf424a5-8ee8-4eff-9c5f-123c203de18b"
                       }
                     ]
                   },
@@ -1154,7 +1190,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "2af60549-4578-4c7a-87c0-3218efabc498"
+                "ID": "573b2387-367c-423b-8944-85ad9b3fc6a3"
               }
             ]
           }
@@ -1250,7 +1286,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "efbb7eea-24a7-446c-a56c-79baad00f006"
+                "ID": "50b982b2-da5d-488f-8014-dd6ffe865e69"
               }
             ]
           },
@@ -3120,4 +3156,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//uaHKayhiwtHh6bQpErQLvDxVftwtt+iI65R0auE9Fk80S1HmQAc6aks5e7lZJY42TagmPedPvQnzOUWIMSVkUS1oSlzjSBGIQieKi1o/cx304kt2st8gHU2C64VeV+oZKLvqP41jBIVna5J1MPEl9fEzaUtd/8zUVxGLTOjj0DGXXGwaIP/ekq+ScT4EuDSdWGgqMX7RsabFWrcE/c0dBcu07EUlLMmNKsnhFaHchNU9QRhPMMve0mwuSZpqQHV0l6TKEaZfO1M6Nnd+w6/xnYphGhWcxnqnVBzITx67uaf+uHXt+2LbIBp6rPk0RC46oGAcioYKlW4dByhgD94MdFoEk9idXXGUhOlBCokLsLylQaQEw3Mc5yP0EfDTjyaz0S2EhLIBRINNlYUKrpjZcnp1q2txOopKQ22cY2of9fUXs54HLKihBOBhDNO4ymsORWo3DuWjKYmGJZY62rrE5Q0U8GHSEO7Rys97cpTY1FDcVcMYg4z643WmQO/UyP/6LdFxV+JdfnKtarNHU+efC8VLsG7vny33S7/N9dQT0mlKDd4AX6rUah+R8U2MaOQI1cSuXnJCijF6O1LHMk6Snm9w+ag66sdcyafC8DecAwvR/cgIR3byJi85VxLxALjWH8hapwuNvCfzAxTVMYLoKXNJpQbx4xHK354z3kKuk14mIdjDmttIFdaJ4/IKKvVtlqojAPzo9G5diY9NXYUYx3II9JBFWS9k3BWlxzrh4MBzhS72omyPXUQswD2MUYutaCHFZAuzouLQgD7vgIM/ZzGOW/aP193WAnthJevhJiO9R41xpu4WZLZJMQVovI9/B4AdQojJv/WSNOGtXKv4e1qenLujTUy0CwCVtBh4YJnoT1NrkO3MPdZJRGsyi87tWmPmm2/yytcUFiBrEc5GZw==|920
+}//yvYWEQVGhq3GzcJOx4GUOlykW1Kg6L4biQfmTBa3Cj80E5KKy46mEIKErbH8c94MfaUwvWvxPCbR3zqHIjjx+h24+v176haTOL5W0S+uzHGo94OF7id8cj4xL82k6f3qocYj+XXyW9UGBG5HK8fSrWZveixU7wGuhWDRqueEl0eWy0bYMh+hUOnmRVXG5SQW8icxd/epOcddyy6aB7MwwBRS4KS/WyU1bw2ch5up/Bvq1Ypmj8lla6aIZhWMvbWcRqRKlKtXhQ0VT1TMNU5LevbfoUmR/Q7KyVJ6Nn9okQ+6SBMZjUDUqhAg3QmeOz9O7utrkRfs4oXVUpD3ADB7KH+WqKy6StCto2XuTTP0oaAN3KGsnM5vKDaK2ABcQPPQsnuytKQ0vpi1s5BA2Jbx5fP0fTPUgi39rW4Vm4B6/55eeF2C4g2CVWMxRzuPej1pHSTq9RLhEbpFw4sWFcE9fKuqCov406v8LOAJQLVlLggh8jKbmjsKf79cOX08OjsEJxp0t9+h9qrs26SAhaCHsCtxU4PjRTNMwbNQq1RNc2vmHBys7yWieNAe8bm7aZri70niEXQli4yCKd7qR3ZRVI2O20EQQab2VKs0TCNWC4sKf1yo695IcqRijGlEzOcTntALnZzpoPDEDbpGOnJHvM1DlnI8fHIhwgXJhaMNDOHURi8DFG6B9QpI7c+PHP+eTOnyAwJeWncWM6/xsSa7C5TyHrMd/pXKVNu7CKdM/NKQ2mvXqvbVRr7OtxI93Z4u/3qHhIyiuWkL6K/6/ICWmNJnbzw7CEx3ynczW+CcDZ/ZtDI6iOnJrRVTpNk1UvSfBmvKjEbObfSYrlLMTuLAVdQPy53hSUXG9bmgK1RtSrSDBYWeui5DUQLkON9VdrHXi+RVnQJaPkyFc+m3Ci5FlQ==|920
