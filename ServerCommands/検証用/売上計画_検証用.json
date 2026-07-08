@@ -93,7 +93,7 @@
               "ID": "d55b01237d5e47878a75d8fa4b1af534"
             }
           ],
-          "ID": "6768ee6d-e753-44c4-995c-9a9ec8cc2f9f"
+          "ID": "9d31bda2-fc5f-479d-be6a-6fb8879149ab"
         },
         {
           "Condition": {
@@ -139,7 +139,7 @@
               "ID": "767efcd80fd5490ebcddb97b7405ab52"
             }
           ],
-          "ID": "b335532a-9070-4a62-ac38-14fd26f8fb2b"
+          "ID": "ae2ae31d-f44a-4e62-8c3a-969f0c4cb5f7"
         },
         {
           "Condition": {
@@ -168,10 +168,12 @@
               },
               "SqlStatement": "DELETE \r\nFROM\r\n    \"INP_実績_配賦後\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"科目コード\" = 'ACC001'; \r\n\r\nDELETE \r\nFROM\r\n    \"INP_予算_配賦後\" \r\nWHERE\r\n    \"年度\" = @pmt1 \r\n    AND \"科目コード\" = 'ACC001';",
               "ReturnsName": "return1",
-              "ID": "4c6be591705e4bfc9fd5e0e3b3040bd6"
+              "ID": "4c6be591705e4bfc9fd5e0e3b3040bd6",
+              "Comments": "2026/7/8　不具合修正（flg=3でよばれることはないので無効化）",
+              "Disabled": true
             }
           ],
-          "ID": "e4a50e73-6f5e-41c5-bfe2-bd7343c33a09"
+          "ID": "9c28e80c-5729-42e3-94a4-674ead1cfa8d"
         }
       ]
     },

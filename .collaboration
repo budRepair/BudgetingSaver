@@ -400,17 +400,7 @@
   },
   {
     "ModuleName": "PCPage/売上入力_検証用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T10:33:08.4741758+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\テンプレート\\検証用\\コンボボックス\\売上入力_検証用.json",
-      "Pages\\テンプレート\\検証用\\コンボボックス\\売上入力_検証用.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/テンプレート/検証用/データ削除用",
@@ -810,16 +800,7 @@
   },
   {
     "ModuleName": "ServerCommand/売上計画_検証用",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AD\\yuka.hatakeyama",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-08T13:58:19.3147236+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\検証用\\売上計画_検証用.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommands/見込",
