@@ -410,7 +410,7 @@
                     ]
                   }
                 ],
-                "ID": "99175c1d-c38b-4493-a18d-9303024a1843"
+                "ID": "c2ac26d3-73bb-4f30-ae7d-b53c9ff50076"
               },
               {
                 "CommandList": [
@@ -428,7 +428,7 @@
                     ]
                   }
                 ],
-                "ID": "187971c2-b291-4363-91ff-c393373380df"
+                "ID": "0741ef41-a0a3-4d83-946b-1c4251de3527"
               }
             ]
           }
@@ -538,7 +538,7 @@
                     ]
                   }
                 ],
-                "ID": "d8ab1b4e-b52c-4207-9d1a-98f9ceae20ec"
+                "ID": "efe56bc1-c730-4759-9a86-9bb7f0fbb143"
               },
               {
                 "CommandList": [
@@ -556,7 +556,7 @@
                     ]
                   }
                 ],
-                "ID": "3bf5026e-df4b-4805-9595-bcd6a5e76693"
+                "ID": "f619220a-2358-47c4-ad57-406ee9761f77"
               }
             ]
           }
@@ -674,7 +674,7 @@
                     ]
                   }
                 ],
-                "ID": "fd1426ec-003d-4a8a-ad47-899ac9058ae4"
+                "ID": "9113a085-0c82-48af-9324-6e1763591034"
               },
               {
                 "CommandList": [
@@ -692,7 +692,7 @@
                     ]
                   }
                 ],
-                "ID": "73a1e4a0-244e-4d84-bb74-f0ed21ef2edb"
+                "ID": "04dace21-7b77-4cee-8bf9-df9d20bfb11c"
               }
             ]
           }
@@ -798,7 +798,7 @@
                     ]
                   }
                 ],
-                "ID": "30a1250e-74f8-4ee8-987e-ecbd02732bad"
+                "ID": "9929b9db-a212-4112-aa22-cebfa01c4ec5"
               },
               {
                 "CommandList": [
@@ -816,7 +816,7 @@
                     ]
                   }
                 ],
-                "ID": "267066f9-8220-4cce-8ded-54081769f547"
+                "ID": "6198272c-5355-46dc-81ee-e8c5e23201d8"
               }
             ]
           }
@@ -887,7 +887,7 @@
                     ]
                   }
                 ],
-                "ID": "549b468a-1cfd-4964-950d-ce705a0c9b76"
+                "ID": "e0f80745-a2a5-45c3-aca1-e9a41b7de474"
               },
               {
                 "CommandList": [
@@ -1041,7 +1041,7 @@
                             "Disabled": true
                           }
                         ],
-                        "ID": "f2d6e3fe-e6fd-47fb-9e01-77afe93509f2"
+                        "ID": "a57f6e0d-04f0-433b-a36e-92bc7aaeb5ed"
                       }
                     ]
                   },
@@ -1154,7 +1154,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "ee97e3e0-199d-4728-b4b6-7463f1a48f00"
+                "ID": "2af60549-4578-4c7a-87c0-3218efabc498"
               }
             ]
           }
@@ -1250,7 +1250,7 @@
                     "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
                   }
                 ],
-                "ID": "d6ea2e10-84cb-4e80-926a-01de11d9f20b"
+                "ID": "efbb7eea-24a7-446c-a56c-79baad00f006"
               }
             ]
           },
@@ -1343,7 +1343,7 @@
       "BindingInfo": {
         "TableName": "売上予算_検証用",
         "ColumnName": "仕入先名称",
-        "GUID": "866b5b1d-fbb5-4dca-8d86-bad6e1002026"
+        "GUID": "4b92f0ee-1ce2-489f-bbac-43552d349ef4"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1351,8 +1351,8 @@
         "DataSource": "商品単価マスタ_検証用",
         "ValueColumnBindingInfo": {
           "TableName": "商品単価マスタ_検証用",
-          "ColumnName": "仕入先コード",
-          "GUID": "190db113-0e22-4531-b838-a7a7620d213b"
+          "ColumnName": "仕入先名称",
+          "GUID": "7d804fa9-fe9b-46da-8ef7-85f2fd2d3f37"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "商品単価マスタ_検証用",
@@ -3120,4 +3120,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//MITw9WPE8JxmhBgTcBBD9DBjeF0i6tFCTG685ZwbXy2P+OqsZhD1MN9raihNd0XnfVbFwyfrdyChIunjdNBuTUjErgFJc0ufvksL3gyiXPwa2xMIkxbiQ0NlAVk101e8KjcR4OREFDsPREwIXbE0uCfSn9Co1OVCMxJKLnY05rKao3Yc7duUn4gv3TxshOJPiHPF91+CEIael9LrUtOI1tC0+FDt3HDyoCDrtuiZr33gLnSN65ByZkQasMe44xsCq4T644iFuG+NnePixvXaqcWByb9G0gCKtAMirb2DtpJsCb455fapXq0SV8u7vj9e2zJOCheTJPQu08wfqJnvo+0EqoHxREIPcAADOTMGcWm1cdady+WMsSZCUf2a5+pTcqGKAWITo5+z1MmrUCk1GfwgVXu9lKcgc8oo2i0o7QSGVt1mgSAFz9+xjzSbABOAFM3JRXBlkvhuHlkJa3GWdoyXqZnYOfboA0PFAAxad7IaeCE6CeAMcJJDthvi6twtHtZEmft0SvDexEWRafgHAUHJ8ttF92nf2+xjMNYmVcJb8k3UxyDIne+BPrr6GKr94vh5u8nodUtzPn/z15k6gcSyxaEX7/D8TC8+KjN5TiCX4Z7o0F5T0/3nyxTh5afxN4ev5MM4JRpP5JXsJosDJ6dBYohUoRkP3JuOp44Kw0RivB/AzkNSx/FFLfVQKFs0YoTYLwb+Zvnq1E1PgDNTjP/p5FldZz7cLPAzwuUz37yivh0I7uNAzkWYvBZcFeVWWIi8o9yK9QCfARdb2Ox1WY/5uP7Lm4cQi45I8aVrJZnYOWcL/pPb4XY7rJNKBxOMoxwbmWwnxeKjqjgM7UEcoDsj95MRUjcoMudqvVCJ/elyUdfWfjWGNfcLxDL+2fJlyOOdRs9QLZxInIzOdb0rAw==|920
+}//uaHKayhiwtHh6bQpErQLvDxVftwtt+iI65R0auE9Fk80S1HmQAc6aks5e7lZJY42TagmPedPvQnzOUWIMSVkUS1oSlzjSBGIQieKi1o/cx304kt2st8gHU2C64VeV+oZKLvqP41jBIVna5J1MPEl9fEzaUtd/8zUVxGLTOjj0DGXXGwaIP/ekq+ScT4EuDSdWGgqMX7RsabFWrcE/c0dBcu07EUlLMmNKsnhFaHchNU9QRhPMMve0mwuSZpqQHV0l6TKEaZfO1M6Nnd+w6/xnYphGhWcxnqnVBzITx67uaf+uHXt+2LbIBp6rPk0RC46oGAcioYKlW4dByhgD94MdFoEk9idXXGUhOlBCokLsLylQaQEw3Mc5yP0EfDTjyaz0S2EhLIBRINNlYUKrpjZcnp1q2txOopKQ22cY2of9fUXs54HLKihBOBhDNO4ymsORWo3DuWjKYmGJZY62rrE5Q0U8GHSEO7Rys97cpTY1FDcVcMYg4z643WmQO/UyP/6LdFxV+JdfnKtarNHU+efC8VLsG7vny33S7/N9dQT0mlKDd4AX6rUah+R8U2MaOQI1cSuXnJCijF6O1LHMk6Snm9w+ag66sdcyafC8DecAwvR/cgIR3byJi85VxLxALjWH8hapwuNvCfzAxTVMYLoKXNJpQbx4xHK354z3kKuk14mIdjDmttIFdaJ4/IKKvVtlqojAPzo9G5diY9NXYUYx3II9JBFWS9k3BWlxzrh4MBzhS72omyPXUQswD2MUYutaCHFZAuzouLQgD7vgIM/ZzGOW/aP193WAnthJevhJiO9R41xpu4WZLZJMQVovI9/B4AdQojJv/WSNOGtXKv4e1qenLujTUy0CwCVtBh4YJnoT1NrkO3MPdZJRGsyi87tWmPmm2/yytcUFiBrEc5GZw==|920
