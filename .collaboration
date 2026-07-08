@@ -400,7 +400,17 @@
   },
   {
     "ModuleName": "PCPage/売上入力_検証用",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AD\\yuka.hatakeyama",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-08T10:26:09.988041+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\テンプレート\\検証用\\コンボボックス\\売上入力_検証用.json",
+      "Pages\\テンプレート\\検証用\\コンボボックス\\売上入力_検証用.rd"
+    ]
   },
   {
     "ModuleName": "Pages/テンプレート/検証用/データ削除用",
